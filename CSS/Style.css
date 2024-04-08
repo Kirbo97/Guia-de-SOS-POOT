@@ -312,7 +312,7 @@ li.gustos {
 }
 
 /* La etiqueta "data" tendra una caracteristica para desplasar las tablas al centro */
-.data{ margin:15px auto;}
+.data{ margin:15px auto 25px auto;}
 
 /* Las etiquetas "td" (columna simple de la tabla) y "th" (columna de la tabla como encabesado) tendran caracteristicas para el diseño de las lineas de la tabla */
 td, th { 
@@ -352,12 +352,23 @@ tr:nth-child(even) {background-color: #FAFAFA;}
 /* La etiqueta "img" con la clase "box_marriage" para que se ocupe del tamaño de la imagen*/
 .box_marriage img { max-width:100%; height:auto; }
 
-/* se crea la clase "box_gallinero" para que se ocupe de posisionar el contenido de las gallinas*/
-.box_gallinero {
-    max-width:200px; 
+/* se crea la clase "box_marriage" para que se ocupe de posisionar el contenido para los perfiles*/
+.box_animales {
+    max-width:250px; 
     height:auto; 
     display:inline-block; 
     margin:10px;
+}
+
+/* La etiqueta "img" con la clase "box_marriage" para que se ocupe del tamaño de la imagen*/
+.box_animales img { max-width:100%; height:auto; }
+
+/* se crea la clase "box_gallinero" para que se ocupe de posisionar el contenido de las gallinas*/
+.box_gallinero {
+    max-width:180px; 
+    height:auto; 
+    display:inline-block; 
+    margin:10px 50px;
 }
 
 /* se crea la clase "box_inicio" para que se ocupe de posisionar el contenido de las opciones*/
@@ -373,7 +384,7 @@ tr:nth-child(even) {background-color: #FAFAFA;}
 
 /* se crea la clase "box_mascota" para que se ocupe de posisionar el contenido para las mascotas*/
 .box_mascota {
-    max-width:200px; 
+    max-width:160px; 
     height:auto; 
     display:inline-block; 
     margin:10px 17px;
@@ -413,26 +424,16 @@ section .copyright {
 }
 
 /* defino que solo la clase "logo" dentro del bloque con la etiqueta "section" tendra tendra ciertas caracteristicas */
-section .logo {
-    width: 40px; /* ajusto el tamaño que tendra esta clase */
-}
+section .logo { width: 40px; } /* ajusto el tamaño que tendra esta clase */
 
 /* defino que solo la clase "enlace" dentro del bloque con la etiqueta "section" tendra tendra ciertas caracteristicas */
-section .enlace {
-    width: 40px; /* ajusto el tamaño que tendra esta clase */
-}
+section .enlace { width: 40px; } /* ajusto el tamaño que tendra esta clase */
 
 /* defino que solo la clase "posision-pri" tendra tendra ciertas caracteristicas */
-.posision-pri {
-    margin: 0 0 0 auto; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda)*/
-}
+.posision-pri { margin: 0 0 0 auto; } /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda)*/
 
 /* defino que solo la clase "posision-sec" tendra tendra ciertas caracteristicas */
-.posision-sec {
-    margin: 0 0 0 4.5em; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda)*/
-}
+.posision-sec { margin: 0 0 0 4.5em; } /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda)*/
 
 /* defino que solo la clase "posision-ter" tendra tendra ciertas caracteristicas */
-.posision-ter {
-    margin: 0 auto 0 4.5em; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda)*/
-}
+.posision-ter { margin: 0 auto 0 4.5em; } /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda)*/
