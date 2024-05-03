@@ -28,10 +28,9 @@
         margin: 0 !important;
     }
     
-    
     nav .pos-fin { margin: 0 0 0 2.75em !important; }
 
-    .vin_tel:-webkit-any-link{ font-size: 0.98em !important; }
+    .vin_tel:-webkit-any-link{ font-size: 1.07em !important; }
 }
 
 /* defino que solo altere estos elementos cuando la pantalla del dispositivo sea un telefono y que este en vertical*/
@@ -58,7 +57,7 @@
     
     nav .pos-fin { margin: 0 0 0 2.75em !important; }
 
-    .vin_tel:-webkit-any-link{ font-size: 0.98em !important; }
+    .vin_tel:-webkit-any-link{ font-size: 1.07em !important; }
 }
 
 /* ******************* */
