@@ -73,6 +73,19 @@ nav{
     box-shadow: 0px 0px 0px 6px #00AA88; 
 }
 
+/* defino que solo la clase "posision-pri" tendra tendra ciertas caracteristicas */
+nav .pos-ini {
+    display: flex; /* le indico que el elemento sea como un bloque (igual que la etiqueta "div") flexible y estaran en la misma linea (segun como este el html) ademas cada elemento se ajustara al tamaño interno proporcionado por bloque en el que se encuentran*/
+    flex-direction: column; /* le indico que los elemento del bloque flexible se organinse en columna*/
+}
+
+/* defino que solo la clase "posision-ter" tendra tendra ciertas caracteristicas */
+nav .pos-fin {
+    margin: 0 0 0 5.5em; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda)*/
+    display: flex; /* le indico que el elemento sea como un bloque (igual que la etiqueta "div") flexible y estaran en la misma linea (segun como este el html) ademas cada elemento se ajustara al tamaño interno proporcionado por bloque en el que se encuentran*/
+    flex-direction: column; /* le indico que los elemento del bloque flexible se organinse en columna*/
+}
+
 /* ******************* */
 /*  Diseños generales  */
 /* ******************* */
@@ -97,19 +110,6 @@ header{
     height: 3.5em;
     display: flex; /* le indico que el elemento sea como un bloque (igual que la etiqueta "div") flexible y estaran en la misma linea (segun como este el html) ademas cada elemento se ajustara al tamaño interno proporcionado por bloque en el que se encuentran*/
     flex-direction: row; /* le indico que los elemento del bloque flexible se organinse en fila*/
-}
-
-/* defino que solo la clase "posision-pri" tendra tendra ciertas caracteristicas */
-nav .pos-ini {
-    display: flex; /* le indico que el elemento sea como un bloque (igual que la etiqueta "div") flexible y estaran en la misma linea (segun como este el html) ademas cada elemento se ajustara al tamaño interno proporcionado por bloque en el que se encuentran*/
-    flex-direction: column; /* le indico que los elemento del bloque flexible se organinse en columna*/
-}
-
-/* defino que solo la clase "posision-ter" tendra tendra ciertas caracteristicas */
-nav .pos-fin {
-    margin: 0 0 0 6.5em; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda)*/
-    display: flex; /* le indico que el elemento sea como un bloque (igual que la etiqueta "div") flexible y estaran en la misma linea (segun como este el html) ademas cada elemento se ajustara al tamaño interno proporcionado por bloque en el que se encuentran*/
-    flex-direction: column; /* le indico que los elemento del bloque flexible se organinse en columna*/
 }
 
 .icono {
@@ -148,7 +148,10 @@ p { text-align: justify; }
 }
 
 /* clase "vin_tel" con propiedad de enlace y le modifico la apariencia de hipervinculo*/
-.vin_tel:-webkit-any-link { color: #ebebf0; }
+.vin_tel:-webkit-any-link { 
+    font-size: 1.08em;
+    color: #ebebf0; 
+}
 
 .sub_titulo {
     color: #09F;
