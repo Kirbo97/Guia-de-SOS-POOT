@@ -230,7 +230,8 @@ h3 , summary {
     margin: 24px 0;
 }
 
-.pirn{ color: rgb(217, 0, 255); }
+
+summary.pirn{ color: rgb(217, 0, 255); }
 
 summary { cursor: pointer; }
 
@@ -242,6 +243,9 @@ details[open] > summary:first-of-type {
     list-style-type: disclosure-open;
 	color: rgb(77, 208, 6);
 }
+
+/*Los details que estan serrados */
+details > summary:first-of-type { margin: 24px 0 4px 0; }
 
 /* se crea la clase "right" para que se ocupe de posisionar la imagen a la derecha*/
 .right {
