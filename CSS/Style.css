@@ -230,8 +230,8 @@ h3 , summary {
     margin: 24px 0;
 }
 
-
 summary.pirn{ color: rgb(217, 0, 255); }
+summary.sec{ color: rgb(239, 192, 0); }
 
 summary { cursor: pointer; }
 
