@@ -486,25 +486,7 @@ tr:nth-child(even) {background-color: #FAFAFA;}
 
 .invierno:before  {
     content: '\26C4'; /*(La guion sera una muñeco de nieve)*/
-    font-size: 2.8em;
-}
-
-/* usado para icono de las estaciones en tablas*/
-
-.ve:before  { 
-    font-size: 1.5em; 
-    content: '\1F31E'; /*(La guion sera un sol)*/
-}
-
-.ot:before  { 
-    font-size: 1.5em; 
-    width: 39.145px;
-    content: '\1F342'; /*(La guion sera una hoja)*/
-}
-
-.pri:before  { 
-    font-size: 1.5em; 
-    content: '\1F338'; /*(La guion sera un cereso)*/
+    font-size: 3em;
 }
 
 .in:before  { 
@@ -521,12 +503,6 @@ tr:nth-child(even) {background-color: #FAFAFA;}
 .evento:before  {
     content: '\1F388'; /*(La guion sera un globo)*/
     font-size: 3em;
-}
-
-/* Estas clases tienen la propiedad "before" (Antes) para que el guion tenga un icono de estaciones */
-.cueva:before  {
-    content: '\1F5FB'; /*(La guion sera un muñeco de nieve)*/
-    font-size: 2.8em;
 }
 
 /* Estas clases tienen la propiedad "before" (Antes) para que el guion tenga un icono de corazon con color */
