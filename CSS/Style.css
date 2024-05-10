@@ -209,8 +209,8 @@ h1:before {
 
 /* evitar que los titulos se expandan fuera del contenido */
 h2 {
-    border-bottom: 2px solid #09F;
-    color: #09F;
+    border-bottom: 2px solid rgb(46, 170, 253);
+    color: rgb(46, 170, 253);
     font-family: 'Ranchers';
     font-size: 2em;
     letter-spacing: 0.1em;
@@ -230,8 +230,9 @@ h3 , summary {
     margin: 24px 0;
 }
 
-summary.pirn{ color: rgb(217, 0, 255); }
+summary.prin{ color: rgb(217, 0, 255); }
 summary.sec{ color: rgb(239, 192, 0); }
+summary.ter{ color: rgb(43, 193, 168); }
 
 summary { cursor: pointer; }
 
