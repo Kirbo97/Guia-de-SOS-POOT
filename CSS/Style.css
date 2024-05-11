@@ -238,7 +238,7 @@ summary { cursor: pointer; }
 
 summary:focus-visible { outline:none; }
 
-details.esp { width: 666.8px;} 
+details.esp { width: 680px;}
 
 details[open] > summary:first-of-type {
     list-style-type: disclosure-open;
