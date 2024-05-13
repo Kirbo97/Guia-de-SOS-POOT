@@ -27,6 +27,8 @@
         padding: 0 4px 0 40px !important;
         margin: 0 !important;
     }
+
+    nav{padding: 25px 8px 0 8px !important; }
     
     nav .pos-ini { margin: 0 0 0 2.67em !important; }
 
@@ -54,6 +56,8 @@
         padding: 0 4px 0 40px !important;
         margin: 0 !important;
     }
+
+    nav{padding: 25px 8px 0 8px !important; }
     
     nav .pos-ini { margin: 0 0 0 2.67em !important; }
 
@@ -66,7 +70,7 @@
 
 nav{
     background: #00AA88;
-    padding: 10px 8px 0 8px;
+    padding: 15px 8px 0 8px;
     display: flex;
     height: 102px;
     border-bottom: 3px solid #edf0f0;
