@@ -30,9 +30,9 @@
 
     nav{padding: 25px 8px 0 8px !important; }
     
-    nav .pos-ini { margin: 0 0 0 2.67em !important; }
+    nav .pos-ini { margin: 0 0 0 2.69em !important; }
 
-    .vin_tel:-webkit-any-link{ font-size: 0.80em !important; }
+    .vin_tel:-webkit-any-link{ font-size: 0.82em !important; }
 }
 
 /* defino que solo altere estos elementos cuando la pantalla del dispositivo sea un telefono y que este en vertical*/
@@ -59,9 +59,9 @@
 
     nav{padding: 25px 8px 0 8px !important; }
     
-    nav .pos-ini { margin: 0 0 0 2.67em !important; }
+    nav .pos-ini { margin: 0 0 0 2.69em !important; }
 
-    .vin_tel:-webkit-any-link{ font-size: 0.80em !important; }
+    .vin_tel:-webkit-any-link{ font-size: 0.82em !important; }
 }
 
 /* ******************* */
