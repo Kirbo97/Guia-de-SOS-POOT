@@ -68,14 +68,14 @@ nav{
     background: #00AA88;
     padding: 10px 8px 0 8px;
     display: flex;
-    height: 75px;
+    height: 100px;
     border-bottom: 3px solid #edf0f0;
     box-shadow: 0px 0px 0px 6px #00AA88; 
 }
 
 /* defino que solo la clase "posision-pri" tendra tendra ciertas caracteristicas */
 nav .pos-ini {
-    margin: 0 0 0 5em;
+    margin: 0.4em 0 0 5.8em;
     display: flex; /* le indico que el elemento sea como un bloque (igual que la etiqueta "div") flexible y estaran en la misma linea (segun como este el html) ademas cada elemento se ajustara al tamaño interno proporcionado por bloque en el que se encuentran*/
     flex-direction: column; /* le indico que los elemento del bloque flexible se organinse en columna*/
 }
@@ -142,7 +142,9 @@ p { text-align: justify; }
 }
 
 /* clase "vin_tel" con propiedad de enlace y le modifico la apariencia de hipervinculo*/
-.vin_tel:-webkit-any-link { 
+.vin_tel:-webkit-any-link {
+    margin: 4px  0 auto 0; 
+    text-align: center; 
     font-size: 1.08em;
     color: #ebebf0; 
 }
