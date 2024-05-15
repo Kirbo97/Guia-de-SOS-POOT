@@ -70,9 +70,9 @@
 
 nav{
     background: #00AA88;
-    padding: 2px 8px 0 8px;
+    padding: 4px 8px 0 8px;
     display: flex;
-    height: 81px;
+    height: 83px;
     border-bottom: 3px solid #edf0f0;
     box-shadow: 0px 0px 0px 6px #00AA88; 
 }
