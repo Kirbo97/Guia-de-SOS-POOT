@@ -68,6 +68,8 @@
 
                 <p>Después de alcanzar el nivel requerido en ciertas habilidades, los procesadores podrán ser creados para usarse en la granja.</p>
 
+                <p>Algunos ingredientes tienen sierto rango de calidad por lo que si usas un producto cuya calidad es alta conseguiras mayor cantidad del rasultado al pasar por la maquina pero solo algunas maquina toman en consideracion el rango de calidad de los cultivos.</p> 
+
                 <details> <!-- Tala -->
                     <summary class="prin">Procesadores obtenidas de la habilidad de Tala</summary>
                     
@@ -527,146 +529,1110 @@
                 </details>
 
                 <details> <!-- Agricultura -->
-                    <summary>Procesadores obtenidas de la habilidad de Agricultura</summary>
-                    <table class="data" style="margin-bottom: 30px;"> 
-                        <tr><th colspan="4">Habilidad de Agricultura</th></tr>
+                    <summary class="prin">Procesadores obtenidas de la habilidad de Agricultura</summary>
+
+                    <details>  <!-- Pulverizadora-->
+                        <summary style="margin-left: 40px;" class="sec">Pulverizadora</summary>
+
+                        <p>La Pulverizadora es una maquina diseñada para convertir algunos productos en polvo como ingredientes para cocinar, los cultivos los puedes conseguir conseguir en tu granja plantandolas.</p> 
+
+                        <table class="data">
+                            <tr><th style="width: 130px;" rowspan="2">Nivel necesario</th><th colspan="4">Función</th></tr>
+                            <tr><th style="width: 250px;">Cantidades</th><th>Materia Prima</th><th>Resultado</th><th>Tiempo</th></tr>
+    
+                            <tr>
+                                <td style="text-align:center; margin: 50% 0;" rowspan="8">
+                                    <div style="margin-bottom: 50%"><img src="../IMG/Prosesadoras/Agricultura/pulverizadora.png" width="90" height="90" style="margin:0;"/><p style="text-align:center; margin: 0;"><b style="font-size: 13.5px;">Nivel 4 para la Normal</b></p></div>
+    
+                                    <div><img src="../IMG/Prosesadoras/Agricultura/pulverizadoraGig.png" width="90" height="90" style="margin:0;"/><p style="text-align:center; margin: 0;"><b style="font-size: 13.5px;">Nivel 10 para la Grande</b></p></div>
+                                </td>
+                                
+                                <td style="text-align:center;">
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Normal:</b> 1 (0-1)(2-4)(5-7)(8-10) <b style="font-size: 13.5px;">=></b> (3)(4)(5)(6)</p></div>
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Grande:</b> 2 (0-1)(2-4)(5-7)(8-10) <b style="font-size: 13.5px;">=></b> (9)(10)(11)(12)</p></div>
+                                </td>
+
+                                <td style="text-align:center;"><img src="../IMG/Otros/Cultivos/Chile.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Chile</b></p></td>
+                                
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Agricultura/Mezcla de especias.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Mezcla de especias</b></p></td>
+                                
+                                <td style="text-align:center;"><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">4 H</b></p></td>
+                            </tr>
+    
+                            <tr>
+                                <td style="text-align:center;">
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Normal:</b> 1 <b style="font-size: 13.5px;">=></b> 1</p></div>
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Grande:</b> 2 <b style="font-size: 13.5px;">=></b> 3</p></div>
+                                </td>
+
+                                <td style="text-align:center;"><img src="../IMG/Otros/Cultivos/Trigo.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Trigo</b></p></td>
+                                
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Agricultura/Harina.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Harina</b></p></td>
+                                
+                                <td style="text-align:center;"><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">4 H</b></p></td>
+                            </tr>
+    
+                            <tr>
+                                <td style="text-align:center;">
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Normal:</b> 1 <b style="font-size: 13.5px;">=></b> 1</p></div>
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Grande:</b> 2 <b style="font-size: 13.5px;">=></b> 3</p></div>
+                                </td>
+
+                                <td style="text-align:center;"><img src="../IMG/Otros/Cultivos/Grano de café.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Grano de café</b></p></td>
+                                
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Agricultura/Café en polvo.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Café en polvo</b></p></td>
+                                
+                                <td style="text-align:center;"><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">4 H</b></p></td>
+                            </tr>
+    
+                            <tr>
+                                <td style="text-align:center;">
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Normal:</b> 1 <b style="font-size: 13.5px;">=></b> 1</p></div>
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Grande:</b> 2 <b style="font-size: 13.5px;">=></b> 3</p></div>
+                                </td>
+
+                                <td style="text-align:center;"><img src="../IMG/Otros/Cultivos/Cacao.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Cacao</b></p></td>
+                                
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Agricultura/Cacao en polvo.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Cacao en polvo</b></p></td>
+                                
+                                <td style="text-align:center;"><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">4 H</b></p></td>
+                            </tr>
+    
+                            <tr>
+                                <td style="text-align:center;">
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Normal:</b> 2 <b style="font-size: 13.5px;">=></b> 1</p></div>
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Grande:</b> 4 <b style="font-size: 13.5px;">=></b> 3</p></div>
+                                </td>
         
-                        <tr><th style="width: 160px;">Nombre</th><th style="width: 100px;" rowspan="2">Nivel necesario</th><th>Proceso de convercion</th></tr>
+                                <td style="text-align:center;"><img src="../IMG/Otros/Silvestre/Oregano.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Orégano</b></p></td>
+                                
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Agricultura/Mezcla de hierbas.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Mezcla de hierbas</b></p></td>
+                                
+                                <td style="text-align:center;"><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">4 H</b></p></td>
+                            </tr>
+    
+                            <tr>
+                                <td style="text-align:center;">
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Normal:</b> 2 <b style="font-size: 13.5px;">=></b> 2</p></div>
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Grande:</b> 4 <b style="font-size: 13.5px;">=></b> 6</p></div>
+                                </td>
         
-                        <tr> <!-- Pulverizadora -->
-                            <td style="text-align:center;"><img src="../IMG/Prosesadoras/pulverizadora.png" width="90" height="90" style="margin:0;"/><p style="text-align:center; margin: 0;"><b>Pulverizadora</b></p></td><td>Nivel 4</td>
-                            <td><ul class="horario">
-                                <li class="gustos">1 Chile (0-1)(2-4)(5-7)(8-10) <b>=></b> (3)(4)(5)(6) Mezcla de especias <b>dura</b> 4H.</li>
-                                <li class="gustos">1 Trigo <b>=></b> 1 Harina <b>dura</b> 4H.</li>
-                                <li class="gustos">1 Grano de café <b>=></b> 1 Café en polvo <b>dura</b> 4H.</li>
-                                <li class="gustos">1 Cacao <b>=></b> 1 Cacao en polvo <b>dura</b> 4H.</li>
-                                <li class="gustos">2 Oregano, Salvia, Caléndula limón o Romero dorado <b>=></b> (1)(2)(3)(4) Mezcla de hierbas <b>dura</b> 4H.</li>
-                            </ul></td>
-                        </tr>
+                                <td style="text-align:center;"><img src="../IMG/Otros/Silvestre/Salvia.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Salvia</b></p></td>
+                                
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Agricultura/Mezcla de hierbas.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Mezcla de hierbas</b></p></td>
+                                
+                                <td style="text-align:center;"><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">4 H</b></p></td>
+                            </tr>
+    
+                            <tr>
+                                <td style="text-align:center;">
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Normal:</b> 2 <b style="font-size: 13.5px;">=></b> 3</p></div>
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Grande:</b> 4 <b style="font-size: 13.5px;">=></b> 9</p></div>
+                                </td>
         
-                        <tr> <!-- Pulverizadora Gigante -->
-                            <td style="text-align:center;"><img src="../IMG/Prosesadoras/pulverizadoraGig.png" width="90" height="90" style="margin:0;"/><p style="text-align:center; margin: 0;"><b>Pulverizadora gigante</b></p></td><td>Nivel 10</td>
-                            <td><ul class="horario">
-                                <li class="gustos">2 Chile (0-1)(2-4)(5-7)(8-10) <b>=></b> (9)(10)(11)(12) Mezcla de especias <b>dura</b> 4H.</li>
-                                <li class="gustos">2 Trigo <b>=></b> 3 Harina <b>dura</b> 4H.</li>
-                                <li class="gustos">2 Grano de café <b>=></b> 3 Café en polvo <b>dura</b> 4H.</li>
-                                <li class="gustos">2 Cacao <b>=></b> 3 Cacao en polvo <b>dura</b> 4H.</li>
-                                <li class="gustos">4 Oregano, Salvia, Caléndula limón o Romero dorado <b>=></b> (3)(6)(9)(12) Mezcla de hierbas <b>dura</b> 4H.</li>
-                            </ul></td>
-                        </tr>
+                                <td style="text-align:center;"><img src="../IMG/Otros/Silvestre/Caléndula limón.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Caléndula limón</b></p></td>
+                                
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Agricultura/Mezcla de hierbas.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Mezcla de hierbas</b></p></td>
+                                
+                                <td style="text-align:center;"><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">4 H</b></p></td>
+                            </tr>
+    
+                            <tr>
+                                <td style="text-align:center;">
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Normal:</b> 2 <b style="font-size: 13.5px;">=></b> 4</p></div>
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Grande:</b> 4 <b style="font-size: 13.5px;">=></b> 12</p></div>
+                                </td>
         
-                        <tr> <!-- Procesadora de tintes -->
-                            <td style="text-align:center;"><img src="../IMG/Prosesadoras/ProTin.png" width="90" height="90" style="margin:0;"/><p style="text-align:center; margin: 0;"><b>Procesadora de tintes</b></p></td><td>Nivel 5</td>
-                            <td><ul class="horario">
-                                <li class="gustos">1 Tulipán, Hibisco o Rosa (0-1)(2-4)(5-7)(8-10) <b>=></b> (1)(2)(3)(4) Tinte rojo <b>dura</b> 2H.</li>
-                                <li class="gustos">1 Nemophila, Cineraria o Prímula (0-1)(2-4)(5-7)(8-10) <b>=></b> (1)(2)(3)(4) Tinte azul <b>dura</b> 2H.</li>
-                                <li class="gustos">1 Petunia o Crisantemo (0-1)(2-4)(5-7)(8-10) <b>=></b> (1)(2)(3)(4) Tinte verde <b>dura</b> 2H.</li>
-                                <li class="gustos">1 Pensamiento, Caléndula o Girasol (0-1)(2-4)(5-7)(8-10) <b>=></b> (1)(2)(3)(4) Tinte amarillo <b>dura</b> 2H.</li>
-                                <li class="gustos">1 Ranúnculo o Begonia (0-1)(2-4)(5-7)(8-10) <b>=></b> (1)(2)(3)(4) Tinte rosa <b>dura</b> 2H.</li>
-                                <li class="gustos">1 Eléboro (0-1)(2-4)(5-7)(8-10) <b>=></b> (4)(5)(6)(7) Tinte rosa <b>dura</b> 2H.</li>
-                                <li class="gustos">1 Clemátide o Campánula (0-1)(2-4)(5-7)(8-10) <b>=></b> (1)(2)(3)(4) Tinte morado <b>dura</b> 2H.</li>
-                                <li class="gustos">1 Lirio o Margarita (0-1)(2-4)(5-7)(8-10) <b>=></b> (1)(2)(3)(4) Tinte blanco <b>dura</b> 2H.</li>
-                                <li class="gustos">1 Pensamiento negro (0-1)(2-4)(5-7)(8-10) <b>=></b> (1)(2)(3)(4) Tinte negro <b>dura</b> 2H.</li>
-                                <li class="gustos">1 Rosa negra (0-1)(2-4)(5-7)(8-10) <b>=></b> (3)(4)(5)(6) Tinte negro <b>dura</b> 2H.</li>
-                            </ul></td>
-                        </tr>
+                                <td style="text-align:center;"><img src="../IMG/Otros/Silvestre/Romero dorado.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Romero dorado</b></p></td>
+                                
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Agricultura/Mezcla de hierbas.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Mezcla de hierbas</b></p></td>
+                                
+                                <td style="text-align:center;"><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">4 H</b></p></td>
+                            </tr>
+                        </table>
+                    </details>
+
+                    <details>  <!-- Procesadora de tintes-->
+                        <summary style="margin-left: 40px;" class="sec">Procesadora de tintes</summary>
+
+                        <p>La Procesadora de tintes es una maquina diseñada para convertir las flores en pintura, las flores las puedes conseguir en tu granja plantandolas.</p> 
+
+                        <table class="data">
+                            <tr><th style="width: 130px;" rowspan="2">Nivel necesario</th><th colspan="4">Función</th></tr>
+                            <tr><th style="width: 250px;">Cantidades</th><th>Materia Prima</th><th>Resultado</th><th>Tiempo</th></tr>
+    
+                            <tr>
+                                <td style="text-align:center; margin: 50% 0;" rowspan="10">
+                                    <div style="margin-bottom: 50%"><img src="../IMG/Prosesadoras/Agricultura/ProTin.png" width="90" height="90" style="margin:0;"/><p style="text-align:center; margin: 0;"><b style="font-size: 13.5px;">Nivel 5 para la Normal</b></p></div>
+    
+                                    <div><img src="../IMG/Prosesadoras/Agricultura/ProTinGig.png" width="90" height="90" style="margin:0;"/><p style="text-align:center; margin: 0;"><b style="font-size: 13.5px;">Nivel 10 para la Grande</b></p></div>
+                                </td>
+                                
+                                <td style="text-align:center;">
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Normal:</b> 1 (0-1)(2-4)(5-7)(8-10) <b style="font-size: 13.5px;">=></b> (1)(2)(3)(4)</p></div>
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Grande:</b> 2 (0-1)(2-4)(5-7)(8-10)<b style="font-size: 13.5px;">=></b> (3)(4)(5)(6)</p></div>
+                                </td>
+
+                                <td style="text-align:center;">
+                                    <div style="justify-content: center; display: flex;">
+                                        <div style="margin: 0 15px;"><img src="../IMG/Otros/Flores/Tulipán.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Tulipán</b></p></div>
         
-                        <tr> <!-- Procesadora de tintes Gigante -->
-                            <td style="text-align:center;"><img src="../IMG/Prosesadoras/ProTinGig.png" width="90" height="90" style="margin:0;"/><p style="text-align:center; margin: 0;"><b>Procesadora de tintes gigante</b></p></td><td>Nivel 10</td>
-                            <td><ul class="horario">
-                                <li class="gustos">2 Tulipán, Hibisco o Rosa (0-1)(2-4)(5-7)(8-10) <b>=></b> (3)(4)(5)(6) Tinte rojo <b>dura</b> 2H.</li>
-                                <li class="gustos">2 Nemophila, Cineraria o Prímula (0-1)(2-4)(5-7)(8-10) <b>=></b> (3)(4)(5)(6) Tinte azul <b>dura</b> 2H.</li>
-                                <li class="gustos">2 Petunia o Crisantemo (0-1)(2-4)(5-7)(8-10) <b>=></b> (3)(4)(5)(6) Tinte verde <b>dura</b> 2H.</li>
-                                <li class="gustos">2 Pensamiento, Caléndula o Girasol (0-1)(2-4)(5-7)(8-10) <b>=></b> (3)(4)(5)(6) Tinte amarillo <b>dura</b> 2H.</li>
-                                <li class="gustos">2 Ranúnculo o Begonia (0-1)(2-4)(5-7)(8-10) <b>=></b> (3)(4)(5)(6) Tinte rosa <b>dura</b> 2H.</li>
-                                <li class="gustos">2 Eléboro (0-1)(2-4)(5-7)(8-10) <b>=></b> (12)(13)(14)(15) Tinte rosa <b>dura</b> 2H.</li>
-                                <li class="gustos">2 Clemátide o Campánula (0-1)(2-4)(5-7)(8-10) <b>=></b> (3)(4)(5)(6) Tinte morado <b>dura</b> 2H.</li>
-                                <li class="gustos">2 Lirio o Margarita (0-1)(2-4)(5-7)(8-10) <b>=></b> (3)(4)(5)(6) Tinte blanco <b>dura</b> 2H.</li>
-                                <li class="gustos">2 Pensamiento negro (0-1)(2-4)(5-7)(8-10) <b>=></b> (3)(4)(5)(6) Tinte negro <b>dura</b> 2H.</li>
-                                <li class="gustos">2 Rosa negra (0-1)(2-4)(5-7)(8-10) <b>=></b> (12)(13)(14)(15) Tinte negro <b>dura</b> 2H.</li>
-                            </ul></td>
-                        </tr>
+                                        <div style="margin: 0 15px;"><img src="../IMG/Otros/Flores/Rosa.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Rosa</b></p></div>
+                                    
+                                        <div style="margin: 0 15px;"><img src="../IMG/Otros/Flores/Hibisco.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Hibisco</b></p></div>
+                                    </div>
+                                </td>
+                                
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Agricultura/Tinte rojo.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Tinte rojo</b></p></td>
+                                
+                                <td style="text-align:center;"><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">2 H</b></p></td>
+                            </tr>
+    
+                            <tr>
+                                <td style="text-align:center;">
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Normal:</b> 1 (0-1)(2-4)(5-7)(8-10) <b style="font-size: 13.5px;">=></b> (1)(2)(3)(4)</p></div>
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Grande:</b> 2 (0-1)(2-4)(5-7)(8-10) <b style="font-size: 13.5px;">=></b> (3)(4)(5)(6)</p></div>
+                                </td>
+
+                                <td style="text-align:center;">
+                                    <div style="justify-content: center; display: flex;">
+                                        <div style="margin: 0 15px;"><img src="../IMG/Otros/Flores/Nemophila.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Nemophila</b></p></div>
         
-                        <tr> <!-- Semillera -->
-                            <td style="text-align:center;"><img src="../IMG/Prosesadoras/semillera.png" width="90" height="90" style="margin:0;"/><p style="text-align:center; margin: 0;"><b>Semillera</b></p></td><td>Nivel 5</td>
-                            <td><ul class="horario">
-                                <li class="gustos">1 Patata o Patata estrella <b>=></b> (2 │ 6) Semillas de papa <b>dura</b> 23H.</li>
-                                <li class="gustos">1 Nabo o Nabo gigante <b>=></b> (2 │ 6) Semillas de nabo <b>dura</b> 23H.</li>
-                                <li class="gustos">1 Pepino <b>=></b> 2 Semillas de pepino <b>dura</b> 23H.</li>
-                                <li class="gustos">1 Cebolla <b>=></b> 2 Semillas de cebolla <b>dura</b> 23H.</li>
-                                <li class="gustos">1 Fresa o Fresa dorada <b>=></b> (2 │ 6) Semillas de fresa <b>dura</b> 23H.</li>
-                                <li class="gustos">1 Ajo <b>=></b> 2 Semillas de ajo <b>dura</b> 23H.</li>
-                                <li class="gustos">1 Calabacín <b>=></b> 2 Semillas de calabacín <b>dura</b> 23H.</li>
-                                <li class="gustos">1 Calabaza <b>=></b> 2 Semillas de calabaza <b>dura</b> 23H.</li>
-                                <li class="gustos">1 Maíz o Maíz mosaico <b>=></b> (2 │ 6) Semillas de maíz <b>dura</b> 23H.</li>
-                                <li class="gustos">1 Tomate o Tomate gigante <b>=></b> (2 │ 6) Semillas de tomate <b>dura</b> 23H.</li>
-                                <li class="gustos">1 Pimiento <b>=></b> 2 Semillas de pimiento <b>dura</b> 23H.</li>
-                                <li class="gustos">1 Berenjena o Berenjena redonda <b>=></b> (2 │ 6) Semillas de berenjena <b>dura</b> 23H.</li>
-                                <li class="gustos">1 Melón o Melón joya <b>=></b> (2 │ 6) Semillas de melón <b>dura</b> 23H.</li>
-                                <li class="gustos">1 Ajo <b>=></b> 2 Semillas de ajo <b>dura</b> 23H.</li>
-                                <li class="gustos">1 Pimiento verde <b>=></b> 2 Semillas de pimiento verde <b>dura</b> 23H.</li>
-                                <li class="gustos">1 Piña <b>=></b> 2 Semillas de piña <b>dura</b> 23H.</li>
-                                <li class="gustos">1 Sandía <b>=></b> 2 Semillas de sandía <b>dura</b> 23H.</li>
-                                <li class="gustos">1 Espinacas o Espinaca corazón <b>=></b> (2 │ 6) Semillas de espinaca <b>dura</b> 23H.</li>
-                                <li class="gustos">1 Zanahoria <b>=></b> 2 Semillas de zanahoria <b>dura</b> 23H.</li>
-                                <li class="gustos">1 Quingombó <b>=></b> 2 Semillas de quingombó <b>dura</b> 23H.</li>
-                                <li class="gustos">1 Bok choy <b>=></b> 2 Semillas de bok choy <b>dura</b> 23H.</li>
-                                <li class="gustos">1 Boniato o Boniato gigante <b>=></b> (2 │ 6) Semillas de boniato <b>dura</b> 23H.</li>
-                                <li class="gustos">1 Chile <b>=></b> 2 Semillas de chile <b>dura</b> 23H.</li>
-                                <li class="gustos">1 Nabo daikon o Nabo daikon con patas <b>=></b> (2 │ 6) Semillas de nabo daikon <b>dura</b> 23H.</li>
-                                <li class="gustos">1 Bardana <b>=></b> 2 Semillas de bardana <b>dura</b> 23H.</li>
-                                <li class="gustos">1 Brócoli <b>=></b> 2 Semillas de brócoli <b>dura</b> 23H.</li>
-                                <li class="gustos">1 Col <b>=></b> 2 Semillas de col <b>dura</b> 23H.</li>
-                                <li class="gustos">1 Col china o Col china dorada <b>=></b> (2 │ 6) Semillas de col china <b>dura</b> 23H.</li>
-                                <li class="gustos">1 Puerro o Puerro gigante <b>=></b> (2 │ 6) Semillas de puerro <b>dura</b> 23H.</li>
-                                <li class="gustos">1 Rábano <b>=></b> 2 Semillas de rábano <b>dura</b> 23H.</li>
-                                <li class="gustos">1 Forraje <b>=></b> 2 Semillas de forraje <b>dura</b> 23H.</li>
-                                <li class="gustos">1 Hojas de té <b>=></b> 2 Semillas de jojas de té <b>dura</b> 23H.</li>
-                                <li class="gustos">1 Frijoles <b>=></b> 2 Semillas de frijoles <b>dura</b> 23H.</li>
-                                <li class="gustos">1 Cualquier flor <b>=></b> 2 Semillas de la flor <b>dura</b> 23H.</li>
-                            </ul></td>
-                        </tr>
+                                        <div style="margin: 0 15px;"><img src="../IMG/Otros/Flores/Cineraria.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Cineraria</b></p></div>
+                                    
+                                        <div style="margin: 0 15px;"><img src="../IMG/Otros/Flores/Prímula.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Prímula</b></p></div>
+                                    </div>
+                                </td>
+                                
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Agricultura/Tinte azul.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Tinte azul</b></p></td>
+                                
+                                <td style="text-align:center;"><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">2 H</b></p></td>
+                            </tr>
+    
+                            <tr>
+                                <td style="text-align:center;">
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Normal:</b> 1 (0-1)(2-4)(5-7)(8-10) <b style="font-size: 13.5px;">=></b> (1)(2)(3)(4)</p></div>
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Grande:</b> 2 (0-1)(2-4)(5-7)(8-10) <b style="font-size: 13.5px;">=></b> (3)(4)(5)(6)</p></div>
+                                </td>
+
+                                <td style="text-align:center;">
+                                    <div style="justify-content: center; display: flex;">
+                                        <div style="margin: 0 15px;"><img src="../IMG/Otros/Flores/Petunia.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Petunia</b></p></div>
         
-                        <tr> <!-- Semillera Gigante -->
-                            <td style="text-align:center;"><img src="../IMG/Prosesadoras/semilleraGig.png" width="90" height="90" style="margin:0;"/><p style="text-align:center; margin: 0;"><b>Semillera gigante</b></p></td><td>Nivel 10</td>
-                            <td><ul class="horario">
-                                <li class="gustos">2 Patata o Patata estrella <b>=></b> (6 │ 18) Semillas de papa <b>dura</b> 23H.</li>
-                                <li class="gustos">2 Nabo o Nabo gigante <b>=></b> (6 │ 18) Semillas de nabo <b>dura</b> 23H.</li>
-                                <li class="gustos">2 Pepino <b>=></b> 6 Semillas de pepino <b>dura</b> 23H.</li>
-                                <li class="gustos">2 Cebolla <b>=></b> 6 Semillas de cebolla <b>dura</b> 23H.</li>
-                                <li class="gustos">2 Fresa o Fresa dorada <b>=></b> (6 │ 18) Semillas de fresa <b>dura</b> 23H.</li>
-                                <li class="gustos">2 Ajo <b>=></b> 6 Semillas de ajo <b>dura</b> 23H.</li>
-                                <li class="gustos">2 Calabacín <b>=></b> 6 Semillas de calabacín <b>dura</b> 23H.</li>
-                                <li class="gustos">2 Calabaza <b>=></b> 6 Semillas de calabaza <b>dura</b> 23H.</li>
-                                <li class="gustos">2 Maíz o Maíz mosaico <b>=></b> (6 │ 18) Semillas de maíz <b>dura</b> 23H.</li>
-                                <li class="gustos">2 Tomate o Tomate gigante <b>=></b> (6 │ 18) Semillas de tomate <b>dura</b> 23H.</li>
-                                <li class="gustos">2 Pimiento <b>=></b> 6 Semillas de pimiento <b>dura</b> 23H.</li>
-                                <li class="gustos">2 Berenjena o Berenjena redonda <b>=></b> (6 │ 18) Semillas de berenjena <b>dura</b> 23H.</li>
-                                <li class="gustos">2 Melón o Melón joya <b>=></b> (6 │ 18) Semillas de melón <b>dura</b> 23H.</li>
-                                <li class="gustos">2 Ajo <b>=></b> 6 Semillas de ajo <b>dura</b> 23H.</li>
-                                <li class="gustos">2 Pimiento verde <b>=></b> 6 Semillas de pimiento verde <b>dura</b> 23H.</li>
-                                <li class="gustos">2 Piña <b>=></b> 6 Semillas de piña <b>dura</b> 23H.</li>
-                                <li class="gustos">2 Sandía <b>=></b> 6 Semillas de sandía <b>dura</b> 23H.</li>
-                                <li class="gustos">2 Espinacas o Espinaca corazón <b>=></b> (6 │ 18) Semillas de espinaca <b>dura</b> 23H.</li>
-                                <li class="gustos">2 Zanahoria <b>=></b> 6 Semillas de zanahoria <b>dura</b> 23H.</li>
-                                <li class="gustos">2 Quingombó <b>=></b> 6 Semillas de quingombó <b>dura</b> 23H.</li>
-                                <li class="gustos">2 Bok choy <b>=></b> 6 Semillas de bok choy <b>dura</b> 23H.</li>
-                                <li class="gustos">2 Boniato o Boniato gigante <b>=></b> (6 │ 18) Semillas de boniato <b>dura</b> 23H.</li>
-                                <li class="gustos">2 Chile <b>=></b> 6 Semillas de chile <b>dura</b> 23H.</li>
-                                <li class="gustos">2 Nabo daikon o Nabo daikon con patas <b>=></b> (6 │ 18) Semillas de nabo daikon <b>dura</b> 23H.</li>
-                                <li class="gustos">2 Bardana <b>=></b> 6 Semillas de bardana <b>dura</b> 23H.</li>
-                                <li class="gustos">2 Brócoli <b>=></b> 6 Semillas de brócoli <b>dura</b> 23H.</li>
-                                <li class="gustos">2 Col <b>=></b> 6 Semillas de col <b>dura</b> 23H.</li>
-                                <li class="gustos">2 Col china o Col china dorada <b>=></b> (6 │ 18) Semillas de col china <b>dura</b> 23H.</li>
-                                <li class="gustos">2 Puerro o Puerro gigante <b>=></b> (6 │ 18) Semillas de puerro <b>dura</b> 23H.</li>
-                                <li class="gustos">2 Rábano <b>=></b> 6 Semillas de rábano <b>dura</b> 23H.</li>
-                                <li class="gustos">2 Forraje <b>=></b> 6 Semillas de forraje <b>dura</b> 23H.</li>
-                                <li class="gustos">2 Hojas de té <b>=></b> 6 Semillas de jojas de té <b>dura</b> 23H.</li>
-                                <li class="gustos">2 Frijoles <b>=></b> 6 Semillas de frijoles <b>dura</b> 23H.</li>
-                                <li class="gustos">2 Cualquier flor <b>=></b> 6 Semillas de la flor <b>dura</b> 23H.</li>
-                            </ul></td>
-                        </tr>
-                    </table>
+                                        <div style="margin: 0 15px;"><img src="../IMG/Otros/Flores/Crisantemo.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Crisantemo</b></p></div>
+                                    </div>
+                                </td>
+                                
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Agricultura/Tinte verde.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Tinte verde</b></p></td>
+                                
+                                <td style="text-align:center;"><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">2 H</b></p></td>
+                            </tr>
+    
+                            <tr>
+                                <td style="text-align:center;">
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Normal:</b> 1 (0-1)(2-4)(5-7)(8-10) <b style="font-size: 13.5px;">=></b> (1)(2)(3)(4)</p></div>
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Grande:</b> 2 (0-1)(2-4)(5-7)(8-10) <b style="font-size: 13.5px;">=></b> (3)(4)(5)(6)</p></div>
+                                </td>
+
+                                <td style="text-align:center;">
+                                    <div style="justify-content: center; display: flex;">
+                                        <div style="margin: 0 15px;"><img src="../IMG/Otros/Flores/Pensamiento.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Pensamiento</b></p></div>
+        
+                                        <div style="margin: 0 15px;"><img src="../IMG/Otros/Flores/Caléndula.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Caléndula</b></p></div>
+        
+                                        <div style="margin: 0 15px;"><img src="../IMG/Otros/Flores/Girasol.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Girasol</b></p></div>
+                                    </div>
+                                </td>
+                                
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Agricultura/Tinte amarillo.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Tinte amarillo</b></p></td>
+                                
+                                <td style="text-align:center;"><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">2 H</b></p></td>
+                            </tr>
+    
+                            <tr>
+                                <td style="text-align:center;">
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Normal:</b> 1 (0-1)(2-4)(5-7)(8-10) <b style="font-size: 13.5px;">=></b> (1)(2)(3)(4)</p></div>
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Grande:</b> 2 (0-1)(2-4)(5-7)(8-10) <b style="font-size: 13.5px;">=></b> (3)(4)(5)(6)</p></div>
+                                </td>
+
+                                <td style="text-align:center;">
+                                    <div style="justify-content: center; display: flex;">
+                                        <div style="margin: 0 15px;"><img src="../IMG/Otros/Flores/Ranúnculo.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Ranúnculo</b></p></div>
+        
+                                        <div style="margin: 0 15px;"><img src="../IMG/Otros/Flores/Begonia.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Begonia</b></p></div>
+                                    </div>
+                                </td>
+                                
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Agricultura/Tinte rosa.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Tinte rosa</b></p></td>
+                                
+                                <td style="text-align:center;"><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">2 H</b></p></td>
+                            </tr>
+    
+                            <tr>
+                                <td style="text-align:center;">
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Normal:</b> 1 (0-1)(2-4)(5-7)(8-10) <b style="font-size: 13.5px;">=></b> (4)(5)(6)(7)</p></div>
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Grande:</b> 2 (0-1)(2-4)(5-7)(8-10) <b style="font-size: 13.5px;">=></b> (12)(13)(14)(15)</p></div>
+                                </td>
+        
+                                <td style="text-align:center;"><img src="../IMG/Otros/Flores/Eléboro.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Eléboro</b></p></td>
+                                
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Agricultura/Tinte rosa.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Tinte rosa</b></p></td>
+                                
+                                <td style="text-align:center;"><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">2 H</b></p></td>
+                            </tr>
+    
+                            <tr>
+                                <td style="text-align:center;">
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Normal:</b> 1 (0-1)(2-4)(5-7)(8-10) <b style="font-size: 13.5px;">=></b> (1)(2)(3)(4)</p></div>
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Grande:</b> 2 (0-1)(2-4)(5-7)(8-10) <b style="font-size: 13.5px;">=></b> (3)(4)(5)(6)</p></div>
+                                </td>
+
+                                <td style="text-align:center;">
+                                    <div style="justify-content: center; display: flex;">
+                                        <div style="margin: 0 15px;"><img src="../IMG/Otros/Flores/Clemátide.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Clemátide</b></p></div>
+        
+                                        <div style="margin: 0 15px;"><img src="../IMG/Otros/Flores/Campánula.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Campánula</b></p></div>
+                                    </div>
+                                </td>
+                                
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Agricultura/Tinte morado.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Tinte morado</b></p></td>
+                                
+                                <td style="text-align:center;"><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">2 H</b></p></td>
+                            </tr>
+    
+                            <tr>
+                                <td style="text-align:center;">
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Normal:</b> 1 (0-1)(2-4)(5-7)(8-10) <b style="font-size: 13.5px;">=></b> (1)(2)(3)(4)</p></div>
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Grande:</b> 2 (0-1)(2-4)(5-7)(8-10) <b style="font-size: 13.5px;">=></b> (3)(4)(5)(6)</p></div>
+                                </td>
+
+                                <td style="text-align:center;">
+                                    <div style="justify-content: center; display: flex;">
+                                        <div style="margin: 0 15px;"><img src="../IMG/Otros/Flores/Lirio.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Lirio</b></p></div>
+        
+                                        <div style="margin: 0 15px;"><img src="../IMG/Otros/Flores/Margarita.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Margarita</b></p></div>
+                                    </div>
+                                </td>
+                                
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Agricultura/Tinte blanco.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Tinte blanco</b></p></td>
+                                
+                                <td style="text-align:center;"><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">2 H</b></p></td>
+                            </tr>
+    
+                            <tr>
+                                <td style="text-align:center;">
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Normal:</b> 1 (0-1)(2-4)(5-7)(8-10) <b style="font-size: 13.5px;">=></b> (1)(2)(3)(4)</p></div>
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Grande:</b> 2 (0-1)(2-4)(5-7)(8-10) <b style="font-size: 13.5px;">=></b> (3)(4)(5)(6)</p></div>
+                                </td>
+        
+                                <td style="text-align:center;"><img src="../IMG/Otros/Flores/Pensamiento negro.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Pensamiento negro</b></p></td>
+                                
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Agricultura/Tinte negro.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Tinte negro</b></p></td>
+                                
+                                <td style="text-align:center;"><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">2 H</b></p></td>
+                            </tr>
+    
+                            <tr>
+                                <td style="text-align:center;">
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Normal:</b> 1 (0-1)(2-4)(5-7)(8-10) <b style="font-size: 13.5px;">=></b> (3)(4)(5)(6)</p></div>
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Grande:</b> 2 (0-1)(2-4)(5-7)(8-10) <b style="font-size: 13.5px;">=></b> (9)(10)(11)(12)</p></div>
+                                </td>
+        
+                                <td style="text-align:center;"><img src="../IMG/Otros/Flores/Rosa negra.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Rosa negra</b></p></td>
+                                
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Agricultura/Tinte negro.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Tinte negro</b></p></td>
+                                
+                                <td style="text-align:center;"><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">2 H</b></p></td>
+                            </tr>
+                        </table>
+                    </details>
+
+                    <details>  <!-- Semillera-->
+                        <summary style="margin-left: 40px;" class="sec">Semillera</summary>
+
+                        <p>La Semillera es una maquina diseñada para convertir tus cosechas en sus semillas respectivamente los cultivos los puedes conseguir conseguir en tu granja plantandolas.</p> 
+
+                        <table class="data" style="margin-bottom: 30px;">
+                            <tr><th style="width: 130px;" rowspan="2">Nivel necesario</th><th colspan="4">Función</th></tr>
+                            <tr><th style="width: 250px;">Cantidades</th><th>Materia Prima</th><th>Resultado</th><th>Tiempo</th></tr>
+    
+                            <tr>
+                                <td style="text-align:center; margin: 50% 0;" rowspan="20">
+                                    <div style="margin-bottom: 50%"><img src="../IMG/Prosesadoras/Agricultura/semillera.png" width="90" height="90" style="margin:0;"/><p style="text-align:center; margin: 0;"><b style="font-size: 13.5px;">Nivel 6 para la Normal</b></p></div>
+    
+                                    <div><img src="../IMG/Prosesadoras/Agricultura/semilleraGig.png" width="90" height="90" style="margin:0;"/><p style="text-align:center; margin: 0;"><b style="font-size: 13.5px;">Nivel 10 para la Grande</b></p></div>
+                                </td>
+                                
+                                <td style="text-align:center;">
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Normal:</b> 1 <b style="font-size: 13.5px;">=></b> 2</p></div>
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Grande:</b> 2 <b style="font-size: 13.5px;">=></b> 6</p></div>
+                                </td>
+
+                                <td style="text-align:center;"><img src="../IMG/Otros/Cultivos/Pepino.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Pepino</b></p></td>
+                                
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Agricultura/Semillas de pepino.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Semillas de pepino</b></p></td>
+                                
+                                <td style="text-align:center;"><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">23 H</b></p></td>
+                            </tr>
+    
+                            <tr>
+                                <td style="text-align:center;">
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Normal:</b> 1 <b style="font-size: 13.5px;">=></b> 2</p></div>
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Grande:</b> 2 <b style="font-size: 13.5px;">=></b> 6</p></div>
+                                </td>
+
+                                <td style="text-align:center;"><img src="../IMG/Otros/Cultivos/Cebolla.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Cebolla</b></p></td>
+                                
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Agricultura/Semillas de cebolla.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Semillas de cebolla</b></p></td>
+                                
+                                <td style="text-align:center;"><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">23 H</b></p></td>
+                            </tr>
+    
+                            <tr>
+                                <td style="text-align:center;">
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Normal:</b> 1 <b style="font-size: 13.5px;">=></b> 2</p></div>
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Grande:</b> 2 <b style="font-size: 13.5px;">=></b> 6</p></div>
+                                </td>
+
+                                <td style="text-align:center;"><img src="../IMG/Otros/Cultivos/Ajo.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Ajo</b></p></td>
+                                
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Agricultura/Semillas de ajo.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Semillas de ajo</b></p></td>
+                                
+                                <td style="text-align:center;"><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">23 H</b></p></td>
+                            </tr>
+    
+                            <tr>
+                                <td style="text-align:center;">
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Normal:</b> 1 <b style="font-size: 13.5px;">=></b> 2</p></div>
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Grande:</b> 2 <b style="font-size: 13.5px;">=></b> 6</p></div>
+                                </td>
+
+                                <td style="text-align:center;"><img src="../IMG/Otros/Cultivos/Calabacín.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Calabacín</b></p></td>
+                                
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Agricultura/Semillas de calabacín.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Semillas de Calabacín</b></p></td>
+                                
+                                <td style="text-align:center;"><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">23 H</b></p></td>
+                            </tr>
+    
+                            <tr>
+                                <td style="text-align:center;">
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Normal:</b> 1 <b style="font-size: 13.5px;">=></b> 2</p></div>
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Grande:</b> 2 <b style="font-size: 13.5px;">=></b> 6</p></div>
+                                </td>
+
+                                <td style="text-align:center;"><img src="../IMG/Otros/Cultivos/Calabaza.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Calabaza</b></p></td>
+                                
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Agricultura/Semillas de calabaza.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Semillas de Calabaza</b></p></td>
+                                
+                                <td style="text-align:center;"><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">23 H</b></p></td>
+                            </tr>
+    
+                            <tr>
+                                <td style="text-align:center;">
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Normal:</b> 1 <b style="font-size: 13.5px;">=></b> 2</p></div>
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Grande:</b> 2 <b style="font-size: 13.5px;">=></b> 6</p></div>
+                                </td>
+
+                                <td style="text-align:center;"><img src="../IMG/Otros/Cultivos/Pimiento rojo.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Pimiento rojo</b></p></td>
+                                
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Agricultura/Semillas de pimiento rojo.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Semillas de pimiento rojo</b></p></td>
+                                
+                                <td style="text-align:center;"><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">23 H</b></p></td>
+                            </tr>
+    
+                            <tr>
+                                <td style="text-align:center;">
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Normal:</b> 1 <b style="font-size: 13.5px;">=></b> 2</p></div>
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Grande:</b> 2 <b style="font-size: 13.5px;">=></b> 6</p></div>
+                                </td>
+
+                                <td style="text-align:center;"><img src="../IMG/Otros/Cultivos/Pimiento verde.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Pimiento verde</b></p></td>
+                                
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Agricultura/Semillas de pimiento verde.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Semillas de pimiento verde</b></p></td>
+                                
+                                <td style="text-align:center;"><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">23 H</b></p></td>
+                            </tr>
+    
+                            <tr>
+                                <td style="text-align:center;">
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Normal:</b> 1 <b style="font-size: 13.5px;">=></b> 2</p></div>
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Grande:</b> 2 <b style="font-size: 13.5px;">=></b> 6</p></div>
+                                </td>
+
+                                <td style="text-align:center;"><img src="../IMG/Otros/Cultivos/Piña.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Piña</b></p></td>
+                                
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Agricultura/Semillas de piña.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Semillas de piña</b></p></td>
+                                
+                                <td style="text-align:center;"><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">23 H</b></p></td>
+                            </tr>
+    
+                            <tr>
+                                <td style="text-align:center;">
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Normal:</b> 1 <b style="font-size: 13.5px;">=></b> 2</p></div>
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Grande:</b> 2 <b style="font-size: 13.5px;">=></b> 6</p></div>
+                                </td>
+
+                                <td style="text-align:center;"><img src="../IMG/Otros/Cultivos/Sandía.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Sandía</b></p></td>
+                                
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Agricultura/Semillas de sandía.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Semillas de sandía</b></p></td>
+                                
+                                <td style="text-align:center;"><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">23 H</b></p></td>
+                            </tr>
+    
+                            <tr>
+                                <td style="text-align:center;">
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Normal:</b> 1 <b style="font-size: 13.5px;">=></b> 2</p></div>
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Grande:</b> 2 <b style="font-size: 13.5px;">=></b> 6</p></div>
+                                </td>
+
+                                <td style="text-align:center;"><img src="../IMG/Otros/Cultivos/Zanahoria.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Zanahoria</b></p></td>
+                                
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Agricultura/Semillas de zanahoria.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Semillas de zanahoria</b></p></td>
+                                
+                                <td style="text-align:center;"><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">23 H</b></p></td>
+                            </tr>
+    
+                            <tr>
+                                <td style="text-align:center;">
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Normal:</b> 1 <b style="font-size: 13.5px;">=></b> 2</p></div>
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Grande:</b> 2 <b style="font-size: 13.5px;">=></b> 6</p></div>
+                                </td>
+
+                                <td style="text-align:center;"><img src="../IMG/Otros/Cultivos/Quingombó.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Quingombó</b></p></td>
+                                
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Agricultura/Semillas de quingombó.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Semillas de quingombó</b></p></td>
+                                
+                                <td style="text-align:center;"><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">23 H</b></p></td>
+                            </tr>
+    
+                            <tr>
+                                <td style="text-align:center;">
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Normal:</b> 1 <b style="font-size: 13.5px;">=></b> 2</p></div>
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Grande:</b> 2 <b style="font-size: 13.5px;">=></b> 6</p></div>
+                                </td>
+
+                                <td style="text-align:center;"><img src="../IMG/Otros/Cultivos/Bok choy.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Bok choy</b></p></td>
+                                
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Agricultura/Semillas de bok choy.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Semillas de bok choy</b></p></td>
+                                
+                                <td style="text-align:center;"><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">23 H</b></p></td>
+                            </tr>
+    
+                            <tr>
+                                <td style="text-align:center;">
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Normal:</b> 1 <b style="font-size: 13.5px;">=></b> 2</p></div>
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Grande:</b> 2 <b style="font-size: 13.5px;">=></b> 6</p></div>
+                                </td>
+
+                                <td style="text-align:center;"><img src="../IMG/Otros/Cultivos/Chile.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Chile</b></p></td>
+                                
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Agricultura/Semillas de chile.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Semillas de chile</b></p></td>
+                                
+                                <td style="text-align:center;"><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">23 H</b></p></td>
+                            </tr>
+    
+                            <tr>
+                                <td style="text-align:center;">
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Normal:</b> 1 <b style="font-size: 13.5px;">=></b> 2</p></div>
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Grande:</b> 2 <b style="font-size: 13.5px;">=></b> 6</p></div>
+                                </td>
+
+                                <td style="text-align:center;"><img src="../IMG/Otros/Cultivos/Bardana.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Bardana</b></p></td>
+                                
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Agricultura/Semillas de bardana.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Semillas de bardana</b></p></td>
+                                
+                                <td style="text-align:center;"><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">23 H</b></p></td>
+                            </tr>
+    
+                            <tr>
+                                <td style="text-align:center;">
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Normal:</b> 1 <b style="font-size: 13.5px;">=></b> 2</p></div>
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Grande:</b> 2 <b style="font-size: 13.5px;">=></b> 6</p></div>
+                                </td>
+
+                                <td style="text-align:center;"><img src="../IMG/Otros/Cultivos/Brócoli.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Brócoli</b></p></td>
+                                
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Agricultura/Semillas de brócoli.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Semillas de brócoli</b></p></td>
+                                
+                                <td style="text-align:center;"><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">23 H</b></p></td>
+                            </tr>
+    
+                            <tr>
+                                <td style="text-align:center;">
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Normal:</b> 1 <b style="font-size: 13.5px;">=></b> 2</p></div>
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Grande:</b> 2 <b style="font-size: 13.5px;">=></b> 6</p></div>
+                                </td>
+
+                                <td style="text-align:center;"><img src="../IMG/Otros/Cultivos/Col.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Col</b></p></td>
+                                
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Agricultura/Semillas de col.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Semillas de col</b></p></td>
+                                
+                                <td style="text-align:center;"><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">23 H</b></p></td>
+                            </tr>
+    
+                            <tr>
+                                <td style="text-align:center;">
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Normal:</b> 1 <b style="font-size: 13.5px;">=></b> 2</p></div>
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Grande:</b> 2 <b style="font-size: 13.5px;">=></b> 6</p></div>
+                                </td>
+
+                                <td style="text-align:center;"><img src="../IMG/Otros/Cultivos/Rabano.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Rábano</b></p></td>
+                                
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Agricultura/Semillas de rábano.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Semillas de rábano</b></p></td>
+                                
+                                <td style="text-align:center;"><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">23 H</b></p></td>
+                            </tr>
+    
+                            <tr>
+                                <td style="text-align:center;">
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Normal:</b> 1 <b style="font-size: 13.5px;">=></b> 2</p></div>
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Grande:</b> 2 <b style="font-size: 13.5px;">=></b> 6</p></div>
+                                </td>
+
+                                <td style="text-align:center;"><img src="../IMG/Otros/Cultivos/Forraje.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Forraje</b></p></td>
+                                
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Agricultura/Semillas de forraje.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Semillas de forraje</b></p></td>
+                                
+                                <td style="text-align:center;"><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">23 H</b></p></td>
+                            </tr>
+    
+                            <tr>
+                                <td style="text-align:center;">
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Normal:</b> 1 <b style="font-size: 13.5px;">=></b> 2</p></div>
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Grande:</b> 2 <b style="font-size: 13.5px;">=></b> 6</p></div>
+                                </td>
+
+                                <td style="text-align:center;"><img src="../IMG/Otros/Cultivos/Hojas de té.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Hojas de té</b></p></td>
+                                
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Agricultura/Semillas de té.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Semillas de té</b></p></td>
+                                
+                                <td style="text-align:center;"><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">23 H</b></p></td>
+                            </tr>
+    
+                            <tr>
+                                <td style="text-align:center;">
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Normal:</b> 1 <b style="font-size: 13.5px;">=></b> 2</p></div>
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Grande:</b> 2 <b style="font-size: 13.5px;">=></b> 6</p></div>
+                                </td>
+
+                                <td style="text-align:center;"><img src="../IMG/Otros/Cultivos/Judías.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Judías</b></p></td>
+                                
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Agricultura/Semillas de judía.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Semillas de judía</b></p></td>
+                                
+                                <td style="text-align:center;"><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">23 H</b></p></td>
+                            </tr>
+                        </table>
+
+                        <table class="data" style="margin-bottom: 30px;">
+                            <tr><th style="width: 130px;" rowspan="2">Nivel necesario</th><th colspan="4">Función</th></tr>
+                            <tr><th style="width: 250px;">Cantidades</th><th>Materia Prima</th><th>Resultado</th><th>Tiempo</th></tr>
+    
+                            <tr>
+                                <td style="text-align:center; margin: 50% 0;" rowspan="12">
+                                    <div style="margin-bottom: 50%"><img src="../IMG/Prosesadoras/Agricultura/semillera.png" width="90" height="90" style="margin:0;"/><p style="text-align:center; margin: 0;"><b style="font-size: 13.5px;">Nivel 6 para la Normal</b></p></div>
+    
+                                    <div><img src="../IMG/Prosesadoras/Agricultura/semilleraGig.png" width="90" height="90" style="margin:0;"/><p style="text-align:center; margin: 0;"><b style="font-size: 13.5px;">Nivel 10 para la Grande</b></p></div>
+                                </td>
+                                
+                                <td style="text-align:center;">
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Normal:</b> 1 <b style="font-size: 13.5px;">=></b> (2 │ 6)</p></div>
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Grande:</b> 2 <b style="font-size: 13.5px;">=></b> (6 │ 18)</p></div>
+                                </td>
+
+                                <td style="text-align:center;">
+                                    <div style="justify-content: center; display: flex;">
+                                        <div style="margin: 0 15px;"><img src="../IMG/Otros/Cultivos/Patata.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Patata</b></p></div>
+        
+                                        <div style="margin: 0 15px;"><img src="../IMG/Otros/Cultivos/Patata estrella.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Patata estrella</b></p></div>
+                                    </div>
+                                </td>
+                                
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Agricultura/Semillas de patata.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Semillas de patata</b></p></td>
+                                
+                                <td style="text-align:center;"><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">23 H</b></p></td>
+                            </tr>
+    
+                            <tr>
+                                <td style="text-align:center;">
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Normal:</b> 1 <b style="font-size: 13.5px;">=></b> (2 │ 6)</p></div>
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Grande:</b> 2 <b style="font-size: 13.5px;">=></b> (6 │ 18)</p></div>
+                                </td>
+
+                                <td style="text-align:center;">
+                                    <div style="justify-content: center; display: flex;">
+                                        <div style="margin: 0 15px;"><img src="../IMG/Otros/Cultivos/Nabo.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Nabo</b></p></div>
+        
+                                        <div style="margin: 0 15px;"><img src="../IMG/Otros/Cultivos/Nabo gigante.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Nabo gigante</b></p></div>
+                                    </div>
+                                </td>
+                                
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Agricultura/Semillas de nabo.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Semillas de nabo</b></p></td>
+                                
+                                <td style="text-align:center;"><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">23 H</b></p></td>
+                            </tr>
+    
+                            <tr>
+                                <td style="text-align:center;">
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Normal:</b> 1 <b style="font-size: 13.5px;">=></b> (2 │ 6)</p></div>
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Grande:</b> 2 <b style="font-size: 13.5px;">=></b> (6 │ 18)</p></div>
+                                </td>
+
+                                <td style="text-align:center;">
+                                    <div style="justify-content: center; display: flex;">
+                                        <div style="margin: 0 15px;"><img src="../IMG/Otros/Cultivos/Fresa.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Fresa</b></p></div>
+        
+                                        <div style="margin: 0 15px;"><img src="../IMG/Otros/Cultivos/Fresa dorada.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Fresa dorada</b></p></div>
+                                    </div>
+                                </td>
+                                
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Agricultura/Semillas de fresa.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Semillas de fresa</b></p></td>
+                                
+                                <td style="text-align:center;"><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">23 H</b></p></td>
+                            </tr>
+    
+                            <tr>
+                                <td style="text-align:center;">
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Normal:</b> 1 <b style="font-size: 13.5px;">=></b> (2 │ 6)</p></div>
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Grande:</b> 2 <b style="font-size: 13.5px;">=></b> (6 │ 18)</p></div>
+                                </td>
+
+                                <td style="text-align:center;">
+                                    <div style="justify-content: center; display: flex;">
+                                        <div style="margin: 0 15px;"><img src="../IMG/Otros/Cultivos/Maíz.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Maíz</b></p></div>
+        
+                                        <div style="margin: 0 15px;"><img src="../IMG/Otros/Cultivos/Maíz mosaico.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Maíz mosaico</b></p></div>
+                                    </div>
+                                </td>
+                                
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Agricultura/Semillas de maíz.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Semillas de maíz</b></p></td>
+                                
+                                <td style="text-align:center;"><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">23 H</b></p></td>
+                            </tr>
+    
+                            <tr>
+                                <td style="text-align:center;">
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Normal:</b> 1 <b style="font-size: 13.5px;">=></b> (2 │ 6)</p></div>
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Grande:</b> 2 <b style="font-size: 13.5px;">=></b> (6 │ 18)</p></div>
+                                </td>
+
+                                <td style="text-align:center;">
+                                    <div style="justify-content: center; display: flex;">
+                                        <div style="margin: 0 15px;"><img src="../IMG/Otros/Cultivos/Tomate.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Tomate</b></p></div>
+        
+                                        <div style="margin: 0 15px;"><img src="../IMG/Otros/Cultivos/Tomate gigante.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Tomate gigante</b></p></div>
+                                    </div>
+                                </td>
+                                
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Agricultura/Semillas de tomate.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Semillas de tomate</b></p></td>
+                                
+                                <td style="text-align:center;"><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">23 H</b></p></td>
+                            </tr>
+    
+                            <tr>
+                                <td style="text-align:center;">
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Normal:</b> 1 <b style="font-size: 13.5px;">=></b> (2 │ 6)</p></div>
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Grande:</b> 2 <b style="font-size: 13.5px;">=></b> (6 │ 18)</p></div>
+                                </td>
+
+                                <td style="text-align:center;">
+                                    <div style="justify-content: center; display: flex;">
+                                        <div style="margin: 0 15px;"><img src="../IMG/Otros/Cultivos/Berenjena.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Berenjena</b></p></div>
+        
+                                        <div style="margin: 0 15px;"><img src="../IMG/Otros/Cultivos/Berenjena redonda.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Berenjena redonda</b></p></div>
+                                    </div>
+                                </td>
+                                
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Agricultura/Semillas de berenjena.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Semillas de berenjena</b></p></td>
+                                
+                                <td style="text-align:center;"><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">23 H</b></p></td>
+                            </tr>
+    
+                            <tr>
+                                <td style="text-align:center;">
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Normal:</b> 1 <b style="font-size: 13.5px;">=></b> (2 │ 6)</p></div>
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Grande:</b> 2 <b style="font-size: 13.5px;">=></b> (6 │ 18)</p></div>
+                                </td>
+
+                                <td style="text-align:center;">
+                                    <div style="justify-content: center; display: flex;">
+                                        <div style="margin: 0 15px;"><img src="../IMG/Otros/Cultivos/Melon.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Melón</b></p></div>
+        
+                                        <div style="margin: 0 15px;"><img src="../IMG/Otros/Cultivos/Melón joya.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Melón joya</b></p></div>
+                                    </div>
+                                </td>
+                                
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Agricultura/Semillas de melón.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Semillas de melón</b></p></td>
+                                
+                                <td style="text-align:center;"><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">23 H</b></p></td>
+                            </tr>
+    
+                            <tr>
+                                <td style="text-align:center;">
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Normal:</b> 1 <b style="font-size: 13.5px;">=></b> (2 │ 6)</p></div>
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Grande:</b> 2 <b style="font-size: 13.5px;">=></b> (6 │ 18)</p></div>
+                                </td>
+
+                                <td style="text-align:center;">
+                                    <div style="justify-content: center; display: flex;">
+                                        <div style="margin: 0 15px;"><img src="../IMG/Otros/Cultivos/Espinaca.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Espinaca</b></p></div>
+        
+                                        <div style="margin: 0 15px;"><img src="../IMG/Otros/Cultivos/Espinaca corazón.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Espinaca corazón</b></p></div>
+                                    </div>
+                                </td>
+                                
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Agricultura/Semillas de espinaca.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Semillas de espinaca</b></p></td>
+                                
+                                <td style="text-align:center;"><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">23 H</b></p></td>
+                            </tr>
+    
+                            <tr>
+                                <td style="text-align:center;">
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Normal:</b> 1 <b style="font-size: 13.5px;">=></b> (2 │ 6)</p></div>
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Grande:</b> 2 <b style="font-size: 13.5px;">=></b> (6 │ 18)</p></div>
+                                </td>
+
+                                <td style="text-align:center;">
+                                    <div style="justify-content: center; display: flex;">
+                                        <div style="margin: 0 15px;"><img src="../IMG/Otros/Cultivos/Boniato.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Boniato</b></p></div>
+        
+                                        <div style="margin: 0 15px;"><img src="../IMG/Otros/Cultivos/Boniato gigante.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Boniato gigante</b></p></div>
+                                    </div>
+                                </td>
+                                
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Agricultura/Semillas de boniato.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Semillas de boniato</b></p></td>
+                                
+                                <td style="text-align:center;"><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">23 H</b></p></td>
+                            </tr>
+    
+                            <tr>
+                                <td style="text-align:center;">
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Normal:</b> 1 <b style="font-size: 13.5px;">=></b> (2 │ 6)</p></div>
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Grande:</b> 2 <b style="font-size: 13.5px;">=></b> (6 │ 18)</p></div>
+                                </td>
+
+                                <td style="text-align:center;">
+                                    <div style="justify-content: center; display: flex;">
+                                        <div style="margin: 0 15px;"><img src="../IMG/Otros/Cultivos/Nabo daikon.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Nabo daikon</b></p></div>
+        
+                                        <div style="margin: 0 15px;"><img src="../IMG/Otros/Cultivos/Nabo daikon con patas.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Nabo daikon con patas</b></p></div>
+                                    </div>
+                                </td>
+                                
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Agricultura/Semillas de nabo daikon.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Semillas de nabo daikon</b></p></td>
+                                
+                                <td style="text-align:center;"><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">23 H</b></p></td>
+                            </tr>
+    
+                            <tr>
+                                <td style="text-align:center;">
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Normal:</b> 1 <b style="font-size: 13.5px;">=></b> (2 │ 6)</p></div>
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Grande:</b> 2 <b style="font-size: 13.5px;">=></b> (6 │ 18)</p></div>
+                                </td>
+
+                                <td style="text-align:center;">
+                                    <div style="justify-content: center; display: flex;">
+                                        <div style="margin: 0 15px;"><img src="../IMG/Otros/Cultivos/Col china.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Col china</b></p></div>
+        
+                                        <div style="margin: 0 15px;"><img src="../IMG/Otros/Cultivos/Col china dorada.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Col china dorada</b></p></div>
+                                    </div>
+                                </td>
+                                
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Agricultura/Semillas de col china.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Semillas de col china</b></p></td>
+                                
+                                <td style="text-align:center;"><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">23 H</b></p></td>
+                            </tr>
+    
+                            <tr>
+                                <td style="text-align:center;">
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Normal:</b> 1 <b style="font-size: 13.5px;">=></b> (2 │ 6)</p></div>
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Grande:</b> 2 <b style="font-size: 13.5px;">=></b> (6 │ 18)</p></div>
+                                </td>
+
+                                <td style="text-align:center;">
+                                    <div style="justify-content: center; display: flex;">
+                                        <div style="margin: 0 15px;"><img src="../IMG/Otros/Cultivos/Puerro.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Puerro</b></p></div>
+        
+                                        <div style="margin: 0 15px;"><img src="../IMG/Otros/Cultivos/Puerro gigante.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Puerro gigante</b></p></div>
+                                    </div>
+                                </td>
+                                
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Agricultura/Semillas de puerro.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Semillas de puerro</b></p></td>
+                                
+                                <td style="text-align:center;"><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">23 H</b></p></td>
+                            </tr>
+                        </table>
+
+                        <table class="data">
+                            <tr><th style="width: 130px;" rowspan="2">Nivel necesario</th><th colspan="4">Función</th></tr>
+                            <tr><th style="width: 250px;">Cantidades</th><th>Materia Prima</th><th>Resultado</th><th>Tiempo</th></tr>
+    
+                            <tr>
+                                <td style="text-align:center; margin: 50% 0;" rowspan="20">
+                                    <div style="margin-bottom: 50%"><img src="../IMG/Prosesadoras/Agricultura/semillera.png" width="90" height="90" style="margin:0;"/><p style="text-align:center; margin: 0;"><b style="font-size: 13.5px;">Nivel 6 para la Normal</b></p></div>
+    
+                                    <div><img src="../IMG/Prosesadoras/Agricultura/semilleraGig.png" width="90" height="90" style="margin:0;"/><p style="text-align:center; margin: 0;"><b style="font-size: 13.5px;">Nivel 10 para la Grande</b></p></div>
+                                </td>
+                                
+                                <td style="text-align:center;">
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Normal:</b> 1 <b style="font-size: 13.5px;">=></b> 2</p></div>
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Grande:</b> 2 <b style="font-size: 13.5px;">=></b> 6</p></div>
+                                </td>
+
+                                <td style="text-align:center;"><img src="../IMG/Otros/Flores/Tulipán.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Tulipán</b></p></td>
+                                
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Agricultura/Semillas de tulipán.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Semillas de tulipán</b></p></td>
+                                
+                                <td style="text-align:center;"><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">23 H</b></p></td>
+                            </tr>
+    
+                            <tr>
+                                <td style="text-align:center;">
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Normal:</b> 1 <b style="font-size: 13.5px;">=></b> 2</p></div>
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Grande:</b> 2 <b style="font-size: 13.5px;">=></b> 6</p></div>
+                                </td>
+
+                                <td style="text-align:center;"><img src="../IMG/Otros/Flores/Nemophila.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Nemophila</b></p></td>
+                                
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Agricultura/Semillas de nemophila.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Semillas de nemophila</b></p></td>
+                                
+                                <td style="text-align:center;"><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">23 H</b></p></td>
+                            </tr>
+    
+                            <tr>
+                                <td style="text-align:center;">
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Normal:</b> 1 <b style="font-size: 13.5px;">=></b> 2</p></div>
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Grande:</b> 2 <b style="font-size: 13.5px;">=></b> 6</p></div>
+                                </td>
+
+                                <td style="text-align:center;"><img src="../IMG/Otros/Flores/Pensamiento.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Pensamiento</b></p></td>
+                                
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Agricultura/Semillas de pensamiento.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Semillas de pensamiento</b></p></td>
+                                
+                                <td style="text-align:center;"><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">23 H</b></p></td>
+                            </tr>
+    
+                            <tr>
+                                <td style="text-align:center;">
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Normal:</b> 1 <b style="font-size: 13.5px;">=></b> 2</p></div>
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Grande:</b> 2 <b style="font-size: 13.5px;">=></b> 6</p></div>
+                                </td>
+
+                                <td style="text-align:center;"><img src="../IMG/Otros/Flores/Ranúnculo.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Ranúnculo</b></p></td>
+                                
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Agricultura/Semillas de ranúnculo.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Semillas de ranúnculo</b></p></td>
+                                
+                                <td style="text-align:center;"><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">23 H</b></p></td>
+                            </tr>
+    
+                            <tr>
+                                <td style="text-align:center;">
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Normal:</b> 1 <b style="font-size: 13.5px;">=></b> 2</p></div>
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Grande:</b> 2 <b style="font-size: 13.5px;">=></b> 6</p></div>
+                                </td>
+
+                                <td style="text-align:center;"><img src="../IMG/Otros/Flores/Pensamiento negro.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Pensamiento negro</b></p></td>
+                                
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Agricultura/Semillas de pensamiento negro.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Semillas de pensamiento negro</b></p></td>
+                                
+                                <td style="text-align:center;"><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">23 H</b></p></td>
+                            </tr>
+    
+                            <tr>
+                                <td style="text-align:center;">
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Normal:</b> 1 <b style="font-size: 13.5px;">=></b> 2</p></div>
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Grande:</b> 2 <b style="font-size: 13.5px;">=></b> 6</p></div>
+                                </td>
+
+                                <td style="text-align:center;"><img src="../IMG/Otros/Flores/Hibisco.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Hibisco</b></p></td>
+                                
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Agricultura/Semillas de hibisco.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Semillas de hibisco</b></p></td>
+                                
+                                <td style="text-align:center;"><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">23 H</b></p></td>
+                            </tr>
+    
+                            <tr>
+                                <td style="text-align:center;">
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Normal:</b> 1 <b style="font-size: 13.5px;">=></b> 2</p></div>
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Grande:</b> 2 <b style="font-size: 13.5px;">=></b> 6</p></div>
+                                </td>
+
+                                <td style="text-align:center;"><img src="../IMG/Otros/Flores/Petunia.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Petunia</b></p></td>
+                                
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Agricultura/Semillas de petunia.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Semillas de petunia</b></p></td>
+                                
+                                <td style="text-align:center;"><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">23 H</b></p></td>
+                            </tr>
+    
+                            <tr>
+                                <td style="text-align:center;">
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Normal:</b> 1 <b style="font-size: 13.5px;">=></b> 2</p></div>
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Grande:</b> 2 <b style="font-size: 13.5px;">=></b> 6</p></div>
+                                </td>
+
+                                <td style="text-align:center;"><img src="../IMG/Otros/Flores/Caléndula.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Caléndula</b></p></td>
+                                
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Agricultura/Semillas de caléndula.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Semillas de caléndula</b></p></td>
+                                
+                                <td style="text-align:center;"><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">23 H</b></p></td>
+                            </tr>
+    
+                            <tr>
+                                <td style="text-align:center;">
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Normal:</b> 1 <b style="font-size: 13.5px;">=></b> 2</p></div>
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Grande:</b> 2 <b style="font-size: 13.5px;">=></b> 6</p></div>
+                                </td>
+
+                                <td style="text-align:center;"><img src="../IMG/Otros/Flores/Girasol.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Girasol</b></p></td>
+                                
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Agricultura/Semillas de girasol.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Semillas de girasol</b></p></td>
+                                
+                                <td style="text-align:center;"><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">23 H</b></p></td>
+                            </tr>
+    
+                            <tr>
+                                <td style="text-align:center;">
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Normal:</b> 1 <b style="font-size: 13.5px;">=></b> 2</p></div>
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Grande:</b> 2 <b style="font-size: 13.5px;">=></b> 6</p></div>
+                                </td>
+
+                                <td style="text-align:center;"><img src="../IMG/Otros/Flores/Lirio.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Lirio</b></p></td>
+                                
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Agricultura/Semillas de lirio.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Semillas de lirio</b></p></td>
+                                
+                                <td style="text-align:center;"><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">23 H</b></p></td>
+                            </tr>
+    
+                            <tr>
+                                <td style="text-align:center;">
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Normal:</b> 1 <b style="font-size: 13.5px;">=></b> 2</p></div>
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Grande:</b> 2 <b style="font-size: 13.5px;">=></b> 6</p></div>
+                                </td>
+
+                                <td style="text-align:center;"><img src="../IMG/Otros/Flores/Rosa.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Rosa</b></p></td>
+                                
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Agricultura/Semillas de rosa.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Semillas de rosa</b></p></td>
+                                
+                                <td style="text-align:center;"><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">23 H</b></p></td>
+                            </tr>
+    
+                            <tr>
+                                <td style="text-align:center;">
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Normal:</b> 1 <b style="font-size: 13.5px;">=></b> 2</p></div>
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Grande:</b> 2 <b style="font-size: 13.5px;">=></b> 6</p></div>
+                                </td>
+
+                                <td style="text-align:center;"><img src="../IMG/Otros/Flores/Crisantemo.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Crisantemo</b></p></td>
+                                
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Agricultura/Semillas de crisantemo.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Semillas de crisantemo</b></p></td>
+                                
+                                <td style="text-align:center;"><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">23 H</b></p></td>
+                            </tr>
+    
+                            <tr>
+                                <td style="text-align:center;">
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Normal:</b> 1 <b style="font-size: 13.5px;">=></b> 2</p></div>
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Grande:</b> 2 <b style="font-size: 13.5px;">=></b> 6</p></div>
+                                </td>
+
+                                <td style="text-align:center;"><img src="../IMG/Otros/Flores/Clemátide.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Clemátide</b></p></td>
+                                
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Agricultura/Semillas de clemátide.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Semillas de clemátide</b></p></td>
+                                
+                                <td style="text-align:center;"><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">23 H</b></p></td>
+                            </tr>
+    
+                            <tr>
+                                <td style="text-align:center;">
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Normal:</b> 1 <b style="font-size: 13.5px;">=></b> 2</p></div>
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Grande:</b> 2 <b style="font-size: 13.5px;">=></b> 6</p></div>
+                                </td>
+
+                                <td style="text-align:center;"><img src="../IMG/Otros/Flores/Margarita.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Margarita</b></p></td>
+                                
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Agricultura/Semillas de margarita.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Semillas de margarita</b></p></td>
+                                
+                                <td style="text-align:center;"><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">23 H</b></p></td>
+                            </tr>
+    
+                            <tr>
+                                <td style="text-align:center;">
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Normal:</b> 1 <b style="font-size: 13.5px;">=></b> 2</p></div>
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Grande:</b> 2 <b style="font-size: 13.5px;">=></b> 6</p></div>
+                                </td>
+
+                                <td style="text-align:center;"><img src="../IMG/Otros/Flores/Rosa negra.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Rosa negra</b></p></td>
+                                
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Agricultura/Semillas de rosa negra.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Semillas de rosa negra</b></p></td>
+                                
+                                <td style="text-align:center;"><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">23 H</b></p></td>
+                            </tr>
+    
+                            <tr>
+                                <td style="text-align:center;">
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Normal:</b> 1 <b style="font-size: 13.5px;">=></b> 2</p></div>
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Grande:</b> 2 <b style="font-size: 13.5px;">=></b> 6</p></div>
+                                </td>
+
+                                <td style="text-align:center;"><img src="../IMG/Otros/Flores/Cineraria.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Cineraria</b></p></td>
+                                
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Agricultura/Semillas de cineraria.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Semillas de cineraria</b></p></td>
+                                
+                                <td style="text-align:center;"><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">23 H</b></p></td>
+                            </tr>
+    
+                            <tr>
+                                <td style="text-align:center;">
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Normal:</b> 1 <b style="font-size: 13.5px;">=></b> 2</p></div>
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Grande:</b> 2 <b style="font-size: 13.5px;">=></b> 6</p></div>
+                                </td>
+
+                                <td style="text-align:center;"><img src="../IMG/Otros/Flores/Prímula.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Prímula</b></p></td>
+                                
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Agricultura/Semillas de prímula.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Semillas de prímula</b></p></td>
+                                
+                                <td style="text-align:center;"><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">23 H</b></p></td>
+                            </tr>
+    
+                            <tr>
+                                <td style="text-align:center;">
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Normal:</b> 1 <b style="font-size: 13.5px;">=></b> 2</p></div>
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Grande:</b> 2 <b style="font-size: 13.5px;">=></b> 6</p></div>
+                                </td>
+
+                                <td style="text-align:center;"><img src="../IMG/Otros/Flores/Begonia.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Begonia</b></p></td>
+                                
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Agricultura/Semillas de begonia.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Semillas de begonia</b></p></td>
+                                
+                                <td style="text-align:center;"><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">23 H</b></p></td>
+                            </tr>
+    
+                            <tr>
+                                <td style="text-align:center;">
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Normal:</b> 1 <b style="font-size: 13.5px;">=></b> 2</p></div>
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Grande:</b> 2 <b style="font-size: 13.5px;">=></b> 6</p></div>
+                                </td>
+
+                                <td style="text-align:center;"><img src="../IMG/Otros/Flores/Campánula.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Campánula</b></p></td>
+                                
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Agricultura/Semillas de campánula.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Semillas de campánula</b></p></td>
+                                
+                                <td style="text-align:center;"><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">23 H</b></p></td>
+                            </tr>
+    
+                            <tr>
+                                <td style="text-align:center;">
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Normal:</b> 1 <b style="font-size: 13.5px;">=></b> 2</p></div>
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Grande:</b> 2 <b style="font-size: 13.5px;">=></b> 6</p></div>
+                                </td>
+
+                                <td style="text-align:center;"><img src="../IMG/Otros/Flores/Eléboro.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Eléboro</b></p></td>
+                                
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Agricultura/Semillas de eléboro.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Semillas de eléboro</b></p></td>
+                                
+                                <td style="text-align:center;"><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">23 H</b></p></td>
+                            </tr>
+                        </table>
+                    </details>
                 </details>
 
                 <details> <!-- Fruticultura -->
@@ -675,7 +1641,7 @@
                     <details>  <!-- Procesadora de plántulas -->
                         <summary style="margin-left: 40px;" class="sec">Procesadora de plántulas</summary>
 
-                        <p>Las Procesadora de plántulas es una maquina diseñada para convertir los productos de los arboles, trigo y arroz en sus semilas respectivamente, para conseguir los productos debe primero plantar su semilla las cuales puedes conseguir comprandolas en la tienda.</p> 
+                        <p>La Procesadora de plántulas es una maquina diseñada para convertir los productos de los arboles, trigo y arroz en sus semilas respectivamente, para conseguir los productos debe primero plantar su semilla las cuales puedes conseguir comprandolas en la tienda.</p> 
 
                         <table class="data">
                             <tr><th style="width: 130px;" rowspan="2">Nivel necesario</th><th colspan="4">Función</th></tr>
@@ -1302,77 +2268,272 @@
 
                 <details> <!-- Cuidado de animales -->
                     <summary>Procesadores obtenidas de la habilidad de Cuidado de animales</summary>
+
+                    <details>  <!-- Mayonesera -->
+                        <summary style="margin-left: 40px;" class="sec">Mayonesera</summary>
+
+                        <p>La Mayonesera es una maquina diseñada para convertir todos los huevos de las gallinas en Mayonesa, las gallinas los puedes conseguir comprandolas en la tienda.</p> 
+
+                        <table class="data">
+                            <tr><th style="width: 130px;" rowspan="2">Nivel necesario</th><th colspan="4">Función</th></tr>
+                            <tr><th style="width: 160px;">Cantidades</th><th>Materia Prima</th><th>Resultado</th><th>Tiempo</th></tr>
+    
+                            <tr>
+                                <td style="text-align:center; margin: 50% 0;" rowspan="5">
+                                    <div style="margin-bottom: 50%"><img src="../IMG/Prosesadoras/Cuidado de animales/mayonesera.png" width="90" height="90" style="margin:0;"/><p style="text-align:center; margin: 0;"><b style="font-size: 13.5px;">Nivel 2 para la Normal</b></p></div>
+    
+                                    <div><img src="../IMG/Prosesadoras/Cuidado de animales/mayoneseraGig.png" width="90" height="90" style="margin:0;"/><p style="text-align:center; margin: 0;"><b style="font-size: 13.5px;">Nivel 9 para la Grande</b></p></div>
+                                </td>
+                                
+                                <td style="text-align:center;">
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Normal:</b> 1 <b style="font-size: 13.5px;">=></b> 1</p></div>
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Grande:</b> 2 <b style="font-size: 13.5px;">=></b> 3</p></div>
+                                </td>
+
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Cuidado de animales/Huevo.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Huevo</b></p></td>
+                                
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Cuidado de animales/Mayonesa.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Mayonesa</b></p></td>
+                                
+                                <td style="text-align:center;"><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">2 H</b></p></td>
+                            </tr>
+    
+                            <tr>
+                                <td style="text-align:center;">
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Normal:</b> 1 <b style="font-size: 13.5px;">=></b> 3</p></div>
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Grande:</b> 2 <b style="font-size: 13.5px;">=></b> 9</p></div>
+                                </td>
+    
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Cuidado de animales/Huevo +.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Huevo +</b></p></td>
+                                
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Cuidado de animales/Mayonesa.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Mayonesa</b></p></td>
+                                
+                                <td style="text-align:center;"><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">2 H</b></p></td>
+                            </tr>
+    
+                            <tr>
+                                <td style="text-align:center;">
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Normal:</b> 1 <b style="font-size: 13.5px;">=></b> 2</p></div>
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Grande:</b> 2 <b style="font-size: 13.5px;">=></b> 6</p></div>
+                                </td>
+                                
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Cuidado de animales/Huevo de seda.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Huevo de seda</b></p></td>
+                                
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Cuidado de animales/Mayonesa.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Mayonesa</b></p></td>
+                                
+                                <td style="text-align:center;"><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">2 H</b></p></td>
+                            </tr>
+    
+                            <tr>
+                                <td style="text-align:center;">
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Normal:</b> 1 <b style="font-size: 13.5px;">=></b> 6</p></div>
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Grande:</b> 2 <b style="font-size: 13.5px;">=></b> 18</p></div>
+                                </td>
+                                
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Cuidado de animales/Huevo de seda +.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Huevo de seda +</b></p></td>
+                                
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Cuidado de animales/Mayonesa.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Mayonesa</b></p></td>
+                                
+                                <td style="text-align:center;"><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">2 H</b></p></td>
+                            </tr>
+                        </table>
+                    </details>
+
+                    <details>  <!-- Yogurtera -->
+                        <summary style="margin-left: 40px;" class="sec">Yogurtera</summary>
+
+                        <p>La Yogurtera es una maquina diseñada para convertir todas las leches en yogur, las vacas, búfala y cabas los puedes conseguir comprandolas en la tienda.</p> 
+
+                        <table class="data">
+                            <tr><th style="width: 130px;" rowspan="2">Nivel necesario</th><th colspan="4">Función</th></tr>
+                            <tr><th style="width: 160px;">Cantidades</th><th>Materia Prima</th><th>Resultado</th><th>Tiempo</th></tr>
+    
+                            <tr>
+                                <td style="text-align:center; margin: 50% 0;" rowspan="5">
+                                    <div style="margin-bottom: 50%"><img src="../IMG/Prosesadoras/Cuidado de animales/Yogurtera.png" width="90" height="90" style="margin:0;"/><p style="text-align:center; margin: 0;"><b style="font-size: 13.5px;">Nivel 3 para la Normal</b></p></div>
+    
+                                    <div><img src="../IMG/Prosesadoras/Cuidado de animales/YogurteraGig.png" width="90" height="90" style="margin:0;"/><p style="text-align:center; margin: 0;"><b style="font-size: 13.5px;">Nivel 10 para la Grande</b></p></div>
+                                </td>
+                                
+                                <td style="text-align:center;">
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Normal:</b> 1 <b style="font-size: 13.5px;">=></b> 1</p></div>
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Grande:</b> 2 <b style="font-size: 13.5px;">=></b> 3</p></div>
+                                </td>
+
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Cuidado de animales/Leche.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Leche</b></p></td>
+                                
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Cuidado de animales/Yogur.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Yogur</b></p></td>
+                                
+                                <td style="text-align:center;"><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">2 H</b></p></td>
+                            </tr>
+    
+                            <tr>
+                                <td style="text-align:center;">
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Normal:</b> 1 <b style="font-size: 13.5px;">=></b> 3</p></div>
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Grande:</b> 2 <b style="font-size: 13.5px;">=></b> 9</p></div>
+                                </td>
+
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Cuidado de animales/Leche +.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Leche +</b></p></td>
+                                
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Cuidado de animales/Yogur.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Yogur</b></p></td>
+                                
+                                <td style="text-align:center;"><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">2 H</b></p></td>
+                            </tr>
+    
+                            <tr>
+                                <td style="text-align:center;">
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Normal:</b> 1 <b style="font-size: 13.5px;">=></b> 1</p></div>
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Grande:</b> 2 <b style="font-size: 13.5px;">=></b> 3</p></div>
+                                </td>
+                                
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Cuidado de animales/Leche de búfala.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Leche de búfala</b></p></td>
+                                
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Cuidado de animales/Yogur.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Yogur</b></p></td>
+                                
+                                <td style="text-align:center;"><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">2 H</b></p></td>
+                            </tr>
+    
+                            <tr>
+                                <td style="text-align:center;">
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Normal:</b> 1 <b style="font-size: 13.5px;">=></b> 3</p></div>
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Grande:</b> 2 <b style="font-size: 13.5px;">=></b> 9</p></div>
+                                </td>
+
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Cuidado de animales/Leche de búfala +.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Leche de búfala +</b></p></td>
+                                
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Cuidado de animales/Yogur.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Yogur</b></p></td>
+                                
+                                <td style="text-align:center;"><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">2 H</b></p></td>
+                            </tr>
+    
+                            <tr>
+                                <td style="text-align:center;">
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Normal:</b> 1 <b style="font-size: 13.5px;">=></b> 1</p></div>
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Grande:</b> 2 <b style="font-size: 13.5px;">=></b> 3</p></div>
+                                </td>
+                                
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Cuidado de animales/Leche de cabra.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Leche de cabra</b></p></td>
+                                
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Cuidado de animales/Yogur.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Yogur</b></p></td>
+                                
+                                <td style="text-align:center;"><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">2 H</b></p></td>
+                            </tr>
+    
+                            <tr>
+                                <td style="text-align:center;">
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Normal:</b> 1 <b style="font-size: 13.5px;">=></b> 3</p></div>
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Grande:</b> 2 <b style="font-size: 13.5px;">=></b> 9</p></div>
+                                </td>
+
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Cuidado de animales/Leche de cabra +.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Leche de cabra +</b></p></td>
+                                
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Cuidado de animales/Yogur.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Yogur</b></p></td>
+                                
+                                <td style="text-align:center;"><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">2 H</b></p></td>
+                            </tr>
+                        </table>
+                    </details>
+
+                    <details>  <!-- Mantequera -->
+                        <summary style="margin-left: 40px;" class="sec">Mantequera</summary>
+
+                        <p>La Mantequera es una maquina diseñada para convertir todas las leches en mantequilla, las vacas, búfala y cabas los puedes conseguir comprandolas en la tienda.</p> 
+
+                        <table class="data">
+                            <tr><th style="width: 130px;" rowspan="2">Nivel necesario</th><th colspan="4">Función</th></tr>
+                            <tr><th style="width: 160px;">Cantidades</th><th>Materia Prima</th><th>Resultado</th><th>Tiempo</th></tr>
+    
+                            <tr>
+                                <td style="text-align:center; margin: 50% 0;" rowspan="5">
+                                    <div style="margin-bottom: 50%"><img src="../IMG/Prosesadoras/Cuidado de animales/mantequera.png" width="90" height="90" style="margin:0;"/><p style="text-align:center; margin: 0;"><b style="font-size: 13.5px;">Nivel 4 para la Normal</b></p></div>
+    
+                                    <div><img src="../IMG/Prosesadoras/Cuidado de animales/mantequeraGig.png" width="90" height="90" style="margin:0;"/><p style="text-align:center; margin: 0;"><b style="font-size: 13.5px;">Nivel 10 para la Grande</b></p></div>
+                                </td>
+                                
+                                <td style="text-align:center;">
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Normal:</b> 1 <b style="font-size: 13.5px;">=></b> 1</p></div>
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Grande:</b> 2 <b style="font-size: 13.5px;">=></b> 3</p></div>
+                                </td>
+
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Cuidado de animales/Leche.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Leche</b></p></td>
+                                
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Cuidado de animales/Mantequilla.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Mantequilla</b></p></td>
+                                
+                                <td style="text-align:center;"><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">2 H</b></p></td>
+                            </tr>
+    
+                            <tr>
+                                <td style="text-align:center;">
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Normal:</b> 1 <b style="font-size: 13.5px;">=></b> 3</p></div>
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Grande:</b> 2 <b style="font-size: 13.5px;">=></b> 9</p></div>
+                                </td>
+
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Cuidado de animales/Leche +.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Leche +</b></p></td>
+                                
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Cuidado de animales/Mantequilla.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Mantequilla</b></p></td>
+                                
+                                <td style="text-align:center;"><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">2 H</b></p></td>
+                            </tr>
+    
+                            <tr>
+                                <td style="text-align:center;">
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Normal:</b> 1 <b style="font-size: 13.5px;">=></b> 1</p></div>
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Grande:</b> 2 <b style="font-size: 13.5px;">=></b> 3</p></div>
+                                </td>
+                                
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Cuidado de animales/Leche de búfala.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Leche de búfala</b></p></td>
+                                
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Cuidado de animales/Mantequilla.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Mantequilla</b></p></td>
+                                
+                                <td style="text-align:center;"><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">2 H</b></p></td>
+                            </tr>
+    
+                            <tr>
+                                <td style="text-align:center;">
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Normal:</b> 1 <b style="font-size: 13.5px;">=></b> 3</p></div>
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Grande:</b> 2 <b style="font-size: 13.5px;">=></b> 9</p></div>
+                                </td>
+
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Cuidado de animales/Leche de búfala +.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Leche de búfala +</b></p></td>
+                                
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Cuidado de animales/Mantequilla.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Mantequilla</b></p></td>
+                                
+                                <td style="text-align:center;"><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">2 H</b></p></td>
+                            </tr>
+    
+                            <tr>
+                                <td style="text-align:center;">
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Normal:</b> 1 <b style="font-size: 13.5px;">=></b> 2</p></div>
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Grande:</b> 2 <b style="font-size: 13.5px;">=></b> 6</p></div>
+                                </td>
+                                
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Cuidado de animales/Leche de cabra.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Leche de cabra</b></p></td>
+                                
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Cuidado de animales/Mantequilla.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Mantequilla</b></p></td>
+                                
+                                <td style="text-align:center;"><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">2 H</b></p></td>
+                            </tr>
+    
+                            <tr>
+                                <td style="text-align:center;">
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Normal:</b> 1 <b style="font-size: 13.5px;">=></b> 6</p></div>
+                                    <div><p style="text-align:center;"><b style="font-size: 13.5px;">Grande:</b> 2 <b style="font-size: 13.5px;">=></b> 18</p></div>
+                                </td>
+
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Cuidado de animales/Leche de cabra +.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Leche de cabra +</b></p></td>
+                                
+                                <td style="text-align:center;"><img src="../IMG/Prosesadoras/Cuidado de animales/Mantequilla.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Mantequilla</b></p></td>
+                                
+                                <td style="text-align:center;"><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">2 H</b></p></td>
+                            </tr>
+                        </table>
+                    </details>
+
+
+
+
                     <table class="data" style="margin-bottom: 30px;"> 
         
                         <tr><th style="width: 160px;">Nombre</th><th style="width: 100px;" rowspan="2">Nivel necesario</th><th>Proceso de convercion</th></tr>
-        
-                        <tr> <!-- Mayonesera -->
-                            <td style="text-align:center;"><img src="../IMG/Prosesadoras/mayonesera.png" width="90" height="90" style="margin:0;"/><p style="text-align:center; margin: 0;"><b>Mayonesera</b></p></td><td>Nivel 2</td>
-                            <td><ul class="horario">
-                                <li class="gustos">1 Huevo <b>=></b> 1 Mayonesa <b>dura</b> 2H.</li>
-                                <li class="gustos">1 Huevo + <b>=></b> 3 Mayonesa <b>dura</b> 2H.</li>
-                                <li class="gustos">1 Huevo de seda <b>=></b> 2 Mayonesa <b>dura</b> 2H.</li>
-                                <li class="gustos">1 Huevo de seda + <b>=></b> 6 Mayonesa <b>dura</b> 2H.</li>
-                            </ul></td>
-                        </tr>
-        
-                        <tr> <!-- Mayonesera Gigante -->
-                            <td style="text-align:center;"><img src="../IMG/Prosesadoras/mayoneseraGig.png" width="90" height="90" style="margin:0;"/><p style="text-align:center; margin: 0;"><b>Mayonesera gigante</b></p></td><td>Nivel 10</td>
-                            <td><ul class="horario">
-                                <li class="gustos">2 Huevo <b>=></b> 3 Mayonesa <b>dura</b> 2H.</li>
-                                <li class="gustos">2 Huevo + <b>=></b> 9 Mayonesa <b>dura</b> 2H.</li>
-                                <li class="gustos">2 Huevo de seda <b>=></b> 6 Mayonesa <b>dura</b> 2H.</li>
-                                <li class="gustos">2 Huevo de seda + <b>=></b> 18 Mayonesa <b>dura</b> 2H.</li>
-                            </ul></td>
-                        </tr>
-        
-                        <tr> <!-- Yogurtera -->
-                            <td style="text-align:center;"><img src="../IMG/Prosesadoras/Yogurtera.png" width="90" height="90" style="margin:0;"/><p style="text-align:center; margin: 0;"><b>Yogurtera</b></p></td><td>Nivel 3</td>
-                            <td><ul class="horario">
-                                <li class="gustos">1 Leche <b>=></b> 1 Yogur <b>dura</b> 2H.</li>
-                                <li class="gustos">1 Leche + <b>=></b> 3 Yogur <b>dura</b> 2H.</li>
-                                <li class="gustos">1 Leche de búfala <b>=></b> 1 Yogur <b>dura</b> 2H.</li>
-                                <li class="gustos">1 Leche de búfala + <b>=></b> 3 Yogur <b>dura</b> 2H.</li>
-                                <li class="gustos">1 Leche de cabra <b>=></b> 1 Yogur <b>dura</b> 2H.</li>
-                                <li class="gustos">1 Leche de cabra + <b>=></b> 3 Yogur <b>dura</b> 2H.</li>
-                            </ul></td>
-                        </tr>
-        
-                        <tr> <!-- Yogurtera Gigante -->
-                            <td style="text-align:center;"><img src="../IMG/Prosesadoras/YogurteraGig.png" width="90" height="90" style="margin:0;"/><p style="text-align:center; margin: 0;"><b>Yogurtera gigante</b></p></td><td>Nivel 10</td>
-                            <td><ul class="horario">
-                                <li class="gustos">2 Leche <b>=></b> 3 Yogur <b>dura</b> 2H.</li>
-                                <li class="gustos">2 Leche + <b>=></b> 9 Yogur <b>dura</b> 2H.</li>
-                                <li class="gustos">2 Leche de búfala <b>=></b> 3 Yogur <b>dura</b> 2H.</li>
-                                <li class="gustos">2 Leche de búfala + <b>=></b> 9 Yogur <b>dura</b> 2H.</li>
-                                <li class="gustos">2 Leche de cabra <b>=></b> 3 Yogur <b>dura</b> 2H.</li>
-                                <li class="gustos">2 Leche de cabra + <b>=></b> 9 Yogur <b>dura</b> 2H.</li>
-                            </ul></td>
-                        </tr>
-        
-                        <tr> <!-- Mantequera -->
-                            <td style="text-align:center;"><img src="../IMG/Prosesadoras/mantequera.png" width="90" height="90" style="margin:0;"/><p style="text-align:center; margin: 0;"><b>Mantequera</b></p></td><td>Nivel 4</td>
-                            <td><ul class="horario">
-                                <li class="gustos">1 Leche <b>=></b> 1 Mantequilla <b>dura</b> 2H.</li>
-                                <li class="gustos">1 Leche + <b>=></b> 3 Mantequilla <b>dura</b> 2H.</li>
-                                <li class="gustos">1 Leche de búfala <b>=></b> 1 Mantequilla <b>dura</b> 2H.</li>
-                                <li class="gustos">1 Leche de búfala + <b>=></b> 3 Mantequilla <b>dura</b> 2H.</li>
-                                <li class="gustos">1 Leche de cabra <b>=></b> 2 Mantequilla <b>dura</b> 2H.</li>
-                                <li class="gustos">1 Leche de cabra + <b>=></b> 6 Mantequilla <b>dura</b> 2H.</li>
-                            </ul></td>
-                        </tr>
-        
-                        <tr> <!-- Mantequera Gigante -->
-                            <td style="text-align:center;"><img src="../IMG/Prosesadoras/mantequeraGig.png" width="90" height="90" style="margin:0;"/><p style="text-align:center; margin: 0;"><b>Mantequera gigante</b></p></td><td>Nivel 10</td>
-                            <td><ul class="horario">
-                                <li class="gustos">2 Leche <b>=></b> 3 Mantequilla <b>dura</b> 2H.</li>
-                                <li class="gustos">2 Leche + <b>=></b> 9 Mantequilla <b>dura</b> 2H.</li>
-                                <li class="gustos">2 Leche de búfala <b>=></b> 3 Mantequilla <b>dura</b> 2H.</li>
-                                <li class="gustos">2 Leche de búfala + <b>=></b> 9 Mantequilla <b>dura</b> 2H.</li>
-                                <li class="gustos">2 Leche de cabra <b>=></b> 6 Mantequilla <b>dura</b> 2H.</li>
-                                <li class="gustos">2 Leche de cabra + <b>=></b> 18 Mantequilla <b>dura</b> 2H.</li>
-                            </ul></td>
-                        </tr>
         
                         <tr> <!-- Procesadora de lana -->
                             <td style="text-align:center;"><img src="../IMG/Prosesadoras/ProLana.png" width="90" height="90" style="margin:0;"/><p style="text-align:center; margin: 0;"><b>Procesadora de lana</b></p></td><td>Nivel 4</td>
@@ -1391,7 +2552,7 @@
                         </tr>
         
                         <tr> <!-- Procesadora de lana Gigante -->
-                            <td style="text-align:center;"><img src="../IMG/Prosesadoras/ProLanaGig.png" width="90" height="90" style="margin:0;"/><p style="text-align:center; margin: 0;"><b>Procesadora de lana gigante</b></p></td><td>Nivel 10</td>
+                            <td style="text-align:center;"><img src="../IMG/Prosesadoras/ProLanaGig.png" width="90" height="90" style="margin:0;"/><p style="text-align:center; margin: 0;"><b>Procesadora de lana gigante</b></p></td><td>Nivel 9</td>
                             <td><ul class="horario">
                                 <li class="gustos">1 Lana <b>=></b> 3 Ovillo de lana <b>dura</b> 4H.</li>
                                 <li class="gustos">1 Lana + <b>=></b> 9 Ovillo de lana <b>dura</b> 4H.</li>
@@ -1442,7 +2603,7 @@
                         </tr>
         
                         <tr> <!-- Tejedora Gigante -->
-                            <td style="text-align:center;"><img src="../IMG/Prosesadoras/tejedoraGig.png" width="90" height="90" style="margin:0;"/><p style="text-align:center; margin: 0;"><b>Tejedora gigante</b></p></td><td>Nivel 10</td>
+                            <td style="text-align:center;"><img src="../IMG/Prosesadoras/tejedoraGig.png" width="90" height="90" style="margin:0;"/><p style="text-align:center; margin: 0;"><b>Tejedora gigante</b></p></td><td>Nivel 9</td>
                             <td><ul class="horario">
                                 <li class="gustos">4 Ovillo de lana <b>=></b> 3 Tela de lana <b>dura</b> 6H.</li>
                                 <li class="gustos">4 Ovillo de lana (oveja Suffolk) <b>=></b> 3 Tela lana (oveja Suffolk) <b>dura</b> 6H.</li>
