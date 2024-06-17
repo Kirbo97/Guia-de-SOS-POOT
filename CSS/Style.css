@@ -411,7 +411,7 @@ tr:nth-child(even) {background-color: #FAFAFA;}
 
 /* se crea la clase "box_menu" para que se ocupe de posisionar el contenido de las opciones*/
 .box_menu_lugares {
-    max-width:180px;
+    max-width:200px;
     height:auto; 
     display:inline-block; 
     margin:12px 20px;
