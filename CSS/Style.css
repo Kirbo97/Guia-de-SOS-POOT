@@ -409,6 +409,17 @@ tr:nth-child(even) {background-color: #FAFAFA;}
 /* La etiqueta "img" con la clase "box_menu" para que se ocupe del tamaño de la imagen*/
 .box_menu img { max-width:100%; height:auto; }
 
+/* se crea la clase "box_menu" para que se ocupe de posisionar el contenido de las opciones*/
+.box_menu_lugares {
+    max-width:180px;
+    height:auto; 
+    display:inline-block; 
+    margin:12px 20px;
+}
+
+/* La etiqueta "img" con la clase "box_menu" para que se ocupe del tamaño de la imagen*/
+.box_menu_lugares img { max-width:100%; height:auto; }
+
 /* se crea la clase "box_inicio" para que se ocupe de posisionar el contenido de las opciones*/
 .box_inicio {
     height:auto; 
@@ -501,11 +512,26 @@ tr:nth-child(even) {background-color: #FAFAFA;}
     font-size: 3em;
 }
 
+/**/
+.pri:before  {
+    content: '\1F338'; /*(La guion sera un cereso)*/
+    font-size: 1.5em;
+}
+
+.ve:before  {
+    content: '\1F31E'; /*(La guion sera un sol)*/
+    font-size: 1.5em;
+}
+
+.ot:before  {
+    content: '\1F342'; /*(La guion sera una hoja)*/
+    font-size: 1.5em;
+}
+
 .in:before  { 
     font-size: 1.5em; 
     content: '\26C4'; /*(La guion sera una muñeco de nieve)*/
 }
-
 /* Estas clases tienen la propiedad "before" (Antes) para que el guion tenga un icono de eventos */
 .cumpleaño:before  {
     content: '\1F382'; /*(La guion sera un regalo)*/
@@ -514,37 +540,6 @@ tr:nth-child(even) {background-color: #FAFAFA;}
 
 .evento:before  {
     content: '\1F388'; /*(La guion sera un globo)*/
-    font-size: 3em;
-}
-
-/* Estas clases tienen la propiedad "before" (Antes) para que el guion tenga un icono de corazon con color */
-.cna:before  {
-    content: '\1F9E1'; /*(La guion sera un corazon naranja)*/
-    font-size: 3em;
-}
-
-.cam:before  {
-    content: '\1F49B'; /*(La guion sera un corazon amarillo)*/
-    font-size: 3em;
-}
-
-.caz:before  {
-    content: '\1F499'; /*(La guion sera un corazon azul)*/
-    font-size: 3em;
-}
-
-.cmo:before  {
-    content: '\1F49C'; /*(La guion sera un corazon morado)*/
-    font-size: 3em;
-}
-
-.cne:before  {
-    content: '\1F5A4'; /*(La guion sera un corazon negro)*/
-    font-size: 3em;
-}
-
-.cbla:before  {
-    content: '\1F90D'; /*(La guion sera un corazon blanco)*/
     font-size: 3em;
 }
 
