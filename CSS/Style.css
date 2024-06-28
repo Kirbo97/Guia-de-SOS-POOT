@@ -17,15 +17,15 @@
     details.esp { width: 409.6px !important;}
 
     th.hora { width: 70px !important; }
-    
-    ul.sep2 { 
-        padding: 0 0 0 40px !important;
-        margin: 0 !important;
+
+    .festival_1 {
+        top: 15.7em !important;
+        left: 67.85em !important;
     }
-    
-    ul.sep3 { 
-        padding: 0 4px 0 40px !important;
-        margin: 0 !important;
+
+    .festival_2 {
+        top: 12.4em !important;
+        left: 67.85em !important;
     }
 
     nav{padding: 25px 8px 0 8px !important; }
@@ -44,18 +44,13 @@
         margin: 4px 0 4px 0 !important;
         text-align: left !important;
     }
+
+    .festival_1 {
+        top: 110px; 
+        left: 88.2em !important;
+    }
     
     details.esp { width: 409.6px !important;}
-    
-    ul.sep2 { 
-        padding: 0 0 0 40px !important;
-        margin: 0 !important;
-    }
-    
-    ul.sep3 { 
-        padding: 0 4px 0 40px !important;
-        margin: 0 !important;
-    }
 
     nav{padding: 25px 8px 0 8px !important; }
     
@@ -94,12 +89,17 @@ dialog {
   }
 
 .btn {
-    border: none; 
+    position: fixed; /* le indico que el elemento sea como un bloque (igual que la etiqueta "div") flexible y no se crea ningún espacio para el elemento en el diseño de la página (segun como este el html). ademas cada elemento se debe definir en donde se posisiona*/
     color: white; 
     font-weight: bold;  /* ajusto el formato del texto para que tenga negrita*/
     padding: 8px 12px; 
     cursor: pointer; 
-    border-radius: 5px; 
+    border-radius: 20px; 
+}
+
+.festival_1 {
+    top: 110px; 
+    left: 88.2em;
 }
 
 .close {background-color: #f44336;} 
