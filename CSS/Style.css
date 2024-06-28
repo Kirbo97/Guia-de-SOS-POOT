@@ -88,7 +88,7 @@ nav .pos-ini {
 /*  Diseños generales  */
 /* ******************* */
 
-dialog:modal {
+dialog {
     border: 3px solid #99d714;
     padding: 0;
   }
@@ -97,7 +97,7 @@ dialog:modal {
     border: none; 
     color: white; 
     font-weight: bold;  /* ajusto el formato del texto para que tenga negrita*/
-    padding: 10px 12px; 
+    padding: 8px 12px; 
     cursor: pointer; 
     border-radius: 5px; 
 }
@@ -551,6 +551,7 @@ tr:nth-child(even) {background-color: #FAFAFA;}
 }
 /* Estas clases tienen la propiedad "before" (Antes) para que el guion tenga un icono de eventos */
 .cumpleaño:before  {
+    cursor: pointer;
     content: '\1F382'; /*(La guion sera un regalo)*/
     font-size: 3em;
 }
