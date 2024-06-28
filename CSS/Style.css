@@ -88,6 +88,23 @@ nav .pos-ini {
 /*  Diseños generales  */
 /* ******************* */
 
+dialog:modal {
+    border: 3px solid #99d714;
+    padding: 0;
+  }
+
+.btn {
+    border: none; 
+    color: white; 
+    font-weight: bold;  /* ajusto el formato del texto para que tenga negrita*/
+    padding: 10px 12px; 
+    cursor: pointer; 
+    border-radius: 5px; 
+}
+
+.close {background-color: #f44336;} 
+.close:hover {background: #da190b;}
+
 /* La etiqueta "html" tendra cierta carasteristica */
 html {
     font-size:100%;
@@ -539,6 +556,7 @@ tr:nth-child(even) {background-color: #FAFAFA;}
 }
 
 .evento:before  {
+    cursor: pointer;
     content: '\1F388'; /*(La guion sera un globo)*/
     font-size: 3em;
 }
