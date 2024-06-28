@@ -19,12 +19,12 @@
     th.hora { width: 70px !important; }
 
     .festival_1 {
-        top: 15.7em !important;
+        top: 27.7em !important;
         left: 67.85em !important;
     }
 
     .festival_2 {
-        top: 12.4em !important;
+        top: 13.4em !important;
         left: 67.85em !important;
     }
 
@@ -105,6 +105,16 @@ dialog {
 .festival_2 {
     top: 6em; 
     left: 88.2em;
+}
+
+.festival_3 {
+    top: 0.5em; 
+    left: 89.5em;
+}
+
+.festival_4 {
+    top: 8.5em; 
+    left: 88.25em;
 }
 
 .close {background-color: #f44336;} 
