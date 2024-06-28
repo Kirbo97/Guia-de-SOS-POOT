@@ -27,7 +27,7 @@
 
     .btn { left: 32.82em !important; }
     
-    .modal_calendario { height: 65em !important;}
+    .modal_calendario { height: 70em !important;}
 
     .festival_1,.festival_2,.festival_3,.festival_4,
     .festival_5,.festival_6,.festival_7,.festival_8 { top: 15.7em !important; }
@@ -91,6 +91,8 @@ dialog {
     border: 3px solid #99d714;
     padding: 0;
 }
+
+dialog p { font-size: 17px; }
 
 .modal_calendario { width: 900px; }
 
