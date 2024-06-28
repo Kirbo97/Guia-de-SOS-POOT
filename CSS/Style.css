@@ -18,6 +18,11 @@
 
     th.hora { width: 70px !important; }
 
+    .img_festival {
+        width: 380px !important;
+         height: 340px !important;
+    }
+
     .btn { left: 32.82em !important; }
     
     .modal_calendario { height: 65em !important;}
