@@ -90,6 +90,7 @@ nav .pos-ini {
 dialog {
     border: 3px solid #99d714;
     padding: 0;
+    margin: auto;
 }
 
 dialog p { font-size: 17px; }
