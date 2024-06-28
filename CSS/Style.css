@@ -98,7 +98,12 @@ dialog {
 }
 
 .festival_1 {
-    top: 110px; 
+    top: 8.2em; 
+    left: 88.2em;
+}
+
+.festival_2 {
+    top: 6em; 
     left: 88.2em;
 }
 
