@@ -18,13 +18,12 @@
 
     th.hora { width: 70px !important; }
 
-    .btn { left: 32.85em !important; }
+    .btn { left: 32.82em !important; }
     
     .modal_calendario { height: 65em !important;}
 
-    .festival_1 { top: 27.7em !important; }
-
-    .festival_2 { top: 13.4em !important; }
+    .festival_1,.festival_2,.festival_3,.festival_4,
+    .festival_5,.festival_6,.festival_7,.festival_8 { top: 15.7em !important; }
 
     nav{padding: 25px 8px 0 8px !important; }
     
