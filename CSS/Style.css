@@ -20,17 +20,11 @@
 
     .btn { left: 32.85em !important; }
     
-    dialog {
-        height: 30em;
-    }
+    .modal_calendario { height: 65em !important;}
 
-    .festival_1 {
-        top: 27.7em !important;
-    }
+    .festival_1 { top: 27.7em !important; }
 
-    .festival_2 {
-        top: 13.4em !important;
-    }
+    .festival_2 { top: 13.4em !important; }
 
     nav{padding: 25px 8px 0 8px !important; }
     
@@ -96,7 +90,7 @@ dialog {
 
 .btn {
     position: fixed; /* le indico que el elemento sea como un bloque (igual que la etiqueta "div") flexible y no se crea ningún espacio para el elemento en el diseño de la página (segun como este el html). ademas cada elemento se debe definir en donde se posisiona*/
-    left: 42.8em;
+    left: 42.5em;
     color: white; 
     font-size: 28px;
     font-weight: bold;  /* ajusto el formato del texto para que tenga negrita*/
@@ -110,7 +104,7 @@ dialog {
      height: 320px; 
 }
 
-.btn_img_grande { top: 2.5em; }
+.btn_img_grande { top: 2.2em; }
 
 
 .festival_1 { top: 3.8em; }
