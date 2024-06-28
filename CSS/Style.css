@@ -18,6 +18,8 @@
 
     th.hora { width: 70px !important; }
 
+    .btn_img_grande { top: 4.2em !important; }
+
     .img_festival {
         width: 380px !important;
          height: 340px !important;
