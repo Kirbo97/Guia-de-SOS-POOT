@@ -219,7 +219,6 @@ p { text-align: justify; }
     border-radius:20px;
     box-sizing:border-box;
     font-family: 'Helvetica', 'Arial', sans-serif;
-    font-size: 1em;
     height:100%;
     line-height: 1.5em;
     margin:50px 50px; /*(arriba y abajo │ derecha y izquierda)*/
