@@ -25,8 +25,8 @@
     }
 
     .img_cumpleaños {
-        width: 200px !important;
-         height: 200px !important;
+        width: 190px !important;
+         height: 190px !important;
     }
 
     nav{padding: 25px 8px 0 8px !important; }
@@ -104,8 +104,8 @@ dialog {
 }
 
 .img_cumpleaños {
-    width: 200px;
-    height: 200px;
+    width: 190px;
+    height: 190px;
 }
 
 .close {background-color: #f44336;} 
