@@ -7,7 +7,6 @@
 /* defino que solo altere estos elementos cuando la pantalla del dispositivo sea un telefono */
 @media screen and (max-width:980px){
     h1 { font-size: 2.18em !important; }
-    header{ height: 76px !important; }
 
     li.gustos { 
         margin: 4px 0 4px 0 !important;
@@ -22,7 +21,7 @@
 
     .img_festival {
         width: 370px !important;
-         height: 340px !important;
+         height: 338px !important;
     }
 
     nav{padding: 25px 8px 0 8px !important; }
@@ -35,7 +34,6 @@
 /* defino que solo altere estos elementos cuando la pantalla del dispositivo sea un telefono y que este en vertical*/
 @media screen and (max-height:600px) and (orientation:landscape){    
     h1 { font-size: 2.18em !important; }
-    header{ height: 76px !important;  }
 
     li.gustos { 
         margin: 4px 0 4px 0 !important;
