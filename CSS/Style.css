@@ -13,11 +13,11 @@
         text-align: left !important;
     }
 
-    dialog h3 { font-size: 28px !important; }
-
     details.esp { width: 409.6px !important;}
 
     th.hora { width: 70px !important; }
+
+    dialog h3 { font-size: 29px !important; }
 
     .img_festival {
         width: 370px !important;
