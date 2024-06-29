@@ -24,6 +24,11 @@
          height: 338px !important;
     }
 
+    .img_cumpleaños {
+        width: 200px !important;
+         height: 200px !important;
+    }
+
     nav{padding: 25px 8px 0 8px !important; }
     
     nav .pos-ini { margin: 0 0 0 2.69em !important; }
@@ -96,6 +101,11 @@ dialog {
 .img_festival {
     width: 320px;
      height: 320px; 
+}
+
+.img_cumpleaños {
+    width: 200px;
+    height: 200px;
 }
 
 .close {background-color: #f44336;} 
