@@ -14,6 +14,10 @@
         text-align: left !important;
     }
 
+    dialog p { font-size: 16px !important; }
+
+    dialog h3 { font-size: 22px !important; }
+
     details.esp { width: 409.6px !important;}
 
     th.hora { width: 70px !important; }
@@ -82,6 +86,8 @@ dialog {
 }
 
 dialog p { font-size: 17px; }
+
+
 
 .modal_calendario { width: 900px; }
 
