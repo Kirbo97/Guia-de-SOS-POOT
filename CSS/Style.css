@@ -203,6 +203,24 @@ p { text-align: justify; }
     z-index:0;
 }
 
+
+
+/* controlar los pasos intermedios en una secuencia de animación */
+@keyframes fade {
+    100% { opacity: 0; } /* Imagen 2 completamente visible al final */
+    50% { opacity: 1; } /* Imagen 2 completamente visible a la mitad de la animación */
+    10% { opacity: 0; } /* Imagen 2 completamente transparente al inicio */
+    0% { opacity: 0; } /* Imagen 2 completamente transparente al inicio */
+}
+
+/* La etiqueta img cdenntro del contenedor con la clase "image-container" tendra la siguientes caracteristicas */
+.image-container img {
+    position: absolute;
+    top: 14.65em; right: 72.5px;
+    animation: fade 5s infinite; /* Repetir la animación indefinidamente */
+    transition: opacity 0.8s ease; /* Transición suave de opacidad */
+}
+
 /* evitar que los titulos se expandan fuera del contenido */
 h1 {
     color: #093;
