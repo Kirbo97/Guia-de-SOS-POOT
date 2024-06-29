@@ -18,14 +18,11 @@
 
     th.hora { width: 70px !important; }
 
-    .btn_img_grande { top: 4.2em !important; }
-
     .img_festival {
         width: 380px !important;
          height: 340px !important;
     }
 
-    
     .modal_calendario { height: 70em !important;}
 
     nav{padding: 25px 8px 0 8px !important; }
@@ -45,11 +42,6 @@
         text-align: left !important;
     }
 
-    .festival_1 {
-        top: 110px; 
-        left: 88.2em !important;
-    }
-    
     details.esp { width: 409.6px !important;}
 
     nav{padding: 25px 8px 0 8px !important; }
@@ -109,20 +101,6 @@ dialog p { font-size: 17px; }
     width: 320px;
      height: 320px; 
 }
-
-.festival_2 { top: 2.5em; }
-
-.festival_3 { top: 0.8em; }
-
-.festival_4 { top: 3.7em; }
-
-.festival_5 { top: 0.3em; }
-
-.festival_6 { top: 2em; }
-
-.festival_7 { top: 2.8em; }
-
-.festival_8 { top: 3.1em; }
 
 .close {background-color: #f44336;} 
 .close:hover {background: #da190b;}
