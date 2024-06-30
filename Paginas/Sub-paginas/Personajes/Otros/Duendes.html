@@ -75,7 +75,12 @@
                 <details> <!-- Lugar 1 -->
                     <summary class="prin">1) Aldea de los duendes de la tierra</summary>
 
-                    <img src="../../../../IMG/Personajes/Duendes/lugares/ADT.jpg" class="left screenshot" loading="lazy" width="340" height="320"  style="margin: 18px 20px 0 0;"/>
+                    <img src="../../../../IMG/Personajes/Duendes/lugares/ADT.jpg" class="left screenshot" loading="lazy" width="340" height="320"  style="margin: 18px 20px 0 0; cursor: pointer;" onclick="window.modal1.showModal();"/>
+
+                    <dialog id="modal1">
+                        <div><button onclick="window.modal1.close();" class="btn close"de>X</button></div>
+                        <img src="../../../../IMG/Personajes/Duendes/lugares/ADT.jpg" class="center screenshot" title="Aldea de los duendes" loading="lazy" width="835" height="835"  style="margin: 30px"/>
+                    </dialog>
     
                     <p>Una vez que encuentre <b>25 duendes</b>, podrá visitar la <b>Aldea de los duendes de la tierra</b>, donde estos te darán materiales, comida y peces. Cuantos más duendes asignes, más bienes obtendrás y de mayor calidad serán. Asegúrate de visitar la aldea de los duendes de la tierra con frecuencia para recoger recompensas. Los duendes te darán diferentes recompensas por ejemplo: Tocón te dará madera, Pedrusco te dará piedras o minerales y Mimitos comida para tus animales. Intenta probarlos todos.</p>
     
@@ -117,6 +122,13 @@
                         <p>En la aldea viven duende lideres que simbolizan las actividades que realizas en la granja y el jugador puede hablar con el <b>duende Manager</b> en la aldea para poder asignar duendes seguidoresa cada uno de los diferentes duendes lideres. Hay 8 Sprites de recursos en total, pero solo 3 están disponibles desde el principio. Los Sprites disponibles desde el principio son <b>Brizna</b>, <b>Pedrusco</b> y <b>Tocón</b>. Los 5 restantes primero deben desbloquearse en el Santuario.</p>
         
                         <p>Hablar con el <b>duende Manager</b> te permitirá acceder al menú de Gestión de duendes seguidores, donde se pueden asignar <b>duendes Seguidores</b> a cualquiera de los duendes lideres. Cuando se asignan a un duendes seguidor, los duendes Seguidores reunirán elementos para que usted los recopile. Si el número de seguidores es mayor, el numero de recompensas será mayor también. Debes dar más seguidores en función de lo que más te interese conseguir. Ademas hablando con con el jefe duende podra obtener Objetos perdidos y encontrados y la opción de liberar animales.</p>
+
+                        <img src="../../../../IMG/Personajes/Duendes/Gestion de duendes.jpg" class="left screenshot" loading="lazy" width="340" height="320" title="Gestion de duendes" style="margin: 18px 20px 0 0; cursor: pointer;" onclick="window.gestion.showModal();"/>
+
+                        <dialog id="gestion">
+                            <div><button onclick="window.gestion.close();" class="btn close"de>X</button></div>
+                            <img src="../../../../IMG/Personajes/Duendes/Gestion de duendes.jpg" class="center screenshot" title="Gestion de duendes" loading="lazy" width="835" height="835"  style="margin: 30px"/>
+                        </dialog>
     
                         <table class="data">
                             <tr><th style="width: 100px;">Cantidad de seguidores</th><th>Bono de seguidor</th></tr>
@@ -133,6 +145,7 @@
                         </table>
     
                         <p>Se pueden asignar hasta 100 seguidores a cada uno de los duendes seguidores y al hablar con ellos podras recolectar materiales gratuitos diariamente, dichos articulos seran referentes al duende por ejemplo si el duende es de mina recibiras productos de animales. ciertas cantidades de seguidores aumentarán la cantidad de veces que puedes recolectar elementos en un solo día. No puedes recolectar nada a menos que tu bolso tenga suficiente espacio para cada artículo recolectado.</p>
+
                     </details>
 
                     <details> <!-- Monedas de la cosecha -->
@@ -180,70 +193,110 @@
                                     <tr><td style="padding: 4px 0 0 0; text-align:center;" rowspan="11"><img src="../../../../IMG/Personajes/Duendes/espiritu/tocon.png" width="100" height="100" style="margin:0;"/><p style="text-align:center; margin: 0;"><b>Duende Tocon</b></p></td></tr>
             
                                     <tr> <!-- 1 -->
-                                        <td style="text-align:center;">1</td>
-                                        <td style=" display: flex;"><ul class="horario"><li class="gustos" style="font-size: 15px;">Tronco.</li></ul></td>
+                                        <td style="text-align:center;">1</td>                     
+                                        <td style="text-align:center;">
+                                            <div style="justify-content: center; display: flex;">
+                                                <div style="margin: 0 15px;"><img src="../../../../IMG/Prosesadoras/Tala/Tronco.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">1 Tronco</b></p></div>
+                                            </div>
+                                        </td>
                                     </tr>
+
                                     <tr> <!-- 2 -->
-                                        <td style="text-align:center;">2</td>
-                                        <td style=" display: flex;">
-                                            <ul class="horario"><li class="gustos" style="font-size: 15px;">2 Tronco.</li></ul>
-                                            <ul class="horario" style="padding-left: 70px;"><li class="gustos" style="font-size: 15px;">Savia.</li></ul>
+                                        <td style="text-align:center;">2</td>                     
+                                        <td style="text-align:center;">
+                                            <div style="justify-content: center; display: flex;">
+                                                <div style="margin: 0 15px;"><img src="../../../../IMG/Prosesadoras/Tala/Tronco.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">2 Tronco</b></p></div>
+                                                
+                                                <div style="margin: 0 15px;"><img src="../../../../IMG/Otros/Silvestre/Salvia.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">1 Salvia</b></p></div>
+                                            </div>
                                         </td>
                                     </tr>
+
                                     <tr> <!-- 3 -->
-                                        <td style="text-align:center;">3</td>
-                                        <td style=" display: flex;">
-                                            <ul class="horario"><li class="gustos" style="font-size: 15px;">3 Tronco.</li></ul>
-                                            <ul class="horario" style="padding-left: 70px;"><li class="gustos" style="font-size: 15px;">Savia.</li></ul>
+                                        <td style="text-align:center;">3</td>                 
+                                        <td style="text-align:center;">
+                                            <div style="justify-content: center; display: flex;">
+                                                <div style="margin: 0 15px;"><img src="../../../../IMG/Prosesadoras/Tala/Tronco.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">3 Tronco</b></p></div>
+                                                
+                                                <div style="margin: 0 15px;"><img src="../../../../IMG/Otros/Silvestre/Salvia.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">1 Salvia</b></p></div>
+                                            </div>
                                         </td>
                                     </tr>
+
                                     <tr> <!-- 4 -->
-                                        <td style="text-align:center;">4</td>
-                                        <td style=" display: flex;">
-                                            <ul class="horario"><li class="gustos" style="font-size: 15px;">4 Tronco.</li></ul>
-                                            <ul class="horario" style="padding-left: 70px;"><li class="gustos" style="font-size: 15px;">Tronco Sólido.</li></ul>
+                                        <td style="text-align:center;">4</td>                 
+                                        <td style="text-align:center;">
+                                            <div style="justify-content: center; display: flex;">
+                                                <div style="margin: 0 15px;"><img src="../../../../IMG/Prosesadoras/Tala/Tronco.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">4 Tronco</b></p></div>
+                                                
+                                                <div style="margin: 0 15px;"><img src="../../../../IMG/Prosesadoras/Tala/Tronco sólido.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">1 Tronco sólido</b></p></div>
+                                            </div>
                                         </td>
                                     </tr>
+
                                     <tr> <!-- 5 -->
                                         <td style="text-align:center;">5</td>
-                                        <td style=" display: flex;">
-                                            <ul class="horario"><li class="gustos" style="font-size: 15px;">5 Tronco.</li></ul>
-                                            <ul class="horario" style="padding-left: 70px;"><li class="gustos" style="font-size: 15px;">2 Tronco Sólido.</li></ul>
+                                        <td style="text-align:center;">
+                                            <div style="justify-content: center; display: flex;">
+                                                <div style="margin: 0 15px;"><img src="../../../../IMG/Prosesadoras/Tala/Tronco.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">5 Tronco</b></p></div>
+                                                
+                                                <div style="margin: 0 15px;"><img src="../../../../IMG/Prosesadoras/Tala/Tronco sólido.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">2 Tronco sólido</b></p></div>
+                                            </div>
                                         </td>
                                     </tr>
+
                                     <tr> <!-- 6 -->
                                         <td style="text-align:center;">6</td>
-                                        <td style=" display: flex;">
-                                            <ul class="horario"><li class="gustos" style="font-size: 15px;">3 Tronco sólido.</li></ul>
-                                            <ul class="horario" style="padding-left: 70px;"><li class="gustos" style="font-size: 15px;">Tronco flexible.</li></ul>
+                                        <td style="text-align:center;">
+                                            <div style="justify-content: center; display: flex;">
+                                                <div style="margin: 0 15px;"><img src="../../../../IMG/Prosesadoras/Tala/Tronco sólido.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">3 Tronco sólido</b></p></div>
+                                                
+                                                <div style="margin: 0 15px;"><img src="../../../../IMG/Prosesadoras/Tala/Tronco flexible.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">1 Tronco flexible</b></p></div>
+                                            </div>
                                         </td>
                                     </tr>
+
                                     <tr> <!-- 7 -->
                                         <td style="text-align:center;">7</td>
-                                        <td style=" display: flex;">
-                                            <ul class="horario"><li class="gustos" style="font-size: 15px;">4 Tronco sólido.</li></ul>
-                                            <ul class="horario" style="padding-left: 70px;"><li class="gustos" style="font-size: 15px;">2 Tronco flexible.</li></ul>
+                                        <td style="text-align:center;">
+                                            <div style="justify-content: center; display: flex;">
+                                                <div style="margin: 0 15px;"><img src="../../../../IMG/Prosesadoras/Tala/Tronco sólido.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">4 Tronco sólido</b></p></div>
+                                                
+                                                <div style="margin: 0 15px;"><img src="../../../../IMG/Prosesadoras/Tala/Tronco flexible.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">2 Tronco flexible</b></p></div>
+                                            </div>
                                         </td>
                                     </tr>
+
                                     <tr> <!-- 8 -->
                                         <td style="text-align:center;">8</td>
-                                        <td style=" display: flex;">
-                                            <ul class="horario"><li class="gustos" style="font-size: 15px;">3 Tronco flexible.</li></ul>
-                                            <ul class="horario" style="padding-left: 70px;"><li class="gustos" style="font-size: 15px;">Tronco resistente.</li></ul>
+                                        <td style="text-align:center;">
+                                            <div style="justify-content: center; display: flex;">
+                                                <div style="margin: 0 15px;"><img src="../../../../IMG/Prosesadoras/Tala/Tronco flexible.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">3 Tronco flexible</b></p></div>
+                                                
+                                                <div style="margin: 0 15px;"><img src="../../../../IMG/Prosesadoras/Tala/Tronco resistente.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">1 Tronco resistente</b></p></div>
+                                            </div>
                                         </td>
                                     </tr>
+
                                     <tr> <!-- 9 -->
                                         <td style="text-align:center;">9</td>
-                                        <td style=" display: flex;">
-                                            <ul class="horario"><li class="gustos" style="font-size: 15px;">4 Tronco flexible.</li></ul>
-                                            <ul class="horario" style="padding-left: 70px;"><li class="gustos" style="font-size: 15px;">2 Tronco resistente.</li></ul>
+                                        <td style="text-align:center;">
+                                            <div style="justify-content: center; display: flex;">
+                                                <div style="margin: 0 15px;"><img src="../../../../IMG/Prosesadoras/Tala/Tronco flexible.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">4 Tronco flexible</b></p></div>
+                                                
+                                                <div style="margin: 0 15px;"><img src="../../../../IMG/Prosesadoras/Tala/Tronco resistente.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">2 Tronco resistente</b></p></div>
+                                            </div>
                                         </td>
                                     </tr>
+
                                     <tr> <!-- 10 -->
                                         <td style="text-align:center;">10</td>
-                                        <td style=" display: flex;">
-                                            <ul class="horario"><li class="gustos" style="font-size: 15px;">3 Tronco resistente.</li></ul>
-                                            <ul class="horario" style="padding-left: 70px;"><li class="gustos" style="font-size: 15px;">Tronco quimera.</li></ul>
+                                        <td style="text-align:center;">
+                                            <div style="justify-content: center; display: flex;">
+                                                <div style="margin: 0 15px;"><img src="../../../../IMG/Prosesadoras/Tala/Tronco resistente.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">3 Tronco resistente</b></p></div>
+                                                
+                                                <div style="margin: 0 15px;"><img src="../../../../IMG/Prosesadoras/Tala/Tronco quimera.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">1 Tronco quimera</b></p></div>
+                                            </div>
                                         </td>
                                     </tr>
                                 </tr>
@@ -1144,19 +1197,27 @@
     
                                     <tr> <!-- 1 -->
                                         <td style="text-align:center;">1</td>
-                                        <td>
-                                            <section style=" display: flex;">
-                                                <ul class="horario"><li class="gustos" style="font-size: 15px;">Seta shiitake.</li></ul>
-                                                <ul class="horario" style="padding-left: 70px;"><li class="gustos" style="font-size: 15px;">Orégano.</li></ul>
-                                                <ul class="horario" style="padding-left: 70px;"><li class="gustos" style="font-size: 15px;">Baya silvestre.</li></ul>
-                                            </section>
-                                            <section style=" display: flex;">
-                                                <ul class="horario"><li class="gustos" style="font-size: 15px;">Helecho real.</li></ul>
-                                                <ul class="horario" style="padding-left: 70px;"><li class="gustos" style="font-size: 15px;">Flor de gota de luna.</li></ul>
-                                                <ul class="horario" style="padding-left: 70px;"><li class="gustos" style="font-size: 15px;">Arcilla.</li></ul>
-                                            </section>
+
+                                        <td style="text-align:center;">
+                                            <div style="justify-content: center; display: flex;">
+                
+                                                <div style="margin: 0 15px;"><img src="../../../../IMG/Reparaciones/Setas/Seta shiitake.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Seta shiitake</b></p></div>
+                
+                                                <div style="margin: 0 15px;"><img src="../../../../IMG/Otros/Silvestre/Oregano.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Orégano</b></p></div>
+                
+                                                <div style="margin: 0 15px;"><img src="../../../../IMG/Otros/Silvestre/Baya silvestre.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Baya silvestre</b></p></div>
+                                            </div>
+                
+                                            <div style="justify-content: center; display: flex;">
+                                                <div style="margin: 0 15px;"><img src="../../../../IMG/Otros/Silvestre/Helecho real.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Helecho real</b></p></div>
+                
+                                                <div style="margin: 0 15px;"><img src="../../../../IMG/Otros/Flores/Flor de gota de luna.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Flor de gota de luna</b></p></div>
+                
+                                                <div style="margin: 0 15px;"><img src="../../../../IMG/Prosesadoras/Drenaje/Arcilla.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Arcilla</b></p></div>
+                                            </div>
                                         </td>
                                     </tr>
+
                                     <tr> <!-- 2 -->
                                         <td style="text-align:center;">2</td>
                                         <td>
@@ -1244,25 +1305,37 @@
                                             </section>
                                         </td>
                                     </tr>
+                                    
                                     <tr> <!-- 9 -->
                                         <td style="text-align:center;">9</td>
-                                        <td>
-                                            <section style=" display: flex;">
-                                                <ul class="horario"><li class="gustos" style="font-size: 15px;">Concha en forma de baston de caramelo.</li></ul>
-                                                <ul class="horario" style="padding-left: 70px;"><li class="gustos" style="font-size: 15px;">Piedra parásito.</li></ul>
-                                                <ul class="horario" style="padding-left: 70px;"><li class="gustos" style="font-size: 15px;">Botella vacía.</li></ul>
-                                            </section>
+
+                                        <td style="text-align:center;">
+                                            <div style="justify-content: center; display: flex;">
+                
+                                                <div style="margin: 0 15px;"><img src="../../../../IMG/Otros/Articulos/varios/Concha en forma de baston de caramelo.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Concha en forma de baston de caramelo</b></p></div>
+                
+                                                <div style="margin: 0 15px;"><img src="../../../../IMG/Tesoro/T6.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Piedra parásito</b></p></div>
+                
+                                                <div style="margin: 0 15px;"><img src="../../../../IMG/Otros/Articulos/varios/botella vacia.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Botella vacía</b></p></div>
+                                            </div>
                                         </td>
                                     </tr>
+                                    
                                     <tr> <!-- 10 -->
                                         <td style="text-align:center;">10</td>
-                                        <td>
-                                            <section style=" display: flex;">
-                                                <ul class="horario"><li class="gustos" style="font-size: 15px;">Hongo pino.</li></ul>
-                                                <ul class="horario" style="padding-left: 70px;"><li class="gustos" style="font-size: 15px;">Jalea real.</li></ul>
-                                                <ul class="horario" style="padding-left: 70px;"><li class="gustos" style="font-size: 15px;">Medalla de Oro de la Ciudad.</li></ul>
-                                                <ul class="horario" style="padding-left: 70px;"><li class="gustos" style="font-size: 15px;">Casco de vaca.</li></ul>
-                                            </section>
+                                        
+
+                                        <td style="text-align:center;">
+                                            <div style="justify-content: center; display: flex;">
+                
+                                                <div style="margin: 0 15px;"><img src="../../../../IMG/Reparaciones/Setas/Hongo pino.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Hongo pino</b></p></div>
+                
+                                                <div style="margin: 0 15px;"><img src="../../../../IMG/Prosesadoras/Apicultura/Jalea real.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Jalea real</b></p></div>
+                
+                                                <div style="margin: 0 15px;"><img src="../../../../IMG/Otros/Articulos/varios/Medalla de Oro de la ciudad.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Medalla de Oro de la Ciudad</b></p></div>
+                                                
+                                                <div style="margin: 0 15px;"><img src="../../../../IMG/Tesoro/T22.png" width="60px" height="60px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Casco de vaca</b></p></div>
+                                            </div>
                                         </td>
                                     </tr>
                                 </tr>
@@ -1275,7 +1348,12 @@
                 <details> <!-- Lugar 2 -->
                     <summary class="prin">2) Lago antiguo</summary>
 
-                    <img src="../../../../IMG/Personajes/Duendes/lugares/LagAnt.jpg" class="left screenshot" loading="lazy" width="340" height="320"  style="margin: 20px 20px 0 0;"/>
+                    <img src="../../../../IMG/Personajes/Duendes/lugares/LagAnt.jpg" class="left screenshot" loading="lazy" width="340" height="320"  style="margin: 20px 20px 0 0; cursor: pointer;" onclick="window.modal2.showModal();"/>
+
+                    <dialog id="modal2">
+                        <div><button onclick="window.modal2.close();" class="btn close"de>X</button></div>
+                        <img src="../../../../IMG/Personajes/Duendes/lugares/LagAnt.jpg" class="center screenshot" title="Aldea de los duendes" loading="lazy" width="835" height="835"  style="margin: 30px"/>
+                    </dialog>
     
                     <p>Es un lugar misterioso que se desbloquea después de cumplir una serie de requisitos. Puede usarse para aumentar aún más tu habilidad tanto en Drenaje como en Pesca.</p>
     
@@ -1339,7 +1417,12 @@
                 <details> <!-- Lugar 3 -->
                     <summary class="prin">3) Isla de los pescadores</summary>
 
-                    <img src="../../../../IMG/Personajes/Duendes/lugares/IslPesc.jpg" class="left screenshot" loading="lazy" width="340" height="320"  style="margin: 20px 20px 0 0;"/>
+                    <img src="../../../../IMG/Personajes/Duendes/lugares/IslPesc.png" class="left screenshot" loading="lazy" width="340" height="320" style="margin: 20px 20px 0 0; cursor: pointer;" onclick="window.modal3.showModal();"/>
+
+                    <dialog id="modal3">
+                        <div><button onclick="window.modal3.close();" class="btn close"de>X</button></div>
+                        <img src="../../../../IMG/Personajes/Duendes/lugares/IslPesc.png" class="center screenshot" title="Aldea de los duendes" loading="lazy" width="835" height="835"  style="margin: 30px"/>
+                    </dialog>
     
                     <p>Es un lugar tranquilo y pintoresco que se desbloquea después de cumplir una serie de requisitos. Puede usarse para aumentar aún más tu habilidad en la pesca.</p>
     
@@ -1351,7 +1434,12 @@
                 <details> <!-- Lugar 4 -->
                     <summary class="prin">4) Montaña del leñador</summary>
 
-                    <img src="../../../../IMG/Personajes/Duendes/lugares/MonLeñ.jpg" class="left screenshot" loading="lazy" width="340" height="320"  style="margin: 20px 20px 0 0;"/>
+                    <img src="../../../../IMG/Personajes/Duendes/lugares/MonLeñ.jpg" class="left screenshot" loading="lazy" width="340" height="320"  style="margin: 20px 20px 0 0; cursor: pointer;" onclick="window.modal4.showModal();"/>
+
+                    <dialog id="modal4">
+                        <div><button onclick="window.modal4.close();" class="btn close"de>X</button></div>
+                        <img src="../../../../IMG/Personajes/Duendes/lugares/MonLeñ.jpg" class="center screenshot" title="Aldea de los duendes" loading="lazy" width="835" height="835"  style="margin: 30px"/>
+                    </dialog>
     
                     <p>Es un lugar tranquilo y pintoresco que se desbloquea después de alcanzar una serie de requisitos. Puede usarse para aumentar aún más su habilidad en la tala de arboles.</p>
     
@@ -1367,7 +1455,12 @@
                 <details> <!-- Lugar 5 -->
                     <summary class="prin">5) Colina Verde</summary>
 
-                    <img src="../../../../IMG/Personajes/Duendes/lugares/ColVerd.jpg" class="left screenshot" loading="lazy" width="340" height="320"  style="margin: 20px 20px 0 0;"/>
+                    <img src="../../../../IMG/Personajes/Duendes/lugares/ColVerd.jpg" class="left screenshot" loading="lazy" width="340" height="320"  style="margin: 20px 20px 0 0; cursor: pointer;" onclick="window.modal5.showModal();"/>
+
+                    <dialog id="modal5">
+                        <div><button onclick="window.modal5.close();" class="btn close"de>X</button></div>
+                        <img src="../../../../IMG/Personajes/Duendes/lugares/ColVerd.jpg" class="center screenshot" title="Aldea de los duendes" loading="lazy" width="835" height="835"  style="margin: 30px"/>
+                    </dialog>
     
                     <p>Es un lugar tranquilo y pintoresco que se desbloquea después de cumplir una serie de requisitos. Puede usarse para aumentar aún más tu habilidad en Siega.</p>
     
@@ -1381,7 +1474,12 @@
                 <details> <!-- Lugar 6 -->
                     <summary class="prin">6) Valle Rompepiedras</summary>
 
-                    <img src="../../../../IMG/Personajes/Duendes/lugares/VallRomp.jpg" class="left screenshot" loading="lazy" width="340" height="320"  style="margin: 20px 20px 0 0;"/>
+                    <img src="../../../../IMG/Personajes/Duendes/lugares/VallRomp.jpg" class="left screenshot" loading="lazy" width="340" height="320"  style="margin: 20px 20px 0 0; cursor: pointer;" onclick="window.modal6.showModal();"/>
+
+                    <dialog id="modal6">
+                        <div><button onclick="window.modal6.close();" class="btn close"de>X</button></div>
+                        <img src="../../../../IMG/Personajes/Duendes/lugares/VallRomp.jpg" class="center screenshot" title="Aldea de los duendes" loading="lazy" width="835" height="835"  style="margin: 30px"/>
+                    </dialog>
     
                     <p>Es un terreno accidentado lleno de rocas minerales. Puede usarse para aumentar aún más tu habilidad en Minería.</p>
     
@@ -1401,7 +1499,12 @@
                 <details> <!-- Lugar 1 -->
                     <summary class="prin">1) Cuevas de Lava</summary>
 
-                    <img src="../../../../IMG/Personajes/Duendes/lugares/CL.png" class="left screenshot" loading="lazy" width="380" height="338"  style="margin: 20px 20px 0 0;"/>
+                    <img src="../../../../IMG/Personajes/Duendes/lugares/CL.jpg" class="left screenshot" loading="lazy" width="380" height="338"  style="margin: 20px 20px 0 0; cursor: pointer;" onclick="window.modal7.showModal();"/>
+
+                    <dialog id="modal7">
+                        <div><button onclick="window.modal7.close();" class="btn close"de>X</button></div>
+                        <img src="../../../../IMG/Personajes/Duendes/lugares/CL.jpg" class="center screenshot" title="Aldea de los duendes" loading="lazy" width="835" height="835"  style="margin: 30px"/>
+                    </dialog>
     
                     <img src="../../../../IMG/Personajes/Duendes/espiritu/magma.png" class="right screenshot" loading="lazy" width="100" height="338"  style="margin: 20px 0 0 20px;" title="Duende magma"/>
     
@@ -1465,11 +1568,16 @@
                 <details> <!-- Lugar 2 -->
                     <summary class="prin">2) Isla Habichuela</summary>
 
-                    <img src="../../../../IMG/Personajes/Duendes/lugares/IH.jpg" class="left screenshot" loading="lazy" width="380" height="338"  style="margin: 20px 20px 0 0;"/>
+                    <img src="../../../../IMG/Personajes/Duendes/lugares/IH.jpg" class="left screenshot" loading="lazy" width="380" height="338"  style="margin: 20px 20px 0 0; cursor: pointer;" onclick="window.modal8.showModal();"/>
+
+                    <dialog id="modal8">
+                        <div><button onclick="window.modal8.close();" class="btn close"de>X</button></div>
+                        <img src="../../../../IMG/Personajes/Duendes/lugares/IH.jpg" class="center screenshot" title="Aldea de los duendes" loading="lazy" width="835" height="835"  style="margin: 30px"/>
+                    </dialog>
     
                     <img src="../../../../IMG/Personajes/Duendes/espiritu/celeste.png" class="right screenshot" loading="lazy" width="100" height="338"  style="margin: 20px 0 0 20px;" title="Duende Celeste"/>
     
-                    <p>En este lugar junto con el minijuego <b>Buscando duendes</b> se desbloquea una vez que encuentres 60 duendes seguidores. El lugar es dirigido por el <b>Duende celeste</b> y para comenzar dicho minijuego solo debes hablar con el.</p>
+                    <p>En este lugar viene junto con el minijuego <b>Buscando duendes</b> que se desbloquean una vez que encuentres 60 duendes seguidores. El lugar es dirigido por el <b>Duende celeste</b> y para poder comenzar dicho minijuego solo debes hablar con el.</p>
     
                     <p>El minijuego consta de tres rondas en las que el jugador debe desenterrar a los <b>duende dorado</b> y evitar desenterrar tallos de habichuelas. Puedes jugar a este juego varias veces en un día, pero cada sesión tardará 1 hora. La cantidad de Sprite Coins que recibas dependerá de los puntos que ganes. Si ganas 55 puntos o más, serás recompensado con dos corazones de resistencia adicionales.</p>
     
