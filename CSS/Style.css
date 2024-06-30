@@ -32,8 +32,7 @@
     }
 
     .img_perfil {
-        width: 195px !important;
-        height: 195px !important;
+        width: 180px !important;
     }
 
     nav{padding: 25px 8px 0 8px !important; }
@@ -123,8 +122,8 @@ dialog {
 /*  Diseños generales  */
 /* ******************* */
 .img_perfil {
-    width: 210px;
-    height: 210px;
+    width: 155px;
+    height: 155px;
 }
 
 /* La etiqueta "html" tendra cierta carasteristica */
