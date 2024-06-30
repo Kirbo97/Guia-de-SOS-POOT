@@ -19,6 +19,8 @@
 
     dialog h3 { font-size: 29px !important; }
 
+    .image-container img { top: 16em !important; }
+
     .img_festival {
         width: 370px !important;
          height: 338px !important;
@@ -209,6 +211,7 @@ p { text-align: justify; }
 @keyframes fade {
     100% { opacity: 0; } /* Imagen 2 completamente visible al final */
     50% { opacity: 1; } /* Imagen 2 completamente visible a la mitad de la animación */
+    45% { opacity: 1; } /* Imagen 2 completamente visible a la mitad de la animación */
     10% { opacity: 0; } /* Imagen 2 completamente transparente al inicio */
     0% { opacity: 0; } /* Imagen 2 completamente transparente al inicio */
 }
