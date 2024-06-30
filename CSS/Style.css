@@ -19,7 +19,7 @@
 
     dialog h3 { font-size: 29px !important; }
 
-    .image-container img { top: 16em !important; }
+    .image-container img { top: 16.01em !important; }
 
     .img_festival {
         width: 370px !important;
@@ -29,6 +29,11 @@
     .img_cumpleaños {
         width: 190px !important;
          height: 190px !important;
+    }
+
+    .img_perfil {
+        width: 200px !important;
+        height: 200px !important;
     }
 
     nav{padding: 25px 8px 0 8px !important; }
@@ -117,6 +122,10 @@ dialog {
 /* ******************* */
 /*  Diseños generales  */
 /* ******************* */
+.img_perfil {
+    width: 210px;
+    height: 210px;
+}
 
 /* La etiqueta "html" tendra cierta carasteristica */
 html {
