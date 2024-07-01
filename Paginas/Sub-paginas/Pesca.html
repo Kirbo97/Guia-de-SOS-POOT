@@ -429,7 +429,7 @@
                     <summary class="prin">1) Otros</summary>
 
                     <section style=" display: flex; flex-direction: column;"> 
-                        <div style="display: flex; flex-direction: row; justify-content: space-evenly; align-items: center; margin: 24px 0;">
+                        <div style="display: flex; flex-direction: row; justify-content: space-evenly; align-items: center; margin: 28px 0;">
                             <div> <!-- Charco -->
                                 <h3 style="margin: 0; cursor: pointer;" onclick="window.t1.showModal();">1.1) Charco</h3>
         
@@ -515,7 +515,7 @@
                             </div>
                         </div>
     
-                        <div style="display: flex; flex-direction: row; justify-content: space-evenly; align-items: center; margin: 24px 0;">
+                        <div style="display: flex; flex-direction: row; justify-content: space-evenly; align-items: center; margin: 28px 0;">
                             <div> <!-- Playas -->
                                 <h3 style="margin: 0; cursor: pointer;" onclick="window.t4.showModal();">1.4) Playas</h3>
         
@@ -552,339 +552,362 @@
                     
                     <summary class="prin">2) Área 1</summary>
 
-                    <section style=" display: flex;"> 
+                    <div style="display: flex; flex-direction: row; justify-content: space-evenly; align-items: center; margin: 28px 0;">
+                        <div>  <!-- Río -->
+                            <h3 style="margin: 0; cursor: pointer;" onclick="window.t5.showModal();">2.1) Área 1 Río</h3>
+    
+                            <dialog id="t5">
+                                <div><button onclick="window.t5.close();" class="btn close"de>X</button></div>
+    
+                                <h3 style="text-align: center">2.1) Área 1 Río</h3>
 
-                        <details class="esp"> <!-- Río -->
-                            <summary>2.1) Área 1 Río</summary>
+                                <table class="data" style="margin: 20px 30px;">
+                                    <tr><th>Pez</th><th>Nivel</th><th style="width: 60px;">Estacion</th><th>Tiempo</th></tr>
         
-                            <table class="data">
-                                <tr><th style="width: 70px;">Pez</th><th style="width: 70px;">Nivel</th><th style="width: 60px;">Estacion</th><th style="width: 85px;">Tiempo</th></tr>
-        
-                                <tr> <!-- 04 -->
-                                    <td style="text-align: center;"><img src="../../IMG/Peces/p04.jpg" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Leucisco</b></p></td><td style="text-align: center;">Básico</td><td style="text-align: center;">Todas</td><td style="text-align: center;">Cualquiera</td>
-                                </tr>
+                                    <tr> <!-- 04 -->
+                                        <td style="text-align: center;"><img src="../../IMG/Peces/p04.jpg" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Leucisco</b></p></td><td style="text-align: center;">Básico</td><td style="text-align: center;">Todas</td><td style="text-align: center;">Cualquiera</td>
+                                    </tr>
+                
+                                    <tr> <!-- 07 -->
+                                        <td style="text-align: center;"><img src="../../IMG/Peces/p07.jpg" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Anguila</b></p></td><td style="text-align: center;">Hierro</td>
+                                        <td style="padding: 4px;">
+                                            <div style=" display: flex;">
+                                                <p class="ot" style="margin: 0;"></p>
+                                                <p class="in"  style="margin: 0 0 0 6px;"></p>
+                                            </div>
+                                        </td>
+                                        <td style="text-align: center;">Cualquiera</td>
+                                    </tr>
             
-                                <tr> <!-- 07 -->
-                                    <td style="text-align: center;"><img src="../../IMG/Peces/p07.jpg" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Anguila</b></p></td><td style="text-align: center;">Hierro</td>
-                                    <td style="padding: 4px;">
-                                        <div style=" display: flex;">
-                                            <p class="ot" style="margin: 0;"></p>
-                                            <p class="in"  style="margin: 0 0 0 6px;"></p>
-                                        </div>
-                                    </td>
-                                    <td style="text-align: center;">Cualquiera</td>
-                                </tr>
-        
-                                <tr> <!-- 09 -->
-                                    <td style="text-align: center;"><img src="../../IMG/Peces/p09.jpg" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Perca amarilla</b></p></td><td style="text-align: center;">Básico</td>
-                                    <td style="padding: 4px;">
-                                        <div style=" display: flex;">
-                                            <p class="pri" style="margin: 0;"></p>
-                                            <p class="ve" style="margin: 0 0 0 6px;"></p>
-                                        </div>
-                                        <div style=" display: flex;">
-                                            <p class="ot" style="margin: 7px auto 0 auto;"></p>
-                                        </div>
-                                    </td>
-                                    <td style="text-align: center;">Cualquiera</td>
-                                </tr>
-        
-                                <tr> <!-- 10 -->
-                                    <td style="text-align: center;"><img src="../../IMG/Peces/p10.jpg" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Tilapia</b></p></td>
-                                    <td style="text-align: center;">Hierro</td><td style="text-align: center;">Todas</td><td style="text-align: center;">Cualquiera</td>
-                                </tr>
-        
-                                <tr> <!-- 11 -->
-                                    <td style="text-align: center;"><img src="../../IMG/Peces/p11.jpg" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Siluro</b></p></td><td style="text-align: center;">Plata</td><td style="text-align: center;">Todas</td><td>06:00 am a 12:00 pm</td>
-                                </tr>
-        
-                                <tr> <!-- 12 -->
-                                    <td style="text-align: center;"><img src="../../IMG/Peces/p12.jpg" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Cabeza de serpiente</b></p></td><td style="text-align: center;">Plata</td><td style="text-align: center;">Todas</td><td style="text-align: center;">Cualquiera</td>
-                                </tr>
-        
-                                <tr> <!-- 26 -->
-                                    <td style="text-align: center;"><img src="../../IMG/Peces/p26.jpg" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Langostino de río</b></p></td><td style="text-align: center;">Hierro</td><td style="text-align: center;">Todas</td><td style="text-align: center;">Cualquiera</td>
-                                </tr>
-        
-                                <tr> <!-- 48 -->
-                                    <td style="text-align: center;"><img src="../../IMG/Peces/p48.jpg" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Pez radiante</b></p></td><td style="text-align: center;">Básico</td><td style="text-align: center;">Todas</td><td style="text-align: center;">Cualquiera</td>
-                                </tr>
-                            </table>
-                            
-                        </details>
-        
-                        <details class="esp"> <!-- Océano -->
-                            <summary>2.2) Área 1 Océano</summary>
-        
-                            <table class="data">
-                                <tr><th style="width: 70px;">Pez</th><th style="width: 70px;">Nivel</th><th style="width: 60px;">Estacion</th><th style="width: 85px;">Tiempo</th></tr>
-        
-                                <tr> <!-- 01 -->
-                                    <td style="text-align: center;"><img src="../../IMG/Peces/p01.jpg" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Sardina</b></p></td><td style="text-align: center;">Básico</td><td style="text-align: center;">Todas</td><td style="text-align: center;">Cualquiera</td>
-                                </tr>
-        
-                                <tr> <!-- 02 -->
-                                    <td style="text-align: center;"><img src="../../IMG/Peces/p02.jpg" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Eperlano Shishamo</b></p></td>
-                                    <td style="text-align: center;">Básico</td>
-                                    <td style="padding: 4px;">
-                                        <div style=" display: flex;">
-                                            <p class="ot" style="margin: 0;"></p>
-                                            <p class="in" style="margin: 0 0 0 6px;"></p>
-                                        </div>
-                                    </td>
-                                    <td style="text-align: center;">Cualquiera</td>
-                                </tr>
-        
-                                <tr> <!-- 05 -->
-                                    <td style="text-align: center;"><img src="../../IMG/Peces/p05.jpg" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Arenque</b></p></td>
-                                    <td style="text-align: center;">Básico</td><td style="text-align: center;">Todas</td><td style="text-align: center;">Cualquiera</td>
-                                </tr>
-        
-                                <tr> <!-- 08-->
-                                    <td style="text-align: center;"><img src="../../IMG/Peces/p08.jpg" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Lubina</b></p></td>
-                                    <td style="text-align: center;">Hierro</td>
-                                    <td style="padding: 4px;">
-                                        <div style=" display: flex;">
-                                            <p class="ve" style="margin: 0;"></p>
-                                            <p class="ot" style="margin: 0 0 0 6px;"></p>
-                                        </div>
-                                    </td>
-                                    <td style="text-align: center;">Cualquiera</td>
-                                </tr>
-        
-                                <tr> <!-- 13 -->
-                                    <td style="text-align: center;"><img src="../../IMG/Peces/p13.jpg" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Pargo</b></p></td>
-                                    <td style="text-align: center;">Plata</td>
-                                    <td style="padding: 4px;">
-                                        <div style=" display: flex;">
-                                            <p class="pri" style="margin: 0;"></p>
-                                            <p class="ve" style="margin: 0 0 0 6px;"></p>
-                                        </div>
-                                    </td>
-                                    <td>06:00 pm a 12:00 am</td>
-                                </tr>
-        
-                                <tr> <!-- 17 -->
-                                    <td style="text-align: center;"><img src="../../IMG/Peces/p17.jpg" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Salmón</b></p></td>
-                                    <td style="text-align: center;">Plata</td><td style="text-align: center;">Todas</td><td style="text-align: center;">Cualquiera</td>
-                                </tr>
-        
-                                <tr> <!-- 25 -->
-                                    <td style="text-align: center;"><img src="../../IMG/Peces/p26.jpg" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Langostino de río</b></p></td><td style="text-align: center;">Básico</td><td style="text-align: center;">Todas</td><td style="text-align: center;">Cualquiera</td>
-                                </tr>
-        
-                                <tr> <!-- 30 -->
-                                    <td style="text-align: center;"><img src="../../IMG/Peces/p30.jpg" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Cangrejo Gazami</b></p></td><td style="text-align: center;">Basico</td><td style="text-align: center;">Todas</td><td style="text-align: center;">Cualquiera</td>
-                                </tr>
-        
-                                <tr> <!-- 34 -->
-                                    <td style="text-align: center;"><img src="../../IMG/Peces/p34.jpg" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Calamar común</b></p></td><td style="text-align: center;">Básico</td>
-                                    <td style="padding: 4px;">
-                                        <div style=" display: flex;">
-                                            <p class="ve" style="margin: 0;"></p>
-                                            <p class="ot" style="margin: 0 0 0 6px;"></p>
-                                        </div>
-                                        <div style=" display: flex;">
-                                            <p class="ot" style="margin: 7px auto 0 auto;"></p>
-                                        </div>
-                                    </td>
-                                    <td style="text-align: center;">05:00 pm a 12:00 am</td>
-                                </tr>
-        
-                                <tr> <!-- 48 -->
-                                    <td style="text-align: center;"><img src="../../IMG/Peces/p48.jpg" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Pez radiante</b></p></td><td style="text-align: center;">Básico</td><td style="text-align: center;">Todas</td><td style="text-align: center;">Cualquiera</td>
-                                </tr>
+                                    <tr> <!-- 09 -->
+                                        <td style="text-align: center;"><img src="../../IMG/Peces/p09.jpg" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Perca amarilla</b></p></td><td style="text-align: center;">Básico</td>
+                                        <td style="padding: 4px;">
+                                            <div style=" display: flex;">
+                                                <p class="pri" style="margin: 0;"></p>
+                                                <p class="ve" style="margin: 0 0 0 6px;"></p>
+                                            </div>
+                                            <div style=" display: flex;">
+                                                <p class="ot" style="margin: 7px auto 0 auto;"></p>
+                                            </div>
+                                        </td>
+                                        <td style="text-align: center;">Cualquiera</td>
+                                    </tr>
             
-                            </table>
-                        </details>
-                    </section>                    
+                                    <tr> <!-- 10 -->
+                                        <td style="text-align: center;"><img src="../../IMG/Peces/p10.jpg" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Tilapia</b></p></td>
+                                        <td style="text-align: center;">Hierro</td><td style="text-align: center;">Todas</td><td style="text-align: center;">Cualquiera</td>
+                                    </tr>
+            
+                                    <tr> <!-- 11 -->
+                                        <td style="text-align: center;"><img src="../../IMG/Peces/p11.jpg" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Siluro</b></p></td><td style="text-align: center;">Plata</td><td style="text-align: center;">Todas</td><td>06:00 am a 12:00 pm</td>
+                                    </tr>
+            
+                                    <tr> <!-- 12 -->
+                                        <td style="text-align: center;"><img src="../../IMG/Peces/p12.jpg" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Cabeza de serpiente</b></p></td><td style="text-align: center;">Plata</td><td style="text-align: center;">Todas</td><td style="text-align: center;">Cualquiera</td>
+                                    </tr>
+            
+                                    <tr> <!-- 26 -->
+                                        <td style="text-align: center;"><img src="../../IMG/Peces/p26.jpg" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Langostino de río</b></p></td><td style="text-align: center;">Hierro</td><td style="text-align: center;">Todas</td><td style="text-align: center;">Cualquiera</td>
+                                    </tr>
+            
+                                    <tr> <!-- 48 -->
+                                        <td style="text-align: center;"><img src="../../IMG/Peces/p48.jpg" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Pez radiante</b></p></td><td style="text-align: center;">Básico</td><td style="text-align: center;">Todas</td><td style="text-align: center;">Cualquiera</td>
+                                    </tr>
+                                </table>
+                            </dialog>
+                        </div>
+
+                        <div>  <!-- Océano -->
+                            <h3 style="margin: 0; cursor: pointer;" onclick="window.t6.showModal();">2.2) Área 1 Océano</h3>
+    
+                            <dialog id="t6">
+                                <div><button onclick="window.t6.close();" class="btn close"de>X</button></div>
+    
+                                <h3 style="text-align: center;">2.2) Área 1 Océano</h3>
+                                
+                                <table class="data" style="margin: 20px 30px;">
+                                    <tr><th>Pez</th><th>Nivel</th><th style="width: 60px;">Estacion</th><th>Tiempo</th></tr>
+        
+                                    <tr> <!-- 01 -->
+                                        <td style="text-align: center;"><img src="../../IMG/Peces/p01.jpg" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Sardina</b></p></td><td style="text-align: center;">Básico</td><td style="text-align: center;">Todas</td><td style="text-align: center;">Cualquiera</td>
+                                    </tr>
+            
+                                    <tr> <!-- 02 -->
+                                        <td style="text-align: center;"><img src="../../IMG/Peces/p02.jpg" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Eperlano Shishamo</b></p></td>
+                                        <td style="text-align: center;">Básico</td>
+                                        <td style="padding: 4px;">
+                                            <div style=" display: flex;">
+                                                <p class="ot" style="margin: 0;"></p>
+                                                <p class="in" style="margin: 0 0 0 6px;"></p>
+                                            </div>
+                                        </td>
+                                        <td style="text-align: center;">Cualquiera</td>
+                                    </tr>
+            
+                                    <tr> <!-- 05 -->
+                                        <td style="text-align: center;"><img src="../../IMG/Peces/p05.jpg" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Arenque</b></p></td>
+                                        <td style="text-align: center;">Básico</td><td style="text-align: center;">Todas</td><td style="text-align: center;">Cualquiera</td>
+                                    </tr>
+            
+                                    <tr> <!-- 08-->
+                                        <td style="text-align: center;"><img src="../../IMG/Peces/p08.jpg" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Lubina</b></p></td>
+                                        <td style="text-align: center;">Hierro</td>
+                                        <td style="padding: 4px;">
+                                            <div style=" display: flex;">
+                                                <p class="ve" style="margin: 0;"></p>
+                                                <p class="ot" style="margin: 0 0 0 6px;"></p>
+                                            </div>
+                                        </td>
+                                        <td style="text-align: center;">Cualquiera</td>
+                                    </tr>
+            
+                                    <tr> <!-- 13 -->
+                                        <td style="text-align: center;"><img src="../../IMG/Peces/p13.jpg" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Pargo</b></p></td>
+                                        <td style="text-align: center;">Plata</td>
+                                        <td style="padding: 4px;">
+                                            <div style=" display: flex;">
+                                                <p class="pri" style="margin: 0;"></p>
+                                                <p class="ve" style="margin: 0 0 0 6px;"></p>
+                                            </div>
+                                        </td>
+                                        <td>06:00 pm a 12:00 am</td>
+                                    </tr>
+            
+                                    <tr> <!-- 17 -->
+                                        <td style="text-align: center;"><img src="../../IMG/Peces/p17.jpg" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Salmón</b></p></td>
+                                        <td style="text-align: center;">Plata</td><td style="text-align: center;">Todas</td><td style="text-align: center;">Cualquiera</td>
+                                    </tr>
+            
+                                    <tr> <!-- 25 -->
+                                        <td style="text-align: center;"><img src="../../IMG/Peces/p26.jpg" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Langostino de río</b></p></td><td style="text-align: center;">Básico</td><td style="text-align: center;">Todas</td><td style="text-align: center;">Cualquiera</td>
+                                    </tr>
+            
+                                    <tr> <!-- 30 -->
+                                        <td style="text-align: center;"><img src="../../IMG/Peces/p30.jpg" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Cangrejo Gazami</b></p></td><td style="text-align: center;">Basico</td><td style="text-align: center;">Todas</td><td style="text-align: center;">Cualquiera</td>
+                                    </tr>
+            
+                                    <tr> <!-- 34 -->
+                                        <td style="text-align: center;"><img src="../../IMG/Peces/p34.jpg" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Calamar común</b></p></td><td style="text-align: center;">Básico</td>
+                                        <td style="padding: 4px;">
+                                            <div style=" display: flex;">
+                                                <p class="ve" style="margin: 0;"></p>
+                                                <p class="ot" style="margin: 0 0 0 6px;"></p>
+                                            </div>
+                                            <div style=" display: flex;">
+                                                <p class="ot" style="margin: 7px auto 0 auto;"></p>
+                                            </div>
+                                        </td>
+                                        <td style="text-align: center;">05:00 pm a 12:00 am</td>
+                                    </tr>
+            
+                                    <tr> <!-- 48 -->
+                                        <td style="text-align: center;"><img src="../../IMG/Peces/p48.jpg" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Pez radiante</b></p></td><td style="text-align: center;">Básico</td><td style="text-align: center;">Todas</td><td style="text-align: center;">Cualquiera</td>
+                                    </tr>
+                                </table>
+                            </dialog>
+                        </div>
+                    </div>                 
 
                 </details>
 
                 <details> <!-- Area 2 -->
                     
                     <summary class="prin">3) Área 2</summary>
-
-                    <section style=" display: flex;"> 
-
-                        <details class="esp"> <!-- Océano -->
-                            <summary>3.1) Área 2 Océano</summary>
-        
-                            <table class="data">
-                                <tr><th style="width: 70px;">Pez</th><th style="width: 70px;">Nivel</th><th style="width: 60px;">Estacion</th><th style="width: 85px;">Tiempo</th></tr>
-        
-                                <tr> <!-- 01 -->
-                                    <td style="text-align: center;"><img src="../../IMG/Peces/p01.jpg" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Sardina</b></p></td><td style="text-align: center;">Básico</td><td style="text-align: center;">Todas</td><td style="text-align: center;">Cualquiera</td>
-                                </tr>
-                                
-                                <tr> <!-- 03 -->
-                                    <td style="text-align: center;"><img src="../../IMG/Peces/p03.jpg" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Jurel</b></p></td>
-                                    <td style="text-align: center;">Básico</td><td style="text-align: center;">Todas</td><td style="text-align: center;">Cualquiera</td>
-                                </tr>
-        
-                                <tr> <!-- 06 -->
-                                    <td style="text-align: center;"><img src="../../IMG/Peces/p06.jpg" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Bacalao</b></p></td>
-                                    <td style="text-align: center;">Básico</td>
-                                    <td style="padding: 4;">
-                                        <div style=" display: flex;">
-                                            <p class="ot" style="margin: 0;"></p>
-                                            <p class="in" style="margin: 0 0 0 6px;"></p>
-                                        </div>
-                                    </td>
-                                    <td style="text-align: center;">Cualquiera</td>
-                                </tr>
-                                
-                                <tr> <!-- 14 -->
-                                    <td style="text-align: center;"><img src="../../IMG/Peces/p14.jpg" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Sabalote</b></p></td>
-                                    <td style="text-align: center;">Básico</td><td style="text-align: center;">Todas</td><td style="text-align: center;">Cualquiera</td>
-                                </tr>
-
-                                <tr> <!-- 15 -->
-                                    <td style="text-align: center;"><img src="../../IMG/Peces/p15.jpg" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Besugo</b></p></td>
-                                    <td style="text-align: center;">Básico</td>
-                                    <td style="padding: 4;">
-                                        <div style=" display: flex;">
-                                            <p class="pri" style="margin: 0;"></p>
-                                            <p class="ve" style="margin: 0 0 0 6px;"></p>
-                                        </div>
-                                    </td>
-                                    <td style="text-align: center;">12:00 pm a 06:00 pm</td>
-                                </tr>
-        
-                                <tr> <!-- 17 -->
-                                    <td style="text-align: center;"><img src="../../IMG/Peces/p17.jpg" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Salmón</b></p></td><td style="text-align: center;">Plata</td><td style="text-align: center;">Todas</td><td style="text-align: center;">Cualquiera</td>
-                                </tr>
-        
-                                <tr> <!-- 19 -->
-                                    <td style="text-align: center;"><img src="../../IMG/Peces/p19.jpg" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Pez remo</b></p></td>
-                                    <td style="text-align: center;">Plata</td>
-                                    <td style="padding: 4;">
-                                        <div style=" display: flex;">
-                                            <p class="pri" style="margin: 0;"></p>
-                                            <p class="in" style="margin: 0 0 0 6px;"></p>
-                                        </div>
-                                    </td>
-                                    <td style="text-align: center;">09:00 pm a 12:00 am</td>
-                                </tr>
-                                
-                                <tr> <!-- 27 -->
-                                    <td style="text-align: center;"><img src="../../IMG/Peces/p27.jpg" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Camarón tigre gigante</b></p></td><td style="text-align: center;">Básico</td><td style="text-align: center;">Todas</td><td style="text-align: center;">Cualquiera</td>
-                                </tr>
-                            
-                                <tr> <!-- 29 -->
-                                    <td style="text-align: center;"><img src="../../IMG/Peces/p29.jpg" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Langosta de roca</b></p></td><td style="text-align: center;">Plata</td>
-                                    <td style="padding: 4;">
-                                        <div style=" display: flex;">
-                                            <p class="in" style="margin: 0 auto;"></p>
-                                        </div>
-                                    </td>
-                                    <td style="text-align: center;">05:00 pm a 02:00 am</td>
-                                </tr>
-        
-                                <tr> <!-- 31 -->
-                                    <td style="text-align: center;"><img src="../../IMG/Peces/p31.jpg" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Cangrejo azul</b></p></td><td style="text-align: center;">Básico</td>
-                                    <td style="padding: 4;">
-                                        <div style=" display: flex;">
-                                            <p class="in" style="margin: 0 auto;"></p>
-                                        </div>
-                                    </td>
-                                    <td style="text-align: center;">06:00 am a 05:00 pm</td>
-                                </tr>
-        
-                                <tr> <!-- 33 -->
-                                    <td style="text-align: center;"><img src="../../IMG/Peces/p33.jpg" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Cangrejo de las nieves</b></p></td><td style="text-align: center;">Hierro</td><td style="text-align: center;">Todas</td><td style="text-align: center;">05:00 pm a 02:00 am</td>
-                                </tr>
-        
-                                <tr> <!-- 35 -->
-                                    <td style="text-align: center;"><img src="../../IMG/Peces/p35.jpg" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Calamar lanceolado</b></p></td><td style="text-align: center;">Básico</td><td style="text-align: center;">Todas</td><td style="text-align: center;">05:00 pm a 02:00 am</td>
-                                </tr>
-        
-                                <tr> <!-- 36 -->
-                                    <td style="text-align: center;"><img src="../../IMG/Peces/p36.jpg" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Calamar manopla</b></p></td><td style="text-align: center;">Básico</td>
-                                    <td style="padding: 4;">
-                                        <div style=" display: flex;">
-                                            <p class="pri" style="margin: 0;"></p>
-                                            <p class="ve" style="margin: 0 0 0 6px;"></p>
-                                        </div>
-                                    </td>
-                                    <td style="text-align: center;">06:00 am a 05:00 pm</td>
-                                </tr>
-        
-                                <tr> <!-- 48 -->
-                                    <td style="text-align: center;"><img src="../../IMG/Peces/p48.jpg" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Pez radiante</b></p></td><td style="text-align: center;">Básico</td><td style="text-align: center;">Todas</td><td style="text-align: center;">Cualquiera</td>
-                                </tr>
-        
-                                <tr> <!-- 49 -->
-                                    <td style="text-align: center;"><img src="../../IMG/Peces/p49.jpg" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Pez brillante</b></p></td><td style="text-align: center;">Plata</td><td style="text-align: center;">Todas</td><td style="text-align: center;">Cualquiera</td>
-                                </tr>
-            
-                            </table>
-                            
-                        </details>
-        
-                        <details class="esp"> <!-- Lago -->
-                            <summary>3.2) Área 2 Lago</summary>
-        
-                            <table class="data">
-                                <tr><th style="width: 70px;">Pez</th><th style="width: 70px;">Nivel</th><th style="width: 60px;">Estacion</th><th style="width: 85px;">Tiempo</th></tr>
-        
-                                <tr> <!-- 04 -->
-                                    <td style="text-align: center;"><img src="../../IMG/Peces/p04.jpg" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Leucisco</b></p></td><td style="text-align: center;">Básico</td><td style="text-align: center;">Todas</td><td style="text-align: center;">Cualquiera</td>
-                                </tr>
-
-                                <tr> <!-- 24 -->
-                                    <td style="text-align: center;"><img src="../../IMG/Peces/p24.jpg" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Cangrejo de río</b></p></td><td style="text-align: center;">Básico</td><td style="text-align: center;">Todas</td><td style="text-align: center;">Cualquiera</td>
-                                </tr>
-
-                                <tr> <!-- 26 -->
-                                    <td style="text-align: center;"><img src="../../IMG/Peces/p26.jpg" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Langostino de río</b></p></td><td style="text-align: center;">Básico</td><td style="text-align: center;">Todas</td><td style="text-align: center;">Cualquiera</td>
-                                </tr>
-        
-                                <tr> <!-- 48 -->
-                                    <td style="text-align: center;"><img src="../../IMG/Peces/p48.jpg" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Pez radiante</b></p></td><td style="text-align: center;">Básico</td><td style="text-align: center;">Todas</td><td style="text-align: center;">Cualquiera</td>
-                                </tr>
-                            </table>
-                            
-                        </details>
-
-                    </section>  
                     
-                    <details> <!-- Lagos Mineros -->
-                        <summary>3.3) Área 2 Lagos Mineros</summary>
+                    <div style="display: flex; flex-direction: row; justify-content: space-evenly; align-items: center; margin: 28px 0;">
+                        <div>  <!-- Océano -->
+                            <h3 style="margin: 0; cursor: pointer;" onclick="window.t7.showModal();">3.1) Área 2 Océano</h3>
     
-                        <table class="data">
-                            <tr><th>Pez</th><th style="width: 70px;">Nivel</th><th style="width: 60px;">Estacion</th><th style="width: 85px;">Tiempo</th></tr>
+                            <dialog id="t7">
+                                <div><button onclick="window.t7.close();" class="btn close"de>X</button></div>
     
-                            <tr> <!-- 04 -->
-                                <td style="text-align: center;"><img src="../../IMG/Peces/p04.jpg" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Leucisco</b></p></td><td style="text-align: center;">Básico</td><td style="text-align: center;">Todas</td><td style="text-align: center;">Cualquiera</td>
-                            </tr>
-        
-                            <tr> <!-- 07 -->
-                                <td style="text-align: center;"><img src="../../IMG/Peces/p07.jpg" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Anguila</b></p></td><td style="text-align: center;">Básico</td><td style="text-align: center;">Todas</td><td style="text-align: center;">Cualquiera</td>
-                            </tr>
-    
-                            <tr> <!-- 11 -->
-                                <td style="text-align: center;"><img src="../../IMG/Peces/p11.jpg" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Siluro</b></p></td><td style="text-align: center;">Plata</td><td style="text-align: center;">Todas</td><td>06:00 am a 12:00 am</td>
-                            </tr>
-                            
-                            <tr> <!-- 12 -->
-                                <td style="text-align: center;"><img src="../../IMG/Peces/p12.jpg" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Cabeza de serpiente</b></p></td><td style="text-align: center;">Plata</td><td style="text-align: center;">Todas</td><td style="text-align: center;">Cualquiera</td>
-                            </tr>
-        
-                            <tr> <!-- 24 -->
-                                <td style="text-align: center;"><img src="../../IMG/Peces/p24.jpg" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Cangrejo de río</b></p></td><td style="text-align: center;">Básico</td><td style="text-align: center;">Todas</td><td style="text-align: center;">Cualquiera</td>
-                            </tr>
-        
-                            <tr> <!-- 48 -->
-                                <td style="text-align: center;"><img src="../../IMG/Peces/p48.jpg" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Pez radiante</b></p></td><td style="text-align: center;">Básico</td><td style="text-align: center;">Todas</td><td style="text-align: center;">Cualquiera</td>
-                            </tr>
-        
-                            <tr> <!-- 49 -->
-                                <td style="text-align: center;"><img src="../../IMG/Peces/p49.jpg" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Pez brillante</b></p></td><td style="text-align: center;">Plata</td><td style="text-align: center;">Todas</td><td style="text-align: center;">Cualquiera</td>
-                            </tr>
-                        </table>
-                    </details>
+                                <h3 style="text-align: center">3.1) Área 2 Océano</h3>
 
+                                <table class="data" style="margin: 20px 30px;">
+                                    <tr><th>Pez</th><th>Nivel</th><th style="width: 60px;">Estacion</th><th>Tiempo</th></tr>
+        
+                                    <tr> <!-- 01 -->
+                                        <td style="text-align: center;"><img src="../../IMG/Peces/p01.jpg" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Sardina</b></p></td><td style="text-align: center;">Básico</td><td style="text-align: center;">Todas</td><td style="text-align: center;">Cualquiera</td>
+                                    </tr>
+                                    
+                                    <tr> <!-- 03 -->
+                                        <td style="text-align: center;"><img src="../../IMG/Peces/p03.jpg" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Jurel</b></p></td>
+                                        <td style="text-align: center;">Básico</td><td style="text-align: center;">Todas</td><td style="text-align: center;">Cualquiera</td>
+                                    </tr>
+            
+                                    <tr> <!-- 06 -->
+                                        <td style="text-align: center;"><img src="../../IMG/Peces/p06.jpg" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Bacalao</b></p></td>
+                                        <td style="text-align: center;">Básico</td>
+                                        <td style="padding: 4;">
+                                            <div style=" display: flex;">
+                                                <p class="ot" style="margin: 0;"></p>
+                                                <p class="in" style="margin: 0 0 0 6px;"></p>
+                                            </div>
+                                        </td>
+                                        <td style="text-align: center;">Cualquiera</td>
+                                    </tr>
+                                    
+                                    <tr> <!-- 14 -->
+                                        <td style="text-align: center;"><img src="../../IMG/Peces/p14.jpg" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Sabalote</b></p></td>
+                                        <td style="text-align: center;">Básico</td><td style="text-align: center;">Todas</td><td style="text-align: center;">Cualquiera</td>
+                                    </tr>
+    
+                                    <tr> <!-- 15 -->
+                                        <td style="text-align: center;"><img src="../../IMG/Peces/p15.jpg" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Besugo</b></p></td>
+                                        <td style="text-align: center;">Básico</td>
+                                        <td style="padding: 4;">
+                                            <div style=" display: flex;">
+                                                <p class="pri" style="margin: 0;"></p>
+                                                <p class="ve" style="margin: 0 0 0 6px;"></p>
+                                            </div>
+                                        </td>
+                                        <td style="text-align: center;">12:00 pm a 06:00 pm</td>
+                                    </tr>
+            
+                                    <tr> <!-- 17 -->
+                                        <td style="text-align: center;"><img src="../../IMG/Peces/p17.jpg" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Salmón</b></p></td><td style="text-align: center;">Plata</td><td style="text-align: center;">Todas</td><td style="text-align: center;">Cualquiera</td>
+                                    </tr>
+            
+                                    <tr> <!-- 19 -->
+                                        <td style="text-align: center;"><img src="../../IMG/Peces/p19.jpg" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Pez remo</b></p></td>
+                                        <td style="text-align: center;">Plata</td>
+                                        <td style="padding: 4;">
+                                            <div style=" display: flex;">
+                                                <p class="pri" style="margin: 0;"></p>
+                                                <p class="in" style="margin: 0 0 0 6px;"></p>
+                                            </div>
+                                        </td>
+                                        <td style="text-align: center;">09:00 pm a 12:00 am</td>
+                                    </tr>
+                                    
+                                    <tr> <!-- 27 -->
+                                        <td style="text-align: center;"><img src="../../IMG/Peces/p27.jpg" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Camarón tigre gigante</b></p></td><td style="text-align: center;">Básico</td><td style="text-align: center;">Todas</td><td style="text-align: center;">Cualquiera</td>
+                                    </tr>
+                                
+                                    <tr> <!-- 29 -->
+                                        <td style="text-align: center;"><img src="../../IMG/Peces/p29.jpg" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Langosta de roca</b></p></td><td style="text-align: center;">Plata</td>
+                                        <td style="padding: 4;">
+                                            <div style=" display: flex;">
+                                                <p class="in" style="margin: 0 auto;"></p>
+                                            </div>
+                                        </td>
+                                        <td style="text-align: center;">05:00 pm a 02:00 am</td>
+                                    </tr>
+            
+                                    <tr> <!-- 31 -->
+                                        <td style="text-align: center;"><img src="../../IMG/Peces/p31.jpg" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Cangrejo azul</b></p></td><td style="text-align: center;">Básico</td>
+                                        <td style="padding: 4;">
+                                            <div style=" display: flex;">
+                                                <p class="in" style="margin: 0 auto;"></p>
+                                            </div>
+                                        </td>
+                                        <td style="text-align: center;">06:00 am a 05:00 pm</td>
+                                    </tr>
+            
+                                    <tr> <!-- 33 -->
+                                        <td style="text-align: center;"><img src="../../IMG/Peces/p33.jpg" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Cangrejo de las nieves</b></p></td><td style="text-align: center;">Hierro</td><td style="text-align: center;">Todas</td><td style="text-align: center;">05:00 pm a 02:00 am</td>
+                                    </tr>
+            
+                                    <tr> <!-- 35 -->
+                                        <td style="text-align: center;"><img src="../../IMG/Peces/p35.jpg" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Calamar lanceolado</b></p></td><td style="text-align: center;">Básico</td><td style="text-align: center;">Todas</td><td style="text-align: center;">05:00 pm a 02:00 am</td>
+                                    </tr>
+            
+                                    <tr> <!-- 36 -->
+                                        <td style="text-align: center;"><img src="../../IMG/Peces/p36.jpg" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Calamar manopla</b></p></td><td style="text-align: center;">Básico</td>
+                                        <td style="padding: 4;">
+                                            <div style=" display: flex;">
+                                                <p class="pri" style="margin: 0;"></p>
+                                                <p class="ve" style="margin: 0 0 0 6px;"></p>
+                                            </div>
+                                        </td>
+                                        <td style="text-align: center;">06:00 am a 05:00 pm</td>
+                                    </tr>
+            
+                                    <tr> <!-- 48 -->
+                                        <td style="text-align: center;"><img src="../../IMG/Peces/p48.jpg" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Pez radiante</b></p></td><td style="text-align: center;">Básico</td><td style="text-align: center;">Todas</td><td style="text-align: center;">Cualquiera</td>
+                                    </tr>
+            
+                                    <tr> <!-- 49 -->
+                                        <td style="text-align: center;"><img src="../../IMG/Peces/p49.jpg" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Pez brillante</b></p></td><td style="text-align: center;">Plata</td><td style="text-align: center;">Todas</td><td style="text-align: center;">Cualquiera</td>
+                                    </tr>
+                                </table>
+                            </dialog>
+                        </div>
+
+                        <div>  <!-- Lago -->
+                            <h3 style="margin: 0; cursor: pointer;" onclick="window.t8.showModal();">3.2) Área 2 Lago</h3>
+    
+                            <dialog id="t8">
+                                <div><button onclick="window.t8.close();" class="btn close"de>X</button></div>
+    
+                                <h3 style="text-align: center;">3.2) Área 2 Lago</h3>
+                                
+                                <table class="data" style="margin: 20px 30px;">
+                                    <tr><th>Pez</th><th>Nivel</th><th style="width: 60px;">Estacion</th><th>Tiempo</th></tr>
+        
+                                    <tr> <!-- 04 -->
+                                        <td style="text-align: center;"><img src="../../IMG/Peces/p04.jpg" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Leucisco</b></p></td><td style="text-align: center;">Básico</td><td style="text-align: center;">Todas</td><td style="text-align: center;">Cualquiera</td>
+                                    </tr>
+    
+                                    <tr> <!-- 24 -->
+                                        <td style="text-align: center;"><img src="../../IMG/Peces/p24.jpg" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Cangrejo de río</b></p></td><td style="text-align: center;">Básico</td><td style="text-align: center;">Todas</td><td style="text-align: center;">Cualquiera</td>
+                                    </tr>
+    
+                                    <tr> <!-- 26 -->
+                                        <td style="text-align: center;"><img src="../../IMG/Peces/p26.jpg" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Langostino de río</b></p></td><td style="text-align: center;">Básico</td><td style="text-align: center;">Todas</td><td style="text-align: center;">Cualquiera</td>
+                                    </tr>
+            
+                                    <tr> <!-- 48 -->
+                                        <td style="text-align: center;"><img src="../../IMG/Peces/p48.jpg" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Pez radiante</b></p></td><td style="text-align: center;">Básico</td><td style="text-align: center;">Todas</td><td style="text-align: center;">Cualquiera</td>
+                                    </tr>
+                                </table>
+                            </dialog>
+                        </div>
+                    </div>    
+
+                    <div style="display: flex; flex-direction: row; justify-content: space-evenly; align-items: center; margin: 28px 0;">
+                        <div> <!-- Lagos Mineros -->
+                            <h3 style="margin: 0; cursor: pointer;" onclick="window.t9.showModal();">3.3) Área 2 Lagos Mineros</h3>
+    
+                            <dialog id="t9">
+                                <div><button onclick="window.t9.close();" class="btn close"de>X</button></div>
+    
+                                <h3 style="text-align: center;">3.3) Área 2 Lagos Mineros</h3>
+
+                                <table class="data" style="margin: 20px 30px;">
+                                    <tr><th>Pez</th><th>Nivel</th><th style="width: 60px;">Estacion</th><th>Tiempo</th></tr>
+    
+                                    <tr> <!-- 04 -->
+                                        <td style="text-align: center;"><img src="../../IMG/Peces/p04.jpg" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Leucisco</b></p></td><td style="text-align: center;">Básico</td><td style="text-align: center;">Todas</td><td style="text-align: center;">Cualquiera</td>
+                                    </tr>
+                
+                                    <tr> <!-- 07 -->
+                                        <td style="text-align: center;"><img src="../../IMG/Peces/p07.jpg" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Anguila</b></p></td><td style="text-align: center;">Básico</td><td style="text-align: center;">Todas</td><td style="text-align: center;">Cualquiera</td>
+                                    </tr>
+            
+                                    <tr> <!-- 11 -->
+                                        <td style="text-align: center;"><img src="../../IMG/Peces/p11.jpg" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Siluro</b></p></td><td style="text-align: center;">Plata</td><td style="text-align: center;">Todas</td><td>06:00 am a 12:00 am</td>
+                                    </tr>
+                                    
+                                    <tr> <!-- 12 -->
+                                        <td style="text-align: center;"><img src="../../IMG/Peces/p12.jpg" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Cabeza de serpiente</b></p></td><td style="text-align: center;">Plata</td><td style="text-align: center;">Todas</td><td style="text-align: center;">Cualquiera</td>
+                                    </tr>
+                
+                                    <tr> <!-- 24 -->
+                                        <td style="text-align: center;"><img src="../../IMG/Peces/p24.jpg" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Cangrejo de río</b></p></td><td style="text-align: center;">Básico</td><td style="text-align: center;">Todas</td><td style="text-align: center;">Cualquiera</td>
+                                    </tr>
+                
+                                    <tr> <!-- 48 -->
+                                        <td style="text-align: center;"><img src="../../IMG/Peces/p48.jpg" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Pez radiante</b></p></td><td style="text-align: center;">Básico</td><td style="text-align: center;">Todas</td><td style="text-align: center;">Cualquiera</td>
+                                    </tr>
+                
+                                    <tr> <!-- 49 -->
+                                        <td style="text-align: center;"><img src="../../IMG/Peces/p49.jpg" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Pez brillante</b></p></td><td style="text-align: center;">Plata</td><td style="text-align: center;">Todas</td><td style="text-align: center;">Cualquiera</td>
+                                    </tr>
+                                </table>
+                            </dialog>
+                        </div>
+                    </div>
                 </details>
 
                 <details> <!-- Area 3 -->
