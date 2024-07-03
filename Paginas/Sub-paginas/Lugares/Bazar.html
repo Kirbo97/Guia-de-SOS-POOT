@@ -62,7 +62,12 @@
 
             <main>
 
-                <img src="../../../IMG/Otros/Lugares/Tienda General.jpg" class="right screenshot" loading="lazy" width="250" height="250" style="margin: 4px 0 0 20px;"/>
+                <img src="../../../IMG/Otros/Lugares/Tienda General.jpg" class="right screenshot" loading="lazy" width="250" height="250" style="margin: 4px 0 0 20px; cursor: pointer;" onclick="window.modal1.showModal();"/>
+
+                <dialog id="modal1">
+                    <div><button onclick="window.modal1.close();" class="btn close"de>X</button></div>
+                    <img src="../../../IMG/Otros/Lugares/Tienda General.jpg" class="center screenshot" title="Bazar de Villa Oliva" loading="lazy" width="835" height="835"  style="margin: 30px"/>
+                </dialog>
 
                 <p>La tienda Olive General de la ciudad está dirigida por Angela. Está ubicado en el nivel más bajo de Olive Town, en el lado derecho de la calle principal. La Tienda General suele vender diferentes tipos de artículos y entre esos articulos se encuentran las semillas para cultivar en tu granja, ¡por lo que será una parada frecuente en tus viajes a la ciudad. El stock de semillas aumentará a medida que coseches más cultivos y materiales silvestres y aumentes el nivel de expansión de tu ciudad.</p>
                 

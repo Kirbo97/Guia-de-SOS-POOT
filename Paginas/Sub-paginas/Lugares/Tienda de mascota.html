@@ -62,7 +62,12 @@
 
             <main>
 
-                <img src="../../..//IMG/Otros/Lugares/tienda de mascota.jpg" class="right screenshot" loading="lazy" width="210" height="210" style="margin: 7px 0 0 20px;"/>
+                <img src="../../..//IMG/Otros/Lugares/tienda de mascota.jpg" class="right screenshot" loading="lazy" width="210" height="210" style="margin: 7px 0 0 20px; cursor: pointer;" onclick="window.modal1.showModal();"/>
+
+                <dialog id="modal1">
+                    <div><button onclick="window.modal1.close();" class="btn close"de>X</button></div>
+                    <img src="../../../IMG/Otros/Lugares/tienda de mascota.jpg" class="center screenshot" title="La casa de las patitas - Tienda de animales" loading="lazy" width="835" height="835"  style="margin: 30px"/>
+                </dialog>
 
                 <p>La tienda de animales está dirigida por Patricia y su hija Bridget. Es la tienda de animales local de Olive Town. La tienda venderá kits de cría para sus animales de granja a 3000G una vez que su habilidad de cuidado de animales alcance el nivel 5 o superior. En esta tienda podras comprar animales para tu granja y tambien comprar mascotas y monturas.</p>
                 

@@ -62,7 +62,12 @@
 
             <main>
 
-                <img src="../../../IMG/Otros/Lugares/Taller de carpintería.jpg" class="right screenshot" loading="lazy" width="250" height="250" style="margin: 4px 0 0 20px;"/>
+                <img src="../../../IMG/Otros/Lugares/Taller de carpintería.jpg" class="right screenshot" loading="lazy" width="250" height="250" style="margin: 4px 0 0 20px; cursor: pointer;" onclick="window.modal1.showModal();"/>
+
+                <dialog id="modal1">
+                    <div><button onclick="window.modal1.close();" class="btn close"de>X</button></div>
+                    <img src="../../../IMG/Otros/Lugares/Taller de carpintería.jpg" class="center screenshot" title="Taller de Nigel" loading="lazy" width="835" height="835"  style="margin: 30px"/>
+                </dialog>
 
                 <p>El taller de carpintería está dirigido está dirigido por Nigel. Está ubicado en la esquina de la calle principal del distrito bajo, frente al Supermercado, en el distrito bajo de la ciudad. Puede solicitar mejoras y materiales para la vivienda aquí y, a medida que coseche más cultivos, se almacenarán más ingredientes. Una vez que se reparen las instalaciones deterioradas de la granja, estarán disponibles para su compra en la tienda. La tienda también ofrece mejoras para la casa, así que reúne materiales y pregúntale a Nigel cuándo quieres agrandar tu casa.</p>
                 

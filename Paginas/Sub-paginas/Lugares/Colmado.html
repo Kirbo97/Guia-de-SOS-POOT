@@ -62,7 +62,12 @@
 
             <main>
 
-                <img src="../../../IMG/Otros/Lugares/tienda comestible.jpg" class="right screenshot" loading="lazy" width="250" height="250" style="margin: 4px 0 0 20px;"/>
+                <img src="../../../IMG/Otros/Lugares/tienda comestible.jpg" class="right screenshot" loading="lazy" width="250" height="250" style="margin: 4px 0 0 20px; cursor: pointer;" onclick="window.modal1.showModal();"/>
+
+                <dialog id="modal1">
+                    <div><button onclick="window.modal1.close();" class="btn close"de>X</button></div>
+                    <img src="../../../IMG/Otros/Lugares/tienda comestible.jpg" class="center screenshot" title="Tienda de comestible de Norman" loading="lazy" width="835" height="835"  style="margin: 30px"/>
+                </dialog>
 
                 <p>La tienda de comestibles o colmado está dirigida por Norman. Se encuentra a la izquierda del Capeside Bistro , en el distrito bajo de la ciudad. En el supermercado, puedes comprar ingredientes de cocina de Norman en el mostrador. Los productos que hay en stock cambian según la temporada. Al igual que la Tienda General y la Floristería , muchos de los productos solo están disponibles para su compra una vez que han sido enviados. Comprar ingredientes de Norman puede ser más costoso que cultivarlos usted mismo, pero resulta útil cuando desea cocinar algo de inmediato. Sin embargo, los ingredientes que se venden aquí son de la más baja calidad, así que ten cuidado si quieres cocinar un plato de alta calidad.</p>
                 

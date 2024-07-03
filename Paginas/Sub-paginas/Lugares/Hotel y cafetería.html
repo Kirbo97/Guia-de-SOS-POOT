@@ -62,7 +62,12 @@
 
             <main>
 
-                <img src="../../../IMG/Otros/Lugares/hotel y cafeteria.jpg" class="right screenshot" loading="lazy" width="250" height="250" style="margin: 4px 0 0 20px;"/>
+                <img src="../../../IMG/Otros/Lugares/hotel y cafeteria.jpg" class="right screenshot" loading="lazy" width="250" height="250" style="margin: 4px 0 0 20px; cursor: pointer;" onclick="window.modal1.showModal();"/>
+
+                <dialog id="modal1">
+                    <div><button onclick="window.modal1.close();" class="btn close"de>X</button></div>
+                    <img src="../../../IMG/Otros/Lugares/hotel y cafeteria.jpg" class="center screenshot" title="Posada de la Gaviota - Hotel y cafetería" loading="lazy" width="835" height="835"  style="margin: 30px"/>
+                </dialog>
 
                 <p>El Hotel y cafetería contiene dos negocios. El hotel está dirigido por Jason y el café está dirigido por su esposa, Sally. La cafetería del primer piso sirve comidas ligeras, principalmente bebidas y postres caseros de Sally. A medida que subas de nivel tu habilidad culinaria, el menú se ampliará y podrás aprender nuevas recetas comiendo algunas de las comidas. En el segundo piso y arriba hay un hotel. Dependiendo de la hora del día, es posible que puedas conocer a algunos de los residentes allí. El ascensor del hotel le llevará a las habitaciones de Beth y Karina.</p>
                 

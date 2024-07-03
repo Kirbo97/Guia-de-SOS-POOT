@@ -62,9 +62,16 @@
 
             <main>
 
-                <img src="../../../IMG/Otros/Lugares/sant.jpg" class="right screenshot" loading="lazy" width="210" height="210" style="margin: 10px 0 0 20px;"/>
+                <img src="../../../IMG/Otros/Lugares/sant.jpg" class="right screenshot" loading="lazy" width="210" height="210" style="margin: 9px 0 0 20px; cursor: pointer;" onclick="window.modal1.showModal();"/>
 
-                <p>En la parte trasera de la ciudad se encuentra un pequeño santuario iluminado con velas que emana una energía misteriosa en medio de un manantial. Cuando el jugador haya visto los eventos del Espíritu, el santuario estará disponible para su uso.</p>
+                <dialog id="modal1">
+                    <div><button onclick="window.modal1.close();" class="btn close"de>X</button></div>
+                    <img src="../../../IMG/Otros/Lugares/sant.jpg" class="center screenshot" title="Santuario" loading="lazy" width="835" height="835"  style="margin: 30px"/>
+                </dialog>
+
+                <p>Dentro del bosque que esta en la parte trasera de la villa Olivo se encuentra un pequeño santuario iluminado por una vela que emana una extraña energía misteriosa en medio de un manantial de niebla. Al principio del juego el santuario no servira de nada debido a que el espíritu de la primavera desaparecio pero en un punto del juego el jugador se topara con unos eventos enfocados en el despertar y respauracion del espíritu de la primavera.</p>
+
+                <p>El jugador tiene que complir las condiciones para que ocurra esos eventos y cuando haya visto todos los eventos del espíritu, el santuario terminara recuperarando sus poderes y estará disponible para su uso. Puede consultar los eventos del espíritu en el perfil del espíritu que se encuentra en la seccion de <b>Personajes</b></p>
 
                 <h2>Bendiciones del Santuario</h2>
 
