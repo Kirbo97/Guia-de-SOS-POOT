@@ -210,8 +210,6 @@ p { text-align: justify; }
     z-index:0;
 }
 
-
-
 /* controlar los pasos intermedios en una secuencia de animación */
 @keyframes fade {
     100% { opacity: 0; } /* Imagen 2 completamente visible al final */
