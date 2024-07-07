@@ -1,5 +1,18 @@
 // Función para cerrar el dialog
-function cerrarDialog(tip) { document.getElementById(tip).close(); }
+function cerrarDialog(tip) { 
+
+    // Valida cual seccion estoy para cerar los details que se quedaron abierto
+    if(tip==='PRO9'){
+        var arreglo = ['cultNorma','cultMuta','flores']
+
+        for(var i = 0; i < arreglo.length; i++){
+            var details = document.getElementById(arreglo[i]);
+            if (details) { details.removeAttribute('open'); }
+        }
+    }
+
+    document.getElementById(tip).close(); 
+}
         
 // Función para mostrar el contenido adecuado según la procesadora seleccionada
 function mostrarContenido(tipo) {
