@@ -80,19 +80,73 @@
                         <tr><th colspan="7" style="font-size: 25px;">Calendario de Primavera</th></tr>
         
                         <tr>
-                            <td style="text-align:center; padding: 0;  width: 120px;"><b style="font-size: 25px;">01</b></td>
-                            <td style="text-align:center; padding: 0;  width: 120px;"><b style="font-size: 25px;">02</b></td>
-                            <td style="text-align:center; padding: 0;  width: 120px;"><b style="font-size: 25px;">03</b></td>
-                            <td style="text-align:center; padding: 0;  width: 120px;"><b style="font-size: 25px;">04</b></td>
-                            <td style="text-align:center; padding: 0;  width: 120px;">
+                            <td style="text-align:center; padding: 0; width: 120px;"><b style="font-size: 25px;">01</b></td>
+                            <td style="text-align:center; padding: 0; width: 120px;"><b style="font-size: 25px;">02</b></td>
+                            <td style="text-align:center; padding: 0; width: 120px;"><b style="font-size: 25px;">03</b></td>
+                            <td style="text-align:center; padding: 0; width: 120px;"><b style="font-size: 25px;">04</b></td>
+                            <td style="text-align:center; padding: 0; width: 120px;"> <!-- Cumpleaños de Ángela -->
                                 <br><b style="color: rgb(232, 22, 22); font-size: 25px;">05</b></br>
-                                <p class="cumpleaño" style="text-align:center; margin: 0; padding: 30px 0 15px 0;"></p>
+                                <div style="display: flex; flex-direction:column; justify-content: space-evenly; align-items: center; margin-top: 10px;">
+                                    <p class="cumpleaño" onclick="window.modal_cumple01.showModal();" title="Cumpleaños de Ángela"></p>
+                                    <div style="margin: 0; margin-bottom: 4px;"><b style="color: #E83;">Ángela</b></div>
+                                </div>
+                                
+                                <dialog id="modal_cumple01" class="modal_calendario">
+
+                                    <button onclick="window.modal_cumple01.close();" class="btn close">X</button>
+
+                                    <h3>Cumpleaños del aldeano</h3>
+
+                                    <img src="../IMG/Personajes/Aldeanos/Caras/Ángela.png" class="left screenshot img_cumpleaños" loading="lazy" style="margin: 0 20px"/>
+
+                                    <div style="padding: 0 20px 20px 20px; margin: 0;"> 
+                                        <p></p>
+
+                                        <p style="margin: 16px 0 0 0 ;">Puede conocer mejor a este personaje consultando su <a class="hiper" href="../Paginas/Sub-paginas/Personajes/Aldeanos/angela.html">bibliografia</a> en la seccion de personajes.</p>
+                                    </div>
+                                </dialog>
                             </td>
-                            <td style="text-align:center; padding: 0;  width: 120px;">
+                            <td style="text-align:center; padding: 0; width: 120px;"> <!-- Cumpleaños de Nguyen y Dunhill -->
                                 <br><b style="color: rgb(232, 22, 22); font-size: 25px;">06</b></br>
-                                <p class="cumpleaño" style="text-align:center; margin: 0; padding: 30px 0 15px 0;"></p>
+                                <div style="display: flex; flex-direction:column; justify-content: space-evenly; align-items: center; margin-top: 10px;">
+                                    <p class="cumpleaño" onclick="window.modal_cumple02.showModal();" title="Cumpleaños de Nguyen y Dunhill"></p>
+                                    <div style="margin: 0; margin-bottom: 4px;"><b style="color: #E83;">Nguyen</b><b> y </b><b style="color: rgb(140, 24, 249);">Dunhill</b></div>
+                                </div>
+
+                                <dialog id="modal_cumple02" class="modal_calendario">
+
+                                    <button onclick="window.modal_cumple02.close();" class="btn close">X</button>
+
+                                    <section style="display: flex; flex-direction: column;">
+
+                                        <div>  <!-- Nguyen -->
+                                            <h3>Cumpleaños del aldeano</h3>
+    
+                                            <img src="../IMG/Personajes/Aldeanos/Caras/Nguyen.png" class="left screenshot img_cumpleaños" loading="lazy" style="margin: 0 20px"/>
+        
+                                            <div style="padding: 0 20px 20px 20px; margin: 0;"> 
+                                                <p></p>
+        
+                                                <p style="margin: 16px 0 0 0 ;">Puede conocer mejor a este personaje consultando su <a class="hiper" href="../Paginas/Sub-paginas/Personajes/Aldeanos/angela.html">bibliografia</a> en la seccion de personajes.</p>
+                                            </div>
+                                        </div>
+
+                                        <div>  <!-- Dunhill -->
+                                            <h3 style="color: rgb(140, 24, 249);">Cumpleaños del aldeano del pase de expanción</h3>
+    
+                                            <img src="../IMG/Personajes/Aldeanos/Caras/pase de expansion/Dunhill.png" class="left screenshot img_cumpleaños" loading="lazy" style="margin: 0 20px"/>
+        
+                                            <div style="padding: 0 20px 20px 20px; margin: 0;"> 
+                                                <p></p>
+        
+                                                <p style="margin: 16px 0 0 0 ;">Puede conocer mejor a este personaje consultando su <a class="hiper" href="../Paginas/Sub-paginas/Personajes/Aldeanos/angela.html">bibliografia</a> en la seccion de personajes.</p>
+                                            </div>
+    
+                                        </div>
+                                    </section>
+                                </dialog>
                             </td>
-                            <td style="text-align:center; padding: 0;  width: 120px;"><b style="font-size: 25px;">07</b></td>
+                            <td style="text-align:center; padding: 0; width: 120px;"><b style="font-size: 25px;">07</b></td>
                         </tr>
     
                         <tr>
@@ -100,9 +154,46 @@
                             <td style="text-align:center; padding: 0;"><b style="font-size: 25px;">09</b></td>
                             <td style="text-align:center; padding: 0;"><b style="font-size: 25px;">10</b></td>
                             <td style="text-align:center; padding: 0;"><b style="font-size: 25px;">11</b></td>
-                            <td style="text-align:center; padding: 0;">
+                            <td style="text-align:center; padding: 0;"> <!-- Cumpleaños de Linh y Ludus -->
                                 <br><b style="color: rgb(232, 22, 22); font-size: 25px;">12</b></br>
-                                <p class="cumpleaño" style="text-align:center; margin: 0; padding: 30px 0 15px 0;"></p>
+                                <div style="display: flex; flex-direction:column; justify-content: space-evenly; align-items: center; margin-top: 10px;">
+                                    <p class="cumpleaño" onclick="window.modal_cumple03.showModal();" title="Cumpleaños de Linh y Ludus"></p>
+                                    <div style="margin: 0; margin-bottom: 4px; width: 110px;"><b style="color: #E83;">Linh</b><b> y </b><b style="color: rgb(140, 24, 249);">Ludus</b></div>
+                                </div>
+
+                                <dialog id="modal_cumple03" class="modal_calendario">
+
+                                    <button onclick="window.modal_cumple03.close();" class="btn close">X</button>
+
+                                    <section style="display: flex; flex-direction: column;">
+
+                                        <div>  <!-- Linh -->
+                                            <h3>Cumpleaños del aldeano</h3>
+    
+                                            <img src="../IMG/Personajes/Candidatos/Cara/linh.png" class="left screenshot img_cumpleaños" loading="lazy" style="margin: 0 20px"/>
+        
+                                            <div style="padding: 0 20px 20px 20px; margin: 0;"> 
+                                                <p></p>
+        
+                                                <p style="margin: 16px 0 0 0 ;">Puede conocer mejor a este personaje consultando su <a class="hiper" href="../Paginas/Sub-paginas/Personajes/Aldeanos/angela.html">bibliografia</a> en la seccion de personajes.</p>
+                                            </div>
+                                        </div>
+
+                                        <div>  <!-- Ludus -->
+                                            <h3 style="color: rgb(140, 24, 249);">Cumpleaños del aldeano del pase de expanción</h3>
+    
+                                            <img src="../IMG/Personajes/Candidatos/Cara/pase de expansion/Ludus.png" class="left screenshot img_cumpleaños" loading="lazy" style="margin: 0 20px"/>
+        
+                                            <div style="padding: 0 20px 20px 20px; margin: 0;"> 
+                                                <p></p>
+        
+                                                <p style="margin: 16px 0 0 0 ;">Puede conocer mejor a este personaje consultando su <a class="hiper" href="../Paginas/Sub-paginas/Personajes/Aldeanos/angela.html">bibliografia</a> en la seccion de personajes.</p>
+                                            </div>
+    
+                                        </div>
+                                    </section>
+                                </dialog>
+
                             </td>
                             <td style="text-align:center; padding: 0;"><b style="font-size: 25px;">13</b></td>
                             <td style="text-align:center; padding: 0;"><b style="font-size: 25px;">14</b></td>
@@ -111,11 +202,13 @@
                         <tr>
                             <td style="text-align:center; padding: 0;">
                                 <br><b style="color: rgb(232, 22, 22); font-size: 25px;">15</b></br>
-                                <p class="evento" style="text-align:center; margin: 0; padding: 30px 0 15px 0;" onclick="window.modal_festival1.showModal();" title="Busqueda de Huevo"></p>
+                                <div style="display: flex; flex-direction:column; justify-content: space-evenly; align-items: center; margin-top: 10px;"><p class="evento" onclick="window.modal_festival1.showModal();" title="Busqueda de Huevo"></p></div>
+
                                 <dialog id="modal_festival1" class="modal_calendario">
-                                    <h3>15 de Primavera - Busqueda de Huevo</h3>
                                     
                                     <button onclick="window.modal_festival1.close();" class="btn close">X</button>
+
+                                    <h3>15 de Primavera - Busqueda de Huevo</h3>
 
                                     <img src="../IMG/festivales/festival de pascua.jpg" class="left screenshot img_festival" loading="lazy"  style="margin: 0 20px;"/>
 
@@ -131,41 +224,163 @@
                                 </dialog>
                             </td>
                             <td style="text-align:center; padding: 0;"><b style="font-size: 25px;">16</b></td>
-                            <td style="text-align:center; padding: 0;">
+                            <td style="text-align:center; padding: 0;"> <!-- Cumpleaños de Jacopo y Moriya -->
                                 <br><b style="color: rgb(232, 22, 22); font-size: 25px;">17</b></br>
-                                <p class="cumpleaño" style="text-align:center; margin: 0; padding: 30px 0 15px 0;"></p>
+                                <div style="display: flex; flex-direction:column; justify-content: space-evenly; align-items: center; margin-top: 10px;">
+                                    <p class="cumpleaño" onclick="window.modal_cumple04.showModal();" title="Cumpleaños de Jacopo y Moriya"></p>
+                                    <div style="margin: 0; margin-bottom: 4px;"><b style="color: #E83;">Jacopo</b><b> y </b><b style="color: rgb(140, 24, 249);">Moriya</b></div>
+                                </div>
+
+                                <dialog id="modal_cumple04" class="modal_calendario">
+
+                                    <button onclick="window.modal_cumple04.close();" class="btn close">X</button>
+
+                                    <section style="display: flex; flex-direction: column;">
+
+                                        <div>  <!-- Jacopo -->
+                                            <h3>Cumpleaños del aldeano</h3>
+    
+                                            <img src="../IMG/Personajes/Aldeanos/Caras/Jacopo.png" class="left screenshot img_cumpleaños" loading="lazy" style="margin: 0 20px"/>
+        
+                                            <div style="padding: 0 20px 20px 20px; margin: 0;"> 
+                                                <p></p>
+        
+                                                <p style="margin: 16px 0 0 0 ;">Puede conocer mejor a este personaje consultando su <a class="hiper" href="../Paginas/Sub-paginas/Personajes/Aldeanos/angela.html">bibliografia</a> en la seccion de personajes.</p>
+                                            </div>
+                                        </div>
+
+                                        <div>  <!-- Moriya -->
+                                            <h3 style="color: rgb(140, 24, 249);">Cumpleaños del aldeano del pase de expanción</h3>
+    
+                                            <img src="../IMG/Personajes/Aldeanos/Caras/pase de expansion/Moriya.png" class="left screenshot img_cumpleaños" loading="lazy" style="margin: 0 20px"/>
+        
+                                            <div style="padding: 0 20px 20px 20px; margin: 0;"> 
+                                                <p></p>
+        
+                                                <p style="margin: 16px 0 0 0 ;">Puede conocer mejor a este personaje consultando su <a class="hiper" href="../Paginas/Sub-paginas/Personajes/Aldeanos/angela.html">bibliografia</a> en la seccion de personajes.</p>
+                                            </div>
+    
+                                        </div>
+                                    </section>
+                                </dialog>
                             </td>
                             <td style="text-align:center; padding: 0;"><b style="font-size: 25px;">18</b></td>
                             <td style="text-align:center; padding: 0;"><b style="font-size: 25px;">19</b></td>
-                            <td style="text-align:center; padding: 0;">
+                            <td style="text-align:center; padding: 0;"> <!-- Cumpleaños de Dosetsu -->
                                 <br><b style="color: rgb(232, 22, 22); font-size: 25px;">20</b></br>
-                                <p class="cumpleaño" style="text-align:center; margin: 0; padding: 30px 0 15px 0;"></p>
+                                <div style="display: flex; flex-direction:column; justify-content: space-evenly; align-items: center; margin-top: 10px;">
+                                    <p class="cumpleaño" onclick="window.modal_cumple05.showModal();" title="Cumpleaños de Dosetsu"></p>
+                                    <div style="margin: 0; margin-bottom: 4px;"><b style="color: #E83;">Dosetsu</b></div>
+                                </div>
+                                
+                                <dialog id="modal_cumple05" class="modal_calendario">
+
+                                    <button onclick="window.modal_cumple05.close();" class="btn close">X</button>
+
+                                    <h3>Cumpleaños del aldeano</h3>
+
+                                    <img src="../IMG/Personajes/Aldeanos/Caras/Doesetsu.png" class="left screenshot img_cumpleaños" loading="lazy" style="margin: 0 20px"/>
+
+                                    <div style="padding: 0 20px 20px 20px; margin: 0;"> 
+                                        <p></p>
+
+                                        <p style="margin: 16px 0 0 0 ;">Puede conocer mejor a este personaje consultando su <a class="hiper" href="../Paginas/Sub-paginas/Personajes/Aldeanos/angela.html">bibliografia</a> en la seccion de personajes.</p>
+                                    </div>
+                                </dialog>
                             </td>
-                            <td style="text-align:center; padding: 0;">
+                            <td style="text-align:center; padding: 0;"> <!-- Cumpleaños de Felicia -->
                                 <br><b style="color: rgb(232, 22, 22); font-size: 25px;">21</b></br>
-                                <p class="cumpleaño" style="text-align:center; margin: 0; padding: 30px 0 15px 0;"></p>
+                                <div style="display: flex; flex-direction:column; justify-content: space-evenly; align-items: center; margin-top: 10px;">
+                                    <p class="cumpleaño" onclick="window.modal_cumple06.showModal();" title="Cumpleaños de Felicia"></p><div style="margin: 0; margin-bottom: 4px;"><b style="color: rgb(140, 24, 249);">Felicia</b></div>
+                                </div>
+
+                                <dialog id="modal_cumple06" class="modal_calendario">
+
+                                    <button onclick="window.modal_cumple06.close();" class="btn close">X</button>
+
+                                    <h3 style="color: rgb(140, 24, 249);">Cumpleaños del aldeano del pase de expanción</h3>
+
+                                    <img src="../IMG/Personajes/Candidatos/Cara/pase de expansion/Felicity.png" class="left screenshot img_cumpleaños" loading="lazy" style="margin: 0 20px"/>
+
+                                    <div style="padding: 0 20px 20px 20px; margin: 0;"> 
+                                        <p></p>
+
+                                        <p style="margin: 16px 0 0 0 ;">Puede conocer mejor a este personaje consultando su <a class="hiper" href="../Paginas/Sub-paginas/Personajes/Aldeanos/angela.html">bibliografia</a> en la seccion de personajes.</p>
+                                    </div>
+                                </dialog>
                             </td>
                         </tr>
     
                         <tr>
                             <td style="text-align:center; padding: 0;"><b style="font-size: 25px;">22</b></td>
-                            <td style="text-align:center; padding: 0;">
+                            <td style="text-align:center; padding: 0;"> <!-- Cumpleaños de Jack -->
                                 <br><b style="color: rgb(232, 22, 22); font-size: 25px;">23</b></br>
-                                <p class="cumpleaño" style="text-align:center; margin: 0; padding: 30px 0 15px 0;"></p>
+                                <div style="display: flex; flex-direction:column; justify-content: space-evenly; align-items: center; margin-top: 10px;">
+                                    <p class="cumpleaño" onclick="window.modal_cumple07.showModal();" title="Cumpleaños de Jack"></p>
+                                    <div style="margin: 0; margin-bottom: 4px;"><b style="color: #E83;">Jack</b></div>
+                                </div>
+
+                                <dialog id="modal_cumple07" class="modal_calendario">
+
+                                    <button onclick="window.modal_cumple07.close();" class="btn close">X</button>
+                                    <h3>Cumpleaños del aldeano</h3>
+
+                                    <img src="../IMG/Personajes/Candidatos/Cara/jack.png" class="left screenshot img_cumpleaños" loading="lazy" style="margin: 0 20px"/>
+
+                                    <div style="padding: 0 20px 20px 20px; margin: 0;"> 
+                                        <p></p>
+
+                                        <p style="margin: 16px 0 0 0 ;">Puede conocer mejor a este personaje consultando su <a class="hiper" href="../Paginas/Sub-paginas/Personajes/Aldeanos/angela.html">bibliografia</a> en la seccion de personajes.</p>
+                                    </div>
+                                </dialog>
                             </td>
                             <td style="text-align:center; padding: 0;"><b style="font-size: 25px;">24</b></td>
                             <td style="text-align:center; padding: 0;"><b style="font-size: 25px;">25</b></td>
-                            <td style="text-align:center; padding: 0;">
+                            <td style="text-align:center; padding: 0;"> <!-- Cumpleaños de Jason -->
                                 <br><b style="color: rgb(232, 22, 22); font-size: 25px;">26</b></br>
-                                <p class="cumpleaño" style="text-align:center; margin: 0; padding: 30px 0 15px 0;"></p>
+                                <div style="display: flex; flex-direction:column; justify-content: space-evenly; align-items: center; margin-top: 10px;">
+                                    <p class="cumpleaño" onclick="window.modal_cumple08.showModal();" title="Cumpleaños de Jason"></p>
+                                    <div style="margin: 0; margin-bottom: 4px;"><b style="color: #E83;">Jason</b></div>
+                                </div>
+
+                                <dialog id="modal_cumple08" class="modal_calendario">
+
+                                    <button onclick="window.modal_cumple08.close();" class="btn close">X</button>
+                                    <h3>Cumpleaños del aldeano</h3>
+
+                                    <img src="../IMG/Personajes/Aldeanos/Caras/Jason.png" class="left screenshot img_cumpleaños" loading="lazy" style="margin: 0 20px"/>
+
+                                    <div style="padding: 0 20px 20px 20px; margin: 0;"> 
+                                        <p></p>
+
+                                        <p style="margin: 16px 0 0 0 ;">Puede conocer mejor a este personaje consultando su <a class="hiper" href="../Paginas/Sub-paginas/Personajes/Aldeanos/angela.html">bibliografia</a> en la seccion de personajes.</p>
+                                    </div>
+                                </dialog>
                             </td>
-                            <td style="text-align:center; padding: 0;">
+                            <td style="text-align:center; padding: 0;"> <!-- Cumpleaños de Beth -->
                                 <br><b style="color: rgb(232, 22, 22); font-size: 25px;">27</b></br>
-                                <p class="cumpleaño" style="text-align:center; margin: 0; padding: 30px 0 15px 0;"></p>
+                                <div style="display: flex; flex-direction:column; justify-content: space-evenly; align-items: center; margin-top: 10px;">
+                                    <p class="cumpleaño" onclick="window.modal_cumple09.showModal();" title="Cumpleaños de Beth"></p>
+                                    <div style="margin: 0; margin-bottom: 4px;"><b style="color: #E83;">Beth</b></div>
+                                </div>
+
+                                <dialog id="modal_cumple09" class="modal_calendario">
+
+                                    <button onclick="window.modal_cumple09.close();" class="btn close">X</button>
+                                    <h3>Cumpleaños del aldeano</h3>
+
+                                    <img src="../IMG/Personajes/Aldeanos/Caras/Beth.png" class="left screenshot img_cumpleaños" loading="lazy" style="margin: 0 20px"/>
+
+                                    <div style="padding: 0 20px 20px 20px; margin: 0;"> 
+                                        <p></p>
+
+                                        <p style="margin: 16px 0 0 0 ;">Puede conocer mejor a este personaje consultando su <a class="hiper" href="../Paginas/Sub-paginas/Personajes/Aldeanos/angela.html">bibliografia</a> en la seccion de personajes.</p>
+                                    </div>
+                                </dialog>
                             </td>
                             <td style="text-align:center; padding: 0;">
                                 <br><b style="color: rgb(232, 22, 22); font-size: 25px;">28</b></br>
-                                <p class="evento" style="text-align:center; margin: 0; padding: 30px 0 15px 0;" onclick="window.modal_festival2.showModal();" title="Derbi de mascotas"></p>
+                                <div style="display: flex; flex-direction:column; justify-content: space-evenly; align-items: center; margin-top: 10px;"><p class="evento" onclick="window.modal_festival2.showModal();" title="Derbi de mascotas"></p></div>
                                 <dialog id="modal_festival2" class="modal_calendario">
                                     <h3>28 de Primavera - Derbi de mascotas</h3>
 
@@ -187,20 +402,6 @@
                         </tr>
                     </table>
 
-                    <h3>Cumpleaños de los aldeanos</h3>
-
-                    <ul class="horario">
-                        <li class="gustos"><b>Dia 05:</b> Cumpleaños de Ángela.</li>
-                        <li class="gustos"><b>Dia 06:</b> Cumpleaños de Nguyen y Dunhill <b style="color: rgb(140, 24, 249);">(Expansion Pass)</b>.</li>
-                        <li class="gustos"><b>Dia 12:</b> Cumpleaños de Linh y Ludus <b style="color: rgb(140, 24, 249);">(Expansion Pass)</b>.</li>
-                        <li class="gustos"><b>Dia 17:</b> Cumpleaños de Jacopo y Moriya <b style="color: rgb(140, 24, 249);">(Expansion Pass)</b>.</li>
-                        <li class="gustos"><b>Dia 20:</b> Cumpleaños de Dosetsu.</li>
-                        <li class="gustos"><b>Dia 21:</b> Cumpleaños de Felicia <b style="color: rgb(140, 24, 249);">(Expansion Pass)</b>.</li>
-                        <li class="gustos"><b>Dia 23:</b> Cumpleaños de Jack.</li>
-                        <li class="gustos"><b>Dia 26:</b> Cumpleaños de Jason.</li>
-                        <li class="gustos"><b>Dia 27:</b> Cumpleaños de Beth.</li>
-                    </ul>
-
                 </section>
 
                 <section> <!-- Verano -->
@@ -211,40 +412,145 @@
                         <tr><th colspan="7" style="font-size: 25px;">Calendario de Verano</th></tr>
         
                         <tr>
-                            <td style="text-align:center; padding: 0;  width: 120px;"><b style="font-size: 25px;">01</b></td>
-                            <td style="text-align:center; padding: 0;  width: 120px;">
+                            <td style="text-align:center; padding: 0; width: 120px;"><b style="font-size: 25px;">01</b></td>
+                            <td style="text-align:center; padding: 0; width: 120px;"> <!-- Cumpleaños de Mikey -->
                                 <br><b style="color: rgb(232, 22, 22); font-size: 25px;">02</b></br>
-                                <p class="cumpleaño" style="text-align:center; margin: 0; padding: 30px 0 15px 0;"></p>
+                                <div style="display: flex; flex-direction:column; justify-content: space-evenly; align-items: center; margin-top: 10px;">
+                                    <p class="cumpleaño" onclick="window.modal_cumple10.showModal();" title="Cumpleaños de Mikey"></p>
+                                    <div style="margin: 0; margin-bottom: 4px;"><b style="color: #E83;">Mikey</b></div>
+                                </div>
+
+                                <dialog id="modal_cumple10" class="modal_calendario">
+
+                                    <button onclick="window.modal_cumple10.close();" class="btn close">X</button>
+                                    <h3>Cumpleaños del aldeano</h3>
+
+                                    <img src="../IMG/Personajes/Aldeanos/Caras/Mikey.png" class="left screenshot img_cumpleaños" loading="lazy" style="margin: 0 20px"/>
+
+                                    <div style="padding: 0 20px 20px 20px; margin: 0;"> 
+                                        <p></p>
+
+                                        <p style="margin: 16px 0 0 0 ;">Puede conocer mejor a este personaje consultando su <a class="hiper" href="../Paginas/Sub-paginas/Personajes/Aldeanos/angela.html">bibliografia</a> en la seccion de personajes.</p>
+                                    </div>
+                                </dialog>
                             </td>
-                            <td style="text-align:center; padding: 0;  width: 120px;"><b style="font-size: 25px;">03</b></td>
-                            <td style="text-align:center; padding: 0;  width: 120px;"><b style="font-size: 25px;">04</b></td>
-                            <td style="text-align:center; padding: 0;  width: 120px;"><b style="font-size: 25px;">05</b></td>
-                            <td style="text-align:center; padding: 0;  width: 120px;"><b style="font-size: 25px;">06</b></td>
-                            <td style="text-align:center; padding: 0;  width: 120px;">
+                            <td style="text-align:center; padding: 0; width: 120px;"><b style="font-size: 25px;">03</b></td>
+                            <td style="text-align:center; padding: 0; width: 120px;"><b style="font-size: 25px;">04</b></td>
+                            <td style="text-align:center; padding: 0; width: 120px;"><b style="font-size: 25px;">05</b></td>
+                            <td style="text-align:center; padding: 0; width: 120px;"><b style="font-size: 25px;">06</b></td>
+                            <td style="text-align:center; padding: 0; width: 120px;"> <!-- Cumpleaños de Norman -->
                                 <br><b style="color: rgb(232, 22, 22); font-size: 25px;">07</b></br>
-                                <p class="cumpleaño" style="text-align:center; margin: 0; padding: 30px 0 15px 0;"></p>
+                                <div style="display: flex; flex-direction:column; justify-content: space-evenly; align-items: center; margin-top: 10px;">
+                                    <p class="cumpleaño" onclick="window.modal_cumple11.showModal();" title="Cumpleaños de Norman"></p>
+                                    <div style="margin: 0; margin-bottom: 4px;"><b style="color: #E83;">Norman</b></div>
+                                </div>
+
+                                <dialog id="modal_cumple11" class="modal_calendario">
+
+                                    <button onclick="window.modal_cumple11.close();" class="btn close">X</button>
+                                    <h3>Cumpleaños del aldeano</h3>
+
+                                    <img src="../IMG/Personajes/Aldeanos/Caras/Norman.png" class="left screenshot img_cumpleaños" loading="lazy" style="margin: 0 20px"/>
+
+                                    <div style="padding: 0 20px 20px 20px; margin: 0;"> 
+                                        <p></p>
+
+                                        <p style="margin: 16px 0 0 0 ;">Puede conocer mejor a este personaje consultando su <a class="hiper" href="../Paginas/Sub-paginas/Personajes/Aldeanos/angela.html">bibliografia</a> en la seccion de personajes.</p>
+                                    </div>
+                                </dialog>
                             </td>
                         </tr>
     
                         <tr>
                             <td style="text-align:center; padding: 0;"><b style="font-size: 25px;">08</b></td>
-                            <td style="text-align:center; padding: 0;">
+                            <td style="text-align:center; padding: 0;"> <!-- Cumpleaños de Laura y Raeger -->
                                 <br><b style="color: rgb(232, 22, 22); font-size: 25px;">09</b></br>
-                                <p class="cumpleaño" style="text-align:center; margin: 0; padding: 30px 0 15px 0;"></p>
+                                <div style="display: flex; flex-direction:column; justify-content: space-evenly; align-items: center; margin-top: 10px;">
+                                    <p class="cumpleaño" onclick="window.modal_cumple12.showModal();" title="Cumpleaños de Laura y Raeger"></p>
+                                    <div style="margin: 0; margin-bottom: 4px;"><b style="color: #E83;">Laura</b><b> y </b><b style="color: rgb(140, 24, 249);">Raeger</b></div>
+                                </div>
+
+                                <dialog id="modal_cumple12" class="modal_calendario">
+
+                                    <button onclick="window.modal_cumple12.close();" class="btn close">X</button>
+
+                                    <section style="display: flex; flex-direction: column;">
+
+                                        <div>  <!-- Laura -->
+                                            <h3>Cumpleaños del aldeano</h3>
+    
+                                            <img src="../IMG/Personajes/Candidatos/Cara/laura.png" class="left screenshot img_cumpleaños" loading="lazy" style="margin: 0 20px"/>
+        
+                                            <div style="padding: 0 20px 20px 20px; margin: 0;"> 
+                                                <p></p>
+        
+                                                <p style="margin: 16px 0 0 0 ;">Puede conocer mejor a este personaje consultando su <a class="hiper" href="../Paginas/Sub-paginas/Personajes/Aldeanos/angela.html">bibliografia</a> en la seccion de personajes.</p>
+                                            </div>
+                                        </div>
+
+                                        <div>  <!-- Raeger -->
+                                            <h3 style="color: rgb(140, 24, 249);">Cumpleaños del aldeano del pase de expanción</h3>
+    
+                                            <img src="../IMG/Personajes/Candidatos/Cara/pase de expansion/Raeger.png" class="left screenshot img_cumpleaños" loading="lazy" style="margin: 0 20px"/>
+        
+                                            <div style="padding: 0 20px 20px 20px; margin: 0;"> 
+                                                <p></p>
+        
+                                                <p style="margin: 16px 0 0 0 ;">Puede conocer mejor a este personaje consultando su <a class="hiper" href="../Paginas/Sub-paginas/Personajes/Aldeanos/angela.html">bibliografia</a> en la seccion de personajes.</p>
+                                            </div>
+    
+                                        </div>
+                                    </section>
+                                </dialog>
                             </td>
-                            <td style="text-align:center; padding: 0;">
+                            <td style="text-align:center; padding: 0;"> <!-- Cumpleaños de Karina -->
                                 <br><b style="color: rgb(232, 22, 22); font-size: 25px;">10</b></br>
-                                <p class="cumpleaño" style="text-align:center; margin: 0; padding: 30px 0 15px 0;"></p>
+                                <div style="display: flex; flex-direction:column; justify-content: space-evenly; align-items: center; margin-top: 10px;">
+                                    <p class="cumpleaño" onclick="window.modal_cumple13.showModal();" title="Cumpleaños de Karina"></p>
+                                    <div style="margin: 0; margin-bottom: 4px;"><b style="color: #E83;">Karina</b></div>
+                                </div>
+
+                                <dialog id="modal_cumple13" class="modal_calendario">
+
+                                    <button onclick="window.modal_cumple13.close();" class="btn close">X</button>
+                                    <h3>Cumpleaños del aldeano</h3>
+
+                                    <img src="../IMG/Personajes/Aldeanos/Caras/Karina.png" class="left screenshot img_cumpleaños" loading="lazy" style="margin: 0 20px"/>
+
+                                    <div style="padding: 0 20px 20px 20px; margin: 0;"> 
+                                        <p></p>
+
+                                        <p style="margin: 16px 0 0 0 ;">Puede conocer mejor a este personaje consultando su <a class="hiper" href="../Paginas/Sub-paginas/Personajes/Aldeanos/angela.html">bibliografia</a> en la seccion de personajes.</p>
+                                    </div>
+                                </dialog>
                             </td>
                             <td style="text-align:center; padding: 0;"><b style="font-size: 25px;">11</b></td>
-                            <td style="text-align:center; padding: 0;">
+                            <td style="text-align:center; padding: 0;"> <!-- Cumpleaños de Giorgio -->
                                 <br><b style="color: rgb(232, 22, 22); font-size: 25px;">12</b></br>
-                                <p class="cumpleaño" style="text-align:center; margin: 0; padding: 30px 0 15px 0;"></p>
+                                <div style="display: flex; flex-direction:column; justify-content: space-evenly; align-items: center; margin-top: 10px;">
+                                    <p class="cumpleaño" onclick="window.modal_cumple14.showModal();" title="Cumpleaños de Giorgio"></p>
+                                    <div style="margin: 0; margin-bottom: 4px;"><b style="color: rgb(140, 24, 249);">Giorgio</b></div>
+                                </div>
+
+                                <dialog id="modal_cumple14" class="modal_calendario">
+
+                                    <button onclick="window.modal_cumple14.close();" class="btn close">X</button>
+
+                                    <h3 style="color: rgb(140, 24, 249);">Cumpleaños del aldeano del pase de expanción</h3>
+
+                                    <img src="../IMG/Personajes/Aldeanos/Caras/pase de expansion/Giorgio.png" class="left screenshot img_cumpleaños" loading="lazy" style="margin: 0 20px"/>
+
+                                    <div style="padding: 0 20px 20px 20px; margin: 0;"> 
+                                        <p></p>
+
+                                        <p style="margin: 16px 0 0 0 ;">Puede conocer mejor a este personaje consultando su <a class="hiper" href="../Paginas/Sub-paginas/Personajes/Aldeanos/angela.html">bibliografia</a> en la seccion de personajes.</p>
+                                    </div>
+                                </dialog>
                             </td>
                             <td style="text-align:center; padding: 0;"><b style="font-size: 25px;">13</b></td>
                             <td style="text-align:center; padding: 0;">
                                 <br><b style="color: rgb(232, 22, 22); font-size: 28px;">14</b></br>
-                                <p class="evento" style="text-align:center; margin: 0; padding: 30px 0 15px 0;" onclick="window.modal_festival3.showModal();" title="Verbena Estival"></p>
+                                <div style="display: flex; flex-direction:column; justify-content: space-evenly; align-items: center; margin-top: 10px;"><p class="evento" onclick="window.modal_festival3.showModal();" title="Verbena Estival"></p></div>
                                 <dialog id="modal_festival3" class="modal_calendario">
                                     <h3>14 de Verano - Verbena Estival</h3>
 
@@ -271,25 +577,59 @@
                         </tr>
     
                         <tr>
-                            <td style="text-align:center; padding: 0;">
+                            <td style="text-align:center; padding: 0;"> <!-- Cumpleaños de Emilio -->
                                 <br><b style="color: rgb(232, 22, 22); font-size: 25px;">15</b></br>
-                                <p class="cumpleaño" style="text-align:center; margin: 0; padding: 30px 0 15px 0;"></p>
+                                <div style="display: flex; flex-direction:column; justify-content: space-evenly; align-items: center; margin-top: 10px;">
+                                    <p class="cumpleaño" onclick="window.modal_cumple15.showModal();" title="Cumpleaños de Emilio"></p>
+                                    <div style="margin: 0; margin-bottom: 4px;"><b style="color: #E83;">Emilio</b></div>
+                                </div>
+
+                                <dialog id="modal_cumple15" class="modal_calendario">
+
+                                    <button onclick="window.modal_cumple15.close();" class="btn close">X</button>
+                                    <h3>Cumpleaños del aldeano</h3>
+
+                                    <img src="../IMG/Personajes/Candidatos/Cara/emilio.png" class="left screenshot img_cumpleaños" loading="lazy" style="margin: 0 20px"/>
+
+                                    <div style="padding: 0 20px 20px 20px; margin: 0;"> 
+                                        <p></p>
+
+                                        <p style="margin: 16px 0 0 0 ;">Puede conocer mejor a este personaje consultando su <a class="hiper" href="../Paginas/Sub-paginas/Personajes/Aldeanos/angela.html">bibliografia</a> en la seccion de personajes.</p>
+                                    </div>
+                                </dialog>
                             </td>
                             <td style="text-align:center; padding: 0;"><b style="font-size: 25px;">16</b></td>
                             <td style="text-align:center; padding: 0;"><b style="font-size: 25px;">17</b></td>
                             <td style="text-align:center; padding: 0;"><b style="font-size: 25px;">18</b></td>
                             <td style="text-align:center; padding: 0;"><b style="font-size: 25px;">19</b></td>
                             <td style="text-align:center; padding: 0;"><b style="font-size: 25px;">20</b></td>
-                            <td style="text-align:center; padding: 0;">
+                            <td style="text-align:center; padding: 0;"> <!-- Cumpleaños de Ralph -->
                                 <br><b style="color: rgb(232, 22, 22); font-size: 25px;">21</b></br>
-                                <p class="cumpleaño" style="text-align:center; margin: 0; padding: 30px 0 15px 0;"></p>
+                                <div style="display: flex; flex-direction:column; justify-content: space-evenly; align-items: center; margin-top: 10px;">
+                                    <p class="cumpleaño" onclick="window.modal_cumple16.showModal();" title="Cumpleaños de Ralph"></p>
+                                    <div  style="margin: 0; margin-bottom: 2px;"><b style="color: #E83;">Ralph</b></div>
+                                </div>
+
+                                <dialog id="modal_cumple16" class="modal_calendario">
+
+                                    <button onclick="window.modal_cumple16.close();" class="btn close">X</button>
+                                    <h3>Cumpleaños del aldeano</h3>
+
+                                    <img src="../IMG/Personajes/Candidatos/Cara/ralph.png" class="left screenshot img_cumpleaños" loading="lazy" style="margin: 0 20px"/>
+
+                                    <div style="padding: 0 20px 20px 20px; margin: 0;"> 
+                                        <p></p>
+
+                                        <p style="margin: 16px 0 0 0 ;">Puede conocer mejor a este personaje consultando su <a class="hiper" href="../Paginas/Sub-paginas/Personajes/Aldeanos/angela.html">bibliografia</a> en la seccion de personajes.</p>
+                                    </div>
+                                </dialog>
                             </td>
                         </tr>
     
                         <tr>
                             <td style="text-align:center; padding: 0;">
                                 <br><b style="color: rgb(232, 22, 22); font-size: 28px;">22</b></br>
-                                <p class="evento" style="text-align:center; margin: 0; padding: 30px 0 15px 0;" onclick="window.modal_festival4.showModal();" title="Espectaculo de fuegos artificiales"></p>
+                                <div style="display: flex; flex-direction:column; justify-content: space-evenly; align-items: center; margin-top: 10px;"><p class="evento" onclick="window.modal_festival4.showModal();" title="Espectaculo de fuegos artificiales"></p></div>
                                 <dialog id="modal_festival4" class="modal_calendario">
                                     <h3>22 de Verano - Espectaculo de fuegos artificiales</h3>
 
@@ -308,14 +648,17 @@
                                     </div>
                                 </dialog>
                             </td>
-                            <td style="text-align:center; padding: 0;">
+                            <td style="text-align:center; padding: 0;"> <!-- Cumpleaños de Marcos -->
                                 <br><b style="color: rgb(232, 22, 22); font-size: 25px;">23</b></br>
-                                <p class="cumpleaño" style="text-align:center; margin: 0; padding: 30px 0 15px 0;" onclick="window.modal_cumple11.showModal();" title="Cumpleaños de Marcos"></p>
+                                <div style="display:flex; flex-direction:column; justify-content: space-evenly; align-items: center; margin-top: 10px;">
+                                    <p class="cumpleaño" onclick="window.modal_cumple17.showModal();" title="Cumpleaños de Marcos"></p>
+                                    <div  style="margin: 0; margin-bottom: 2px;"><b style="color: #E83;">Marcos</b></div>
+                                </div>
                                 
-                                <dialog id="modal_cumple11" class="modal_calendario">
+                                <dialog id="modal_cumple17" class="modal_calendario">
                                     <h3>Cumpleaños del aldeano</h3>
 
-                                    <button onclick="window.modal_cumple11.close();" class="btn close">X</button>
+                                    <button onclick="window.modal_cumple17.close();" class="btn close">X</button>
 
                                     <img src="../IMG/Personajes/Aldeanos/Caras/Marcos.png" class="left screenshot img_cumpleaños" loading="lazy" style="margin: 0 20px"/>
 
@@ -326,14 +669,17 @@
                                     </div>
                                 </dialog>
                             </td>
-                            <td style="text-align:center; padding: 0;">
+                            <td style="text-align:center; padding: 0;"> <!-- Cumpleaños de Georg -->
                                 <br><b style="color: rgb(232, 22, 22); font-size: 25px;">24</b></br>
-                                <p class="cumpleaño" style="text-align:center; margin: 0; padding: 30px 0 15px 0;" onclick="window.modal_cumple12.showModal();" title="Cumpleaños de Georg"></p>
+                                <div style="display: flex; flex-direction:column; justify-content: space-evenly; align-items: center; margin-top: 10px;">
+                                    <p class="cumpleaño" onclick="window.modal_cumple18.showModal();" title="Cumpleaños de Georg"></p>
+                                    <div  style="margin: 0; margin-bottom: 2px;"><b style="color: #E83;">Georg</b></div>
+                                </div>
                                 
-                                <dialog id="modal_cumple12" class="modal_calendario">
+                                <dialog id="modal_cumple18" class="modal_calendario">
                                     <h3>Cumpleaños del aldeano</h3>
 
-                                    <button onclick="window.modal_cumple12.close();" class="btn close">X</button>
+                                    <button onclick="window.modal_cumple18.close();" class="btn close">X</button>
 
                                     <img src="../IMG/Personajes/Aldeanos/Caras/Georg.png" class="left screenshot img_cumpleaños" loading="lazy" style="margin: 0 20px"/>
 
@@ -347,33 +693,52 @@
                                 </dialog>
                             </td>
                             <td style="text-align:center; padding: 0;"><b style="font-size: 25px;">25</b></td>
-                            <td style="text-align:center; padding: 0;">
+                            <td style="text-align:center; padding: 0;"> <!-- Cumpleaños de Hina -->
                                 <br><b style="color: rgb(232, 22, 22); font-size: 25px;">26</b></br>
-                                <p class="cumpleaño" style="text-align:center; margin: 0; padding: 30px 0 15px 0;"></p>
+                                <div style="display: flex; flex-direction:column; justify-content: space-evenly; align-items: center; margin-top: 10px;">
+                                    <p class="cumpleaño" onclick="window.modal_cumple19.showModal();" title="Cumpleaños de Hina"></p>
+                                    <div style="margin: 0; margin-bottom: 4px;"><b style="color: rgb(140, 24, 249);">Hina</b></div>
+                                </div>
+
+                                <dialog id="modal_cumple19" class="modal_calendario">
+
+                                    <button onclick="window.modal_cumple19.close();" class="btn close">X</button>
+
+                                    <h3 style="color: rgb(140, 24, 249);">Cumpleaños del aldeano del pase de expanción</h3>
+
+                                    <img src="../IMG/Personajes/Aldeanos/Caras/pase de expansion/Hina.png" class="left screenshot img_cumpleaños" loading="lazy" style="margin: 0 20px"/>
+
+                                    <div style="padding: 0 20px 20px 20px; margin: 0;"> 
+                                        <p></p>
+
+                                        <p style="margin: 16px 0 0 0 ;">Puede conocer mejor a este personaje consultando su <a class="hiper" href="../Paginas/Sub-paginas/Personajes/Aldeanos/angela.html">bibliografia</a> en la seccion de personajes.</p>
+                                    </div>
+                                </dialog>
                             </td>
                             <td style="text-align:center; padding: 0;"><b style="font-size: 25px;">27</b></td>
-                            <td style="text-align:center; padding: 0;">
+                            <td style="text-align:center; padding: 0;"> <!-- Cumpleaños de Reina -->
                                 <br><b style="color: rgb(232, 22, 22); font-size: 25px;">28</b></br>
-                                <p class="cumpleaño" style="text-align:center; margin: 0; padding: 30px 0 15px 0;"></p>
+                                <div style="display: flex; flex-direction:column; justify-content: space-evenly; align-items: center; margin-top: 10px;">
+                                    <p class="cumpleaño" onclick="window.modal_cumple20.showModal();" title="Cumpleaños de Reina"></p>
+                                    <div  style="margin: 0; margin-bottom: 2px;"><b style="color: #E83;">Reina</b></div>
+                                </div>
+
+                                <dialog id="modal_cumple20" class="modal_calendario">
+
+                                    <button onclick="window.modal_cumple20.close();" class="btn close">X</button>
+                                    <h3>Cumpleaños del aldeano</h3>
+
+                                    <img src="../IMG/Personajes/Candidatos/Cara/reina.png" class="left screenshot img_cumpleaños" loading="lazy" style="margin: 0 20px"/>
+
+                                    <div style="padding: 0 20px 20px 20px; margin: 0;"> 
+                                        <p></p>
+
+                                        <p style="margin: 16px 0 0 0 ;">Puede conocer mejor a este personaje consultando su <a class="hiper" href="../Paginas/Sub-paginas/Personajes/Aldeanos/angela.html">bibliografia</a> en la seccion de personajes.</p>
+                                    </div>
+                                </dialog>
                             </td>
                         </tr>
                     </table>
-
-                    <h3>Cumpleaños de los aldeanos</h3>
-
-                    <ul class="horario">
-                        <li class="gustos"><b>Dia 02:</b> Cumpleaños de Mikey.</li>
-                        <li class="gustos"><b>Dia 07:</b> Cumpleaños de Norman.</li>
-                        <li class="gustos"><b>Dia 09:</b> Cumpleaños de Laura y Raeger <b style="color: rgb(140, 24, 249);">(Expansion Pass)</b>.</li>
-                        <li class="gustos"><b>Dia 10:</b> Cumpleaños de Karina.</li>
-                        <li class="gustos"><b>Dia 12:</b> Cumpleaños de Giorgio <b style="color: rgb(140, 24, 249);">(Expansion Pass)</b>.</li>
-                        <li class="gustos"><b>Dia 15:</b> Cumpleaños de Emilio.</li>
-                        <li class="gustos"><b>Dia 21:</b> Cumpleaños de Ralph.</li>
-                        <li class="gustos"><b>Dia 23:</b> Cumpleaños de Marcos.</li>
-                        <li class="gustos"><b>Dia 24:</b> Cumpleaños de Georg.</li>
-                        <li class="gustos"><b>Dia 26:</b> Cumpleaños de Hina <b style="color: rgb(140, 24, 249);">(Expansion Pass)</b>.</li>
-                        <li class="gustos"><b>Dia 28:</b> Cumpleaños de Reina.</li>
-                    </ul>
                 </section>
 
                 <section> <!-- Otoño -->
@@ -386,14 +751,17 @@
                         <tr>
                             <td style="text-align:center; padding: 0; width: 120px;"><b style="font-size: 25px;">01</b></td>
                             <td style="text-align:center; padding: 0; width: 120px;"><b style="font-size: 25px;">02</b></td>
-                            <td style="text-align:center; padding: 0;  width: 120px;">
+                            <td style="text-align:center; padding: 0; width: 120px;"> <!-- Cumpleaños de Bridget -->
                                 <br><b style="color: rgb(232, 22, 22); font-size: 25px;">03</b></br>
-                                <p class="cumpleaño" style="text-align:center; margin: 0; padding: 30px 0 15px 0;" onclick="window.modal_cumple14.showModal();" title="Cumpleaños de Bridget"></p>
+                                <div style="display: flex; flex-direction:column; justify-content: space-evenly; align-items: center; margin-top: 10px;">
+                                    <p class="cumpleaño" onclick="window.modal_cumple21.showModal();" title="Cumpleaños de Bridget"></p>
+                                    <div style="margin: 0; margin-bottom: 4px;"><b style="color: #E83;">Bridget</b></div>
+                                </div>
                                 
-                                <dialog id="modal_cumple14" class="modal_calendario">
+                                <dialog id="modal_cumple21" class="modal_calendario">
                                     <h3>Cumpleaños del aldeano</h3>
 
-                                    <button onclick="window.modal_cumple14.close();" class="btn close">X</button>
+                                    <button onclick="window.modal_cumple21.close();" class="btn close">X</button>
 
                                     <img src="../IMG/Personajes/Candidatos/Cara/bridget.png" class="left screenshot img_cumpleaños" loading="lazy" style="margin: 0 20px"/>
 
@@ -407,24 +775,27 @@
                                 </dialog>
                             </td>
                             <td style="text-align:center; padding: 0; width: 120px;"><b style="font-size: 25px;">04</b></td>
-                            <td style="text-align:center; padding: 0; width: 120px;">
+                            <td style="text-align:center; padding: 0; width: 120px;"> <!-- Cumpleaños de Lisette -->
                                 <br><b style="color: rgb(232, 22, 22); font-size: 25px;">05</b></br>
                                 <p class="cumpleaño" style="text-align:center; margin: 0; padding: 30px 0 15px 0;"></p>
+                                <div style="margin: 0; margin-bottom: 4px;"><b style="color: rgb(140, 24, 249);">Lisette</b></div>
                             </td>
-                            <td style="text-align:center; padding: 0; width: 120px;">
+                            <td style="text-align:center; padding: 0; width: 120px;"> <!-- Cumpleaños de Iris -->
                                 <br><b style="color: rgb(232, 22, 22); font-size: 25px;">06</b></br>
                                 <p class="cumpleaño" style="text-align:center; margin: 0; padding: 30px 0 15px 0;"></p>
+                                <div style="margin: 0; margin-bottom: 4px;"><b style="color: rgb(140, 24, 249);">Iris</b></div>
                             </td>
-                            <td style="text-align:center; padding: 0; width: 120px;">
+                            <td style="text-align:center; padding: 0; width: 120px;"> <!-- Cumpleaños de Amador -->
                                 <br><b style="color: rgb(232, 22, 22); font-size: 25px;">07</b></br>
                                 <p class="cumpleaño" style="text-align:center; margin: 0; padding: 30px 0 15px 0;"></p>
+                                <div style="margin: 0; margin-bottom: 4px;"><b style="color: #E83;">Amador</b></div>
                             </td>
                         </tr>
     
                         <tr>
                             <td style="text-align:center; padding: 0;">
                                 <br><b style="color: rgb(232, 22, 22); font-size: 25px;">08</b></br>
-                                <p class="evento" style="text-align:center; margin: 0; padding: 30px 0 15px 0;" onclick="window.modal_festival5.showModal();" title="Búsqueda de Setas"></p>
+                                <div style="display: flex; flex-direction:column; justify-content: space-evenly; align-items: center; margin-top: 10px;"><p class="evento" onclick="window.modal_festival5.showModal();" title="Búsqueda de Setas"></p></div>
                                 
                                 <dialog id="modal_festival5" class="modal_calendario">
                                     <h3>08 de Otoño - Búsqueda de Setas</h3>
@@ -452,28 +823,32 @@
                                     </div>
                                 </dialog>
                             </td>
-                            <td style="text-align:center; padding: 0;">
+                            <td style="text-align:center; padding: 0;"> <!-- Cumpleaños de Sydney y Tigre -->
                                 <br><b style="color: rgb(232, 22, 22); font-size: 25px;">09</b></br>
                                 <p class="cumpleaño" style="text-align:center; margin: 0; padding: 30px 0 15px 0;"></p>
+                                <div style="margin: 0; margin-bottom: 4px;"><b style="color: #E83;">Sydney</b><b> y </b><b style="color: rgb(140, 24, 249);">Tigre</b></div>
                             </td>
                             <td style="text-align:center; padding: 0;"><b style="font-size: 25px;">10</b></td>
                             <td style="text-align:center; padding: 0;"><b style="font-size: 25px;">11</b></td>
                             <td style="text-align:center; padding: 0;"><b style="font-size: 25px;">12</b></td>
-                            <td style="text-align:center; padding: 0;">
+                            <td style="text-align:center; padding: 0;"> <!-- Cumpleaños de Patricia -->
                                 <br><b style="color: rgb(232, 22, 22); font-size: 25px;">13</b></br>
-                                <p class="cumpleaño" style="text-align:center; margin: 0; padding: 30px 0 15px 0;" onclick="window.modal_cumple16.showModal();" title="Cumpleaños de Patricia"></p>
+                                <div style="display: flex; flex-direction:column; justify-content: space-evenly; align-items: center; margin-top: 10px;">
+                                    <p class="cumpleaño" onclick="window.modal_cumple26.showModal();" title="Cumpleaños de Patricia"></p>
+                                    <div style="margin: 0; margin-bottom: 4px;"><b style="color: #E83;">Patricia</b></div>
+                                </div>
                                 
-                                <dialog id="modal_cumple16" class="modal_calendario">
+                                <dialog id="modal_cumple26" class="modal_calendario">
                                     <h3>Cumpleaños del aldeano</h3>
 
-                                    <button onclick="window.modal_cumple16.close();" class="btn close">X</button>
+                                    <button onclick="window.modal_cumple26.close();" class="btn close">X</button>
 
                                     <img src="../IMG/Personajes/Aldeanos/Caras/Patricia.png" class="left screenshot img_cumpleaños" loading="lazy" style="margin: 0 20px"/>
 
                                     <div style="padding: 0 20px 20px 20px; margin: 0;"> 
                                         <p>Patricia es la esposa de Georg y es madre de Bridget y Damon. Dirige la tienda de animales "La casa de las patitas" con su hija Bridget. Ella se encarga de las ventas de todo el ganado y las aves de corral, así como de los kits de cría. Ama a los animales y se dedica a cuidarlos y brindarles el mejor cuidado posible.</p>
                 
-                                        <p>Patricia invitará a sus amigas Sally , Ángela y Manuela a su casa una vez a la semana en su día libre. Compite cada año en el derbi de mascotas y ayuda a Manuela con el Verbena Estival.</p>
+                                        <p>Patricia invitará a sus amigas Sally, Ángela y Manuela a su casa una vez a la semana en su día libre. Compite cada año en el derbi de mascotas y ayuda a Manuela con el Verbena Estival.</p>
 
                                         <p style="margin: 16px 0 0 0 ;">Puede conocer mejor a este personaje consultando su <a class="hiper" href="../Paginas/Sub-paginas/Personajes/Aldeanos/patricia.html">bibliografia</a> en la seccion de personajes.</p>
                                     </div>
@@ -485,19 +860,21 @@
                         <tr>
                             <td style="text-align:center; padding: 0;"><b style="font-size: 25px;">15</b></td>
                             <td style="text-align:center; padding: 0;"><b style="font-size: 25px;">16</b></td>
-                            <td style="text-align:center; padding: 0;">
+                            <td style="text-align:center; padding: 0;"> <!-- Cumpleaños de Misaki -->
                                 <br><b style="color: rgb(232, 22, 22); font-size: 25px;">17</b></br>
                                 <p class="cumpleaño" style="text-align:center; margin: 0; padding: 30px 0 15px 0;"></p>
+                                <div style="margin: 0; margin-bottom: 4px;"><b style="color: #E83;">Misaki</b></div>
                             </td>
-                            <td style="text-align:center; padding: 0;">
+                            <td style="text-align:center; padding: 0;"> <!-- Cumpleaños de Simón -->
                                 <br><b style="color: rgb(232, 22, 22); font-size: 25px;">18</b></br>
                                 <p class="cumpleaño" style="text-align:center; margin: 0; padding: 30px 0 15px 0;"></p>
+                                <div style="margin: 0; margin-bottom: 4px;"><b style="color: #E83;">Simón</b></div>
                             </td>
                             <td style="text-align:center; padding: 0;"><b style="font-size: 25px;">19</b></td>
                             <td style="text-align:center; padding: 0;"><b style="font-size: 25px;">20</b></td>
                             <td style="text-align:center; padding: 0;">
                                 <br><b style="color: rgb(232, 22, 22); font-size: 25px;">21</b></br>
-                                <p class="evento" style="text-align:center; margin: 0; padding: 30px 0 15px 0;" onclick="window.modal_festival6.showModal();" title="Memoria de los espiritus"></p>
+                                <div style="display: flex; flex-direction:column; justify-content: space-evenly; align-items: center; margin-top: 10px;"><p class="evento" onclick="window.modal_festival6.showModal();" title="Memoria de los espiritus"></p></div>
                                 
                                 <dialog id="modal_festival6" class="modal_calendario">
                                     <h3>21 de Otoño - Memoria de los espiritus</h3>
@@ -529,39 +906,45 @@
                             <td style="text-align:center; padding: 0;"><b style="font-size: 25px;">23</b></td>
                             <td style="text-align:center; padding: 0;"><b style="font-size: 25px;">24</b></td>
                             <td style="text-align:center; padding: 0;">
-                                <br><b style="color: rgb(232, 22, 22); font-size: 25px;">25</b></br>
+                                <br><b style="color: rgb(232, 22, 22); font-size: 25px;">25</b></br> <!-- Cumpleaños de Blaire -->
                                 <p class="cumpleaño" style="text-align:center; margin: 0; padding: 30px 0 15px 0;"></p>
+                                <div style="margin: 0; margin-bottom: 4px;"><b style="color: #E83;">Blaire</b></div>
                             </td>
-                            <td style="text-align:center; padding: 0;">
+                            <td style="text-align:center; padding: 0;"> <!-- Cumpleaños de Manuela -->
                                 <br><b style="color: rgb(232, 22, 22); font-size: 25px;">26</b></br>
-                                <p class="cumpleaño" style="text-align:center; margin: 0; padding: 30px 0 15px 0;"></p>
+                                <div style="display: flex; flex-direction:column; justify-content: space-evenly; align-items: center; margin-top: 10px;">
+                                    <p class="cumpleaño" onclick="window.modal_cumple30.showModal();" title="Cumpleaños de Manuela"></p>
+                                    <div style="margin: 0; margin-bottom: 4px;"><b style="color: #E83;">Manuela</b></div>
+                                </div>
+                                
+                                <dialog id="modal_cumple30" class="modal_calendario">
+                                    <h3>Cumpleaños del aldeano</h3>
+
+                                    <button onclick="window.modal_cumple30.close();" class="btn close">X</button>
+
+                                    <img src="../IMG/Personajes/Aldeanos/Caras/Manuela.png" class="left screenshot img_cumpleaños" loading="lazy" style="margin: 0 20px"/>
+
+                                    <div style="padding: 0 20px 20px 20px; margin: 0;"> 
+                                        <p>Manuela es la esposa de Marcos y es la madre Emilio. Manuela es una mujer alegre y vivaz que ama el mar. Para Manuela, Raúl es considerado como un miembro de su familia por lo que suele pasar tiempo con él. Si interactuas con ella podras resibir como regalo de su parte tu primera caña de pescar para que puedas embarcarte al mundo de la pesca.</p>
+
+                                        <p>Manuela junto con Sally y Ángela suelen visitar una vez a la semana en los días libres de Patricia y tambien Manuela es la encargada de preparar todo para el festival de Verbena Estival.</p>
+
+                                        <p style="margin: 16px 0 0 0 ;">Puede conocer mejor a este personaje consultando su <a class="hiper" href="../Paginas/Sub-paginas/Personajes/Aldeanos/manuela.html">bibliografia</a> en la seccion de personajes.</p>
+                                    </div>
+                                </dialog>
                             </td>
-                            <td style="text-align:center; padding: 0;">
+                            <td style="text-align:center; padding: 0;"> <!-- Cumpleaños de Lars y Marian -->
                                 <br><b style="color: rgb(232, 22, 22); font-size: 25px;">27</b></br>
                                 <p class="cumpleaño" style="text-align:center; margin: 0; padding: 30px 0 15px 0;"></p>
+                                <div style="margin: 0; margin-bottom: 4px; width: 110px;"><b style="color: #E83;">Lars</b><b> y </b><b style="color: rgb(140, 24, 249);">Marian</b></div>
                             </td>
-                            <td style="text-align:center; padding: 0;">
+                            <td style="text-align:center; padding: 0;"> <!-- Cumpleaños de Víctor -->
                                 <br><b style="color: rgb(232, 22, 22); font-size: 25px;">28</b></br>
                                 <p class="cumpleaño" style="text-align:center; margin: 0; padding: 30px 0 15px 0;"></p>
+                                <div style="margin: 0; margin-bottom: 4px;"><b style="color: #E83;">Víctor</b></div>
                             </td>
                         </tr>
                     </table>
-
-                    <h3>Cumpleaños de los aldeanos</h3>
-
-                    <ul class="horario">
-                        <li class="gustos"><b>Dia 03:</b> Cumpleaños de Bridget.</li>
-                        <li class="gustos"><b>Dia 05:</b> Cumpleaños de Lisette <b style="color: rgb(140, 24, 249);">(Expansion Pass)</b>.</li>
-                        <li class="gustos"><b>Dia 06:</b> Cumpleaños de Iris <b style="color: rgb(140, 24, 249);">(Expansion Pass)</b>.</li>
-                        <li class="gustos"><b>Dia 07:</b> Cumpleaños de Amador.</li>
-                        <li class="gustos"><b>Dia 09:</b> Cumpleaños de Sydney y Tigre <b style="color: rgb(140, 24, 249);">(Expansion Pass)</b>.</li>
-                        <li class="gustos"><b>Dia 17:</b> Cumpleaños de Misaki.</li>
-                        <li class="gustos"><b>Dia 18:</b> Cumpleaños de Simón.</li>
-                        <li class="gustos"><b>Dia 25:</b> Cumpleaños de Blaire.</li>
-                        <li class="gustos"><b>Dia 26:</b> Cumpleaños de Manuela.</li>
-                        <li class="gustos"><b>Dia 27:</b> Cumpleaños de Lars y Marian <b style="color: rgb(140, 24, 249);">(Expansion Pass)</b>.</li>
-                        <li class="gustos"><b>Dia 28:</b> Cumpleaños de Víctor.</li>
-                    </ul>
                 </section>
 
                 <section> <!-- Invierno -->
@@ -572,19 +955,19 @@
                         <tr><th colspan="7" style="font-size: 25px;">Calendario de Invierno</th></tr>
         
                         <tr>
-                            <td style="text-align:center; padding: 0;  width: 120px;">
+                            <td style="text-align:center; padding: 0; width: 120px;">
                                 <br><b style="color: rgb(232, 22, 22); font-size: 25px;">01</b></br>
                                 <p class="cumpleaño" style="text-align:center; margin: 0; padding: 30px 0 15px 0;"></p>
                             </td>
-                            <td style="text-align:center; padding: 0;  width: 120px;"><b style="font-size: 25px;">03</b></td>
-                            <td style="text-align:center; padding: 0;  width: 120px;"><b style="font-size: 25px;">03</b></td>
-                            <td style="text-align:center; padding: 0;  width: 120px;">
+                            <td style="text-align:center; padding: 0; width: 120px;"><b style="font-size: 25px;">03</b></td>
+                            <td style="text-align:center; padding: 0; width: 120px;"><b style="font-size: 25px;">03</b></td>
+                            <td style="text-align:center; padding: 0; width: 120px;">
                                 <br><b style="color: rgb(232, 22, 22); font-size: 25px;">04</b></br>
                                 <p class="cumpleaño" style="text-align:center; margin: 0; padding: 30px 0 15px 0;"></p>
                             </td>
-                            <td style="text-align:center; padding: 0;  width: 120px;"><b style="font-size: 25px;">05</b></td>
-                            <td style="text-align:center; padding: 0;  width: 120px;"><b style="font-size: 25px;">06</b></td>
-                            <td style="text-align:center; padding: 0;  width: 120px;">
+                            <td style="text-align:center; padding: 0; width: 120px;"><b style="font-size: 25px;">05</b></td>
+                            <td style="text-align:center; padding: 0; width: 120px;"><b style="font-size: 25px;">06</b></td>
+                            <td style="text-align:center; padding: 0; width: 120px;">
                                 <br><b style="color: rgb(232, 22, 22); font-size: 25px;">07</b></br>
                                 <p class="cumpleaño" style="text-align:center; margin: 0; padding: 30px 0 15px 0;"></p>
                             </td>
@@ -593,7 +976,7 @@
                         <tr>
                             <td style="text-align:center; padding: 0;">
                                 <br><b style="color: rgb(232, 22, 22); font-size: 25px;">08</b></br>
-                                <p class="evento" style="text-align:center; margin: 0; padding: 30px 0 15px 0;" onclick="window.modal_festival7.showModal();" title="Torneo de Pesca"></p>
+                                <div style="display: flex; flex-direction:column; justify-content: space-evenly; align-items: center; margin-top: 10px;"><p class="evento" onclick="window.modal_festival7.showModal();" title="Torneo de Pesca"></p></div>
                                 
                                 <dialog id="modal_festival7" class="modal_calendario">
                                     <h3>08 de Invierno - Torneo de Pesca</h3>
@@ -631,14 +1014,17 @@
                         </tr>
     
                         <tr>
-                            <td style="text-align:center; padding: 0;">
+                            <td style="text-align:center; padding: 0;"> <!-- Cumpleaños de Damon -->
                                 <br><b style="color: rgb(232, 22, 22); font-size: 25px;">15</b></br>
-                                <p class="cumpleaño" style="text-align:center; margin: 0; padding: 30px 0 15px 0;" onclick="window.modal_cumple27.showModal();" title="Cumpleaños de Damon"></p>
+                                <div style="display: flex; flex-direction:column; justify-content: space-evenly; align-items: center; margin-top: 10px;">
+                                    <p class="cumpleaño" onclick="window.modal_cumple39.showModal();" title="Cumpleaños de Damon"></p>
+                                    <div style="margin: 0; margin-bottom: 4px;"><b style="color: #E83;">Damon</b></div>
+                                </div>
                                 
-                                <dialog id="modal_cumple27" class="modal_calendario">
+                                <dialog id="modal_cumple39" class="modal_calendario">
                                     <h3>Cumpleaños del aldeano</h3>
 
-                                    <button onclick="window.modal_cumple27.close();" class="btn close">X</button>
+                                    <button onclick="window.modal_cumple39.close();" class="btn close">X</button>
 
                                     <img src="../IMG/Personajes/Candidatos/Cara/damon.png" class="left screenshot img_cumpleaños" loading="lazy" style="margin: 0 20px"/>
 
@@ -649,6 +1035,8 @@
 
                                         <p style="margin: 16px 0 0 0 ;">Puede conocer mejor a este personaje consultando su <a class="hiper" href="../Paginas/Sub-paginas/Personajes/Candidatos/damon.html">bibliografia</a> en la seccion de personajes.</p>
                                     </div>
+                                
+                                </dialog>
                             </td>
                             <td style="text-align:center; padding: 0;"><b style="font-size: 25px;">16</b></td>
                             <td style="text-align:center; padding: 0;">
@@ -670,8 +1058,7 @@
                             <td style="text-align:center; padding: 0;"><b style="font-size: 25px;">24</b></td>
                             <td style="text-align:center; padding: 0;">
                                 <br><b style="color: rgb(232, 22, 22); font-size: 25px;">25</b></br>
-                                <p class="evento" style="text-align:center; margin: 0; padding: 30px 0 15px 0;" onclick="window.modal_festival8.showModal();" title="Velada Invernal"></p>
-
+                                <div style="display: flex; flex-direction:column; justify-content: space-evenly; align-items: center; margin-top: 10px;"><p class="evento" onclick="window.modal_festival8.showModal();" title="Velada Invernal"></p></div>
 
                                 <dialog id="modal_festival8" class="modal_calendario">
                                     <h3>25 de Invierno - Velada Invernal</h3>
