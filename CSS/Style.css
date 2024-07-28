@@ -15,23 +15,9 @@
 
     details.esp { width: 409.6px !important;}
 
-    th.hora { width: 70px !important; }
-
     dialog h3 { font-size: 29px !important; }
 
     .image-container img { top: 16.01em !important; }
-
-    .img_festival {
-        width: 370px !important;
-         height: 338px !important;
-    }
-
-    .img_cumpleaños {
-        width: 190px !important;
-         height: 190px !important;
-    }
-
-    .img_perfil { width: 180px !important; }
 
     nav{padding: 25px 8px 0 8px !important; }
     
