@@ -37,7 +37,7 @@
     
     nav .pos-ini { margin: 0 0 0 2.69em !important; }
 
-    .vin_tel:-webkit-any-link{ font-size: 0.82em !important; }
+    .vin_nav:-webkit-any-link{ font-size: 0.82em !important; }
 }
 
 /* defino que solo altere estos elementos cuando la pantalla del dispositivo sea un telefono y que este en vertical*/
@@ -55,7 +55,7 @@
     
     nav .pos-ini { margin: 0 0 0 2.69em !important; }
 
-    .vin_tel:-webkit-any-link{ font-size: 0.82em !important; }
+    .vin_nav:-webkit-any-link{ font-size: 0.82em !important; }
 }
 
 /* ******************* */
