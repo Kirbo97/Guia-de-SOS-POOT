@@ -78,6 +78,18 @@ nav .pos-ini {
     flex-direction: column; /* le indico que los elemento del bloque flexible se organinse en columna*/
 }
 
+/* clase "vin_tel" con propiedad de enlace y le modifico la apariencia de hipervinculo*/
+.vin_nav:-webkit-any-link {
+    cursor: pointer;
+    font-weight: bold;
+    font-family: 'Fantasy', sans-serif;
+    text-decoration: none;
+    margin: 4px  0 auto 0; 
+    text-align: center; 
+    font-size: 1.03em;
+    color: #ebebf0; 
+}
+
 /* *********************** */
 /*  Diseños de lo modales  */
 /* *********************** */
@@ -180,14 +192,6 @@ p { text-align: justify; }
     color: #0000EE;
 }
 
-/* clase "vin_tel" con propiedad de enlace y le modifico la apariencia de hipervinculo*/
-.vin_tel:-webkit-any-link {
-    margin: 4px  0 auto 0; 
-    text-align: center; 
-    font-size: 1.03em;
-    color: #ebebf0; 
-}
-
 .sub_titulo {
     color: #09F;
     font-weight: bold;
@@ -210,20 +214,18 @@ p { text-align: justify; }
     z-index:0;
 }
 
-/* controlar los pasos intermedios en una secuencia de animación */
+/* controlar los pasos intermedios en una secuencia de animación (para la imagen del espiritu)*/
 @keyframes fade {
-    100% { opacity: 0; } /* Imagen 2 completamente visible al final */
-    50% { opacity: 1; } /* Imagen 2 completamente visible a la mitad de la animación */
-    45% { opacity: 1; } /* Imagen 2 completamente visible a la mitad de la animación */
-    10% { opacity: 0; } /* Imagen 2 completamente transparente al inicio */
-    0% { opacity: 0; } /* Imagen 2 completamente transparente al inicio */
+    0% { opacity: 0; }   /* Imagen completamente transparente al inicio */
+    50% { opacity: 1; }  /* Imagen completamente visible a la mitad de la animación */
+    100% { opacity: 0; } /* Imagen completamente transparente al final */
 }
 
-/* La etiqueta img cdenntro del contenedor con la clase "image-container" tendra la siguientes caracteristicas */
+/* La etiqueta img denntro del contenedor con la clase "image-container" tendra la siguientes caracteristicas (para la imagen del espiritu)*/
 .image-container img {
     position: absolute;
     top: 14.65em; right: 72.5px;
-    animation: fade 5s infinite; /* Repetir la animación indefinidamente */
+    animation: fade 10s infinite; /* Repetir la animación indefinidamente */
     transition: opacity 0.8s ease; /* Transición suave de opacidad */
 }
 
@@ -283,7 +285,6 @@ h3 , summary {
 
 summary.prin{ color: rgb(217, 0, 255); }
 summary.sec{ color: rgb(239, 192, 0); }
-summary.ter{ color: rgb(43, 193, 168); }
 
 summary { cursor: pointer; }
 
@@ -340,24 +341,6 @@ ul {
     list-style:none;
     line-height: 1.5em;
     margin-left: -.5em;
-}
-
-/* se crea la clase "sep1" en la etiqueta "ul" para que se ocupe de posisionar el contenido de una lista */
-ul.sep1 { 
-    padding: 0 0 0 10px;
-    margin: 0;
-}
-
-/* se crea la clase "sep2" en la etiqueta "ul" para que se ocupe de posisionar el contenido de una lista */
-ul.sep2 { 
-    padding: 0 0 0 100px;
-    margin: 0;
-}
-
-/* se crea la clase "sep3" en la etiqueta "ul" para que se ocupe de posisionar el contenido de una lista */
-ul.sep3 { 
-    padding: 0 4px 0 100px;
-    margin: 0;
 }
 
 /* se crea la clase "horario" en la etiqueta "ul" para que se ocupe de posisionar el contenido de una lista */
