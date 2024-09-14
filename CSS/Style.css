@@ -158,6 +158,9 @@ b {
     font-weight:800;
 }
 
+b.hora { color: rgb(53, 54, 54); }
+b.lugar { color: rgb(115, 55, 171); }
+
 /* La etiqueta "p" tendra cierta carasteristica */
 p { text-align: justify; }
 
