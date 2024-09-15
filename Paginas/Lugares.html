@@ -262,6 +262,202 @@
                     <p>El Palacio Gourmet es el lugar donde vive el crítico gastronómico Lovett. Revisa el cuaderno que hay dentro para encontrar los pedidos de platos de Lovett y vuelve al cuaderno para entregar los platos solicitados y recibir recompensas. Los pedidos tienen un nivel y cuando hayas entregado todos los platos de ese nivel, pasarás al siguiente nivel. Cuanto más alto sea el nivel del pedido mayor será la calidad de los artículos que recibirás como recompensa.</p>
 
                     <p>Debido a que Lovett es un crítico gastronómico tiene tanto dinero y eso se ve reflejado en su casa la cuanes un palacio con una decoracion refinada que se asemejan a los frances</p>
+
+                    <h3>Recompensas del libro de Lovett</h3>
+
+                    <div style="display: flex; flex-direction: row; justify-content: space-evenly; align-items: center;">
+    
+                        <p style="margin: 0; cursor: pointer;" onclick="window.n1.showModal();"><b>Nivel 1</b></p>
+    
+                        <p style="margin: 0; cursor: pointer;" onclick="window.n2.showModal();"><b>Nivel 2</b></p>
+    
+                        <p style="margin: 0; cursor: pointer;" onclick="window.n3.showModal();"><b>Nivel 3</b></p>
+    
+                        <p style="margin: 0; cursor: pointer;" onclick="window.n4.showModal();"><b>Nivel 4</b></p>
+    
+                        <p style="margin: 0; cursor: pointer;" onclick="window.n5.showModal();"><b>Nivel 5</b></p>
+                    </div>
+
+                    <dialog id="n1">
+                        
+                        <div><button onclick="window.n1.close();" class="btn close"de>X</button></div>
+                        <h3 style="text-align: center;">Nivel 1 del libro</h3>
+                        <table class="data" style="margin: 20px 50px 30px 50px;">
+                            <tr><th>Plato para entregar</th><th>Calidad requerida</th><th colspan="3">Premio</th></tr>
+
+                            <tr>
+                                <td style="padding: 4px 0 0 0; text-align:center;"><img src="../IMG/Cocina/Recetas/ensalada/Ensalada vegetal.png" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Ensalada vegetal</b></p></td>
+    
+                                <td style="text-align:center;">Cualquier calidad</td>
+                                
+                                <td style="text-align:center;">
+                                    <div style="display: flex; flex-direction: row; justify-content: space-evenly; align-items: center;">
+                                        <div style="margin: 0 15px;"><img src="../IMG/Prosesadoras/Agricultura/Mezcla de hierbas.png" width="80px" height="80px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="color:rgb(241, 40, 40); font-size: 20px;">3</b><b> Mezcla de hierbas</b></p></div>
+                                        <div style="margin: 0 15px;"><img src="../IMG/Prosesadoras/Agricultura/Mezcla de especias.png" width="80px" height="80px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="color:rgb(241, 40, 40); font-size: 20px;">3</b><b> Mezcla de especias</b></p></div>
+                                    </div>
+                                </td>
+                            </tr>
+        
+                            <tr>
+                                <td style="padding: 4px 0 0 0; text-align:center;"><img src="../IMG/Cocina/Recetas/sopa/Sopa de marisco.png" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Sopa de marisco</b></p></td>
+    
+                                <td style="text-align:center;">Cualquier calidad</td>
+                                
+                                <td style="text-align:center;">
+                                    <div style="display: flex; flex-direction: row; justify-content: space-evenly; align-items: center;">
+                                        <div style="margin: 0 15px;"><img src="../IMG/Otros/Cultivos/Nabo.png" width="80px" height="80px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="color:rgb(241, 40, 40); font-size: 20px;">3</b><b> Nabo (<b class="star s2">★</b> 2)</b></p></div>
+                                        <div style="margin: 0 15px;"><img src="../IMG/Otros/Cultivos/Patata.png" width="80px" height="80px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="color:rgb(241, 40, 40); font-size: 20px;">3</b><b> Patata (<b class="star s2">★</b> 2)</b></p></div>
+                                        <div style="margin: 0 15px;"><img src="../IMG/Otros/Cultivos/Pepino.png" width="80px" height="80px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="color:rgb(241, 40, 40); font-size: 20px;">3</b><b> Pepino (<b class="star s2">★</b> 2)</b></p></div>
+                                    </div>
+                                </td>
+                            </tr>
+        
+                            <tr>
+                                <td style="padding: 4px 0 0 0; text-align:center;"><img src="../IMG/Cocina/Recetas/entrantes/Huevo frito.png" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Huevo frito</b></p></td>
+    
+                                <td style="text-align:center;">Cualquier calidad</td>
+                                
+                                <td style="text-align:center;">
+                                    <div style="display: flex; flex-direction: row; justify-content: space-evenly; align-items: center;">
+                                        <div style="margin: 0 15px;"><img src="../IMG/Otros/Cultivos/Arroz.png" width="80px" height="80px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="color:rgb(241, 40, 40); font-size: 20px;">3</b><b> Arroz (<b class="star s2">★</b> 2)</b></p></div>
+                                        <div style="margin: 0 15px;"><img src="../IMG/Otros/Cultivos/Trigo.png" width="80px" height="80px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="color:rgb(241, 40, 40); font-size: 20px;">3</b><b> Trigo (<b class="star s2">★</b> 2)</b></p></div>
+                                        <div style="margin: 0 15px;"><img src="../IMG/Otros/Cultivos/Judías.png" width="80px" height="80px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="color:rgb(241, 40, 40); font-size: 20px;">3</b><b> Judías (<b class="star s2">★</b> 2)</b></p></div>
+                                    </div>
+                                </td>
+                            </tr>
+        
+                            <tr>
+                                <td style="padding: 4px 0 0 0; text-align:center;"><img src="../IMG/Cocina/Recetas/entrantes/Arroz con curry.png" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Arroz con curry</b></p></td>
+    
+                                <td style="text-align:center;">Cualquier calidad</td>
+                                
+                                <td style="text-align:center;">
+                                    <div style="display: flex; flex-direction: row; justify-content: space-evenly; align-items: center;">
+                                        <div style="margin: 0 15px;"><img src="../IMG/Otros/Mat Pri/Sal de roca.png" width="80px" height="80px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="color:rgb(241, 40, 40); font-size: 20px;">3</b><b> Sal de roca</b></p></div>
+                                        <div style="margin: 0 15px;"><img src="../IMG/Otros/Mat Pri/Grano de pimienta.png" width="80px" height="80px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="color:rgb(241, 40, 40); font-size: 20px;">3</b><b> Grano de pimienta</b></p></div>
+                                        <div style="margin: 0 15px;"><img src="../IMG/Otros/Mat Pri/Caña de azúcar.png" width="80px" height="80px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="color:rgb(241, 40, 40); font-size: 20px;">3</b><b> Caña de azúcar</b></p></div>
+                                    </div>
+                                </td>
+                            </tr>
+        
+                            <tr>
+                                <td style="padding: 4px 0 0 0; text-align:center;"><img src="../IMG/Cocina/Recetas/entrantes/Cangrejo de río en salsa mala.png" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px; width: 140px;"><b style="font-size: 13.5px;">Cangrejo de río en salsa mala</b></p></td>
+    
+                                <td style="text-align:center;">Cualquier calidad</td>
+                                
+                                <td style="text-align:center;">
+                                    <div style="display: flex; flex-direction: row; justify-content: space-evenly; align-items: center;">
+                                        <div style="margin: 0 15px;"><img src="../IMG/Prosesadoras/Agricultura/Café en polvo.png" width="80px" height="80px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="color:rgb(241, 40, 40); font-size: 20px;">3</b><b> Café en polvo (<b class="star s2">★</b> 2)</b></p></div>
+                                        <div style="margin: 0 15px;"><img src="../IMG/Prosesadoras/Agricultura/Cacao en polvo.png" width="80px" height="80px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="color:rgb(241, 40, 40); font-size: 20px;">3</b><b> Cacao en polvo (<b class="star s2">★</b> 2)</b></p></div>
+                                        <div style="margin: 0 15px;"><img src="../IMG/Prosesadoras/Agricultura/Harina.png" width="80px" height="80px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="color:rgb(241, 40, 40); font-size: 20px;">3</b><b> Harina (<b class="star s2">★</b> 2)</b></p></div>
+                                    </div>
+                                </td>
+                            </tr>
+        
+                            <tr>
+                                <td style="padding: 4px 0 0 0; text-align:center;"><img src="../IMG/Cocina/Recetas/postres/Oshiruko.png" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Oshiruko</b></p></td>
+    
+                                <td style="text-align:center;">Cualquier calidad</td>
+                                
+                                <td style="text-align:center;">
+                                    <div style="display: flex; flex-direction: row; justify-content: space-evenly; align-items: center;">
+                                        <div style="margin: 0 15px;"><img src="../IMG/Prosesadoras/Agricultura/pulverizadora.png" width="80px" height="80px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="color:rgb(241, 40, 40); font-size: 20px;">1</b><b> Pulverizadora</b></p></div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </dialog>
+
+                    <dialog id="n2">
+                        <div><button onclick="window.n2.close();" class="btn close"de>X</button></div>
+                        <h3 style="text-align: center;">Nivel 2 del libro</h3>
+                        <table class="data" style="margin: 20px 50px 30px 50px;">
+                            <tr><th>Plato para entregar</th><th>Calidad requerida</th><th colspan="4">Premio</th></tr>
+
+                            <tr>
+                                <td style="padding: 4px 0 0 0; text-align:center;"><img src="../IMG/Cocina/Recetas/ensalada/Ensalada vegetal.png" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Ensalada vegetal</b></p></td>
+    
+                                <td style="text-align:center;">Cualquier calidad</td>
+                                
+                                <td style="text-align:center;">
+                                    <div style="display: flex; flex-direction: row; justify-content: space-evenly; align-items: center;">
+                                        <div style="margin: 0 15px;"><img src="../IMG/Prosesadoras/Agricultura/Mezcla de hierbas.png" width="80px" height="80px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="color:rgb(241, 40, 40); font-size: 20px;">3</b><b> Mezcla de hierbas</b></p></div>
+                                        <div style="margin: 0 15px;"><img src="../IMG/Prosesadoras/Agricultura/Mezcla de especias.png" width="80px" height="80px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="color:rgb(241, 40, 40); font-size: 20px;">3</b><b> Mezcla de especias</b></p></div>
+                                    </div>
+                                </td>
+                            </tr>
+        
+                            <tr>
+                                <td style="padding: 4px 0 0 0; text-align:center;"><img src="../IMG/Cocina/Recetas/sopa/Sopa de marisco.png" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Sopa de marisco</b></p></td>
+    
+                                <td style="text-align:center;">Cualquier calidad</td>
+                                
+                                <td style="text-align:center;">
+                                    <div style="display: flex; flex-direction: row; justify-content: space-evenly; align-items: center;">
+                                        <div style="margin: 0 15px;"><img src="../IMG/Otros/Cultivos/Nabo.png" width="80px" height="80px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="color:rgb(241, 40, 40); font-size: 20px;">3</b><b> Nabo (<b class="star s2">★</b> 2)</b></p></div>
+                                        <div style="margin: 0 15px;"><img src="../IMG/Otros/Cultivos/Patata.png" width="80px" height="80px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="color:rgb(241, 40, 40); font-size: 20px;">3</b><b> Patata (<b class="star s2">★</b> 2)</b></p></div>
+                                        <div style="margin: 0 15px;"><img src="../IMG/Otros/Cultivos/Pepino.png" width="80px" height="80px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="color:rgb(241, 40, 40); font-size: 20px;">3</b><b> Pepino (<b class="star s2">★</b> 2)</b></p></div>
+                                    </div>
+                                </td>
+                            </tr>
+        
+                            <tr>
+                                <td style="padding: 4px 0 0 0; text-align:center;"><img src="../IMG/Cocina/Recetas/entrantes/Huevo frito.png" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Huevo frito</b></p></td>
+    
+                                <td style="text-align:center;">Cualquier calidad</td>
+                                
+                                <td style="text-align:center;">
+                                    <div style="display: flex; flex-direction: row; justify-content: space-evenly; align-items: center;">
+                                        <div style="margin: 0 15px;"><img src="../IMG/Otros/Cultivos/Arroz.png" width="80px" height="80px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="color:rgb(241, 40, 40); font-size: 20px;">3</b><b> Arroz (<b class="star s2">★</b> 2)</b></p></div>
+                                        <div style="margin: 0 15px;"><img src="../IMG/Otros/Cultivos/Trigo.png" width="80px" height="80px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="color:rgb(241, 40, 40); font-size: 20px;">3</b><b> Trigo (<b class="star s2">★</b> 2)</b></p></div>
+                                        <div style="margin: 0 15px;"><img src="../IMG/Otros/Cultivos/Judías.png" width="80px" height="80px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="color:rgb(241, 40, 40); font-size: 20px;">3</b><b> Judías (<b class="star s2">★</b> 2)</b></p></div>
+                                    </div>
+                                </td>
+                            </tr>
+        
+                            <tr>
+                                <td style="padding: 4px 0 0 0; text-align:center;"><img src="../IMG/Cocina/Recetas/entrantes/Arroz con curry.png" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Arroz con curry</b></p></td>
+    
+                                <td style="text-align:center;">Cualquier calidad</td>
+                                
+                                <td style="text-align:center;">
+                                    <div style="display: flex; flex-direction: row; justify-content: space-evenly; align-items: center;">
+                                        <div style="margin: 0 15px;"><img src="../IMG/Otros/Mat Pri/Sal de roca.png" width="80px" height="80px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="color:rgb(241, 40, 40); font-size: 20px;">3</b><b> Sal de roca</b></p></div>
+                                        <div style="margin: 0 15px;"><img src="../IMG/Otros/Mat Pri/Grano de pimienta.png" width="80px" height="80px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="color:rgb(241, 40, 40); font-size: 20px;">3</b><b> Grano de pimienta</b></p></div>
+                                        <div style="margin: 0 15px;"><img src="../IMG/Otros/Mat Pri/Caña de azúcar.png" width="80px" height="80px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="color:rgb(241, 40, 40); font-size: 20px;">3</b><b> Caña de azúcar</b></p></div>
+                                    </div>
+                                </td>
+                            </tr>
+        
+                            <tr>
+                                <td style="padding: 4px 0 0 0; text-align:center;"><img src="../IMG/Cocina/Recetas/entrantes/Cangrejo de río en salsa mala.png" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px; width: 140px;"><b style="font-size: 13.5px;">Cangrejo de río en salsa mala</b></p></td>
+    
+                                <td style="text-align:center;">Cualquier calidad</td>
+                                
+                                <td style="text-align:center;">
+                                    <div style="display: flex; flex-direction: row; justify-content: space-evenly; align-items: center;">
+                                        <div style="margin: 0 15px;"><img src="../IMG/Prosesadoras/Agricultura/Café en polvo.png" width="80px" height="80px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="color:rgb(241, 40, 40); font-size: 20px;">3</b><b> Café en polvo (<b class="star s2">★</b> 2)</b></p></div>
+                                        <div style="margin: 0 15px;"><img src="../IMG/Prosesadoras/Agricultura/Cacao en polvo.png" width="80px" height="80px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="color:rgb(241, 40, 40); font-size: 20px;">3</b><b> Cacao en polvo (<b class="star s2">★</b> 2)</b></p></div>
+                                        <div style="margin: 0 15px;"><img src="../IMG/Prosesadoras/Agricultura/Harina.png" width="80px" height="80px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="color:rgb(241, 40, 40); font-size: 20px;">3</b><b> Harina (<b class="star s2">★</b> 2)</b></p></div>
+                                    </div>
+                                </td>
+                            </tr>
+        
+                            <tr>
+                                <td style="padding: 4px 0 0 0; text-align:center;"><img src="../IMG/Cocina/Recetas/postres/Oshiruko.png" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Oshiruko</b></p></td>
+    
+                                <td style="text-align:center;">Cualquier calidad</td>
+                                
+                                <td style="text-align:center;">
+                                    <div style="display: flex; flex-direction: row; justify-content: space-evenly; align-items: center;">
+                                        <div style="margin: 0 15px;"><img src="../IMG/Prosesadoras/Agricultura/pulverizadora.png" width="80px" height="80px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="color:rgb(241, 40, 40); font-size: 20px;">1</b><b> Pulverizadora</b></p></div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </dialog>
+
+
                 </details>
             </main>
             
@@ -291,5 +487,7 @@
                 </section>
             </footer>
         </div> 
+        
+        <script type="text/javascript" src="../JS/funciones.js"></script> <!-- Conecta el archivo js para ser usado en la pagina --><!-- Este sj contiene las funciones de encriptar y desencriptar de la pagina-->
     </body>
 </html>

@@ -161,6 +161,15 @@ b {
 b.hora { color: rgb(53, 54, 54); }
 b.lugar { color: rgb(115, 55, 171); }
 
+b.star{ 
+    font-size:1.2em; 
+    -webkit-text-stroke: 0.5px black;
+}
+b.s1{ color: rgba(139,70,62,1); }
+b.s2{ color: rgba(132,196,205,1); }
+b.s3{ color: rgba(181,188,207,1); }
+b.s4{ color: rgba(200,157,37,1); }
+
 /* La etiqueta "p" tendra cierta carasteristica */
 p { text-align: justify; }
 
