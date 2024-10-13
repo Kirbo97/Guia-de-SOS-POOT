@@ -116,6 +116,12 @@ dialog {
 /* ******************* */
 /*  Diseños generales  */
 /* ******************* */
+/* La etiqueta "base1" es para la id y tendra cierta carasteristica */
+#base1 {
+    transition: opacity 0.5s ease; /* Efecto de desvanecimiento */
+    opacity: 1;
+}
+
 .img_perfil {
     width: 155px;
     height: 155px;
