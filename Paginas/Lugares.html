@@ -375,9 +375,9 @@
                                 <td style="text-align:center;"><p style="text-align:center; margin: 0;">2 <b class="star s2">★</b> o superior</p></td>
                                 
                                 <td style="text-align:center;">
-                                    <div style="display: flex; flex-direction: row; justify-content: space-evenly; align-items: center;">
-                                        <div style="margin: 0 8px;"><img src="../IMG/Prosesadoras/Cocina/ProCon.png" width="80px" height="80px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="color:rgb(241, 40, 40); font-size: 20px;">1</b><b> Procesadora de condimentos</b></p></div>
-                                        <div style="margin: 0 8px;"><img src="../IMG/Prosesadoras/Cocina/ProAli.png" width="80px" height="80px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="color:rgb(241, 40, 40); font-size: 20px;">1</b><b> Procesadora de aliños</b></p></div>
+                                    <div style="display: flex; flex-direction: row; justify-content: space-evenly; align-items: center; margin-bottom: 12px;">
+                                        <div style="margin: 0 8px;"><img src="../IMG/Prosesadoras/Cocina/ProCon.png" width="80px" height="80px"/><p style="text-align:center; margin: 0 10px;"><b style="color:rgb(241, 40, 40); font-size: 20px;">1</b><b> Procesadora de condimentos</b></p></div>
+                                        <div style="margin: 0 8px;"><img src="../IMG/Prosesadoras/Cocina/ProAli.png" width="80px" height="80px"/><p style="text-align:center; margin: 0 10px;"><b style="color:rgb(241, 40, 40); font-size: 20px;">1</b><b> Procesadora de aliños</b></p></div>
                                     </div>
                                 </td>
                             </tr>
@@ -458,7 +458,7 @@
                         <div><button onclick="window.n3.close();" class="btn close"de>X</button></div>
                         <h3 style="text-align: center;">Nivel 3 del libro</h3>
                         <table class="data" style="margin: 20px 40px 30px 40px;">
-                            <tr><th style="width: 11em;">Plato para entregar</th><th>Calidad requerida</th><th colspan="4">Premio</th></tr>
+                            <tr><th style="width: 11em;">Plato para entregar</th><th>Calidad requerida</th><th>Premio</th></tr>
 
                             <tr>
                                 <td style="padding: 4px 0 0 0; text-align:center;"><img src="../IMG/Cocina/Recetas/ensalada/Pescadito marinado.png" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Pescadito marinado</b></p></td>
@@ -666,15 +666,79 @@
                             </tr>
         
                             <tr>
-                                <td style="padding: 4px 0 0 0; text-align:center;"><img src="../IMG/Cocina/Recetas/postres/Yogur con miel.png" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px; width: 140px;"><b style="font-size: 13.5px;">Yogur con miel</b></p></td>
+                                <td style="text-align:center;">
+                                    <div id="base4"><img src="../IMG/Cocina/Recetas/postres/Oshiruko.png" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px;"><b style="font-size: 13.5px;">Oshiruko</b></p></div>
+                                    <div style="display: none;">
+
+                                        <div id="plat27"><img src="../IMG/Cocina/Recetas/postres/Oshiruko.png" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px;"><b style="font-size: 13.5px;">Oshiruko</b></p></div>
     
-                                <td style="text-align:center;"><p style="text-align:center; margin: 0;">2 <b class="star s2">★</b> o superior</p></td>
+                                        <div id="plat28"><img src="../IMG/Cocina/Recetas/postres/Tortitas.png" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px;"><b style="font-size: 13.5px;">Tortitas</b></p></div>
+    
+                                        <div id="plat29"><img src="../IMG/Cocina/Recetas/postres/Manzana asada.png" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px;"><b style="font-size: 13.5px;">Manzana asada</b></p></div>
+                                    </div>
+
+                                    <script>
+                                        let c4 = 0;
+                                        const platos4 = ["plat29","plat28","plat27"];
+                                        const lib3ba4 = document.getElementById('base4');
+                                        
+                                        function cambiarDivs4() {
+                                            lib3ba4.style.opacity = 0; // Comienza el desvanecimiento
+                                
+                                            setTimeout(() => {
+                                                const temp = document.getElementById(platos4[c4]);
+                                                lib3ba4.innerHTML = temp.innerHTML;
+                                                c4 = (c4 + 1) % platos4.length; // Incrementa c y vuelve a 0 si alcanza el final
+                                                lib3ba4.style.opacity = 1; // Restaura la opacidad
+                                            }, 300); // Tiempo igual al de la transición de CSS
+                                        }
+                                        
+                                        setInterval(cambiarDivs4, 3000); // Cambia cada 2 segundos
+                                    </script>
+
+                                </td>
+    
+                                <td style="text-align:center;"><p style="text-align:center; margin: 0;">4 <b class="star s2">★</b> o superior</p></td>
                                 
                                 <td style="text-align:center;">
-                                    <div style="display: flex; flex-direction: row; justify-content: space-evenly; align-items: center;">
-                                        <div style="margin: 0 8px;"><img src="../IMG/Otros/Cultivos/Tomate.png" width="80px" height="80px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="color:rgb(241, 40, 40); font-size: 20px;">3</b><b> Tomate (<b class="star s2">★</b> 4)</b></p></div>
-                                        <div style="margin: 0 8px;"><img src="../IMG/Otros/Cultivos/Pimiento rojo.png" width="80px" height="80px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="color:rgb(241, 40, 40); font-size: 20px;">3</b><b> Pimiento rojo (<b class="star s2">★</b> 4)</b></p></div>
-                                        <div style="margin: 0 8px;"><img src="../IMG/Otros/Cultivos/Berenjena.png" width="80px" height="80px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="color:rgb(241, 40, 40); font-size: 20px;">3</b><b> Berenjena (<b class="star s2">★</b> 4)</b></p></div>
+                                    <div style="display: flex; flex-direction: row; justify-content: space-evenly; align-items: center; margin-bottom: 12px;">
+                                        <div style="margin: 0 8px;"><img src="../IMG/Otros/Flores/Rosa.png" width="80px" height="80px"/><p style="text-align:center; margin: 0 10px; width: 130px;"><b style="color:rgb(241, 40, 40); font-size: 20px;">3</b><b> Rosa (<b class="star s3">★</b> 6)</b></p></div>
+                                        <div style="margin: 0 8px;"><img src="../IMG/Otros/Flores/Crisantemo.png" width="80px" height="80px"/><p style="text-align:center; margin: 0 10px; width: 130px;"><b style="color:rgb(241, 40, 40); font-size: 20px;">3</b><b> Crisantemo (<b class="star s3">★</b> 6)</b></p></div>
+                                        <div style="margin: 0 8px;"><img src="../IMG/Otros/Flores/Clemátide.png" width="80px" height="80px"/><p style="text-align:center; margin: 0 10px; width: 130px;"><b style="color:rgb(241, 40, 40); font-size: 20px;">3</b><b> Clemátide (<b class="star s3">★</b> 6)</b></p></div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td style="padding: 4px 0 0 0; text-align:center;"><img src="../IMG/Cocina/Recetas/entrantes/Curry de quingombó.png" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Curry de quingombó</b></p></td>
+    
+                                <td style="text-align:center;"><p style="text-align:center; margin: 0;">4 <b class="star s2">★</b> o superior</p></td>
+                                
+                                <td style="text-align:center;">
+
+                                    <div style="display: flex; flex-direction: row; justify-content: space-evenly; align-items: center; margin-bottom: 12px;">
+                                        <div style="margin: 0 8px;"><img src="../IMG/Otros/Cultivos/Rabano.png" width="80px" height="80px"/><p style="text-align:center; margin: 0 10px;"><b style="color:rgb(241, 40, 40); font-size: 20px;">3</b><b> Rábano (<b class="star s3">★</b> 6)</b></p></div>
+                                        <div style="margin: 0 8px;"><img src="../IMG/Otros/Cultivos/Hojas de té.png" width="80px" height="80px"/><p style="text-align:center; margin: 0 10px;"><b style="color:rgb(241, 40, 40); font-size: 20px;">3</b><b> Hojas de té (<b class="star s3">★</b> 6)</b></p></div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td style="padding: 4px 0 0 0; text-align:center;"><img src="../IMG/Cocina/Recetas/otros/Chai.png" width="70px" height="70px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Chai</b></p></td>
+    
+                                <td style="text-align:center;"><p style="text-align:center; margin: 0;">4 <b class="star s2">★</b> o superior</p></td>
+                                
+                                <td style="text-align:center;">
+
+                                    <div style="display: flex; flex-direction: row; justify-content: space-evenly; align-items: center; margin-bottom: 12px;">
+                                        <div style="margin: 0 8px;"><img src="../IMG/Prosesadoras/Cocina/Aceite de oliva.png" width="80px" height="80px"/><p style="text-align:center; margin: 0 10px; width: 140px;"><b style="color:rgb(241, 40, 40); font-size: 20px;">5</b><b> Aceite de oliva</b></p></div>
+                                        <div style="margin: 0 8px;"><img src="../IMG/Prosesadoras/Agricultura/Mezcla de hierbas.png" width="80px" height="80px"/><p style="text-align:center; margin: 0 10px; width: 140px;"><b style="color:rgb(241, 40, 40); font-size: 20px;">5</b><b> Mezcla de hierbas</b></p></div>
+                                        <div style="margin: 0 8px;"><img src="../IMG/Prosesadoras/Agricultura/Mezcla de especias.png" width="80px" height="80px"/><p style="text-align:center; margin: 0 10px; width: 140px;"><b style="color:rgb(241, 40, 40); font-size: 20px;">5</b><b> Mezcla de especias</b></p></div>
+                                    </div>
+
+                                    <div style="display: flex; flex-direction: row; justify-content: space-evenly; align-items: center; margin-bottom: 12px;">
+                                        <div style="margin: 0 8px;"><img src="../IMG/Prosesadoras/Cocina/ProCon.png" width="80px" height="80px"/><p style="text-align:center; margin: 0 10px; width: 140px;"><b style="color:rgb(241, 40, 40); font-size: 20px;">1</b><b> Procesadora de condimentos</b></p></div>
+                                        <div style="margin: 0 8px;"><img src="../IMG/Prosesadoras/Cocina/ProAli.png" width="80px" height="80px"/><p style="text-align:center; margin: 0 10px; width: 140px;"><b style="color:rgb(241, 40, 40); font-size: 20px;">1</b><b> Procesadora de aliños</b></p></div>
                                     </div>
                                 </td>
                             </tr>
