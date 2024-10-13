@@ -116,8 +116,8 @@ dialog {
 /* ******************* */
 /*  Diseños generales  */
 /* ******************* */
-/* La etiqueta "base1" es para la id y tendra cierta carasteristica */
-#base1 {
+/* Las id tendra cierta carasteristica (usado para el efecto de cambio de platos) */
+#base1, #base2,#base3{
     transition: opacity 0.5s ease; /* Efecto de desvanecimiento */
     opacity: 1;
 }
