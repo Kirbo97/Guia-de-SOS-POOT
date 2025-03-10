@@ -177,6 +177,14 @@ div.list_btn{
 
 .btn_ev_cand { background-color:rgb(182, 152, 32); }
 
+
+p.FechCump{
+    margin: 0;
+    margin-bottom: 6px;
+    width: 110px; 
+    text-align: center;
+}
+
 /* ********************************* */
 /*  Diseños generales de las listas  */
 /* ********************************* */
@@ -309,6 +317,12 @@ td.perso{ padding: 8px 18px;}
 b.cant{ 
     color:rgb(241, 40, 40); 
     font-size: 18px;
+}
+
+/* La etiqueta "b" tendra un color para referirse a la cantidad de un objeto */
+b.FechEv{ 
+    color: rgb(232, 22, 22);
+    font-size: 25px;
 }
 
 /* La etiqueta "b" tendra un color para referirse a la hora en la parte de los horarios */
