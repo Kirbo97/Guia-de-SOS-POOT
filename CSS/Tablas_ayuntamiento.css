@@ -1,0 +1,33 @@
+/* ************************************ */
+/*  Diseños dla tabla del ayuntamiento  */
+/* ************************************ */
+
+.btn_ev_ayun{
+    line-height: 1.5em;
+    width: 7em; 
+    padding: 6px; 
+    font-weight: bold; 
+    font-size: 18px;
+    border-radius:20px;
+    background-color:rgb(153, 95, 230); 
+    color: #FAFAFA;
+    cursor: pointer;
+}
+
+.reco_ayun td, .reco_ayun td.recom3 p{ text-align:center;}
+
+.reco_ayun td.recom3 p{ margin: 0 0 8px;}
+
+td.recom1,th.recom1{width: 22em;}
+
+td.recom2,th.recom2{width: 20em;}
+
+td.recom3,th.recom3{width: 21em;}
+
+#header1{ width: 66.55em; }
+
+/* ********************************************************* */
+/*  Diseños de tabla personalisada para el personaje Victor  */
+/* ********************************************************* */
+
+.tabla-encabezado_vic th, .tabla-encabezado_recom th{ border-bottom: 0; }

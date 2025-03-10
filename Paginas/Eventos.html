@@ -1,0 +1,1840 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head>
+        <meta charset="UTF-8">   <!-- Para usar la escritura latina -->
+        <title>Guia de eventos de calendario de SOS-POOT</title>
+        <meta name="origen" content="La informacion y parte de los diseños de la pagina pertenesen a Ushi No Tane, pero la representacion de la informacion traducida, funciones y diseños modificados y añadidos son de mi propio criterio"/>
+        <link rel="stylesheet" href="../CSS/Style.css" type="text/css" />
+        <link rel="shortcut icon" href="../IMG/Iconos/Kirbo.ico"/>
+    </head>
+    
+    <body>
+        <nav>
+            <div>
+                <a href="../Paginas/Actividades.html" style="text-align: center;"><img src="../IMG/Iconos/Actividades.png" title="Actividades" style="border:none;" width="40" height="40"></a>
+                <a class="vin_nav" href="../Paginas/Actividades.html">Actividades</a>
+            </div>
+
+            <div>
+                <a href="../Paginas/Lugares.html" style="text-align: center;"><img src="../IMG/Iconos/edificio.png" title="Lugares" style="border:none;" width="40" height="40"></a>
+                <a class="vin_nav" href="../Paginas/Lugares.html">Lugares</a>
+            </div>
+
+            <div>
+                <a href="../Paginas/Herramientas.html" style="text-align: center;"><img src="../IMG/Iconos/herra.png" title="Herramientas" style="border:none;" width="40" height="40"></a>
+                <a class="vin_nav" href="../Paginas/Herramientas.html">Herramientas</a>
+            </div>
+
+            <div>
+                <a href="../Paginas/Personajes.html" style="text-align: center;"><img src="../IMG/Iconos/Personajes.png" title="Personajes" style="border:none;" width="40" height="40"></a>
+                <a class="vin_nav" href="../Paginas/Personajes.html">Personajes</a>
+            </div>
+
+            <div>
+                <a href="../Paginas/Maquinas.html" style="text-align: center;"><img src="../IMG/Iconos/maquinas.png" title="Procesadoras" style="border:none;" width="40" height="40"></a>
+                <a class="vin_nav" href="../Paginas/Maquinas.html"  style="width: 120px;">Procesadoras</a>
+            </div>
+
+            <div>
+                <a href="../Paginas/Eventos.html" style="text-align: center;"><img src="../IMG/Iconos/calen.png" title="Eventos" style="border:none;" width="40" height="40"></a>
+                <a class="vin_nav" href="../Paginas/Eventos.html">Eventos</a>
+            </div>
+
+            <div>
+                <a href="../Paginas/Habilidades.html" style="text-align: center;"><img src="../IMG/Iconos/habilidades.png" title="Habilidades" style="border:none;" width="40" height="40"></a>
+                <a class="vin_nav" href="../Paginas/Habilidades.html">Habilidades</a>
+            </div>
+
+            <div>
+                <a href="../Paginas/Resistencia.html" style="text-align: center;"><img src="../IMG/Iconos/resistencia.png" title="Salud y resistencia" style="border:none;" width="40" height="40"></a>
+                <a class="vin_nav" href="../Paginas/Eventos.html">Salud</a>
+            </div>
+
+        </nav>
+        
+        <div id="content">
+
+            <header style="display: flex; justify-content: space-between;">
+                <h1>Calendario</h1> 
+                    <a href="../index.html"><img src="../IMG/Iconos/home.png"  alt="home" class="icono" style="right:80px;"></img></a>
+            </header>
+
+            <main>
+                <p>Hay 3 eventos que se añaden en el juego dependiendo como se desarrolla:</p>
+
+                <ul class="horario">
+                    <li class="gustos">El <b>cumpleaños del jugador</b> es un evento que usted escoge el dia al momento de crear su perfil.</li>
+                    <li class="gustos">El <b>aniversario de boda</b> es un evento que aparece al siguiente año despues de casarse y aparece en el dia en el que se caso.</li>
+                    <li class="gustos">El <b>cumpleaños del hijo</b> es un evento que aparece al siguiente año despues de tener un hijo y aparece en el dia en el que nacio.</li>
+                </ul>
+
+                <p>Si logras conseguir el pase de exoancuin del juego desbloquearas nuevos personajes por lo que conseguiras nuevas fechas de cumpleaños.</p>
+
+                <section> <!-- Primavera -->
+
+                    <h2>Temporada de primavera</h2>
+
+                    <table class="data" style="margin-top: 1.8em;"> <!-- Primavera -->
+                        <tr>
+                            <th colspan="7" style="font-size: 1.2em; background-color: #84f16e; height: 4em;">
+                                <div style="display: flex; justify-content: space-around; align-items: center;">
+                                    <p class="primavera" style="margin-top: 1.65em;" title="Primavera" ></p>
+                                    <p class="primavera" style="margin-top: 1.65em;" title="Primavera" ></p>
+                                    <p class="primavera" style="margin-top: 1.65em;" title="Primavera" ></p>
+                                    <p class="primavera" style="margin-top: 1.65em;" title="Primavera" ></p>
+                                </div>
+                            </th>
+                        </tr>
+        
+                        <tr>
+                            <td class="td_calenda"><b style="font-size: 25px;">01</b></td>
+                            <td class="td_calenda"><b style="font-size: 25px;">02</b></td>
+                            <td class="td_calenda"> <!-- Cumpleaños de Matsuyuki -->
+                                <div style="display: flex;flex-direction:column; align-items: center;">
+                                    <br><b style="color: rgb(232, 22, 22); font-size: 25px;">03</b></br>
+                                    <p class="cumpleaño" onclick="window.modal_cumple00.showModal();" title="Cumpleaños de Matsuyuki"></p>
+                                    <p style="margin: 0; margin-bottom: 6px; text-align: center;"><b style="color: #E83;">Matsuyuki</b></p>
+                                </div>
+                                
+                                <dialog id="modal_cumple00" class="modal_calendario">
+
+                                    <button onclick="window.modal_cumple00.close();" class="btn close">X</button>
+
+                                    <div style="padding: 0 45px 30px 40px; margin: 0;">
+                                        <h3 class="modal_tit">Cumpleaños del aldeano</h3>
+
+                                        <img src="../IMG/Personajes/Aldeanos/Caras/Especiales/Matsuyuki.png" class="left screenshot img_cumpleaños" style="margin: 0 20px 0 0"/>
+
+                                        <p><i>"¿Eres consciente de lo que pasará si juegas conmigo?".</i></p>
+    
+                                        <p>Matsuyuki es el unico aldeano como personaje secreto que solamente se puede desbloquear si llegas a casarte con Iori en el juego. Este personaje llega a la Villa Oliva intentando atentar contra la vida de Iori. Tambien es conocido por maullar como un gato y permanece inmóvil junto a la casa de Iori, hablando la mayor parte del tiempo entre paréntesis.</p>
+
+                                        <p style="margin: 16px 0 0 0 ;">Puede conocer mejor a este personaje consultando su <a class="hiper" href="../Paginas/Sub-paginas/Personajes/Otros/matsuyuki.html">bibliografia</a> en la seccion de personajes.</p>
+                                    </div>
+                                </dialog>
+                            </td>
+                            <td class="td_calenda"><b style="font-size: 25px;">04</b></td>
+                            <td class="td_calenda"> <!-- Cumpleaños de Ángela -->
+                                <div style="display: flex;flex-direction:column; align-items: center;">
+                                    <br><b style="color: rgb(232, 22, 22); font-size: 25px;">05</b></br>
+                                    <p class="cumpleaño" onclick="window.modal_cumple01.showModal();" title="Cumpleaños de Ángela"></p>
+                                    <p style="margin: 0; margin-bottom: 6px; text-align: center;"><b style="color: #E83;">Ángela</b></p>
+                                </div>
+                                
+                                <dialog id="modal_cumple01" class="modal_calendario">
+
+                                    <button onclick="window.modal_cumple01.close();" class="btn close">X</button>
+                                    
+
+                                    <div style="padding: 0 45px 30px 40px; margin: 0;">
+
+                                        <h3 class="modal_tit">Cumpleaños del aldeano</h3>
+    
+                                        <img src="../IMG/Personajes/Aldeanos/Caras/Ángela.png" class="left screenshot img_cumpleaños" style="margin: 0 20px 0 0"/>
+
+                                        <p><i>"La madre de Jack. La propietaria del bazar de ciudad Oliva, que trabaja duro, ayuda a todos los habitantes del pueblo con su vasto conocimiento de los productos y el inventario. Disfruta de postres agridulces como el pudín de café".</i></p>
+
+                                        <p>Ángela es un personaje de <b>Story of Seasons: Pioneers of Olive Town</b>.</p>
+                                        
+                                        <p>Ángela es la dueña actual de el bazar de ciudad Oliva. Ella trabaja detrás del mostrador cuando la tienda se encuentra abierta y en algunas ocaciones cuando ella se encuentra ocupada o esta indispuesta para trabajar ella suele dejar que su hijo Jack la cubra en el mostrador de la tienda. Ángela heredó el bazar de ciudad Oliva despues de la jubilacion de sus padres, Jessie y Simon, quienes aún viven en la parte trasera de la tienda con Ángela y sus hijos, Jack y Cindy.</p>
+                                        
+                                        <p>Le apasiona ayudar a los demás en lo que puede y siempre intenta tener exactamente lo que sus clientes necesitan. Es muy unida a su familia. Los martes, cuando la tienda está cerrada, visita a sus amigas Patricia y Sally en la casa de Patricia para conversar.</p>
+
+                                        <p style="margin: 16px 0 0 0 ;">Puede conocer mejor a este personaje consultando su <a class="hiper" href="../Paginas/Sub-paginas/Personajes/Aldeanos/angela.html">bibliografia</a> en la seccion de personajes.</p>
+                                    </div>
+                                </dialog>
+                            </td>
+                            <td class="td_calenda"> <!-- Cumpleaños de Nguyen y Dunhill -->
+                                <div style="display: flex;flex-direction:column; align-items: center;">
+                                    <br><b style="color: rgb(232, 22, 22); font-size: 25px;">06</b></br>
+                                    <p class="cumpleaño" onclick="window.modal_cumple02.showModal();" title="Cumpleaños de Nguyen y Dunhill"></p>
+                                    <p style="margin: 0; margin-bottom: 6px; text-align: center;"><b style="color: #E83;">Nguyen</b><b> y </b><b style="color: rgb(140, 24, 249);">Dunhill</b></p>
+                                </div>
+
+                                <dialog id="modal_cumple02" class="modal_calendario">
+
+                                    <button onclick="window.modal_cumple02.close();" class="btn close">X</button>
+
+                                    <div style="padding: 0 45px 30px 40px; margin: 0;">
+
+                                        <section style="display: flex; flex-direction: column;">
+    
+                                            <div>  <!-- Nguyen -->
+                                                <h3 class="modal_tit">Cumpleaños del aldeano</h3>
+        
+                                                <img src="../IMG/Personajes/Aldeanos/Caras/Nguyen.png" class="left screenshot img_cumpleaños" style="margin: 0 20px 0 0"/>
+
+                                                <p><i>"El abuelo tranquilo de Linh. Dueño de la floristería. Ha cuidado de la ciudad Oliva desde sus humildes días de pionero. Un pescador veterano que recientemente ha cogido gusto por pescar sus presas con cebos misteriosos".</i></p>
+
+                                                <p>Nguyen es un personaje de <b>Story of Seasons: Pioneers of Olive Town</b>.</p>
+                                    
+                                                <p>Es el propietario de una cálida floristería, que regenta junto a su nieta, Linh.</p>
+                                
+                                                <p>Al igual que Simon y el abuelo del jugador, Nguyen fue uno de los fundadores de la ciudad Oliva.</p>
+                                
+                                                <p>Además de su trabajo en la floristería, a Nguyen le gusta pescar y compite regularmente con Iori y Norman. También juega al ajedrez con Simon en la cafetería. Siempre es un feroz competidor en la competencia anual de pesca que se lleva a cabo cada invierno.</p>
+            
+                                                <p style="margin: 16px 0 0 0 ;">Puede conocer mejor a este personaje consultando su <a class="hiper" href="../Paginas/Sub-paginas/Personajes/Aldeanos/nguyen.html">bibliografia</a> en la seccion de personajes.</p>
+                                            </div>
+    
+                                            <div>  <!-- Dunhill -->
+                                                <h3 class="modal_tit tit_1">Cumpleaños del aldeano del pase de expanción</h3>
+        
+                                                <img src="../IMG/Personajes/Aldeanos/Caras/pase de expansion/Dunhill.png" class="left screenshot img_cumpleaños" style="margin: 0 20px 0 0"/>
+    
+                                                <p><i></i></p>
+                                                
+                                                <p></p>
+            
+                                                <p style="margin: 16px 0 0 0 ;">Puede conocer mejor a este personaje consultando su <a class="hiper" href="../Paginas/Sub-paginas/Personajes/Aldeanos/">bibliografia</a> en la seccion de personajes.</p>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </dialog>
+                            </td>
+                            <td class="td_calenda"><b style="font-size: 25px;">07</b></td>
+                        </tr>
+    
+                        <tr>
+                            <td class="td_calenda"><b style="font-size: 25px;">08</b></td>
+                            <td class="td_calenda"><b style="font-size: 25px;">09</b></td>
+                            <td class="td_calenda"><b style="font-size: 25px;">10</b></td>
+                            <td class="td_calenda"><b style="font-size: 25px;">11</b></td>
+                            <td class="td_calenda"> <!-- Cumpleaños de Linh y Ludus -->
+                                <div style="display: flex;flex-direction:column; align-items: center;">
+                                    <br><b style="color: rgb(232, 22, 22); font-size: 25px;">12</b></br>
+                                    <p class="cumpleaño" onclick="window.modal_cumple03.showModal();" title="Cumpleaños de Linh y Ludus"></p>
+                                    <p style="margin: 0; margin-bottom: 6px; width: 110px; text-align: center;"><b style="color: #E83;">Linh</b><b> y </b><b style="color: rgb(140, 24, 249);">Ludus</b></p>
+                                </div>
+
+                                <dialog id="modal_cumple03" class="modal_calendario">
+
+                                    <button onclick="window.modal_cumple03.close();" class="btn close">X</button>
+
+                                    <div style="padding: 0 45px 30px 40px; margin: 0;">
+                                        <section style="display: flex; flex-direction: column;">
+                                            <div>  <!-- Linh -->
+                                                <h3 class="modal_tit">Cumpleaños del aldeano</h3>
+        
+                                                <img src="../IMG/Personajes/Candidatos/Cara/linh.png" class="left screenshot img_cumpleaños" style="margin: 0 20px 0 0"/>
+
+                                                <p><i>"Una joven que ayuda a su abuelo en su tienda. Una ávida lectora a la que le encanta prensar flores y usarlas como marcapáginas. Prefiere la dulzura sutil de los mangos a otras frutas".</i></p>
+                                
+                                                <p>Lihn es una candidata a matrimonio en <b>Story of Seasons: Pioneers of Olive Town</b>.</p>
+                                                
+                                                <p>Una joven que ayuda a su abuelo Nguyen con su floristería. Es tímida e ingenua, pero se encariña con sus amigos y los quiere.</p>
+                                                
+                                                <p>Al igual que el jugador, Linh es oriunda de la ciudad, pero se mudó a la ciudad Oliva para ayudar a cuidar a su abuelo y a su negocio. Aún mantiene contacto con sus amigos de la ciudad y, ocasionalmente, envía o recibe cartas y paquetes. Sabe mucho sobre flores y ama la naturaleza.</p>
+                                
+                                                <p>Fuera del trabajo, se lleva bien con Cindy y Mikey.</p>
+            
+                                                <p style="margin: 16px 0 0 0 ;">Puede conocer mejor a este personaje consultando su <a class="hiper" href="../Paginas/Sub-paginas/Personajes/Candidatos/linh.html">bibliografia</a> en la seccion de personajes.</p>
+                                            </div>
+    
+                                            <div>  <!-- Ludus -->
+                                                <h3 class="modal_tit tit_1">Cumpleaños del aldeano del pase de expanción</h3>
+        
+                                                <img src="../IMG/Personajes/Candidatos/Cara/pase de expansion/Ludus.png" class="left screenshot img_cumpleaños" style="margin: 0 20px 0 0"/>
+        
+                                                <p><i></i></p>
+                                                
+                                                <p></p>
+            
+                                                <p style="margin: 16px 0 0 0 ;">Puede conocer mejor a este personaje consultando su <a class="hiper" href="../Paginas/Sub-paginas/Personajes/Aldeanos/">bibliografia</a> en la seccion de personajes.</p>
+                                            </div>
+                                        </section>
+                                    </div>
+
+                                </dialog>
+
+                            </td>
+                            <td class="td_calenda"><b style="font-size: 25px;">13</b></td>
+                            <td class="td_calenda"><b style="font-size: 25px;">14</b></td>
+                        </tr>
+    
+                        <tr>
+                            <td class="td_calenda"> <!-- Busqueda de Huevo -->
+                                <div style="display: flex;flex-direction:column; align-items: center;">
+                                    <br><b style="color: rgb(232, 22, 22); font-size: 25px;">15</b></br>
+                                    <p class="evento" onclick="window.modal_festival1.showModal();" title="Busqueda de Huevo"></p>
+                                </div>
+
+                                <dialog id="modal_festival1" class="modal_calendario">
+                                    
+                                    <button onclick="window.modal_festival1.close();" class="btn close">X</button>
+
+                                    <div style="padding: 0 45px 30px 40px; margin: 0;">
+
+                                        <h3 style="text-align: center;">15 de Primavera - Busqueda de Huevo</h3>
+
+                                        <img src="../IMG/festivales/festival de pascua.jpg" class="left screenshot img_festival"  style="margin: 0 20px 0 0;"/>
+
+                                        <p>Podrás acceder a ciudad Oliva para participar en este festival a partir de las 10:00 horas. En este día, todos se reúnen en la plaza del pueblo en las afueras de la ciudad para buscar huevos. Este festival te mostrará deambulando por la ciudad y localizando los huevos que pintó Gloria. Cuantos más huevos encuentres, mejor será tu suerte para el año, al menos según el alcalde Víctor.</p>
+    
+                                        <p>No buscarás huevos activamente, pero verás escenas en las que buscas huevos. Si le ha entregado el colgante de confesión a un candidato a matrimonio, puede pedirle que busque huevos con usted. Si no tienes una relación con nadie, puedes participar en la búsqueda de huevos con Mikey y Cindy.</p>
+    
+                                        <p>Los candidatos a matrimonio de los DLC no asistirán a este festival a menos que usted esté casado con un candidato a matrimonio de DLC, y solo entonces participará su cónyuge del DLC.</p>
+    
+                                        <p style="margin: 16px 0 0 0 ;">Este festival finaliza a las 19:00 horas.</p>
+                                    </div>
+                                </dialog>
+                            </td>
+                            <td class="td_calenda"><b style="font-size: 25px;">16</b></td>
+                            <td class="td_calenda"> <!-- Cumpleaños de Jacopo y Moriya -->
+                                <div style="display: flex;flex-direction:column; align-items: center;">
+                                    <br><b style="color: rgb(232, 22, 22); font-size: 25px;">17</b></br>
+                                    <p class="cumpleaño" onclick="window.modal_cumple04.showModal();" title="Cumpleaños de Jacopo y Moriya"></p>
+                                    <p style="margin: 0; margin-bottom: 6px; text-align: center;"><b style="color: #E83;">Jacopo</b><b> y </b><b style="color: rgb(140, 24, 249);">Moriya</b></p>
+                                </div>
+
+                                <dialog id="modal_cumple04" class="modal_calendario">
+
+                                    <button onclick="window.modal_cumple04.close();" class="btn close">X</button>
+
+                                    <div style="padding: 0 45px 30px 40px; margin: 0;">
+                                        <section style="display: flex; flex-direction: column;">
+                                            <div>  <!-- Jacopo -->
+                                                <h3 class="modal_tit">Cumpleaños del aldeano</h3>
+        
+                                                <img src="../IMG/Personajes/Aldeanos/Caras/Jacopo.png" class="left screenshot img_cumpleaños" style="margin: 0 20px 0 0"/>
+            
+                                                <p><i>"El hijo tranquilo de Víctor y Gloria. Trabaja en el ferry turístico, principalmente porque de esa manera puede acceder fácilmente a la ciudad. Le encanta la pizza y afirma que cualquier pizza es de tamaño personal siempre que creas en ti mismo".</i></p>
+
+                                                <p>Jacopo es un personaje de <b>Story of Seasons: Pioneers of Olive Town</b>.</p>
+                
+                                                <p>Es un tipo tranquilo y el único hijo de Víctor y Gloria. Vive con sus padres en el ayuntamiento y es muy conocido por ser un poco holgazán, por lo que su padre tuvo que conseguirle un trabajo con Georg en el ferry. Jacopo adora su trabajo y respeta mucho a Georg como mentor, aunque todavía disfruta mucho de su tiempo libre.</p>
+            
+                                                <p style="margin: 16px 0 0 0 ;">Puede conocer mejor a este personaje consultando su <a class="hiper" href="../Paginas/Sub-paginas/Personajes/Aldeanos/jacopo.html">bibliografia</a> en la seccion de personajes.</p>
+                                            </div>
+    
+                                            <div>  <!-- Moriya -->
+                                                <h3 class="modal_tit tit_1">Cumpleaños del aldeano del pase de expanción</h3>
+        
+                                                <img src="../IMG/Personajes/Aldeanos/Caras/pase de expansion/Moriya.png" class="left screenshot img_cumpleaños" style="margin: 0 20px 0 0"/>
+            
+                                                <p><i></i></p>
+                                                
+                                                <p></p>
+            
+                                                <p style="margin: 16px 0 0 0 ;">Puede conocer mejor a este personaje consultando su <a class="hiper" href="../Paginas/Sub-paginas/Personajes/Aldeanos/">bibliografia</a> en la seccion de personajes.</p>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </dialog>
+                            </td>
+                            <td class="td_calenda"><b style="font-size: 25px;">18</b></td>
+                            <td class="td_calenda"><b style="font-size: 25px;">19</b></td>
+                            <td class="td_calenda"> <!-- Cumpleaños de Dosetsu -->
+                                <div style="display: flex;flex-direction:column; align-items: center;">
+                                    <br><b style="color: rgb(232, 22, 22); font-size: 25px;">20</b></br>
+                                    <p class="cumpleaño" onclick="window.modal_cumple05.showModal();" title="Cumpleaños de Dosetsu"></p>
+                                    <p style="margin: 0; margin-bottom: 6px; text-align: center;"><b style="color: #E83;">Dosetsu</b></p>
+                                </div>
+                                
+                                <dialog id="modal_cumple05" class="modal_calendario">
+
+                                    <button onclick="window.modal_cumple05.close();" class="btn close">X</button>
+
+                                    <div style="padding: 0 45px 30px 40px; margin: 0;">
+
+                                        <h3 class="modal_tit">Cumpleaños del aldeano</h3>
+
+                                        <img src="../IMG/Personajes/Aldeanos/Caras/Doesetsu.png" class="left screenshot img_cumpleaños" style="margin: 0 20px 0 0"/>
+            
+                                        <p><i>"El fiel y leal servidor de Iori. Ha servido a su amo durante muchos años. Un modelo de artes marciales y creativas. Una vez probó un plato con puerros en sus viajes y fue amor a primera vista".</i></p>
+
+                                        <p>Dosetsu es un personaje de <b>Story of Seasons: Pioneers of Olive Town</b>.</p>
+
+                                        <p>Dosetsu es el fiel y leal sirviente de Iori. Ha servido a su amo durante muchos años. Un modelo de artes marciales y creativas. Una vez probó un plato con puerros en sus viajes y fue amor a primera vista.</p>
+                
+                                        <p>También actúa como tutor de Cindy y Mikey y con su ayuda organiza la búsqueda de setas cada año en otoño.</p>
+
+                                        <p style="margin: 16px 0 0 0 ;">Puede conocer mejor a este personaje consultando su <a class="hiper" href="../Paginas/Sub-paginas/Personajes/Aldeanos/doesetsu.html">bibliografia</a> en la seccion de personajes.</p>
+                                    </div>
+                                </dialog>
+                            </td>
+                            <td class="td_calenda"> <!-- Cumpleaños de Felicia -->
+                                <div style="display: flex;flex-direction:column; align-items: center;">
+                                    <br><b style="color: rgb(232, 22, 22); font-size: 25px;">21</b></br>
+                                    <p class="cumpleaño" onclick="window.modal_cumple06.showModal();" title="Cumpleaños de Felicia"></p>
+                                    <p style="margin: 0; margin-bottom: 6px; text-align: center;"><b style="color: rgb(140, 24, 249);">Felicia</b></p>
+                                </div>
+
+                                <dialog id="modal_cumple06" class="modal_calendario">
+
+                                    <button onclick="window.modal_cumple06.close();" class="btn close">X</button>
+
+                                    <div style="padding: 0 45px 30px 40px; margin: 0;">
+
+                                        <h3 class="modal_tit tit_1">Cumpleaños del aldeano del pase de expanción</h3>
+
+                                        <img src="../IMG/Personajes/Candidatos/Cara/pase de expansion/Felicity.png" class="left screenshot img_cumpleaños" style="margin: 0 20px 0 0"/>
+            
+                                        <p><i></i></p>
+                                    
+                                        <p></p>
+
+                                        <p style="margin: 16px 0 0 0 ;">Puede conocer mejor a este personaje consultando su <a class="hiper" href="../Paginas/Sub-paginas/Personajes/Aldeanos/">bibliografia</a> en la seccion de personajes.</p>
+                                    </div>
+                                </dialog>
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td class="td_calenda"><b style="font-size: 25px;">22</b></td>
+                            <td class="td_calenda"> <!-- Cumpleaños de Jack -->
+                                <div style="display: flex;flex-direction:column; align-items: center;">
+                                    <br><b style="color: rgb(232, 22, 22); font-size: 25px;">23</b></br>
+                                    <p class="cumpleaño" onclick="window.modal_cumple07.showModal();" title="Cumpleaños de Jack"></p>
+                                    <p style="margin: 0; margin-bottom: 6px; text-align: center;"><b style="color: #E83;">Jack</b></p>
+                                </div>
+
+                                <dialog id="modal_cumple07" class="modal_calendario">
+
+                                    <button onclick="window.modal_cumple07.close();" class="btn close">X</button>
+
+                                    <div style="padding: 0 45px 30px 40px; margin: 0;">
+                                        <h3 class="modal_tit">Cumpleaños del aldeano</h3>
+
+                                        <img src="../IMG/Personajes/Candidatos/Cara/jack.png" class="left screenshot img_cumpleaños" style="margin: 0 20px 0 0"/>
+
+                                        <p><i>"No trabaja en la tienda general por las tardes, pero ayuda por las noches. Le apasiona la ciudad Oliva y quiere convertirla en un lugar mejor. Adora las curiosidades que normalmente no se venderían en la tienda de su familia".</i></p>
+
+                                        <p>Jack es un candidato a matrimonio en <b>Story of Seasons: Pioneers of Olive Town</b>.</p>
+                            
+                                        <p>Jack es el nieto de Simon y Jessie, el hijo de Ángela y el hermano mayor de Cindy. Vive en la tienda general con su familia. Ocasionalmente ayuda a su madre con la tienda general, pero es consciente de su capacidad para tratar con los clientes. Jack tiene mucho tiempo libre y disfruta de caminar por la ciudad Oliva y ver películas. Siempre está tratando de pensar en ideas de souvenirs para vender en la tienda general.</p>
+                        
+                                        <p>Cuando la ciudad Oliva tenga suficientes ampliaciones, Jack abrirá un puesto en el muelle cerca del hotel. Tendrá en exposición las tallas de madera que ha realizado.</p>
+
+                                        <p style="margin: 16px 0 0 0 ;">Puede conocer mejor a este personaje consultando su <a class="hiper" href="../Paginas/Sub-paginas/Personajes/Candidatos/jack.html">bibliografia</a> en la seccion de personajes.</p>
+                                    </div>
+                                </dialog>
+                            </td>
+                            <td class="td_calenda"><b style="font-size: 25px;">24</b></td>
+                            <td class="td_calenda"><b style="font-size: 25px;">25</b></td>
+                            <td class="td_calenda"> <!-- Cumpleaños de Jason -->
+                                <div style="display: flex;flex-direction:column; align-items: center;">
+                                    <br><b style="color: rgb(232, 22, 22); font-size: 25px;">26</b></br>
+                                    <p class="cumpleaño" onclick="window.modal_cumple08.showModal();" title="Cumpleaños de Jason"></p>
+                                    <p style="margin: 0; margin-bottom: 6px; text-align: center;"><b style="color: #E83;">Jason</b></p>
+                                </div>
+
+                                <dialog id="modal_cumple08" class="modal_calendario">
+
+                                    <button onclick="window.modal_cumple08.close();" class="btn close">X</button>
+
+                                    <div style="padding: 0 45px 30px 40px; margin: 0;">
+                                        <h3 class="modal_tit">Cumpleaños del aldeano</h3>
+
+                                        <img src="../IMG/Personajes/Aldeanos/Caras/Jason.png" class="left screenshot img_cumpleaños" style="margin: 0 20px 0 0"/>
+
+                                        <p><i>"El padre de Blaire. El bondadoso dueño del hotel. Quería ser pirata, pero no era lo suficientemente fuerte. Abrió su hotel con la esperanza de que los piratas se alojaran allí. Atesora mapas antiguos para poder usarlos para buscar tesoros algún día".</i></p>
+
+                                        <p>Jason es un personaje de <b>Story of Seasons: Pioneers of Olive Town</b>.</p>
+                                        
+                                        <p>Es un marido y padre bondadoso que dirige el Gull's Rest Hotel. Es un gran trabajador que disfruta creando una buena experiencia para todos los huéspedes. Tiene una obsesión con los piratas.</p>
+                                        
+                                        <p>Compite en la búsqueda anual de setas.</p>
+
+                                        <p style="margin: 16px 0 0 0 ;">Puede conocer mejor a este personaje consultando su <a class="hiper" href="../Paginas/Sub-paginas/Personajes/Aldeanos/jason.html">bibliografia</a> en la seccion de personajes.</p>
+                                    </div>
+                                </dialog>
+                            </td>
+                            <td class="td_calenda"> <!-- Cumpleaños de Beth -->
+                                <div style="display: flex;flex-direction:column; align-items: center;">
+                                    <br><b style="color: rgb(232, 22, 22); font-size: 25px;">27</b></br>
+                                    <p class="cumpleaño" onclick="window.modal_cumple09.showModal();" title="Cumpleaños de Beth"></p>
+                                    <p style="margin: 0; margin-bottom: 6px; text-align: center;"><b style="color: #E83;">Beth</b></p>
+                                </div>
+
+                                <dialog id="modal_cumple09" class="modal_calendario">
+
+                                    <button onclick="window.modal_cumple09.close();" class="btn close">X</button>
+
+                                    <div style="padding: 0 45px 30px 40px; margin: 0;">
+                                        <h3 class="modal_tit">Cumpleaños del aldeano</h3>
+
+                                        <img src="../IMG/Personajes/Aldeanos/Caras/Beth.png" class="left screenshot img_cumpleaños" style="margin: 0 20px 0 0"/>
+
+                                        <p><i>"La amiga de Gloria, siempre curiosa y coleccionista de objetos curiosos. Actualmente está excavando artefactos en la zona y enviándoselos a sus padres, que tienen una tienda de objetos curiosos. Cuando se trata de comidas favoritas, cuanto más picantes, mejor".</i></p>
+
+                                        <p>Beth es un personaje de <b>Story of Seasons: Pioneers of Olive Town</b>.</p>
+                
+                                        <p>Trabaja en la recepción del museo y debido a que nesesita adquirir antigüedades decidio irse de su ciudad natal para quedarse en la ciudad Oliva donde podra conseguir varias antigüedades. Mientras se hospeda en la ciudad Oliva, vive en la Posada de la Gaviota. Ralph suele acompañar a Beth en su búsqueda de antigüedades en las zonas boscosas de la ciudad Oliva. Es amiga de Gloria y tiene una relación con Lars.</p>
+                                        
+                                        <p>Si el jugador ha hecho donaciones al museo, como fotografías de animales o reliquias adquiridas por drenar los estanque o en la mina, Beth creará réplicas de las donaciones que se pueden comprar como decoración. Su familia tiene una tienda de antigüedades en su ciudad natal.</p>
+
+                                        <p style="margin: 16px 0 0 0 ;">Puede conocer mejor a este personaje consultando su <a class="hiper" href="../Paginas/Sub-paginas/Personajes/Aldeanos/beth.html">bibliografia</a> en la seccion de personajes.</p>
+                                    </div>
+                                </dialog>
+                            </td>
+                            <td class="td_calenda"> <!-- Derby de mascota -->
+                                <div style="display: flex;flex-direction:column; align-items: center;">
+                                    <br><b style="color: rgb(232, 22, 22); font-size: 25px;">28</b></br>
+                                    <p class="evento" onclick="window.modal_festival2.showModal();" title="Derbi de mascotas"></p>
+                                </div>
+
+                                <dialog id="modal_festival2" class="modal_calendario">
+
+                                    <button onclick="window.modal_festival2.close();" class="btn close">X</button>
+
+                                    <div style="padding: 0 45px 30px 40px; margin: 0;">
+                                        <h3 style="text-align: center;">28 de Primavera - Derbi de mascotas</h3>
+
+                                        <img src="../IMG/festivales/festival de derbi.jpg" class="left screenshot img_festival" style="margin: 0 20px 0 0;"/>
+
+                                        <p>Dirígete a la ciudad Oliva después de las 10:00 am para participar en la carrera de mascotas. En este festival puedes participar inscribiendo a tu mascota para competir en el derbi anual de mascotas. Habla con Georg en la plaza de la ciudad y selecciona si quieres participar en la carrera con tu mascota o si en el caso que todavia no tienes mascota o no quieres usar una propia para participa puedes alquilar una mascota temporal.</p>
+
+                                        <p>Tu mascota competirá contra otros tres competidores. El objetivo de la carrera es ser la mascota más rápida en recuperar las pelotas del final de la pista y devolverlas a la línea de meta. La mascota que traiga dos pelotas primero será la ganadora. Durante la carrera, aparecerán botones sobre la cabeza de tu mascota. Al presionarlos, tu mascota liberará una ráfaga de velocidad. ¡Guau! Cuantos más corazones de amistad tenga tu mascota, mejor le irá durante la carrera.</p>
+
+                                        <p>Dependiendo en que puestos lleges podras resivir un trofeo de oro plata o cobre mas una cantidad monetaria junto al trofeo, dicha cantidad varia dependiendo del trofeo</p>
+
+                                        <p style="margin: 16px 0 0 0 ;">Este festival finaliza a las 19:00 horas.</p>
+                                    </div>
+                                </dialog>
+                            </td>
+                        </tr>
+                    </table>
+
+                </section>
+
+                <section> <!-- Verano -->
+                    
+                    <h2>Temporada de Verano</h2>
+
+                    <table class="data" style="margin-top: 1.8em;"> <!-- Verano --> 
+                        <tr>
+                            <th colspan="7" style="font-size: 1.2em; background-color: #f2e88c; height: 4em;">
+                                <div style="display: flex; justify-content: space-around; align-items: center;">
+                                    <p class="verano" style="margin-top: 1.65em;" title="Verano"></p>
+                                    <p class="verano" style="margin-top: 1.65em;" title="Verano"></p>
+                                    <p class="verano" style="margin-top: 1.65em;" title="Verano"></p>
+                                    <p class="verano" style="margin-top: 1.65em;" title="Verano"></p>
+                                </div>
+                            </th>
+                        </tr>
+        
+                        <tr>
+                            <td class="td_calenda"><b style="font-size: 25px;">01</b></td>
+                            <td style="padding: 0; width: 120px;"> <!-- Cumpleaños de Mikey -->
+                                <div style="display: flex;flex-direction:column; align-items: center;">
+                                    <br><b style="color: rgb(232, 22, 22); font-size: 25px;">02</b></br>
+                                    <p class="cumpleaño" onclick="window.modal_cumple10.showModal();" title="Cumpleaños de Mikey"></p>
+                                    <p style="margin: 0; margin-bottom: 6px; text-align: center;"><b style="color: #E83;">Mikey</b></p>
+                                </div>
+
+                                <dialog id="modal_cumple10" class="modal_calendario">
+
+                                    <button onclick="window.modal_cumple10.close();" class="btn close">X</button>
+
+                                    <div style="padding: 0 45px 30px 40px; margin: 0;">
+                                        <h3 class="modal_tit">Cumpleaños del aldeano</h3>
+
+                                        <img src="../IMG/Personajes/Aldeanos/Caras/Mikey.png" class="left screenshot img_cumpleaños" style="margin: 0 20px 0 0"/>
+
+                                        <p><i>"El hermano pequeño de Blaire. Como la mayoría de los niños de su edad, tiene dos objetivos principales en la vida: comer y jugar. Le encantan todo tipo de dulces, pero las golosinas caseras de Sally lo han malcriado, por lo que es un poco quisquilloso con la comida".</i></p>
+
+                                        <p>Mikey es un personaje de <b>Story of Seasons: Pioneers of Olive Town</b>.</p>
+                                        
+                                        <p>Es un niño pequeño y travieso al que le encanta comer dulces. Siempre evita hacer sus deberes y prefiere estar jugando. Le gusta atrapar insectos y hacerle bromas a su madre y a su hermana. A menudo juega con Cindy, que tiene su misma edad. Dosetsu le da clases particulares y le gusta ayudar a Linh a regar las flores que hay fuera de la floristería.</p>
+                                        
+                                        <p>Él organiza la búsqueda de hongos con la ayuda de Cindy cada año y también compite en el Derby de mascotas.</p>
+
+                                        <p style="margin: 16px 0 0 0 ;">Puede conocer mejor a este personaje consultando su <a class="hiper" href="../Paginas/Sub-paginas/Personajes/Aldeanos/mikey.html">bibliografia</a> en la seccion de personajes.</p>
+                                    </div>
+                                </dialog>
+                            </td>
+                            <td class="td_calenda"><b style="font-size: 25px;">03</b></td>
+                            <td class="td_calenda"><b style="font-size: 25px;">04</b></td>
+                            <td class="td_calenda"><b style="font-size: 25px;">05</b></td>
+                            <td class="td_calenda"><b style="font-size: 25px;">06</b></td>
+                            <td style="padding: 0; width: 120px;"> <!-- Cumpleaños de Norman -->
+                                <div style="display: flex;flex-direction:column; align-items: center;">
+                                    <br><b style="color: rgb(232, 22, 22); font-size: 25px;">07</b></br>
+                                    <p class="cumpleaño" onclick="window.modal_cumple11.showModal();" title="Cumpleaños de Norman"></p>
+                                    <p style="margin: 0; margin-bottom: 6px; text-align: center;"><b style="color: #E83;">Norman</b></p>
+                                </div>
+
+                                <dialog id="modal_cumple11" class="modal_calendario">
+
+                                    <button onclick="window.modal_cumple11.close();" class="btn close">X</button>
+
+                                    <div style="padding: 0 45px 30px 40px; margin: 0;">
+                                        <h3 class="modal_tit">Cumpleaños del aldeano</h3>
+
+                                        <img src="../IMG/Personajes/Aldeanos/Caras/Norman.png" class="left screenshot img_cumpleaños" style="margin: 0 20px 0 0"/>
+            
+                                        <p><i></i></p>
+                            
+                                        <p></p>
+
+                                        <p style="margin: 16px 0 0 0 ;">Puede conocer mejor a este personaje consultando su <a class="hiper" href="../Paginas/Sub-paginas/Personajes/Aldeanos/">bibliografia</a> en la seccion de personajes.</p>
+                                    </div>
+                                </dialog>
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td class="td_calenda"><b style="font-size: 25px;">08</b></td>
+                            <td class="td_calenda"> <!-- Cumpleaños de Laura y Raeger -->
+                                <div style="display: flex;flex-direction:column; align-items: center;">
+                                    <br><b style="color: rgb(232, 22, 22); font-size: 25px;">09</b></br>
+                                    <p class="cumpleaño" onclick="window.modal_cumple12.showModal();" title="Cumpleaños de Laura y Raeger"></p>
+                                    <p style="margin: 0; margin-bottom: 6px; text-align: center;"><b style="color: #E83;">Laura</b><b> y </b><b style="color: rgb(140, 24, 249);">Raeger</b></p>
+                                </div>
+
+                                <dialog id="modal_cumple12" class="modal_calendario">
+
+                                    <button onclick="window.modal_cumple12.close();" class="btn close">X</button>
+
+                                    <div style="padding: 0 45px 30px 40px; margin: 0;">
+                                        
+                                        <section style="display: flex; flex-direction: column;">
+    
+                                            <div>  <!-- Laura -->
+                                                <h3 class="modal_tit">Cumpleaños del aldeano</h3>
+        
+                                                <img src="../IMG/Personajes/Candidatos/Cara/laura.png" class="left screenshot img_cumpleaños" style="margin: 0 20px 0 0"/>
+                
+                                                <p><i></i></p>
+                                
+                                                <p></p>
+            
+                                                <p style="margin: 16px 0 0 0 ;">Puede conocer mejor a este personaje consultando su <a class="hiper" href="../Paginas/Sub-paginas/Personajes/Aldeanos/">bibliografia</a> en la seccion de personajes.</p>
+                                            </div>
+    
+                                            <div>  <!-- Raeger -->
+                                                <h3 class="modal_tit tit_1">Cumpleaños del aldeano del pase de expanción</h3>
+        
+                                                <img src="../IMG/Personajes/Candidatos/Cara/pase de expansion/Raeger.png" class="left screenshot img_cumpleaños" style="margin: 0 20px 0 0"/>
+                
+                                                <p><i></i></p>
+                                
+                                                <p></p>
+            
+                                                <p style="margin: 16px 0 0 0 ;">Puede conocer mejor a este personaje consultando su <a class="hiper" href="../Paginas/Sub-paginas/Personajes/Aldeanos/">bibliografia</a> en la seccion de personajes.</p>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </dialog>
+                            </td>
+                            <td class="td_calenda"> <!-- Cumpleaños de Karina -->
+                                <div style="display: flex;flex-direction:column; align-items: center;">
+                                    <br><b style="color: rgb(232, 22, 22); font-size: 25px;">10</b></br>
+                                    <p class="cumpleaño" onclick="window.modal_cumple13.showModal();" title="Cumpleaños de Karina"></p>
+                                    <p style="margin: 0; margin-bottom: 6px; text-align: center;"><b style="color: #E83;">Karina</b></p>
+                                </div>
+
+                                <dialog id="modal_cumple13" class="modal_calendario">
+
+                                    <button onclick="window.modal_cumple13.close();" class="btn close">X</button>
+
+                                    <div style="padding: 0 45px 30px 40px; margin: 0;">
+                                        <h3 class="modal_tit">Cumpleaños del aldeano</h3>
+
+                                        <img src="../IMG/Personajes/Aldeanos/Caras/Karina.png" class="left screenshot img_cumpleaños" style="margin: 0 20px 0 0"/>
+
+                                        <p><i>"Una estilista carismática que se especializa en cambios de imagen totales. Llegó a la ciudad Oliva en busca de un nuevo entorno para satisfacer sus necesidades creativas. Una firme creyente en la combinación de sabores de aguacates y salsa de soja".</i></p>
+                        
+                                        <p>Karina es un personaje de <b>Story of Seasons: Pioneers of Olive Town</b>.</p>
+                                        
+                                        <p>Karina es peluquera y maquilladora y se mudó recientemente a la ciudad Oliva. Antes de que se construya el salón, estará desempleada y se alojará en el hotel. Cuando Olive Town se amplíe para incluir un salón, Karina se mudará allí para instalar el local.</p>
+                                        
+                                        <p>Karina confeccionará ropa y accesorios para el jugador si este puede proporcionarle los materiales necesarios. Si el jugador ayuda a ampliar su salón, Karina invitará a Jeanne a que la ayude a administrar su negocio. Las dos mujeres vivirán y trabajarán juntas en el salón.</p>
+                        
+                                        <p>Es una gran trabajadora que pasa toda su semana laboral en el salón. Es buena amiga de Reina y pasa tiempo con ella en su día libre en el salón.</p>
+
+                                        <p style="margin: 16px 0 0 0 ;">Puede conocer mejor a este personaje consultando su <a class="hiper" href="../Paginas/Sub-paginas/Personajes/Aldeanos/karina.html">bibliografia</a> en la seccion de personajes.</p>
+                                    </div>
+                                </dialog>
+
+                            </td>
+                            <td class="td_calenda"><b style="font-size: 25px;">11</b></td>
+                            <td class="td_calenda"> <!-- Cumpleaños de Giorgio -->
+                                <div style="display: flex;flex-direction:column; align-items: center;">
+                                    <br><b style="color: rgb(232, 22, 22); font-size: 25px;">12</b></br>
+                                    <p class="cumpleaño" onclick="window.modal_cumple14.showModal();" title="Cumpleaños de Giorgio"></p>
+                                    <p style="margin: 0; margin-bottom: 6px; text-align: center;"><b style="color: rgb(140, 24, 249);">Giorgio</b></p>
+                                </div>
+
+                                <dialog id="modal_cumple14" class="modal_calendario">
+
+                                    <button onclick="window.modal_cumple14.close();" class="btn close">X</button>
+
+                                    <div style="padding: 0 45px 30px 40px; margin: 0;">
+
+                                        <h3 class="modal_tit tit_1">Cumpleaños del aldeano del pase de expanción</h3>
+
+                                        <img src="../IMG/Personajes/Aldeanos/Caras/pase de expansion/Giorgio.png" class="left screenshot img_cumpleaños" style="margin: 0 20px 0 0"/>
+            
+                                        <p><i></i></p>
+                            
+                                        <p></p>
+
+                                        <p style="margin: 16px 0 0 0 ;">Puede conocer mejor a este personaje consultando su <a class="hiper" href="../Paginas/Sub-paginas/Personajes/Aldeanos/">bibliografia</a> en la seccion de personajes.</p>
+                                    </div>
+                                </dialog>
+                            </td>
+                            <td class="td_calenda"><b style="font-size: 25px;">13</b></td>
+                            <td class="td_calenda"> <!-- Verbena Estival -->
+                                <div style="display: flex;flex-direction:column; align-items: center;">
+                                    <br><b style="color: rgb(232, 22, 22); font-size: 28px;">14</b></br>
+                                    <p class="evento" onclick="window.modal_festival3.showModal();" title="Verbena Estival"></p>
+                                </div>
+                                <dialog id="modal_festival3" class="modal_calendario">
+
+                                    <button onclick="window.modal_festival3.close();" class="btn close">X</button>
+
+                                    <div style="padding: 0 45px 30px 40px; margin: 0;">
+
+                                        <h3 style="text-align: center;">14 de Verano - Verbena Estival</h3>
+
+                                        <img src="../IMG/festivales/festival de Verbena Estival.jpg" class="left screenshot img_festival" style="margin: 0 20px 0 0;"/>
+
+                                        <p>Camina hasta la ciudad Oliva a las 10:00 am y visita la zona de la playa. Sally, Manuela y Patricia han preparado un juego de lanzamiento de barriles junto al muelle. En este juego, hay un recorrido de distancia en el agua, donde puedes lanzar barriles desde el muelle. El objetivo es golpear el lanzador de barriles con la fuerza suficiente para que el barril caiga en el área de la meta marcada en rojo. Ganarás la mayor cantidad de puntos por llegar al lugar correcto, menos puntos por hacer que tu barril caiga en el área azul y 0 por caer en el área gris.</p>
+
+                                        <p>Cada juego te coloca en tres rondas contra los demás competidores. En cada ronda, tienes tres oportunidades de hacer que el cañón aterrice en el punto ideal. Obtienes más puntos por aterrizar en las zonas roja o azul a medida que avanzan las rondas, ya que la última ronda es la más difícil para alcanzar el punto óptimo. El barril siempre ganará 0 puntos si cae en el área gris fuera de los límites. Tiened un total de tres intentos que se convertirán en el puntaje de esa ronda. Gana más puntos en las tres rondas para ganar el festival. También puedes realizar una ronda de práctica si quieres probar el concurso antes de participar.</p>
+                                                                      
+                                        <ul class="horario">
+                                            <li><b>Ronda 1:</b> El área roja vale 20 puntos, el área azul vale 10 puntos.</li>
+                                            <li><b>Ronda 2:</b> El área roja vale 50 puntos, el área azul vale 30 puntos.</li>
+                                            <li><b>Ronda 3:</b> El área roja vale 60 puntos, el área azul vale 40 puntos.</li>
+                                        </ul>
+                                        
+                                        <p style="margin: 16px 0 0 0 ;">Dependiendo en que puestos lleges podras resivir un trofeo de oro plata o cobre mas una cantidad monetaria junto al trofeo, dicha cantidad varia dependiendo del trofeo</p>
+ 
+                                    </div>
+                                </dialog>
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td class="td_calenda"> <!-- Cumpleaños de Emilio -->
+                                <div style="display: flex;flex-direction:column; align-items: center;">
+                                    <br><b style="color: rgb(232, 22, 22); font-size: 25px;">15</b></br>
+                                    <p class="cumpleaño" onclick="window.modal_cumple15.showModal();" title="Cumpleaños de Emilio"></p>
+                                    <p style="margin: 0; margin-bottom: 6px; text-align: center;"><b style="color: #E83;">Emilio</b></p>
+                                </div>
+
+                                <dialog id="modal_cumple15" class="modal_calendario">
+
+                                    <button onclick="window.modal_cumple15.close();" class="btn close">X</button>
+
+                                    <div style="padding: 0 45px 30px 40px; margin: 0;">
+                                        <h3 class="modal_tit">Cumpleaños del aldeano</h3>
+
+                                        <img src="../IMG/Personajes/Candidatos/Cara/emilio.png" class="left screenshot img_cumpleaños" style="margin: 0 20px 0 0"/>
+            
+                                        <p><i>"Se levanta temprano todos los días con Marcos y Raúl para ir a pescar. Adora la naturaleza exuberante e intacta que rodea Olive Town. Nunca se cansa de comer mariscos en su vida".</i></p>
+
+                                        <p>Emilio es un candidato a matrimonio en <b>Story of Seasons: Pioneers of Olive Town</b>.</p>
+                            
+                                        <p>Emilio es un pescador tranquilo que vive con su familia en una casa en la playa. Le apasiona ser pescador y sabe cómo hacer reír a la gente. Le encanta el mar y tiene un gran talento para tocar la guitarra. Para Emilio, el océano ha sido como su patio trasero desde que tiene memoria y planea que siga siendo así para el resto de su vida.</p>
+
+                                        <p>Le gusta competir en el torneo de pesca cada año.</p>
+
+                                        <p style="margin: 16px 0 0 0 ;">Puede conocer mejor a este personaje consultando su <a class="hiper" href="../Paginas/Sub-paginas/Personajes/Candidatos/emilio.html">bibliografia</a> en la seccion de personajes.</p>
+                                    </div>
+                                </dialog>
+                            </td>
+                            <td class="td_calenda"><b style="font-size: 25px;">16</b></td>
+                            <td class="td_calenda"><b style="font-size: 25px;">17</b></td>
+                            <td class="td_calenda"><b style="font-size: 25px;">18</b></td>
+                            <td class="td_calenda"><b style="font-size: 25px;">19</b></td>
+                            <td class="td_calenda"><b style="font-size: 25px;">20</b></td>
+                            <td class="td_calenda"> <!-- Cumpleaños de Ralph -->
+                                <div style="display: flex;flex-direction:column; align-items: center;">
+                                    <br><b style="color: rgb(232, 22, 22); font-size: 25px;">21</b></br>
+                                    <p class="cumpleaño" onclick="window.modal_cumple16.showModal();" title="Cumpleaños de Ralph"></p>
+                                    <p style="margin: 0; margin-bottom: 6px; text-align: center;"><b style="color: #E83;">Ralph</b></p>
+                                </div>
+
+                                <dialog id="modal_cumple16" class="modal_calendario">
+
+                                    <button onclick="window.modal_cumple16.close();" class="btn close">X</button>
+
+                                    <div style="padding: 0 45px 30px 40px; margin: 0;">
+                                        <h3 class="modal_tit">Cumpleaños del aldeano</h3>
+
+                                        <img src="../IMG/Personajes/Candidatos/Cara/ralph.png" class="left screenshot img_cumpleaños" style="margin: 0 20px 0 0"/>
+
+                                        <p><i>"Un guardabosques que guía a otros a través del bosque y observa la vida silvestre local. Solía jugar al fútbol en un equipo escolar y todavía entrena para mantenerse en forma. Disfruta de comidas sencillas como pan y sopa".</i></p>
+
+                                        <p>Ralph es un candidato a matrimonio en <b>Story of Seasons: Pioneers of Olive Town</b>.</p>
+                            
+                                        <p>Un guardabosques que protege la vida silvestre y ayuda a preservar la naturaleza que rodea a la ciudad Oliva. Guía a los turistas a través del bosque de manera segura, así como a los residentes de la ciudad Oliva, como Beth, que va al bosque en busca de artefactos. Es una persona tranquila y serena que se desenvuelve bien en situaciones de crisis, lo que lo convierte en un muy buen guardabosques. Disfruta de su trabajo y le encanta estar al aire libre. Tiene un gran respeto por los animales y quiere preservar el bosque natural tanto como sea posible.</p>
+                        
+                                        <p>Solía jugar al fútbol, pero tuvo que dejarlo por una lesión. Sin embargo, todavía le gusta mantenerse en forma. Trabaja en la estación de guardabosques, pero vive con su padre Nigel en la carpintería y tambien compite en el evento Verbena Estival todos los años.</p>
+
+                                        <p style="margin: 16px 0 0 0 ;">Puede conocer mejor a este personaje consultando su <a class="hiper" href="../Paginas/Sub-paginas/Personajes/Candidatos/ralph.html">bibliografia</a> en la seccion de personajes.</p>
+                                    </div>
+                                </dialog>
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td class="td_calenda"> <!-- Espectaculo de fuegos artificiales -->
+                                <div style="display: flex;flex-direction:column; align-items: center;">
+                                    <br><b style="color: rgb(232, 22, 22); font-size: 28px;">22</b></br>
+                                    <p class="evento" onclick="window.modal_festival4.showModal();" title="Espectaculo de fuegos artificiales"></p>
+                                </div>
+
+                                <dialog id="modal_festival4" class="modal_calendario">
+
+                                    <button onclick="window.modal_festival4.close();" class="btn close">X</button>
+
+                                    <div style="padding: 0 45px 30px 40px; margin: 0;">
+                                        <h3 style="text-align: center;">22 de Verano - Espectaculo de fuegos artificiales</h3>
+
+                                        <img src="../IMG/festivales/festival de Espectaculo de fuegos artificiales.jpg" class="left screenshot img_festival" style="margin: 0 20px 0 0;"/>
+
+                                        <p>Visite viudad Olivo después de las 10:00 am para ver a todos reunidos cerca de la playa. Durante este festival, podrás ver el espectáculo del cielo, ya sea solo o con tu pareja. Si estás solo, habla con Nigel para iniciar las festividades. Si tiene a alguien con quien trabaja, hable con él y pregúntele si le gustaría ver los fuegos artificiales con usted. Al confirmar su selección los fuegos artificiales comenzarán inmediatamente.</p>
+
+                                        <p>El festival pasará a ser de noche para que puedas ver los fuegos artificiales iluminando el cielo. Si tienes a alguien que te acompañe, podrás conversar un rato con esa persona durante el espectáculo.</p>
+
+                                        <p>Los candidatos a matrimonio DLC no asistirán a este festival a menos que estén casados con un candidato a matrimonio DLC, y solo entonces participará su cónyuge DLC.</p>
+
+                                        <p style="margin: 16px 0 0 0 ;">Este festival finaliza a las 9:00 pm.</p>
+                                    </div>
+                                </dialog>
+                            </td>
+                            <td class="td_calenda"> <!-- Cumpleaños de Marcos -->
+                                <div style="display: flex;flex-direction:column; align-items: center;">
+                                    <br><b style="color: rgb(232, 22, 22); font-size: 25px;">23</b></br>
+                                    <p class="cumpleaño" onclick="window.modal_cumple17.showModal();" title="Cumpleaños de Marcos"></p>
+                                    <p style="margin: 0; margin-bottom: 6px; text-align: center;"><b style="color: #E83;">Marcos</b></p>
+                                </div>
+                                
+                                <dialog id="modal_cumple17" class="modal_calendario">
+
+                                    <button onclick="window.modal_cumple17.close();" class="btn close">X</button>
+
+                                    <div style="padding: 0 45px 30px 40px; margin: 0;">
+                                        <h3 class="modal_tit">Cumpleaños del aldeano</h3>
+
+                                        <img src="../IMG/Personajes/Aldeanos/Caras/Marcos.png" class="left screenshot img_cumpleaños" style="margin: 0 20px 0 0"/>
+
+                                        <p><i>"El padre de Emilio. Proviene de una familia de pescadores y él mismo se convirtió en uno de ellos. Después de casarse con su amiga de la infancia Maneula, los dos se mudaron a Villa Oliva. Naturalmente, a él le encantan los mariscos".</i></p>
+
+                                        <p>Marcos es un personaje de <b>Story of Seasons: Pioneers of Olive Town</b>.</p>
+
+                                        <p>Marcos es el esposo de Manuela y es la padre de Emilio. Marcos es un pescador tranquilo y amante del mar que enseña a pescar tanto a Emilio como a Raúl. Para Marcos, Raúl es considerado como un miembro más de su familia a pesar de ser un pariente por lo que suele pasar tiempo con él. Marcos compite en el evento Verbena Estival en el verano todos los años y tambien es el encargado que encender los fuegos artificiales para el espectáculo anual de fuegos artificiales.</p>
+
+                                        <p style="margin: 16px 0 0 0 ;">Puede conocer mejor a este personaje consultando su <a class="hiper" href="../Paginas/Sub-paginas/Personajes/Aldeanos/marcos.html">bibliografia</a> en la seccion de personajes.</p>
+                                    </div>
+                                </dialog>
+                            </td>
+                            <td class="td_calenda"> <!-- Cumpleaños de Georg -->
+                                <div style="display: flex;flex-direction:column; align-items: center;">
+                                    <br><b style="color: rgb(232, 22, 22); font-size: 25px;">24</b></br>
+                                    <p class="cumpleaño" onclick="window.modal_cumple18.showModal();" title="Cumpleaños de Georg"></p>
+                                    <p style="margin: 0; margin-bottom: 6px; text-align: center;"><b style="color: #E83;">Georg</b></p>
+                                </div>
+                                
+                                <dialog id="modal_cumple18" class="modal_calendario">
+
+                                    <button onclick="window.modal_cumple18.close();" class="btn close">X</button>
+
+                                    <div style="padding: 0 45px 30px 40px; margin: 0;">
+
+                                        <h3 class="modal_tit">Cumpleaños del aldeano</h3>
+
+                                        <img src="../IMG/Personajes/Aldeanos/Caras/Georg.png" class="left screenshot img_cumpleaños" style="margin: 0 20px 0 0"/>
+
+                                        <p><i>"El padre de Damon y Bridget. El capitán del ferry turístico, un hombre sensato. Se enorgullece de su trabajo, conectando la ciudad y Villa Oliva con su barco. Desde que era joven, ha comido huevos para mantenerse sano y en forma".</i></p>
+
+                                        <p>Georg es un personaje de <b>Story of Seasons: Pioneers of Olive Town</b>.</p>
+
+                                        <p>Georg es el esposo de Bridget y es padre de Bridget y Damon. Es un hombre de pocas palabras que opera el ferry de pasajeros que lleva a la gente a Olive Town. Ha contratado a Jacopo como su asistente. Aunque no son la pareja ideal, Georg se ha encariñado bastante con Jacopo y agradece la ayuda adicional.</p>
+
+                                        <p>Le encanta estar en el agua durante el día, pero también pasar tiempo con su familia en casa por las noches. Aunque no ayuda directamente en la tienda de animales, se demuestra que le gustan mucho los animales. Organiza el Pet Derby anual cada verano.</p>
+
+                                        <p style="margin: 16px 0 0 0 ;">Puede conocer mejor a este personaje consultando su <a class="hiper" href="../Paginas/Sub-paginas/Personajes/Aldeanos/georg.html">bibliografia</a> en la seccion de personajes.</p>
+                                    </div>
+                                </dialog>
+                            </td>
+                            <td class="td_calenda"><b style="font-size: 25px;">25</b></td>
+                            <td class="td_calenda"> <!-- Cumpleaños de Hina -->
+                                <div style="display: flex;flex-direction:column; align-items: center;">
+                                    <br><b style="color: rgb(232, 22, 22); font-size: 25px;">26</b></br>
+                                    <p class="cumpleaño" onclick="window.modal_cumple19.showModal();" title="Cumpleaños de Hina"></p>
+                                    <p style="margin: 0; margin-bottom: 6px; text-align: center;"><b style="color: rgb(140, 24, 249);">Hina</b></p>
+                                </div>
+
+                                <dialog id="modal_cumple19" class="modal_calendario">
+
+                                    <button onclick="window.modal_cumple19.close();" class="btn close">X</button>
+
+                                    <div style="padding: 0 45px 30px 40px; margin: 0;">
+
+                                        <h3 class="modal_tit tit_1">Cumpleaños del aldeano del pase de expanción</h3>
+
+                                        <img src="../IMG/Personajes/Aldeanos/Caras/pase de expansion/Hina.png" class="left screenshot img_cumpleaños" style="margin: 0 20px 0 0"/>
+            
+                                        <p><i></i></p>
+                            
+                                        <p></p>
+
+                                        <p style="margin: 16px 0 0 0 ;">Puede conocer mejor a este personaje consultando su <a class="hiper" href="../Paginas/Sub-paginas/Personajes/Aldeanos/">bibliografia</a> en la seccion de personajes.</p>
+                                    </div>
+                                </dialog>
+                            </td>
+                            <td class="td_calenda"><b style="font-size: 25px;">27</b></td>
+                            <td class="td_calenda"> <!-- Cumpleaños de Reina -->
+                                <div style="display: flex;flex-direction:column; align-items: center;">
+                                    <br><b style="color: rgb(232, 22, 22); font-size: 25px;">28</b></br>
+                                    <p class="cumpleaño" onclick="window.modal_cumple20.showModal();" title="Cumpleaños de Reina"></p>
+                                    <p style="margin: 0; margin-bottom: 6px; text-align: center;"><b style="color: #E83;">Reina</b></p>
+                                </div>
+
+                                <dialog id="modal_cumple20" class="modal_calendario">
+
+                                    <button onclick="window.modal_cumple20.close();" class="btn close">X</button>
+
+                                    <div style="padding: 0 45px 30px 40px; margin: 0;">
+
+                                        <h3 class="modal_tit">Cumpleaños del aldeano</h3>
+
+                                        <img src="../IMG/Personajes/Candidatos/Cara/reina.png" class="left screenshot img_cumpleaños" style="margin: 0 20px 0 0"/>
+
+                                        <p><i>"Conocio a Gloria cuando era estudiante y la invitaron a trabajar en el museo. Tiene conocimientos sobre objetos antiguos y le encanta evaluar tesoros hasta el punto de perder la noción del tiempo".</i></p>
+
+                                        <p>Reina es un candidata a matrimonio en <b>Story of Seasons: Pioneers of Olive Town</b>.</p>
+                                        
+                                        <p>Una joven que trabaja y vive en el museo. Aunque Reina es muy relajada, se toma en serio su trabajo en el museo y le encanta aprender todo lo que pueda sobre los artefactos desconocidos. Está muy bien informada sobre las exhibiciones y recibe elogios de la directora del museo, Gloria, quien confía mucho en ella. Es muy cercana a Gloria y también pasa tiempo con su amiga Karina cuando el museo está cerrado los jueves.</p>
+                                        
+                                        <p>Ella está a cargo de los servicios de tasación del museo y puede tasar los objetos desconocidos que el jugador obtenga para ella. Habla con Reina detrás del mostrador del museo mientras esté abierto. Si hay un artefacto en la bolsa del jugador, ella se ofrecerá a tasarlo.</p>
+
+                                        <p style="margin: 16px 0 0 0 ;">Puede conocer mejor a este personaje consultando su <a class="hiper" href="../Paginas/Sub-paginas/Personajes/Candidatos/reina.html">bibliografia</a> en la seccion de personajes.</p>
+                                    </div>
+                                </dialog>
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+
+                <section> <!-- Otoño -->
+
+                    <h2>Temporada de Otoño</h2>
+
+                    <table class="data" style="margin-top: 1.8em;"> <!-- Otoño -->
+                        <tr>
+                            <th colspan="7" style="font-size: 1.2em; background-color: #f7b05f; height: 4em;">
+                                <div style="display: flex; justify-content: space-around; align-items: center;">
+                                    <p class="otoño" style="margin-top: 1.65em;" title="Otoño"></p>
+                                    <p class="otoño" style="margin-top: 1.65em;" title="Otoño"></p>
+                                    <p class="otoño" style="margin-top: 1.65em;" title="Otoño"></p>
+                                    <p class="otoño" style="margin-top: 1.65em;" title="Otoño"></p>
+                                </div>
+                            </th>
+                        </tr>
+        
+                        <tr>
+                            <td class="td_calenda"><b style="font-size: 25px;">01</b></td>
+                            <td class="td_calenda"><b style="font-size: 25px;">02</b></td>
+                            <td style="padding: 0; width: 120px;"> <!-- Cumpleaños de Bridget -->
+                                <div style="display: flex;flex-direction:column; align-items: center;">
+                                    <br><b style="color: rgb(232, 22, 22); font-size: 25px;">03</b></br>
+                                    <p class="cumpleaño" onclick="window.modal_cumple21.showModal();" title="Cumpleaños de Bridget"></p>
+                                    <p style="margin: 0; margin-bottom: 6px; text-align: center;"><b style="color: #E83;">Bridget</b></p>
+                                </div>
+                                
+                                <dialog id="modal_cumple21" class="modal_calendario">
+                                    <h3 class="modal_tit">Cumpleaños del aldeano</h3>
+
+                                    <button onclick="window.modal_cumple21.close();" class="btn close">X</button>
+
+                                    <div style="padding: 0 45px 30px 40px; margin: 0;">
+
+                                        <img src="../IMG/Personajes/Candidatos/Cara/bridget.png" class="left screenshot img_cumpleaños" style="margin: 0 20px 0 0"/>
+
+                                        <p><i>"Una joven amable que trabaja en una tienda de animales. Se preocupa mucho por su familia. Los animales del bosque son sus queridos amigos. Le encanta beber leche fresca y deliciosa".</i></p>
+
+                                        <p>Bridget es un candidata a matrimonio en <b>Story of Seasons: Pioneers of Olive Town</b>.</p>
+                                        
+                                        <p>Bridget es la hermna mator de Damon e hija de Patricia y Georg. ¡Bridget ama a todos los animales, domesticados o salvajes! y a menudo se preocupa por el futuro de su hermano menor Damon, Bridget es una chica muy trabajadora y siempre siempre mantiene una sonrisa en su rostro y un amigo animal cerca.</p>
+                
+                                        <p>Bridget trabajará en la tienda de animales de su familia y estará a cargo de las mascotas y monturas que el jugador puede comprar. Tambien compite en el festival de derbi de mascotas.</p>
+
+                                        <p style="margin: 16px 0 0 0 ;">Puede conocer mejor a este personaje consultando su <a class="hiper" href="../Paginas/Sub-paginas/Personajes/Candidatos/bridgette.html">bibliografia</a> en la seccion de personajes.</p>
+                                    </div>
+                                </dialog>
+                            </td>
+                            <td class="td_calenda"><b style="font-size: 25px;">04</b></td>
+                            <td style="padding: 0; width: 120px;"> <!-- Cumpleaños de Lisette -->
+                                <div style="display: flex;flex-direction:column; align-items: center;">
+                                    <br><b style="color: rgb(232, 22, 22); font-size: 25px;">05</b></br>
+                                    <p class="cumpleaño" onclick="window.modal_cumple22.showModal();" title="Cumpleaños de Lisette"></p>
+                                    <p style="margin: 0; margin-bottom: 6px; text-align: center;"><b style="color: rgb(140, 24, 249);">Lisette</b></p>
+                                </div>
+
+                                <dialog id="modal_cumple22" class="modal_calendario">
+
+                                    <button onclick="window.modal_cumple22.close();" class="btn close">X</button>
+
+                                    <div style="padding: 0 45px 30px 40px; margin: 0;">
+
+                                        <h3 class="modal_tit">Cumpleaños del aldeano</h3>
+
+                                        <img src="../IMG/Personajes/Candidatos/Cara/pase de expansion/Lisette.png" class="left screenshot img_cumpleaños" style="margin: 0 20px 0 0"/>
+            
+                                        <p><i></i></p>
+                            
+                                        <p></p>
+
+                                        <p style="margin: 16px 0 0 0 ;">Puede conocer mejor a este personaje consultando su <a class="hiper" href="../Paginas/Sub-paginas/Personajes/Aldeanos/">bibliografia</a> en la seccion de personajes.</p>
+                                    </div>
+                                </dialog>
+                            </td>
+                            <td style="padding: 0; width: 120px;"> <!-- Cumpleaños de Iris -->
+                                <div style="display: flex;flex-direction:column; align-items: center;">
+                                    <br><b style="color: rgb(232, 22, 22); font-size: 25px;">06</b></br>
+                                    <p class="cumpleaño" onclick="window.modal_cumple23.showModal();" title="Cumpleaños de Iris"></p>
+                                    <p style="margin: 0; margin-bottom: 6px; text-align: center;"><b style="color: rgb(140, 24, 249);">Iris</b></p>
+                                </div>
+
+                                <dialog id="modal_cumple23" class="modal_calendario">
+
+                                    <button onclick="window.modal_cumple23.close();" class="btn close">X</button>
+
+                                    <div style="padding: 0 45px 30px 40px; margin: 0;">
+
+                                        <h3 class="modal_tit">Cumpleaños del aldeano</h3>
+
+                                        <img src="../IMG/Personajes/Candidatos/Cara/pase de expansion/Iris.png" class="left screenshot img_cumpleaños" style="margin: 0 20px 0 0"/>
+            
+                                        <p><i></i></p>
+                            
+                                        <p></p>
+
+                                        <p style="margin: 16px 0 0 0 ;">Puede conocer mejor a este personaje consultando su <a class="hiper" href="../Paginas/Sub-paginas/Personajes/Aldeanos/">bibliografia</a> en la seccion de personajes.</p>
+                                    </div>
+                                </dialog>
+                            </td>
+                            <td style="padding: 0; width: 120px;"> <!-- Cumpleaños de Lovett -->
+                                <div style="display: flex;flex-direction:column; align-items: center;">
+                                    <br><b style="color: rgb(232, 22, 22); font-size: 25px;">07</b></br>
+                                    <p class="cumpleaño" onclick="window.modal_cumple24.showModal();" title="Cumpleaños de Iris"></p>
+                                    <p style="margin: 0; margin-bottom: 6px; text-align: center;"><b style="color: #E83;">Lovett</b></p>
+                                </div>
+
+                                <dialog id="modal_cumple24" class="modal_calendario">
+
+                                    <button onclick="window.modal_cumple24.close();" class="btn close">X</button>
+
+                                    <div style="padding: 0 45px 30px 40px; margin: 0;">
+
+                                        <h3 class="modal_tit">Cumpleaños del aldeano</h3>
+
+                                        <img src="../IMG/Personajes/Aldeanos/Caras/Lovett.png" class="left screenshot img_cumpleaños" style="margin: 0 20px 0 0"/>
+
+                                        <p><i>"Un bon vivant que siempre está a la caza de platos raros y deliciosos. Escribe columnas especiales sobre gastronomía en revistas sobre todos los platos que ha probado y tiene seguidores en todo el mundo".</i></p>
+                        
+                                        <p>Lovett es un personaje de <b>Story of Seasons: Pioneers of Olive Town</b>.</p>
+                                        
+                                        <p>Es un aristócrata gourmet que viaja por todo el mundo probando comida. Su mente siempre está pensando en comida, sin importar la hora del día. Va del bistró, la cafetería y su casa todos los días.</p>
+                                        
+                                        <p>Si el jugador visita la casa de Lovett, tendrá una lista de platos que está buscando. Si el jugador completa estas solicitudes, Lovett lo recompensará con una amplia variedad de artículos.</p>
+
+                                        <p style="margin: 16px 0 0 0 ;">Puede conocer mejor a este personaje consultando su <a class="hiper" href="../Paginas/Sub-paginas/Personajes/Aldeanos/">bibliografia</a> en la seccion de personajes.</p>
+                                    </div>
+                                </dialog>
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td class="td_calenda"> <!-- Búsqueda de Setas -->
+                                <div style="display: flex;flex-direction:column; align-items: center;">
+                                    <br><b style="color: rgb(232, 22, 22); font-size: 25px;">08</b></br>
+                                    <p class="evento" onclick="window.modal_festival5.showModal();" title="Búsqueda de Setas"></p>
+                                </div>
+
+                                <dialog id="modal_festival5" class="modal_calendario">
+
+                                    <button onclick="window.modal_festival5.close();" class="btn close">X</button>
+
+                                    <div style="padding: 0 45px 30px 40px; margin: 0;">
+
+                                        <h3 style="text-align: center;">08 de Otoño - Búsqueda de Setas</h3>
+
+                                        <img src="../IMG/festivales/festival de Búsqueda de Setas.jpg" class="left screenshot img_festival" style="margin: 0 20px 0 0;"/>
+
+                                        <p>Se trata de un festival competitivo en el que los participantes recolectan setas. El objetivo no es recolectar la mayor cantidad de hongos de juguete, sino recolectar hasta 20 hongos que valgan la mayor cantidad de puntos. Ingrese a la ciudad Oliva entre las 10:00 am y las 7:00 pm, luego hable con Dosetsu para unirse a la diversión de los hongos. Cindy y Mikey han escondido pequeños hongos de juguete para que los encuentren los participantes. Tendrás 70 segundos para cazar los hongos de juguete de mayor valor antes de que los otros tres competidores los encuentren. Los hongos estarán escondidos en el área de la plaza, el patio de juegos y al norte en el bosque. No encontrarás ninguno en otras partes de ciudad Oliva, como las calles inferiores o la playa.</p>
+
+                                        <p>Hay tres colores de setas de juguete: rojo, amarillo y azul. Cuantos más puntos valga el hongo, menos encontrarás.</p>
+                                                                      
+                                        <ul class="horario">
+                                            <li><b>Hongos rojos grandes:</b> 5 puntos cada uno. Solo se pueden encontrar 1 o 2.</li>
+                                            <li><b>Hongos amarillos:</b> 3 puntos cada uno. Se pueden encontrar 3 o 4.</li>
+                                            <li><b>Minihongos azules:</b> 1 punto cada uno. ¡Hay muchos disponibles!.</li>
+                                        </ul>
+
+                                        <p>Puedes recoger un máximo de 20 setas. Como solo hay unos pocos hongos rojos y amarillos, intenta localizarlos primero. Luego, recoge los pequeños azules para llenar tu límite de 20 hongos.</p>
+
+                                        <p>Dependiendo en que puestos lleges podras resivir un trofeo de oro plata o cobre mas una cantidad monetaria junto al trofeo, dicha cantidad varia dependiendo del trofeo</p>
+
+                                        <p style="margin: 16px 0 0 0 ;">Este festival finaliza a las 19:00 horas.</p>
+                                    </div>
+                                </dialog>
+                            </td>
+                            <td class="td_calenda"> <!-- Cumpleaños de Sydney y Tigre -->
+                                <div style="display: flex;flex-direction:column; align-items: center;">
+                                    <br><b style="color: rgb(232, 22, 22); font-size: 25px;">09</b></br>
+                                    <p class="cumpleaño" onclick="window.modal_cumple25.showModal();" title="Cumpleaños de Sydney y Tigre"></p>
+                                    <p style="margin: 0; margin-bottom: 6px; text-align: center;"><b style="color: #E83;">Sydney</b><b> y </b><b style="color: rgb(140, 24, 249);">Tigre</b></p>
+                                </div>
+                                
+                                <dialog id="modal_cumple25" class="modal_calendario">
+
+                                    <button onclick="window.modal_cumple25.close();" class="btn close">X</button>
+
+                                    <div style="padding: 0 45px 30px 40px; margin: 0;">
+                                        
+                                        <section style="display: flex; flex-direction: column;">
+    
+                                            <div>  <!-- Sydney -->
+                                                <h3 class="modal_tit">Cumpleaños del aldeano</h3>
+        
+                                                <img src="../IMG/Personajes/Aldeanos/Caras/Sydney.png" class="left screenshot img_cumpleaños" style="margin: 0 20px 0 0"/>
+                
+                                                <p><i></i></p>
+                                
+                                                <p></p>
+            
+                                                <p style="margin: 16px 0 0 0 ;">Puede conocer mejor a este personaje consultando su <a class="hiper" href="../Paginas/Sub-paginas/Personajes/Aldeanos/">bibliografia</a> en la seccion de personajes.</p>
+                                            </div>
+    
+                                            <div>  <!-- Tigre -->
+                                                <h3 class="modal_tit tit_1">Cumpleaños del aldeano del pase de expanción</h3>
+        
+                                                <img src="../IMG/Personajes/Aldeanos/Caras/pase de expansion/Tigre.png" class="left screenshot img_cumpleaños" style="margin: 0 20px 0 0"/>
+                
+                                                <p><i></i></p>
+                                
+                                                <p></p>
+            
+                                                <p style="margin: 16px 0 0 0 ;">Puede conocer mejor a este personaje consultando su <a class="hiper" href="../Paginas/Sub-paginas/Personajes/Aldeanos/">bibliografia</a> en la seccion de personajes.</p>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </dialog>
+                            </td>
+                            <td class="td_calenda"><b style="font-size: 25px;">10</b></td>
+                            <td class="td_calenda"><b style="font-size: 25px;">11</b></td>
+                            <td class="td_calenda"><b style="font-size: 25px;">12</b></td>
+                            <td class="td_calenda"> <!-- Cumpleaños de Patricia -->
+                                <div style="display: flex;flex-direction:column; align-items: center;">
+                                    <br><b style="color: rgb(232, 22, 22); font-size: 25px;">13</b></br>
+                                    <p class="cumpleaño" onclick="window.modal_cumple26.showModal();" title="Cumpleaños de Patricia"></p>
+                                    <p style="margin: 0; margin-bottom: 6px; text-align: center;"><b style="color: #E83;">Patricia</b></p>
+                                </div>
+                                
+                                <dialog id="modal_cumple26" class="modal_calendario">
+                                    <h3 class="modal_tit">Cumpleaños del aldeano</h3>
+
+                                    <button onclick="window.modal_cumple26.close();" class="btn close">X</button>
+
+                                    <div style="padding: 0 45px 30px 40px; margin: 0;">
+
+                                        <img src="../IMG/Personajes/Aldeanos/Caras/Patricia.png" class="left screenshot img_cumpleaños" style="margin: 0 20px 0 0"/>
+
+                                        <p><i>"La madre de Damon y Bridget. Dueña de la tienda de animales. Ha cuidado ganado desde que era niña, por lo que es una experta en el cuidado de animales. Le encanta la miel y la anhela a diario, además de todas sus golosinas para la hora del té".</i></p>
+
+                                        <p>Patricia es un personaje de <b>Story of Seasons: Pioneers of Olive Town</b>.</p>
+
+                                        <p>Patricia es la esposa de Georg y es madre de Bridget y Damon. Dirige la tienda de animales "La casa de las patitas" con su hija Bridget. Ella se encarga de las ventas de todo el ganado y las aves de corral, así como de los kits de cría. Ama a los animales y se dedica a cuidarlos y brindarles el mejor cuidado posible.</p>
+                
+                                        <p>Patricia invitará a sus amigas Sally, Ángela y Manuela a su casa una vez a la semana en su día libre. Compite cada año en el derbi de mascotas y ayuda a Manuela con el Verbena Estival.</p>
+
+                                        <p style="margin: 16px 0 0 0 ;">Puede conocer mejor a este personaje consultando su <a class="hiper" href="../Paginas/Sub-paginas/Personajes/Aldeanos/patricia.html">bibliografia</a> en la seccion de personajes.</p>
+                                    </div>
+                                </dialog>
+                            </td>
+                            <td class="td_calenda"><b style="font-size: 25px;">14</b></td>
+                        </tr>
+    
+                        <tr>
+                            <td class="td_calenda"><b style="font-size: 25px;">15</b></td>
+                            <td class="td_calenda"><b style="font-size: 25px;">16</b></td>
+                            <td class="td_calenda"> <!-- Cumpleaños de Misaki -->
+                                <div style="display: flex;flex-direction:column; align-items: center;">
+                                    <br><b style="color: rgb(232, 22, 22); font-size: 25px;">17</b></br>
+                                    <p class="cumpleaño" onclick="window.modal_cumple27.showModal();" title="Cumpleaños de Misaki"></p>
+                                    <p style="margin: 0; margin-bottom: 6px; text-align: center;"><b style="color: #E83;">Misaki</b></p>
+                                </div>
+
+                                <dialog id="modal_cumple27" class="modal_calendario">
+
+                                    <button onclick="window.modal_cumple27.close();" class="btn close">X</button>
+
+                                    <div style="padding: 0 45px 30px 40px; margin: 0;">
+
+                                        <h3 class="modal_tit">Cumpleaños del aldeano</h3>
+
+                                        <img src="../IMG/Personajes/Aldeanos/Caras/Misaki.png" class="left screenshot img_cumpleaños" style="margin: 0 20px 0 0"/>
+
+                                        <p><i>"La apacible dueña del restaurante. Es una gran oyente y su presencia tranquilizadora hace que sea fácil hablar con ella; muchos residentes acuden a ella en busca de consejos. Cocina platos de todos los países, pero prefiere adobos que realcen los sabores de la comida local".</i></p>
+                        
+                                        <p>Misaki es un personaje de <b>Story of Seasons: Pioneers of Olive Town</b>.</p>
+                                        
+                                        <p>Es la dueña del restaurante del pueblo. Una mujer misteriosa que es muy sabia pero que no habla mucho de sí misma. Está llena de buenos consejos y siempre está pendiente de los demás, en particular de Blaire, por quien se preocupa constantemente.</p>
+                                        
+                                        <p>Ella es una cocinera excelente y aparentemente puede satisfacer a cualquiera con su cocina, ¡incluso a un gourmet de clase mundial como Lovett!.</p>
+
+                                        <p style="margin: 16px 0 0 0 ;">Puede conocer mejor a este personaje consultando su <a class="hiper" href="../Paginas/Sub-paginas/Personajes/Aldeanos/misaki.html">bibliografia</a> en la seccion de personajes.</p>
+                                    </div>
+                                </dialog>
+                            </td>
+                            <td class="td_calenda"> <!-- Cumpleaños de Simon -->
+                                <div style="display: flex;flex-direction:column; align-items: center;">
+                                    <br><b style="color: rgb(232, 22, 22); font-size: 25px;">18</b></br>
+                                    <p class="cumpleaño" onclick="window.modal_cumple28.showModal();" title="Cumpleaños de Simon"></p>
+                                    <p style="margin: 0; margin-bottom: 6px; text-align: center;"><b style="color: #E83;">Simon</b></p>
+                                </div>
+
+                                <dialog id="modal_cumple28" class="modal_calendario">
+
+                                    <button onclick="window.modal_cumple28.close();" class="btn close">X</button>
+
+                                    <div style="padding: 0 45px 30px 40px; margin: 0;">
+
+                                        <h3 class="modal_tit">Cumpleaños del aldeano</h3>
+
+                                        <img src="../IMG/Personajes/Aldeanos/Caras/Simon.png" class="left screenshot img_cumpleaños" style="margin: 0 20px 0 0"/>
+
+                                        <p><i>"El abuelo de Jack. Uno de los pioneros originales de la ciudad Oliva. Desde que Ángela heredó la tienda de comestibles, está aprovechando al máximo su jubilación. En su opinión, los platos sencillos como el pudín son inmejorables".</i></p>
+
+                                        <p>Simon es un personaje de <b>Story of Seasons: Pioneers of Olive Town</b>.</p>
+                                        
+                                        <p>Es uno de los pioneros que originalmente ayudó a construir la ciudad Oliva, junto con su esposa Jessie, Nguyen y el abuelo del jugador. Alguna vez fue el dueño del bazar de ciudad Oliva de la ciudad con su esposa, pero desde que envejeció decidió jubilarse y ceder la propiedad a su hija, Ángela.</p>
+                        
+                                        <p>Aunque está jubilado, a Simon todavía le gusta ayudar cuando puede en la tienda. Sigue siendo muy buen amigo de Nguyen y le gusta jugar al ajedrez con él. Suele verse por la ciudad con Jessie, y los dos suelen ir al mirador en el bosque para disfrutar de la vista.</p>
+                                        
+                                        <p>Sabe mucho sobre la ciudad Oliva y siempre da buenos consejos. Vive con su esposa, su hija y sus nietos en el bazar.</p>
+
+                                        <p style="margin: 16px 0 0 0 ;">Puede conocer mejor a este personaje consultando su <a class="hiper" href="../Paginas/Sub-paginas/Personajes/Aldeanos/simon.html">bibliografia</a> en la seccion de personajes.</p>
+                                    </div>
+                                </dialog>
+                            </td>
+                            <td class="td_calenda"><b style="font-size: 25px;">19</b></td>
+                            <td class="td_calenda"><b style="font-size: 25px;">20</b></td>
+                            <td class="td_calenda"> <!-- Memoria de los espiritus -->
+                                <div style="display: flex;flex-direction:column; align-items: center;">
+                                    <br><b style="color: rgb(232, 22, 22); font-size: 25px;">21</b></br>
+                                    <p class="evento" onclick="window.modal_festival6.showModal();" title="Memoria de los espiritus"></p>
+                                </div>
+                                
+                                <dialog id="modal_festival6" class="modal_calendario">
+
+                                    <button onclick="window.modal_festival6.close();" class="btn close">X</button>
+
+                                    <div style="padding: 0 45px 30px 40px; margin: 0;">
+
+                                        <h3 style="text-align: center;">21 de Otoño - Memoria de los espiritus</h3>
+
+                                        <img src="../IMG/festivales/Festival de los espiritus.jpg" class="left screenshot img_festival" style="margin: 0 20px 0 0;"/>
+
+                                        <p>Los residentes de la ciudad Oliva se reunirán este día para expresar su agradecimiento por las bendiciones de la naturaleza que cubren su ciudad. Entre las 10:00 am y las 7:00 pm, llegarán a ciudad Oliva y todos estarán en la plaza, donde estarán entusiasmados por encender las linternas de papel que planean lanzar al cielo. Si ya se ha confesado con un candidato para el matrimonio y está saliendo con él o ella (o incluso se ha casado), hable con esa persona en la plaza para invitarla a encender las linternas con usted.</p>
+
+                                        <p>Cuando estés listo, habla con Simon en el centro de la plaza. La hora cambiará a la noche y todas las linternas se iluminarán con fuego.</p>
+                                                                      
+                                        <ul class="horario">
+                                            <li>Si asistes solo al festival, la escena será en tu granjero dejando flotar tu pequeña linterna solitaria.</li>
+                                            <li>Si logras invitar a un candidato a pasar tiempo contigo, la escena incluirá conversaciones con Lars, Beth, tu cita y Jacopo.</li>
+                                        </ul>
+
+                                        <p>Los candidatos a matrimonio del DLC no asistirán a este festival a menos que usted esté casado con un candidato a matrimonio del DLC, y solo entonces participará su cónyuge de DLC.</p>
+
+                                        <p style="margin: 16px 0 0 0 ;">Este festival termina a las 19:00 h. Por suerte, las linternas de fuego no provocarán ningún incendio en el juego.</p>
+                                    </div>
+                                </dialog>
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td class="td_calenda"><b style="font-size: 25px;">22</b></td>
+                            <td class="td_calenda"><b style="font-size: 25px;">23</b></td>
+                            <td class="td_calenda"><b style="font-size: 25px;">24</b></td>
+                            <td class="td_calenda"> <!-- Cumpleaños de Blaire -->
+                                <div style="display: flex;flex-direction:column; align-items: center;">
+                                    <br><b style="color: rgb(232, 22, 22); font-size: 25px;">25</b></br>
+                                    <p class="cumpleaño" onclick="window.modal_cumple29.showModal();" title="Cumpleaños de Blaire"></p>
+                                    <p style="margin: 0; margin-bottom: 6px; text-align: center;"><b style="color: #E83;">Blaire</b></p>
+                                </div>
+
+                                <dialog id="modal_cumple29" class="modal_calendario">
+
+                                    <button onclick="window.modal_cumple29.close();" class="btn close">X</button>
+
+                                    <div style="padding: 0 45px 30px 40px; margin: 0;">
+
+                                        <h3 class="modal_tit">Cumpleaños del aldeano</h3>
+
+                                        <img src="../IMG/Personajes/Candidatos/Cara/blaire.png" class="left screenshot img_cumpleaños" style="margin: 0 20px 0 0"/>
+
+                                        <p><i>"Una camarera del bistró que respeta profundamente a su dueña, Misaki. Sueña con triunfar en la ciudad como actriz. Siempre está al día de las tendencias de moda y disfruta coleccionando joyas como pasatiempo".</i></p>
+
+                                        <p>Blaire es un candidata a matrimonio en <b>Story of Seasons: Pioneers of Olive Town</b>.</p>
+                                        
+                                        <p>Una chica alegre y vivaz que trabaja como camarera en el bistró de Misaki . Admira y respeta a Misaki, aunque a veces siente que Misaki la hace pasar un mal rato. Solía vivir en la ciudad cuando era estudiante y prefiere vivir allí a vivir en un lugar pequeño como la ciudad Oliva.</p>
+                                        
+                                        <p>Desea volver a la ciudad algún día para perseguir su sueño de convertirse en una actriz famosa. Vive en el hotel con su familia.</p>
+
+                                        <p style="margin: 16px 0 0 0 ;">Puede conocer mejor a este personaje consultando su <a class="hiper" href="../Paginas/Sub-paginas/Personajes/Candidatos/blaire.html">bibliografia</a> en la seccion de personajes.</p>
+                                    </div>
+                                </dialog>
+                            </td>
+                            <td class="td_calenda"> <!-- Cumpleaños de Manuela -->
+                                <div style="display: flex;flex-direction:column; align-items: center;">
+                                    <br><b style="color: rgb(232, 22, 22); font-size: 25px;">26</b></br>
+                                    <p class="cumpleaño" onclick="window.modal_cumple30.showModal();" title="Cumpleaños de Manuela"></p>
+                                    <p style="margin: 0; margin-bottom: 6px; text-align: center;"><b style="color: #E83;">Manuela</b></p>
+                                </div>
+                                
+                                <dialog id="modal_cumple30" class="modal_calendario">
+
+                                    <button onclick="window.modal_cumple30.close();" class="btn close">X</button>
+
+                                    <div style="padding: 0 45px 30px 40px; margin: 0;">
+                                        <h3 class="modal_tit">Cumpleaños del aldeano</h3>
+
+                                        <img src="../IMG/Personajes/Aldeanos/Caras/Manuela.png" class="left screenshot img_cumpleaños" style="margin: 0 20px 0 0;"/>
+
+                                        <p><i>"La madre de Emilio. Nació y creció en un pueblo portuario conocido por su pesca. Está casada con Marcos, su hijo de la infancia. Las piñas son sus favoritas y le encantan los platos que las incorporan, como la mermelada o las frutas con leche".</i></p>
+
+                                        <p>Manuela es un personaje de <b>Story of Seasons: Pioneers of Olive Town</b>.</p>
+
+                                        <p>Manuela es la esposa de Marcos y es la madre Emilio. Manuela es una mujer alegre y vivaz que ama el mar. Para Manuela, Raúl es considerado como un miembro de su familia por lo que suele pasar tiempo con él. Si interactuas con ella podras resibir como regalo de su parte tu primera caña de pescar para que puedas embarcarte al mundo de la pesca.</p>
+
+                                        <p>Manuela junto con Sally y Ángela suelen visitar una vez a la semana en los días libres de Patricia y tambien Manuela es la encargada de preparar todo para el festival de Verbena Estival.</p>
+
+                                        <p style="margin: 16px 0 0 0 ;">Puede conocer mejor a este personaje consultando su <a class="hiper" href="../Paginas/Sub-paginas/Personajes/Aldeanos/manuela.html">bibliografia</a> en la seccion de personajes.</p>
+                                    </div>
+                                </dialog>
+                            </td>
+                            <td class="td_calenda"> <!-- Cumpleaños de Lars y Marian -->
+                                <div style="display: flex;flex-direction:column; align-items: center;">
+                                    <br><b style="color: rgb(232, 22, 22); font-size: 25px;">27</b></br>
+                                    <p class="cumpleaño" onclick="window.modal_cumple31.showModal();" title="Cumpleaños de Lars y Marian"></p>
+                                    <p style="margin: 0; margin-bottom: 6px; text-align: center; width: 110px;"><b style="color: #E83;">Lars</b><b> y </b><b style="color: rgb(140, 24, 249);">Marian</b></p>
+                                </div>
+                                
+                                <dialog id="modal_cumple31" class="modal_calendario">
+
+                                    <button onclick="window.modal_cumple31.close();" class="btn close">X</button>
+
+                                    <div style="padding: 0 45px 30px 40px; margin: 0;">
+                                        
+                                        <section style="display: flex; flex-direction: column;">
+    
+                                            <div>  <!-- Lars -->
+                                                <h3 class="modal_tit">Cumpleaños del aldeano</h3>
+        
+                                                <img src="../IMG/Personajes/Aldeanos/Caras/Lars.png" class="left screenshot img_cumpleaños" style="margin: 0 20px 0 0"/>
+
+                                                <p><i>"El hermano menor de Clemen. Ayuda en la tienda de herramientas... a veces. Se enamoró de Beth a primera vista y se entregó por completo a ella. Tiene gratos recuerdos de su infancia, cuando comía castañas con su hermano".</i></p>
+
+                                                <p>Lars es un personaje de <b>Story of Seasons: Pioneers of Olive Town</b>.</p>
+                                                
+                                                <p>Es un joven que en ocasiones ayuda a su hermano Clemens a llevar la tienda de herramientas. Mientras que Clemens se especializa en herramientas, Lars se especializa en motocicletas. Con el tiempo, él se encargará de todas las reparaciones de la motocicleta averiada del jugador.</p>
+                                                
+                                                <p>Es el mejor amigo de Damon , a quien considera casi como un segundo hermano. También tiene una relación con Beth, de quien se enamoró a primera vista. Le gusta leer, escuchar música y todo lo que tenga que ver con las motocicletas.</p>
+            
+                                                <p style="margin: 16px 0 0 0 ;">Puede conocer mejor a este personaje consultando su <a class="hiper" href="../Paginas/Sub-paginas/Personajes/Aldeanos/lars.html">bibliografia</a> en la seccion de personajes.</p>
+                                            </div>
+    
+                                            <div>  <!-- Marian -->
+                                                <h3 class="modal_tit tit_1">Cumpleaños del aldeano del pase de expanción</h3>
+        
+                                                <img src="../IMG/Personajes/Aldeanos/Caras/pase de expansion/Marian.png" class="left screenshot img_cumpleaños" style="margin: 0 20px 0 0"/>
+                
+                                                <p><i></i></p>
+                                
+                                                <p></p>
+            
+                                                <p style="margin: 16px 0 0 0 ;">Puede conocer mejor a este personaje consultando su <a class="hiper" href="../Paginas/Sub-paginas/Personajes/Aldeanos/">bibliografia</a> en la seccion de personajes.</p>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </dialog>
+                            </td>
+                            <td class="td_calenda"> <!-- Cumpleaños de Víctor -->
+                                <div style="display: flex;flex-direction:column; align-items: center;">
+                                    <br><b style="color: rgb(232, 22, 22); font-size: 25px;">28</b></br>
+                                    <p class="cumpleaño" onclick="window.modal_cumple32.showModal();" title="Cumpleaños de Víctor"></p>
+                                    <p style="margin: 0; margin-bottom: 6px; text-align: center;"><b style="color: #E83;">Víctor</b></p>
+                                </div>
+                                
+                                <dialog id="modal_cumple32" class="modal_calendario">
+
+                                    <button onclick="window.modal_cumple32.close();" class="btn close">X</button>
+
+                                    <div style="padding: 0 45px 30px 40px; margin: 0;">
+                                        <h3 class="modal_tit">Cumpleaños del aldeano</h3>
+
+                                        <img src="../IMG/Personajes/Aldeanos/Caras/Victor.png" class="left screenshot img_cumpleaños" style="margin: 0 20px 0 0;"/>
+
+                                        <p><i>"El marido de Gloria y alcalde de la ciudad Oliva. Suele estar deambulando por la ciudad, dando lo mejor de sí para mantener contentos a sus residentes. Sueña con convertir su ciudad en un famoso destino turístico. Los melones jugosos son su fruta favorita".</i></p>
+
+                                        <p>Víctor es un personaje de <b>Story of Seasons: Pioneers of Olive Town</b>.</p>
+
+                                        <p>Víctor es una persona muy amable y es la persona más importante de la ciudad Oliva. Al ser el alcalde, constantemente sueña con un futuro brillante y mejor para la ciudad y para todos los habitantes de la misma. Está muy orgulloso de la ciudad Oliva y le apasiona convertirla en uno de los mejores destinos turísticos dinámicos.</p>
+
+                                        <p>Siempre busca mejorar la ciudad, por lo que implementa un tablón de peticiones ubicado en el ayuntamiento para que los habitantes de la ciudad puedan ayudarse mutuamente y conseguir donaciones para mejorar la ciudad.</p>
+
+                                        <p style="margin: 16px 0 0 0 ;">Puede conocer mejor a este personaje consultando su <a class="hiper" href="../Paginas/Sub-paginas/Personajes/Aldeanos/manuela.html">bibliografia</a> en la seccion de personajes.</p>
+                                    </div>
+                                </dialog>
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+
+                <section> <!-- Invierno -->
+                    <h2>Temporada de Invierno</h2>
+
+                    <table class="data" style="margin-bottom: 1.5em; margin-top: 1.8em;"> <!-- Invierno -->
+                        <tr>
+                            <th colspan="7" style="font-size: 1.2em; background-color: #7ed1f5; height: 4em;">
+                                <div style="display: flex; justify-content: space-around; align-items: center;">
+                                    <p class="invierno" style="margin-top: 1.65em;" title="Invierno"></p>
+                                    <p class="invierno" style="margin-top: 1.65em;" title="Invierno"></p>
+                                    <p class="invierno" style="margin-top: 1.65em;" title="Invierno"></p>
+                                    <p class="invierno" style="margin-top: 1.65em;" title="Invierno"></p>
+                                </div>
+                            </th>
+                        </tr>
+        
+                        <tr>
+                            <td style="padding: 0; width: 120px;"> <!-- Cumpleaños de Cindy -->
+                                <div style="display: flex;flex-direction:column; align-items: center;">
+                                    <br><b style="color: rgb(232, 22, 22); font-size: 25px;">01</b></br>
+                                    <p class="cumpleaño" onclick="window.modal_cumple33.showModal();" title="Cumpleaños de Cindy"></p>
+                                    <p style="margin: 0; margin-bottom: 6px; text-align: center;"><b style="color: #E83;">Cindy</b></p>
+                                </div>
+
+                                <dialog id="modal_cumple33" class="modal_calendario">
+
+                                    <button onclick="window.modal_cumple33.close();" class="btn close">X</button>
+
+                                    <div style="padding: 0 45px 30px 40px; margin: 0;">
+
+                                        <h3 class="modal_tit">Cumpleaños del aldeano</h3>
+
+                                        <img src="../IMG/Personajes/Aldeanos/Caras/Cindy.png" class="left screenshot img_cumpleaños" style="margin: 0 20px 0 0"/>
+
+                                        <p><i>"La hermana menor de Jack. Quiere heredar la tienda y ser tan servicial con todos como su madre. Es inteligente y madura para su edad, pero como cualquier niño, tiene debilidad por los dulces, como el flan de miel".</i></p>
+
+                                        <p>Cindy es un personaje de <b>Story of Seasons: Pioneers of Olive Town</b>.</p>
+                                        
+                                        <p>Cindy es la hija de Ángela y la hermana menor de Jack. Aunque es joven, desea poder ayudar más en la tienda de la familia y a menudo se le ocurren ideas de nuevos productos para vender. Quiere hacerse cargo del negocio familiar algún día cuando sea mayor.</p>
+                                        
+                                        <p>Tiene más o menos la misma edad que Mikey y los dos suelen jugar juntos. Dosetsu le da clases particulares y disfruta regando las flores que hay fuera de la Floristería Nguyen con Linh. Con la ayuda de Mikey, ayuda a organizar la búsqueda anual de setas.</p>
+
+                                        <p style="margin: 16px 0 0 0 ;">Puede conocer mejor a este personaje consultando su <a class="hiper" href="../Paginas/Sub-paginas/Personajes/Aldeanos/cindy.html">bibliografia</a> en la seccion de personajes.</p>
+                                    </div>
+                                </dialog>
+                            </td>
+                            <td class="td_calenda"><b style="font-size: 25px;">02</b></td>
+                            <td class="td_calenda"><b style="font-size: 25px;">03</b></td>
+                            <td style="padding: 0; width: 120px;"> <!-- Cumpleaños de Clemens -->
+                                <div style="display: flex;flex-direction:column; align-items: center;">
+                                    <br><b style="color: rgb(232, 22, 22); font-size: 25px;">04</b></br>
+                                    <p class="cumpleaño" onclick="window.modal_cumple34.showModal();" title="Cumpleaños de Clemens"></p>
+                                    <p style="margin: 0; margin-bottom: 6px; text-align: center;"><b style="color: #E83;">Clemens</b></p>
+                                </div>
+
+                                <dialog id="modal_cumple34" class="modal_calendario">
+
+                                    <button onclick="window.modal_cumple34.close();" class="btn close">X</button>
+
+                                    <div style="padding: 0 45px 30px 40px; margin: 0;">
+
+                                        <h3 class="modal_tit">Cumpleaños del aldeano</h3>
+
+                                        <img src="../IMG/Personajes/Aldeanos/Caras/Clemens.png" class="left screenshot img_cumpleaños" style="margin: 0 20px 0 0"/>
+
+                                        <p><i>"El hermano mayor de Lars es muy amable. Es el dueño de la tienda de herramientas. Es de una región donde hay nieve, así que cuanto más frío hace, más animado está. Le encanta el sabor nostálgico de las castañas, le recuerdan a las que comía a la parrilla en su tierra natal".</i></p>
+
+                                        <p>Clemens es un personaje de <b>Story of Seasons: Pioneers of Olive Town</b>.</p>
+                                        
+                                        <p>Clemens es el dueño de la tienda de herramientas, que dirige con la ayuda de su hermano menor Lars . Clemens mejorará las herramientas y la mochila del jugador. También le dará al jugador un cubo para usar en el drenaje de charcos y estanques. Cuando la motocicleta del jugador esté reparada, Clemens ofrecerá servicios para pintar la motocicleta de un nuevo color.</p>
+                                        
+                                        <p>Pasa la mayor parte de su tiempo en la tienda de herramientas. Está enamorado de Misaki y pasa su día libre en su restaurante. Creció en un clima mucho más frío, por lo que prospera en temperaturas más frías. Organiza la celebración de Snowshine en invierno y compite en el evento Verbena Estival todos los años.</p>
+
+                                        <p style="margin: 16px 0 0 0 ;">Puede conocer mejor a este personaje consultando su <a class="hiper" href="../Paginas/Sub-paginas/Personajes/Aldeanos/clemens.html">bibliografia</a> en la seccion de personajes.</p>
+                                    </div>
+                                </dialog>
+                            </td>
+                            <td class="td_calenda"><b style="font-size: 25px;">05</b></td>
+                            <td class="td_calenda"><b style="font-size: 25px;">06</b></td>
+                            <td style="padding: 0; width: 120px;"> <!-- Cumpleaños de Jessie -->
+                                <div style="display: flex;flex-direction:column; align-items: center;">
+                                    <br><b style="color: rgb(232, 22, 22); font-size: 25px;">07</b></br>
+                                    <p class="cumpleaño" onclick="window.modal_cumple35.showModal();" title="Cumpleaños de Jessie"></p>
+                                    <p style="margin: 0; margin-bottom: 6px; text-align: center;"><b style="color: #E83;">Jessie</b></p>
+                                </div>
+
+                                <dialog id="modal_cumple35" class="modal_calendario">
+
+                                    <button onclick="window.modal_cumple35.close();" class="btn close">X</button>
+
+                                    <div style="padding: 0 45px 30px 40px; margin: 0;">
+
+                                        <h3 class="modal_tit">Cumpleaños del aldeano</h3>
+
+                                        <img src="../IMG/Personajes/Aldeanos/Caras/Jessie.png" class="left screenshot img_cumpleaños" style="margin: 0 20px 0 0"/>
+
+                                        <p><i>"La abuela de Jack. Originalmente dirigía el bazar de ciudad Oliva con Simon antes de dejar que Ángela la heredara. Está aprovechando al máximo su jubilación leyendo, paseando y bordando. Tiene debilidad por el pudín de miel".</i></p>
+
+                                        <p>Jessie es un personaje de <b>Story of Seasons: Pioneers of Olive Town</b>.</p>
+                                        
+                                        <p>Es una anciana muy amable y también es una de las desarrolladoras originales de la ciudad Oliva, junto con su esposo Simon, Nguyen y el abuelo del jugador. Está muy orgullosa de la ciudad y está muy emocionada de verla convertirse en algo aún más grande de lo que era</p>
+                        
+                                        <p>Siempre que sale de casa para pasear, se la ve junto a su esposo Simon. Los dos suelen caminar hacia el mirador del acantilado que se encuentra ubicado en el bosque. Cuando está en su casa, se pone a tejer y a pasar tiempo con su querida familia.</p>
+                                        
+                                        <p>Ella vive en la parte trasera del bazar con el resto de su familia, incluida su hija Ángela y sus nietos Jack y Cindy.</p>
+
+                                        <p style="margin: 16px 0 0 0 ;">Puede conocer mejor a este personaje consultando su <a class="hiper" href="../Paginas/Sub-paginas/Personajes/Aldeanos/jessie.html">bibliografia</a> en la seccion de personajes.</p>
+                                    </div>
+                                </dialog>
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td class="td_calenda"> <!-- Torneo de Pesca -->
+                                <div style="display: flex;flex-direction:column; align-items: center;">
+                                    <br><b style="color: rgb(232, 22, 22); font-size: 25px;">08</b></br>
+                                    <p class="evento" onclick="window.modal_festival7.showModal();" title="Torneo de Pesca"></p>
+                                </div>
+                                
+                                <dialog id="modal_festival7" class="modal_calendario">
+
+                                    <button onclick="window.modal_festival7.close();" class="btn close">X</button>
+
+                                    <div style="padding: 0 45px 30px 40px; margin: 0;">
+
+                                        <h3 style="text-align: center;">08 de Invierno - Torneo de Pesca</h3>
+
+                                        <img src="../IMG/festivales/Torneo de pesca.jpg" class="left screenshot img_festival" style="margin: 0 20px 0 0;"/>
+                                        
+                                        <p>Este festival te desafía a pescar el pez más grande durante el límite de tiempo del festival. Ingresa a la ciudad Oliva entre las 10:00 am y las 7:00 pm para participar en el torneo, luego dirígete al área de la playa para hablar con Norman para comenzar. Puedes colocar cebo de pesca en tu línea antes de que comience el concurso, pero no se utilizará durante el concurso; Terminarás el concurso con la misma cantidad de cebo que cuando empezaste.</p>
+
+                                        <p>Tienes 2 minutos (120 segundos) para pescar el pez más grande que puedas. Tendrás que lanzar tu línea en el océano y esperar tener la suerte de pescar un pez enorme. Mientras luchas contra los pescadores más extraordinarios de la ciudad, no vas a ganar con una miserable sardina. Tener una caña de pescar bien mejorada y una habilidad de pesca de rango 5 o superior te ayudará a asegurar tu victoria, ¡aunque no está garantizada!.</p>
+                                                                      
+                                        <p>Dependiendo en que puestos lleges podras resivir un trofeo de oro plata o cobre mas una cantidad monetaria junto al trofeo, dicha cantidad varia dependiendo del trofeo</p>
+
+                                        <p style="margin: 16px 0 0 0 ;">Este festival termina a las 19:00 horas.</p>
+                                    </div>
+                                </dialog>
+                            </td>
+                            <td class="td_calenda"> <!-- Cumpleaños de Neil -->
+                                <div style="display: flex;flex-direction:column; align-items: center;">
+                                    <br><b style="color: rgb(232, 22, 22); font-size: 25px;">09</b></br>
+                                    <p class="cumpleaño" onclick="window.modal_cumple36.showModal();" title="Cumpleaños de Neil"></p>
+                                    <p style="margin: 0; margin-bottom: 6px; text-align: center;"><b style="color: rgb(140, 24, 249);">Neil</b></p>
+                                </div>
+
+                                <dialog id="modal_cumple36" class="modal_calendario">
+
+                                    <button onclick="window.modal_cumple36.close();" class="btn close">X</button>
+
+                                    <div style="padding: 0 45px 30px 40px; margin: 0;">
+
+                                        <h3 class="modal_tit">Cumpleaños del aldeano</h3>
+
+                                        <img src="../IMG/Personajes/Candidatos/Cara/pase de expansion/Neil.png" class="left screenshot img_cumpleaños" style="margin: 0 20px 0 0"/>
+            
+                                        <p><i></i></p>
+                            
+                                        <p></p>
+
+                                        <p style="margin: 16px 0 0 0 ;">Puede conocer mejor a este personaje consultando su <a class="hiper" href="../Paginas/Sub-paginas/Personajes/Aldeanos/">bibliografia</a> en la seccion de personajes.</p>
+                                    </div>
+                                </dialog>
+                            </td>
+                            <td class="td_calenda"> <!-- Cumpleaños de Jeanne -->
+                                <div style="display: flex;flex-direction:column; align-items: center;">
+                                    <br><b style="color: rgb(232, 22, 22); font-size: 25px;">10</b></br>
+                                    <p class="cumpleaño" onclick="window.modal_cumple37.showModal();" title="Cumpleaños de Jeanne"></p>
+                                    <p style="margin: 0; margin-bottom: 6px; text-align: center;"><b style="color: #E83;">Jeanne</b></p>
+                                </div>
+
+                                <dialog id="modal_cumple37" class="modal_calendario">
+
+                                    <button onclick="window.modal_cumple37.close();" class="btn close">X</button>
+
+                                    <div style="padding: 0 45px 30px 40px; margin: 0;">
+
+                                        <h3 class="modal_tit">Cumpleaños del aldeano</h3>
+
+                                        <img src="../IMG/Personajes/Aldeanos/Caras/Jeanne.png" class="left screenshot img_cumpleaños" style="margin: 0 20px 0 0"/>
+
+                                        <p><i>"Una esteticista que trabaja en el salón de belleza. Llegó a la ciudad Oliva para seguir los pasos de Karina, a quien respeta como mentora. Le encanta el rico sabor y la dulzura del chocolate".</i></p>
+
+                                        <p>Jeanne es un personaje de <b>Story of Seasons: Pioneers of Olive Town</b>.</p>
+                            
+                                        <p>Es una esteticista que llegó a la ciudad Oliva por petición de Karina. Jeanne solo aparecerá una vez que el jugador haya ampliado con éxito el salón de belleza de Karina, y será la encargada de manejar el Spa el cual se puede usar para que el jugador pueda editar la apariencia física y la voz de su personaje.</p>
+                        
+                                        <p>Jeanne es una mujer muy simpática y despreocupada. Al igual que Reina, siempre busca pasar un buen rato, aunque también le apasiona su trabajo en el salon de belleza. Tiene un buen ojo para la moda y está al tanto de todas las últimas tendencias. Vivirá junto a Karina en la parte trasera del salón de belleza.</p>
+                        
+                                        <p>Debido a que Jeanne no es residente de la ciudad Oliva y vino por petición de Karina, ella no tiene ningun familiar en la ciudad por lo que su unico conocido es la propia Karina.</p>
+
+                                        <p style="margin: 16px 0 0 0 ;">Puede conocer mejor a este personaje consultando su <a class="hiper" href="../Paginas/Sub-paginas/Personajes/Aldeanos/jeanne.html">bibliografia</a> en la seccion de personajes.</p>
+                                    </div>
+                                </dialog>
+                            </td>
+                            <td class="td_calenda"><b style="font-size: 25px;">11</b></td>
+                            <td class="td_calenda"><b style="font-size: 25px;">12</b></td>
+                            <td class="td_calenda"><b style="font-size: 25px;">13</b></td>
+                            <td class="td_calenda"> <!-- Cumpleaños de Nigel -->
+                                <div style="display: flex;flex-direction:column; align-items: center;">
+                                    <br><b style="color: rgb(232, 22, 22); font-size: 25px;">14</b></br>
+                                    <p class="cumpleaño" onclick="window.modal_cumple38.showModal();" title="Cumpleaños de Nigel"></p>
+                                    <p style="margin: 0; margin-bottom: 6px; text-align: center;"><b style="color: #E83;">Nigel</b></p>
+                                </div>
+
+                                <dialog id="modal_cumple38" class="modal_calendario">
+
+                                    <button onclick="window.modal_cumple38.close();" class="btn close">X</button>
+
+                                    <div style="padding: 0 45px 30px 40px; margin: 0;">
+
+                                        <h3 class="modal_tit">Cumpleaños del aldeano</h3>
+
+                                        <img src="../IMG/Personajes/Aldeanos/Caras/Nigel.png" class="left screenshot img_cumpleaños" style="margin: 0 20px 0 0"/>
+
+                                        <p><i>"El padre de Ralph. Un carpintero que trabaja solo en la mayoría de los edificios de la ciudad Oliva. Su trabajo es muy solicitado por su calidad y durabilidad. Por lo general, prefiere comer comidas sencillas, como sándwiches".</i></p>
+
+                                        <p>Nigel es un personaje de <b>Story of Seasons: Pioneers of Olive Town</b>.</p>
+    
+                                        <p>Nigel es el padre de Ralph y trabaja en la ciudad Oliva como carpintero. Debido a su habilidad con la madera el es muy solicitado en la ciudad para realisar trabajos de remodelacion o elaboracion de muebles. Nigel es una persona amable y dedicada.</p>
+                        
+                                        <p>Se sabe muy poco lo que le paso a su esposa por lo que se entiende que el estuvo criando a su hijo solo, ademas siente algo por Misaki y trata de confesar sus sentimientos hacia ella pero debido a que siempre se pone nervioso al momento de hacerlo termina arruinandolo o algo inesperado lo arruina y no logra hacerlo debido a eso.</p>
+                        
+                                        <p>Ayuda a fabricar los fuegos artificiales para el festival anual de fuegos artificiales.</p>
+
+                                        <p style="margin: 16px 0 0 0 ;">Puede conocer mejor a este personaje consultando su <a class="hiper" href="../Paginas/Sub-paginas/Personajes/Aldeanos/nigel.html">bibliografia</a> en la seccion de personajes.</p>
+                                    </div>
+                                </dialog>
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td class="td_calenda"> <!-- Cumpleaños de Damon -->
+                                <div style="display: flex;flex-direction:column; align-items: center;">
+                                    <br><b style="color: rgb(232, 22, 22); font-size: 25px;">15</b></br>
+                                    <p class="cumpleaño" onclick="window.modal_cumple39.showModal();" title="Cumpleaños de Damon"></p>
+                                    <p style="margin: 0; margin-bottom: 6px; text-align: center;"><b style="color: #E83;">Damon</b></p>
+                                </div>
+                                
+                                <dialog id="modal_cumple39" class="modal_calendario">
+
+                                    <button onclick="window.modal_cumple39.close();" class="btn close">X</button>
+
+                                    <div style="padding: 0 45px 30px 40px; margin: 0;">
+                                        <h3 class="modal_tit">Cumpleaños del aldeano</h3>
+
+                                        <img src="../IMG/Personajes/Candidatos/Cara/damon.png" class="left screenshot img_cumpleaños" style="margin: 0 20px 0 0;"/>
+
+                                        <p><i>"Suele pasear en motocicleta, pero en secreto ayuda en la tienda de animales. Le encantan las leyendas sobre las estrellas y contempla el cielo nocturno todas las noches. Le gusta coleccionar joyas para crear accesorios".</i></p>
+
+                                        <p>Damon es un candidato a matrimonio en <b>Story of Seasons: Pioneers of Olive Town</b>.</p>
+
+                                        <p>Damon es el hermano menor de Bridget e hijo de Patricia y Georg. Damon vive con su familia en una tienda de animales. Aunque no le importa admitirlo, a Damon le gustan los animales y sabe cómo cuidarlos. Sin embargo, Damon desea ser su propia persona y no quiere trabajar en el negocio familiar. Damon es distante en la superficie, pero se abre a las personas que le importan.</p>
+
+                                        <p>Le gusta crear accesorios con gemas y piedras. Es el mejor amigo de Lars , que es como un hermano para él. Tiene como pasatiempo andar en motocicleta y le gusta mirar las estrellas a altas horas de la noche. También disfruta mucho tomando café.</p>
+
+                                        <p style="margin: 16px 0 0 0 ;">Puede conocer mejor a este personaje consultando su <a class="hiper" href="../Paginas/Sub-paginas/Personajes/Candidatos/damon.html">bibliografia</a> en la seccion de personajes.</p>
+                                    </div>
+                                </dialog>
+                            </td>
+                            <td class="td_calenda"><b style="font-size: 25px;">16</b></td>
+                            <td class="td_calenda"> <!-- Cumpleaños de Gloria -->
+                                <div style="display: flex;flex-direction:column; align-items: center;">
+                                    <br><b style="color: rgb(232, 22, 22); font-size: 25px;">17</b></br>
+                                    <p class="cumpleaño" onclick="window.modal_cumple40.showModal();" title="Cumpleaños de Gloria"></p>
+                                    <p style="margin: 0; margin-bottom: 6px; text-align: center;"><b style="color: #E83;">Gloria</b></p>
+                                </div>
+
+                                <dialog id="modal_cumple40" class="modal_calendario">
+
+                                    <button onclick="window.modal_cumple40.close();" class="btn close">X</button>
+
+                                    <div style="padding: 0 45px 30px 40px; margin: 0;">
+
+                                        <h3 class="modal_tit">Cumpleaños del aldeano</h3>
+
+                                        <img src="../IMG/Personajes/Aldeanos/Caras/Gloria.png" class="left screenshot img_cumpleaños" style="margin: 0 20px 0 0"/>
+            
+                                        <p><i>"La esposa de Víctor. La veterana conservadora del Museo del Olivo. Parece que se mudó aquí después de que comenzara el estudio de las ruinas cercanas a la ciudad. Le encantan las fresas, especialmente las variedades raras de otras partes del mundo".</i></p>
+
+                                        <p>Gloria es un personaje de <b>Story of Seasons: Pioneers of Olive Town</b>.</p>
+    
+                                        <p>Gloria está casada con el alcalde de la ciudad Oliva, Víctor , y es la curadora del museo de la ciudad Oliva. Es una mujer sofisticada y sensata. Gloria comparte el amor de su marido por la ciudad Oliva y siempre lo apoya. Ha contratado a Reina y Beth para que la ayuden a gestionar sin problemas el museo.</p>
+                        
+                                        <p>Cuando el jugador visite el museo por primera vez, Gloria le regalará una cámara para tomar fotografías de la vida salvaje local. También le pedirá donaciones al jugador en forma de tesoros, peces y fotografías de animales salvajes para exhibir en el museo. Hable con Gloria detrás del mostrador mientras el museo esté abierto para hacer una donación.</p>
+
+                                        <p style="margin: 16px 0 0 0 ;">Puede conocer mejor a este personaje consultando su <a class="hiper" href="../Paginas/Sub-paginas/Personajes/Aldeanos/gloria.html">bibliografia</a> en la seccion de personajes.</p>
+                                    </div>
+                                </dialog>
+                            </td>
+                            <td class="td_calenda"><b style="font-size: 25px;">18</b></td>
+                            <td class="td_calenda"><b style="font-size: 25px;">19</b></td>
+                            <td class="td_calenda"><b style="font-size: 25px;">20</b></td>
+                            <td class="td_calenda"> <!-- Cumpleaños de Sally -->
+                                <div style="display: flex;flex-direction:column; align-items: center;">
+                                    <br><b style="color: rgb(232, 22, 22); font-size: 25px;">21</b></br>
+                                    <p class="cumpleaño" onclick="window.modal_cumple41.showModal();" title="Cumpleaños de Sally"></p>
+                                    <p style="margin: 0; margin-bottom: 6px; text-align: center;"><b style="color: #E83;">Sally</b></p>
+                                </div>
+
+                                <dialog id="modal_cumple41" class="modal_calendario">
+
+                                    <button onclick="window.modal_cumple41.close();" class="btn close">X</button>
+
+                                    <div style="padding: 0 45px 30px 40px; margin: 0;">
+
+                                        <h3 class="modal_tit">Cumpleaños del aldeano</h3>
+
+                                        <img src="../IMG/Personajes/Aldeanos/Caras/Sally.png" class="left screenshot img_cumpleaños" style="margin: 0 20px 0 0"/>
+            
+                                        <p><i>"La madre de Blaire. Propietaria del café. Una pastelera experta que ha estado perfeccionando sus habilidades en el arte del café con leche. ¡A los clientes habituales del café les encanta! Disfruta de la mermelada de naranja y suele usarla como ingrediente secreto en sus platos".</i></p>
+
+                                        <p>Sally es un personaje de <b>Story of Seasons: Pioneers of Olive Town</b>.</p>
+
+                                        <p>La confiable anfitriona del Gull's Rest Café. Está muy orgullosa de su habilidad para preparar un excelente café. Es muy trabajadora y pasa su único día libre con sus tres mejores amigas: Angela, Manuela y Patricia.</p>
+
+                                        <p style="margin: 16px 0 0 0 ;">Puede conocer mejor a este personaje consultando su <a class="hiper" href="../Paginas/Sub-paginas/Personajes/Aldeanos/sally.html">bibliografia</a> en la seccion de personajes.</p>
+                                    </div>
+                                </dialog>
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td class="td_calenda"><b style="font-size: 25px;">22</b></td>
+                            <td class="td_calenda"><b style="font-size: 25px;">23</b></td>
+                            <td class="td_calenda"><b style="font-size: 25px;">24</b></td>
+                            <td class="td_calenda"> <!-- Velada Invernal -->
+                                <div style="display: flex;flex-direction:column; align-items: center;">
+                                    <br><b style="color: rgb(232, 22, 22); font-size: 25px;">25</b></br>
+                                    <p class="evento" onclick="window.modal_festival8.showModal();" title="Velada Invernal"></p>
+                                </div>
+
+                                <dialog id="modal_festival8" class="modal_calendario">
+
+                                    <button onclick="window.modal_festival8.close();" class="btn close">X</button>
+
+                                    <div style="padding: 0 45px 30px 40px; margin: 0;">
+
+                                        <h3 style="text-align: center;">25 de Invierno - Velada Invernal</h3>
+
+                                        <img src="../IMG/festivales/Velada Invernal.jpg" class="left screenshot img_festival" style="margin: 0 20px 0 0;"/>
+
+                                        <p>Este festival helado todos se reúnen en el corazón de la ciudad y familias y amigos se unen para mostrar las habilidades artísticas de las distintas familias de la ciudad Oliva. Ingresa al pueblo entre las 10:00 am y las 7:00 pm, donde encontrarás a los pobladores alrededor de la playa y la zona del muelle turístico. Tendrás la oportunidad de ver las esculturas con cualquier candidato con el que estés saliendo o casado. También puedes sentarte junto a la hoguera y disfrutar de una charla con los demás.</p>
+                                                                      
+                                        <ul class="horario">
+                                            <li>Si no tienes novia, habla con Clemens para comenzar la escena de visualización de la escultura.</li>
+                                            <li>SÍ tienes a alguien con quien estás casado o con quien estás casado, habla con esa persona. Visitarás cada una de las esculturas de hielo y hablarás con las familias de los artistas.</li>
+                                        </ul>
+
+                                        <p>Los candidatos a matrimonio del DLC no asistirán a este festival a menos que usted esté casado con un candidato a matrimonio del DLC, y solo entonces participará su cónyuge de DLC.</p>
+                                                                      
+                                        <p>Dependiendo en que puestos lleges podras resivir un trofeo de oro plata o cobre mas una cantidad monetaria junto al trofeo, dicha cantidad varia dependiendo del trofeo</p>
+
+                                        <p style="margin: 16px 0 0 0 ;">Este festival finaliza a las 19:00 horas.</p>
+                                    </div>
+                                </dialog>
+                            </td>
+                            <td class="td_calenda"><b style="font-size: 25px;">26</b></td>
+                            <td class="td_calenda"> <!-- Cumpleaños de Raúl -->
+                                <div style="display: flex;flex-direction:column; align-items: center;">
+                                    <br><b style="color: rgb(232, 22, 22); font-size: 25px;">27</b></br>
+                                    <p class="cumpleaño" onclick="window.modal_cumple42.showModal();" title="Cumpleaños de Raúl"></p>
+                                    <p style="margin: 0; margin-bottom: 6px; text-align: center;"><b style="color: #E83;">Raúl</b></p>
+                                </div>
+                                
+                                <dialog id="modal_cumple42" class="modal_calendario">
+
+                                    <button onclick="window.modal_cumple42.close();" class="btn close">X</button>
+
+                                    <div style="padding: 0 45px 30px 40px; margin: 0;">
+                                        <h3 class="modal_tit">Cumpleaños del aldeano</h3>
+
+                                        <img src="../IMG/Personajes/Aldeanos/Caras/Raul.png" class="left screenshot img_cumpleaños" style="margin: 0 20px 0 0;"/> 
+
+                                        <p><i>"Un amigo íntimo de Emilio, a quien trata como si fuera de la familia. Un aprendiz de pescador educado. Marcos lo adoptó como su protector después de haber estado interesado durante mucho tiempo en la pesca. Le encanta la mayonesa y piensa que sabe bien con cualquier cosa".</i></p>
+
+                                        <p>Raúl es un personaje de <b>Story of Seasons: Pioneers of Olive Town</b>.</p>
+    
+                                        <p>Raúl es un chico de carácter bondadoso y de buen corazón que vive junto a sus familiares en la ciudad Oliva para aprender todo acerca de cómo ser un buen pescador a través de las enseñanzas de Marcos. Está entusiasmado por aprender a ser pescador y le encanta estar en el barco. Además, es muy cercano a Emilio, a tal punto que lo ve como un verdadero hermano mayor.</p>
+
+                                        <p style="margin: 16px 0 0 0 ;">Puede conocer mejor a este personaje consultando su <a class="hiper" href="../Paginas/Sub-paginas/Personajes/Aldeanos/raul.html">bibliografia</a> en la seccion de personajes.</p>
+                                    </div>
+                                
+                                </dialog>
+                            </td>
+                            <td class="td_calenda"> <!-- Cumpleaños de Iori -->
+                                <div style="display: flex;flex-direction:column; align-items: center;">
+                                    <br><b style="color: rgb(232, 22, 22); font-size: 25px;">28</b></br>
+                                    <p class="cumpleaño" onclick="window.modal_cumple43.showModal();" title="Cumpleaños de Iori"></p>
+                                    <p style="margin: 0; margin-bottom: 6px; text-align: center;"><b style="color: #E83;">Iori</b></p>
+                                </div>
+
+                                <dialog id="modal_cumple43" class="modal_calendario">
+
+                                    <button onclick="window.modal_cumple43.close();" class="btn close">X</button>
+
+                                    <div style="padding: 0 45px 30px 40px; margin: 0;">
+
+                                        <h3 class="modal_tit">Cumpleaños del aldeano</h3>
+
+                                        <img src="../IMG/Personajes/Candidatos/Cara/iori.png" class="left screenshot img_cumpleaños" style="margin: 0 20px 0 0"/>
+            
+                                        <p><i>"Un joven de una tierra lejana que vive con su sirviente, Dosetsu. Disfruta de las pequeñas bendiciones de la naturaleza, como el susurro de las hojas en el viento. Ama el otoño por sus hongos matsutake".</i></p>
+
+                                        <p>Iori es un candidato a matrimonio en <b>Story of Seasons: Pioneers of Olive Town</b>.</p>
+    
+                                        <p>Iori es un joven que vive con su sirviente, Dosetsu. Proviene de una isla lejana y alguna vez fue algo similar a un duque. A lo largo de los acontecimientos, se descubre que Iori necesitaba alejarse de sus responsabilidades y se fue a la ciudad Oliva para escapar.</p>
+                        
+                                        <p>Aunque estaba acostumbrado a vivir una vida de lujo antes de mudarse a la ciudad Oliva, Iori es educado y amable con todos, y siempre se dirige a la gente de manera formal. También es amable con los animales y ama la naturaleza.</p>
+                
+                                        <p>Tiene talento y pasión por la pesca. A menudo se lo puede ver pescando en el muelle de la playa del pueblo y participa en el torneo anual de pesca.</p>
+
+                                        <p style="margin: 16px 0 0 0 ;">Puede conocer mejor a este personaje consultando su <a class="hiper" href="../Paginas/Sub-paginas/Personajes/Candidatos/iori.html">bibliografia</a> en la seccion de personajes.</p>
+                                    </div>
+                                </dialog>
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+            </main>
+            
+            <footer>
+                <section class="pie"> <p class="copyright">© Copyright Fabian Daquilema - 2024</p> </section>
+            
+                <section style="display: flex; margin: 14px 0 0 0; justify-content: space-evenly;align-content: center;">
+                    <div>
+                        <a href="https://www.twitch.tv/kirbo1997" target="_blank"><img src="../IMG/Cuentas/twitch.png" alt="Twitch" class="enlace"></img></a> <!-- Conecta el archivo jpg para ser usado en la pagina para usarlo como hipervinculo y le doy un nombre a esa imagen-->
+                    </div>
+                    
+                    <div>
+                        <a href="https://www.linkedin.com/in/fabian-daquilema-aguayo-8b4745134" target="_blank"><img src="../IMG/Cuentas/linkedin.png" alt="Linkedin" class="enlace"></img></a> <!-- Conecta el archivo jpg para ser usado en la pagina para usarlo como hipervinculo y le doy un nombre a esa imagen-->
+                    </div>
+                
+                    <div>
+                        <a href="https://kirbo97.github.io/Portafolio/"><img src="../IMG/Cuentas/Home.png" alt="Menu" class="enlace"></img></a> <!-- Conecta el archivo jpg para ser usado en la pagina para usarlo como hipervinculo y le doy un nombre a esa imagen-->
+                    </div>
+    
+                    <div>
+                        <a href="https://www.youtube.com/@kirbo1997" target="_blank"><img src="../IMG/Cuentas/youtube.png"  alt="Youtube" class="enlace"></img></a> <!-- Conecta el archivo jpg para ser usado en la pagina para usarlo como hipervinculo y le doy un nombre a esa imagen-->
+                    </div>
+    
+                    <div>
+                        <a href="https://github.com/Kirbo97?tab=repositories" target="_blank"><img src="../IMG/Cuentas/GitHub-v2.png"  alt="Github" class="enlace"></img></a> <!-- Conecta el archivo jpg para ser usado en la pagina para usarlo como hipervinculo y le doy un nombre a esa imagen-->
+                    </div>
+                </section>
+            </footer>
+        </div>
+    </body>
+</html>

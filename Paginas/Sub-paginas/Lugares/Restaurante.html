@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head>
+        <meta charset="UTF-8">   <!-- Para usar la escritura latina -->
+        <title>Guia del Restaurante de SOS-POOT</title> 
+        <link rel="stylesheet" href="../../../CSS/Style.css" type="text/css" />
+        <link rel="shortcut icon" href="../../../IMG/Iconos/Kirbo.ico"/>
+    </head>
+    
+    <body>
+        <nav>
+            <div>
+                <a href="../../../Paginas/Actividades.html" style="text-align: center;"><img src="../../../IMG/Iconos/Actividades.png" title="Actividades" style="border:none;" width="40" height="40"></a>
+                <a class="vin_nav" href="../../../Paginas/Actividades.html">Actividades</a>
+            </div>
+
+            <div>
+                <a href="../../../Paginas/Lugares.html" style="text-align: center;"><img src="../../../IMG/Iconos/edificio.png" title="Lugares" style="border:none;" width="40" height="40"></a>
+                <a class="vin_nav" href="../../../Paginas/Lugares.html">Lugares</a>
+            </div>
+
+            <div>
+                <a href="../../../Paginas/Herramientas.html" style="text-align: center;"><img src="../../../IMG/Iconos/herra.png" title="Herramientas" style="border:none;" width="40" height="40"></a>
+                <a class="vin_nav" href="../../../Paginas/Herramientas.html">Herramientas</a>
+            </div>
+
+            <div>
+                <a href="../../../Paginas/Personajes.html" style="text-align: center;"><img src="../../../IMG/Iconos/Personajes.png" title="Personajes" style="border:none;" width="40" height="40"></a>
+                <a class="vin_nav" href="../../../Paginas/Personajes.html">Personajes</a>
+            </div>
+
+            <div>
+                <a href="../../../Paginas/Maquinas.html" style="text-align: center;"><img src="../../../IMG/Iconos/maquinas.png" title="Procesadoras" style="border:none;" width="40" height="40"></a>
+                <a class="vin_nav" href="../../../Paginas/Maquinas.html"  style="width: 120px;">Procesadoras</a>
+            </div>
+
+            <div>
+                <a href="../../../Paginas/Eventos.html" style="text-align: center;"><img src="../../../IMG/Iconos/calen.png" title="Eventos" style="border:none;" width="40" height="40"></a>
+                <a class="vin_nav" href="../../../Paginas/Eventos.html">Eventos</a>
+            </div>
+
+            <div>
+                <a href="../../../Paginas/Habilidades.html" style="text-align: center;"><img src="../../../IMG/Iconos/habilidades.png" title="Habilidades" style="border:none;" width="40" height="40"></a>
+                <a class="vin_nav" href="../../../Paginas/Habilidades.html">Habilidades</a>
+            </div>
+
+            <div>
+                <a href="../../../Paginas/Resistencia.html" style="text-align: center;"><img src="../../../IMG/Iconos/resistencia.png" title="Salud y resistencia" style="border:none;" width="40" height="40"></a>
+                <a class="vin_nav" href="../../../Paginas/Eventos.html">Salud</a>
+            </div>
+        </nav>
+
+        <div id="content">
+            <header style="display: flex;justify-content: space-between; align-items: center;">
+                <h1>Restaurante El Cabo</h1>
+                <div style="display: flex; column-gap: 3em;">
+                    <a href="../../../Paginas/Lugares.html"><img src="../../../IMG/Iconos/atras.png"  alt="atras" class="icono" style="right:160px;"></img></a>
+                    <a href="../../../index.html"><img src="../../../IMG/Iconos/home.png"  alt="home" class="icono" title="Home" style="right:80px;"></img></a>
+                </div>
+            </header>
+
+            <main>
+                <img src="../../../IMG/Otros/Lugares/restaurante.jpg" class="right screenshot" width="250" height="250" style="margin: 4px 0 0 20px; cursor: pointer;" onclick="window.modal1.showModal();"/>
+
+                <dialog id="modal1">
+                    <div><button onclick="window.modal1.close();" class="btn close">X</button></div>
+                    <img src="../../../IMG/Otros/Lugares/restaurante.jpg" class="center screenshot" title="Restaurante El Cabo" width="835" height="835"  style="margin: 30px"/>
+                </dialog>
+
+                <p>El restaurante está dirigido por Misaki y Blaire. Está situado a la derecha del Colmado, en el barrio bajo del pueblo. Muchos residentes de la ciudad Olive vienen al restaurante para almorzar o cenar. El menú de Misaki se compone principalmente de platos principales, por lo que se recomienda venir aquí a comer cuando quieras recuperar mucha energía. Además, al igual que el Café , comer algunas de las comidas te inspirará a aprender la receta. El bistro abre un poco tarde, a las 12:00 pm, pero también abre hasta altas horas de la noche, por lo que es un buen lugar para visitar después de un largo día de trabajo en la granja.</p>
+                
+                <table class="data">
+                    <tr><th>Horas</th><td class="perso">12:00 pm - 10:00 pm.</td></tr>
+                    <tr><th>Cerrado</th><td class="perso">Nunca.</td></tr>
+                    <tr><th>Residentes</th><td class="perso">Misaki.</td></tr>
+                    <tr><th>Dirigido por</th>
+                        <td style="padding: 8px 18px 8px 10px;"><ul class="horario">
+                            <li class="gustos">Misaki (Propietaria).</li>
+                            <li class="gustos">Blaire (Camarera).</li>
+                        </ul></td>
+                    </tr>
+                </table>
+                
+                <h2>Acerca de los efectos de los alimentos</h2>
+
+                <p>¡Comer comida restaura tu resistencia! La cantidad de energía que se recupera al comer platos principales es particularmente alta. Sin embargo, si comes un plato principal primero, te llenarás y no podrás comer ningún otro plato. Así que come primero un plato de ensalada, lo que aumenta tu resistencia máxima, y luego bebe bebidas, platos de sopa y, finalmente, un plato principal, ¡para que parezca un plato completo! Los platos de postre recuperan una pequeña cantidad de energía, pero se pueden comer incluso con el estómago lleno, así que déjalos para el final.</p>
+
+                <details style="margin-bottom: 20px;"> <!-- Menú del restaurante -->
+                    <summary class="prin">Menú del restaurante</summary>
+
+                    <table class="data">
+                        <tr><th style="width: 70px;">Categoria</th><th style="text-align: center;">Comida</th><th style="width: 80px;">Precio</th><th style="width: 300px;">Requisito de desbloqueo</th></tr>
+    
+                        <tr>
+                            <th style="text-align:center;" rowspan="2">Ensalada</th>
+                            <td style="text-align: center;"><img src="../../../IMG/Cocina/Recetas/ensalada/Ensalada de patatas.png" width="80px" height="80px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Ensalada de patatas</b></p></td>
+                            <td class="td_dinero">80 <b>G</b></td><td style="text-align:center;">Disponible al inicio</td>
+                        </tr>
+    
+                        <tr>
+                            <td style="text-align: center;"><img src="../../../IMG/Cocina/Recetas/ensalada/Pescadito marinado.png" width="80px" height="80px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Pescadito marinado</b></p></td>
+                            <td class="td_dinero">440 <b>G</b></td><td style="text-align:justify;">Alcanza el nivel 6 en la habilidad de cocina.</td>
+                        </tr>
+    
+                        <tr>
+                            <th style="text-align:center;" rowspan="2">Sopas</th>
+                            <td style="text-align: center;"><img src="../../../IMG/Cocina/Recetas/sopa/Potaje amarillo.png" width="80px" height="80px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Potaje amarillo</b></p></td>
+                            <td class="td_dinero">130 <b>G</b></td><td style="text-align:center;">Disponible al inicio</td>
+                        </tr>
+    
+                        <tr>
+                            <td style="text-align: center;"><img src="../../../IMG/Cocina/Recetas/sopa/Acqua pazza.png" width="80px" height="80px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Acqua pazza</b></p></td>
+                            <td class="td_dinero">380 <b>G</b></td><td style="text-align:justify;">Alcanza el nivel 5 en la habilidad de cocina.</td>
+                        </tr>
+    
+                        <tr>
+                            <th style="text-align:center;" rowspan="5">Entrantes</th>
+                            <td style="text-align: center;"><img src="../../../IMG/Cocina/Recetas/entrantes/Arroz con curry.png" width="80px" height="80px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Arroz con curry</b></p></td>
+                            <td class="td_dinero">150 <b>G</b></td><td style="text-align:center;">Disponible al inicio</td>
+                        </tr>
+    
+                        <tr>
+                            <td style="text-align: center;"><img src="../../../IMG/Cocina/Recetas/entrantes/Tortilla.png" width="80px" height="80px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Tortilla</b></p></td>
+                            <td class="td_dinero">140 <b>G</b></td><td style="text-align:center;">Disponible al inicio</td>
+                        </tr>
+    
+                        <tr>
+                            <td style="text-align: center;"><img src="../../../IMG/Cocina/Recetas/entrantes/Pasta a la carbonara.png" width="80px" height="80px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Pasta a la carbonara</b></p></td>
+                            <td class="td_dinero">530 <b>G</b></td><td style="text-align:center;">Alcanza la habilidad de cocina Lv.8</td>
+                        </tr>
+    
+                        <tr>
+                            <td style="text-align: center;"><img src="../../../IMG/Cocina/Recetas/entrantes/Pasta de peperoncino.png" width="80px" height="80px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Pasta de peperoncino</b></p></td>
+                            <td class="td_dinero">920 <b>G</b></td><td style="text-align:center;">Alcanza la habilidad de cocina Lv.9</td>
+                        </tr>
+    
+                        <tr>
+                            <td style="text-align: center;"><img src="../../../IMG/Cocina/Recetas/entrantes/Pasta a la genovesa.png" width="80px" height="80px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Pasta a la genovesa</b></p></td>
+                            <td class="td_dinero">950 <b>G</b></td><td style="text-align:center;">Alcanza la habilidad de cocina Lv.10</td>
+                        </tr>
+    
+                        <tr>
+                            <th style="text-align:center;" rowspan="2">Postres</th>
+                            <td style="text-align: center;"><img src="../../../IMG/Cocina/Recetas/postres/Flan.png" width="80px" height="80px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Flan</b></p></td>
+                            <td class="td_dinero">210 <b>G</b></td><td style="text-align:center;">Disponible al inicio</td>
+                        </tr>
+    
+                        <tr>
+                            <td style="text-align: center;"><img src="../../../IMG/Cocina/Recetas/postres/Boniatos caramelizados.png" width="80px" height="80px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Boniatos caramelizados</b></p></td>
+                            <td class="td_dinero">410 <b>G</b></td><td style="text-align:center;">Disponible al inicio</td>
+                        </tr>
+    
+                        <tr>
+                            <th style="text-align:center;" rowspan="2">Otros</th>
+                            <td style="text-align: center;"><img src="../../../IMG/Cocina/Recetas/otros/Zumo de verduras.png" width="80px" height="80px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Zumo de verduras</b></p></td>
+                            <td class="td_dinero">70 <b>G</b></td><td style="text-align:center;">Disponible al inicio</td>
+                        </tr>
+    
+                        <tr>
+                            <td style="text-align: center;"><img src="../../../IMG/Cocina/Recetas/otros/Bebida de yogur.png" width="80px" height="80px"/><p style="text-align:center; margin: 0 10px 8px 10px;"><b style="font-size: 13.5px;">Bebida de yogur</b></p></td>
+                            <td class="td_dinero">140 <b>G</b></td><td style="text-align:center;">Disponible al inicio</td>
+                        </tr>
+                    </table>
+                </details>
+            </main>
+            
+            <footer>
+                <section class="pie"> <p class="copyright">© Copyright Fabian Daquilema - 2024</p> </section>
+            
+                <section style="display: flex; margin: 14px 0 0 0; justify-content: space-evenly;align-content: center;">
+                    <div>
+                        <a href="https://www.twitch.tv/kirbo1997" target="_blank"><img src="../../../IMG/Cuentas/twitch.png" alt="Twitch" class="enlace"></img></a> <!-- Conecta el archivo jpg para ser usado en la pagina para usarlo como hipervinculo y le doy un nombre a esa imagen-->
+                    </div>
+                    
+                    <div>
+                        <a href="https://www.linkedin.com/in/fabian-daquilema-aguayo-8b4745134" target="_blank"><img src="../../../IMG/Cuentas/linkedin.png" alt="Linkedin" class="enlace"></img></a> <!-- Conecta el archivo jpg para ser usado en la pagina para usarlo como hipervinculo y le doy un nombre a esa imagen-->
+                    </div>
+                
+                    <div>
+                        <a href="https://kirbo97.github.io/Portafolio/"><img src="../../../IMG/Cuentas/Home.png" alt="Menu" class="enlace"></img></a> <!-- Conecta el archivo jpg para ser usado en la pagina para usarlo como hipervinculo y le doy un nombre a esa imagen-->
+                    </div>
+    
+                    <div>
+                        <a href="https://www.youtube.com/@kirbo1997" target="_blank"><img src="../../../IMG/Cuentas/youtube.png"  alt="Youtube" class="enlace"></img></a> <!-- Conecta el archivo jpg para ser usado en la pagina para usarlo como hipervinculo y le doy un nombre a esa imagen-->
+                    </div>
+    
+                    <div>
+                        <a href="https://github.com/Kirbo97?tab=repositories" target="_blank"><img src="../../../IMG/Cuentas/GitHub-v2.png"  alt="Github" class="enlace"></img></a> <!-- Conecta el archivo jpg para ser usado en la pagina para usarlo como hipervinculo y le doy un nombre a esa imagen-->
+                    </div>
+                </section>
+            </footer>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,66 @@
+/* ****************************** */
+/*  Diseños dla tabla de objetos  */
+/* ****************************** */
+
+.Table_regalo{ width: 64em; }
+
+/* Defino la clase que sera el contenedor principal */
+.cont_obj_regalo, .cont_obj_habi, .cont_obj_duen, 
+.cont_obj_craf, .cont_obj_inst, .cont_obj_cult,
+.cont_obj_ingre,.cont_mat_requ, .cont_obj_herra {
+    margin-top: 6px;
+    display: flex; 
+    row-gap: 10px;
+    justify-content: space-evenly; 
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cont_obj_regalo { 
+    column-gap: 25px; 
+    row-gap: 15px;
+}
+
+.cont_obj_herra { column-gap: 40px; }
+
+/* Defino las caracteristicas del div que estan dentro del contenedor principal */
+.cont_obj_regalo div, .cont_obj_habi div, .cont_obj_duen div,
+.cont_obj_craf div, .cont_obj_inst div, .cont_obj_herra div,
+.cont_obj_cult div, .cont_obj_ingre div, .cont_mat_requ div { 
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cont_obj_regalo div img {
+    width: 60px;
+    height: 60px;
+}
+
+/* Defino las caracteristicas del b que estan dentro del contenedor principal */
+.cont_obj_regalo b, .cont_obj_habi b, .cont_obj_duen b,
+.cont_obj_ingre b, .cont_mat_requ b, .cont_obj_herra b { 
+    font-size: 13.5px; 
+}
+
+/* Defino las caracteristicas del p que estan dentro del contenedor principal */
+.cont_obj_regalo p, .cont_obj_habi p, .cont_obj_duen p, 
+.cont_obj_craf p, .cont_obj_inst p, .cont_obj_herra p,
+.cont_obj_cult p, .cont_obj_ingre p, .cont_mat_requ p {
+    width: auto; 
+    display: flex;
+    margin: 1px 10px 8px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.cont_obj_cult p { margin: 1px 6px 8px; }
+
+/* Defino las caracteristicas para los rostros que se visualisan en la tabla de regalos */
+#fasina, #encanta, #gusta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

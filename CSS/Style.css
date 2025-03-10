@@ -1,0 +1,336 @@
+@import url('Diseño_movil.css');
+@import url('Footer_y_Nav.css');
+@import url('Imagenes.css');
+@import url('Iconos.css');
+@import url('Modales.css');
+@import url('Tabla_cont_obj.css');
+@import url('Tablas_ayuntamiento.css');
+
+/* ******************* */
+/*  Diseños generales  */
+/* ******************* */
+
+/* Las id tendra cierta carasteristica (usado para el efecto de cambio de platos) */
+#base1,#base2,#base3,#base4,#base5,#base6,#base7,#base8,#base9,#base10,
+#baprem1,#baprem2,#baprem3,#baprem4,#baprem5,#baprem6,#baprem7,#baprem8,#baprem9,#baprem10,#baprem11,#baprem12,#baprem13{
+    transition: opacity 0.5s ease; /* Efecto de desvanecimiento */
+    opacity: 1;
+}
+
+/* La etiqueta "html" tendra cierta carasteristica */
+html {
+    font-size:100%;
+    margin:0px; 
+    padding:0px; 
+}
+
+/* La etiqueta "body" tendra cierta carasteristica */
+body {
+    background: url('../IMG/fondo.jpg') repeat; 
+    background-attachment: fixed;
+    margin: 0;
+}
+
+/* La etiqueta "header" tendra cierta carasteristica */
+header{
+    border-bottom:2px solid #00AA88;
+    display: flex; /* le indico que el elemento sea como un bloque (igual que la etiqueta "div") flexible y estaran en la misma linea (segun como este el html) ademas cada elemento se ajustara al tamaño interno proporcionado por bloque en el que se encuentran*/
+    flex-direction: row; /* le indico que los elemento del bloque flexible se organinse en fila*/
+}
+
+/* se crea caracteristicas para la etiqueta "b" para que sirva como negrilla*/
+b {
+    color: #369;
+    font-weight:800;
+}
+
+/* se crea una clase para la etiqueta "b" para que sirva como negrilla amarilla para la letra G para referirse al dinero */
+b.dinero{
+    color:rgb(225, 192, 4);
+    font-size: 20px;
+}
+
+/* La etiqueta "p" tendra cierta carasteristica */
+p { text-align: justify; }
+
+/* clase "link" con propiedad de enlace es para quitarle la apariencia de hiperbinculo */
+.link:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* clase "hiper" con propiedad de enlace y le modifico la apariencia de hipervinculo*/
+.hiper:-webkit-any-link, b.enla {
+    font-size: 1.2em;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: 'Fantasy', sans-serif;
+    text-decoration: none;
+    color: #0000EE;
+}
+  
+/* esta ID evita que el borde golpee debajo de objetos flotantes */
+#content {
+    background-color: rgba(255,255,255,.95);
+    border: 3px solid #228877;
+    box-shadow: 0px 0px 0px 6px #FFF; 
+    border-radius:20px;
+    box-sizing:border-box;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    height:100%;
+    line-height: 1.5em;
+    margin:50px 50px; /*(arriba y abajo │ derecha y izquierda)*/
+    overflow:hidden; 
+    padding: 20px;
+    z-index:0;
+}
+
+/* evitar que los titulos se expandan fuera del contenido */
+h1 {
+    color: #093;
+    font-family: 'Ranchers';
+    font-size: 2.5em;
+    letter-spacing: 0.1em;
+    line-height:1em;
+    margin: 0;
+    margin-bottom: 0.4em;
+} 
+
+/* evitar que los titulos se expandan fuera del contenido */
+h2 {
+    border-bottom: 2px solid rgb(46, 170, 253);
+    color: rgb(46, 170, 253);
+    font-family: 'Ranchers';
+    font-size: 2em;
+    letter-spacing: 0.1em;
+    line-height: 1.4em;
+    margin: 26.56px 0 0 0;
+}
+
+/* evitar que los titulos se expandan fuera del contenido */
+h3 , summary {
+	border-bottom:none;
+    font-weight: bold;
+	color: #E83;
+	font-family: 'Ranchers', sans-serif;
+	font-size: 1.5em;
+	letter-spacing: 0.1em;
+	line-height: 1em;
+    margin: 24px 0;
+}
+
+/* Estas clases es para crear un Scroll en la seccion de personajes */
+.scroll-container,.scroll-container_matri {
+    width: auto;           /* Ancho del contenedor */
+    height: 26em;          /* Alto del contenedor */
+    overflow: auto;         /* Activa la barra de desplazamiento */
+    scroll-behavior: smooth; /* Desplazamiento suave */
+    border: 1px solid #ccc; /* Borde opcional para definir el contorno */
+}
+
+.scroll-container_matri{ border: none; /* Borde opcional para definir el contorno */ }
+
+/* Estas clase es para crear un Scroll en la tabla de regalos */
+.scroll-container_reg {
+    width: auto;           /* Ancho del contenedor */
+    height: 24.74em;          /* Alto del contenedor */
+    overflow: auto;         /* Activa la barra de desplazamiento */
+    scroll-behavior: smooth; /* Desplazamiento suave */
+    border: 1px solid #ccc; /* Borde opcional para definir el contorno */
+    border: none; /* Borde opcional para definir el contorno */
+    padding-right: 10px; /* Espaciado interno */
+}
+
+/* Defino las caracteristicas de los botones que sirven para subir y bajar el scroll*/
+.btn_scroll{
+    height: 50%; 
+    padding: 6px; 
+    font-weight: bold; 
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/* Defino una clase para tener una lista de botones */
+div.list_btn{
+    display: flex; 
+    align-items: center; 
+    justify-content: space-evenly; 
+    flex-wrap: wrap; 
+    column-gap: 6em; 
+    row-gap: 4em; 
+    margin-top: 26.54px;
+}
+
+/* Defino unas clases para definir la apariencia de los botones */
+.btn_ev_per,.btn_ev_cand {
+    line-height: 1.5em;
+    width: 7em; 
+    padding: 6px; 
+    font-weight: bold; 
+    font-size: 18px;
+    border-radius:20px;
+    background-color:rgb(153, 95, 230); 
+    color: #FAFAFA;
+    cursor: pointer;
+}
+
+.btn_ev_cand { background-color:rgb(182, 152, 32); }
+
+/* ********************************* */
+/*  Diseños generales de las listas  */
+/* ********************************* */
+
+/* se crea caracteristicas para la etiqueta "ul" para controlar la lista*/
+ul {	
+    list-style:none;
+    line-height: 1.5em;
+    margin-left: -.5em;
+}
+
+/* se crea la clase "horario" en la etiqueta "ul" para que se ocupe de posisionar el contenido de una lista */
+ul.horario { 
+    padding: 0 4px;
+    margin: 0;
+}
+
+/* La etiqueta li tendra espacio para abajo */
+li { 
+    margin-block-end: 0.5em; 
+    margin-right: 0.5em;
+    text-align: justify;
+    margin: 8px 0 8px 8px;
+}
+
+li.gustos { 
+    margin: 4px 0 4px 0;
+    text-align: left;
+}
+
+/* ********************************** */
+/*  Diseños generales de los summary  */
+/* ********************************** */
+
+/* defino los colores de los summary */
+summary.prin{ color: rgb(217, 0, 255); }
+summary.sec{ color: rgb(239, 192, 0); }
+
+summary { cursor: pointer; }
+
+summary:focus-visible { outline:none; }
+
+details.esp { width: 680px;}
+
+details[open] > summary:first-of-type {
+    list-style-type: disclosure-open;
+	color: rgb(77, 208, 6);
+}
+
+details > summary:first-of-type { margin: 24px 0 4px 0; } /*Los details que estan serrados */
+
+/* ********************************* */
+/*  Diseños generales de las tablas  */
+/* ********************************* */
+
+/* La etiqueta "data" tendra una caracteristica para desplasar las tablas al centro */
+.data{
+    margin:15px auto;
+    border-spacing: 0px;
+    border:2px solid green;
+}
+
+/* Las etiquetas "td" (columna simple de la tabla) y "th" (columna de la tabla como encabesado) tendran caracteristicas para el diseño de las lineas de la tabla */
+td, th { 
+    padding: 4px 5px; /*(arriba, derecha, abajo y izquierda)*/
+    border:2px solid green;
+}
+
+/* La etiqueta "th" (columna de la tabla como encabesado) tendran caracteristicas para el diseño del encabesado de la tabla */
+th { 
+    background-color:#00AA88; 
+    color: #FAFAFA
+}
+
+/* La etiqueta "tr" (fila de la tabla) con propiedad "nth-child(odd)" (filas impares) tendra un color en la tabla */
+tr:nth-child(odd) {background-color: #E8E8E8;}
+
+/* La etiqueta "tr" (fila de la tabla) con propiedad "nth-child(even)" (filas pares) tendra un color en la tabla */
+tr:nth-child(even) {background-color: #FAFAFA;}
+
+/* ******************************** */
+
+/* Cuando la tabla tiene un diseño diferente para presentar los datos (salon de belleza) */
+tr.dat_adi_SalBell th{ 
+    background-color:#ca9a15; 
+    width: 120px;
+}
+
+/* La tabla con la clase "ingredientes" tendra un ancho definido para las columnas del 4 al 5 */
+.ingredientes tr td:nth-child(4),
+.ingredientes tr td:nth-child(5),
+.ingredientes tr td:nth-child(6),
+.ingredientes tr td:nth-child(7) {
+    width: 155px;
+}
+
+/* Esta clase es para cuando la celda es de solo "-" */
+.td_neutro{
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+/* Estas clases es para cuando la celda es de solo dinero */
+.td_dinero {
+    text-align:center; 
+    font-weight: bold;
+}
+
+.td_dinero b{
+    color:rgb(225, 192, 4); 
+    font-size: 20px;
+}
+
+/* Usados en datos de los npc */
+td.perso{ padding: 8px 18px;}
+
+/* Usados en el calendario */
+.td_calenda {
+    text-align:center;
+    padding: 0;
+    width: 120px;
+}
+
+/* ********************************************************* */
+/*  Color de la etiqueta "b" que estan dentro de las tablas  */
+/* ********************************************************* */
+
+/* La etiqueta "b" tendra un color para referirse a la cantidad de un objeto */
+b.cant{ 
+    color:rgb(241, 40, 40); 
+    font-size: 18px;
+}
+
+/* La etiqueta "b" tendra un color para referirse a la hora en la parte de los horarios */
+b.hora { color: rgb(53, 54, 54); }
+
+/* La etiqueta "b" tendra un color para referirse a un lugar */
+b.lugar { color: rgb(115, 55, 171); }
+
+/* La etiqueta "b" tendra un color para resaltar la habilidad */
+b.habilidad { 
+    color: rgb(40, 158, 69);
+    font-size: 15.5px; 
+}
+
+/* La etiqueta "b" tendra un diseño para el contorno de una estrella */
+b.star{ 
+    font-size:1.2em; 
+    -webkit-text-stroke: 0.5px black;
+}
+
+/* La etiqueta "b" tendra un color para resaltar en nivel de la estrella */
+b.s1{ color: rgba(139,70,62,1); } /* N0 */
+b.s2{ color: rgba(132,196,205,1); } /* N1 - N4 */
+b.s3{ color: rgba(181,188,207,1); } /* N5 - N7 */
+b.s4{ color: rgba(200,157,37,1); } /* N8 - N10 */

@@ -1,0 +1,68 @@
+/* ********************************* */
+/*  Diseños para Moviles (426 x 790) */
+/* ********************************* */
+
+/*Con la linea para que se adapte a la pantalla en la que se encuentra, el tamaño para el Movil es (max-width:426px), sin es linea el tamaño para Movil es (max-width:980px)*/
+
+/* defino que solo altere estos elementos cuando la pantalla del dispositivo sea un telefono */
+@media screen and (max-width:980px){
+    h1 { font-size: 2.18em !important; }
+
+    li.gustos { 
+        margin: 4px 0 4px 0 !important;
+        text-align: left !important;
+    }
+
+    p { font-size: 17px !important; }
+    
+    .data p { font-size: 16px !important; }
+
+    .scroll-container_matri{ border: 1px solid #ccc !important; }
+
+    .scroll-container,.scroll-container_matri { height: 19.5em !important; }
+
+    .box_aldeanos,.box_matrimonio { max-width:125px !important; }
+
+    .box_otro { max-width:200px !important; }
+
+    details.esp { width: 409.6px !important;}
+
+    dialog h3 { font-size: 29px !important; }
+
+    .image-container img { top: 14.6em !important; }
+
+    .img_perfil { width: 170px !important; }
+
+    .vin_nav:-webkit-any-link{ font-size: 0.82em !important; }
+    
+    td.recom1,th.recom1{width: 12.45em !important;}
+    td.recom2,th.recom2{width: 14.4em !important;}
+    td.recom3,th.recom3{width: 21em !important;}
+    #header1{ width: 64.5em !important;}
+
+    .Table_regalo{ width: 50em !important;}
+
+    div.cont_duen{ column-gap: 8em !important; }
+}
+
+/* defino que solo altere estos elementos cuando la pantalla del dispositivo sea un telefono y que este en vertical*/
+@media screen and (max-height:600px) and (orientation:landscape){    
+    h1 { font-size: 2.18em !important; }
+
+    li.gustos { 
+        margin: 4px 0 4px 0 !important;
+        text-align: left !important;
+    }
+
+    .image-container img { top: 15.29em !important; }
+    
+    .scroll-container { height: 19.5em !important; }
+
+    .box_aldeanos,.box_matrimonio { max-width:125px !important; }
+
+    .box_otro { max-width:200px !important; }
+
+    details.esp { width: 409.6px !important;}
+
+    .vin_nav:-webkit-any-link{ font-size: 0.82em !important; }
+}
