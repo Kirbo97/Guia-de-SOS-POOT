@@ -8,7 +8,7 @@
 .cont_obj_regalo, .cont_obj_habi, .cont_obj_duen, 
 .cont_obj_craf, .cont_obj_inst, .cont_obj_cult,
 .cont_obj_ingre,.cont_mat_requ, .cont_obj_herra {
-    margin-top: 6px;
+    padding-top: 6px;
     display: flex; 
     row-gap: 10px;
     justify-content: space-evenly; 
