@@ -55,7 +55,6 @@ function Scrollbutton(tip_bot) {
     if (anchoVentana <= 980) { // desplasamiento para cuando es  el movile
         if (tip_bot === 'arriba') {
             boxsort.scrollTop -= salto_movile;
-            console.log(anchoVentana)
         } else if (tip_bot === 'abajo') {
             boxsort.scrollTop += salto_movile;
         }
@@ -65,6 +64,29 @@ function Scrollbutton(tip_bot) {
             boxsort.scrollTop -= salto_comp;
         } else if (tip_bot === 'abajo') {
             boxsort.scrollTop += salto_comp;
+        }   
+    }
+}      
+
+// Función para mostrar el contenido adecuado según la procesadora seleccionada (Seccion de personajes)
+function Scrollbutton_Perso_DLC(tip_bot_DLC) {
+
+    var anchoVentana = window.innerWidth;
+    var salto_movile=240;
+    var salto_comp=305.05;
+        
+    if (anchoVentana <= 980) { // desplasamiento para cuando es  el movile
+        if (tip_bot_DLC === 'arriba') {
+            boxsort_Aldeano_DLC.scrollTop -= salto_movile;
+        } else if (tip_bot_DLC === 'abajo') {
+            boxsort_Aldeano_DLC.scrollTop += salto_movile;
+        }
+            
+    } else if (anchoVentana > 980) { // desplasamiento para cuando es la computadora
+        if (tip_bot_DLC === 'arriba') {
+            boxsort_Aldeano_DLC.scrollTop -= salto_comp;
+        } else if (tip_bot_DLC === 'abajo') {
+            boxsort_Aldeano_DLC.scrollTop += salto_comp;
         }   
     }
 }   
@@ -233,8 +255,13 @@ if (window.location.pathname.includes("Personajes/")) {
     // Obtener el ancho de la ventana
     var TipoVent = window.innerWidth;
 
+    // valido si la pagina en la que estoy es una que no tiene tabla de regalos porque si no lo tiene termina el proseso
+    if(window.location.pathname.includes("/jugador") || window.location.pathname.includes("/Espiritu") || window.location.pathname.includes("/Duendes") ){ 
+        var repetir=0; 
+    } else { var repetir=3; }
+ 
     // Recorrer todos los elementos <th> encontrados
-    for (var i = 0; i < 3; i++) {
+    for (var i = 0; i < repetir; i++) {
 
         // Obtener el elemento <div> con id "regalos"
         var elemento = document.getElementById("regalos"+ (i + 1));

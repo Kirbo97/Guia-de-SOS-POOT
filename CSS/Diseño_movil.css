@@ -19,7 +19,9 @@
 
     .scroll-container_matri{ border: 1px solid #ccc !important; }
 
-    .scroll-container,.scroll-container_matri { height: 19.5em !important; }
+    .scroll-container_aldeanos,.scroll-container_matri { height: 19.5em !important; }
+    
+    .scroll-container_DLC  { height: 16em !important; }
 
     .box_aldeanos,.box_matrimonio { max-width:125px !important; }
 
