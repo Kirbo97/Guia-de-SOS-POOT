@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="../CSS/Style.css" type="text/css" />
         <link rel="shortcut icon" href="../IMG/Iconos/Kirbo.ico"/>
         <script type="text/javascript" src="../JS/include.js"></script> <!-- Conecta el archivo js para ser usado en la pagina --><!-- Este sj contiene la funcion de insertar el nav y footer a la pagina-->
+        <script type="text/javascript" src="../JS/funciones.js"></script> <!-- Conecta el archivo js para ser usado en la pagina --><!-- Este sj contiene la funcion de intercambio de contenido de la tabla-->
     </head>
     
     <body>
@@ -30,22 +31,65 @@
 
                 <p>Si logras conseguir el pase de exoancuin del juego desbloquearas nuevos personajes por lo que conseguiras nuevas fechas de cumpleaños.</p>
 
-                <section> <!-- Primavera -->
+                <h2 id="tituloEstacion">Calendarios de temporadas</h2>
 
-                    <h2>Temporada de primavera</h2>
+                <i>Nota: Seleccione una estación.</i>
 
-                    <table class="data" style="margin-top: 1.8em;"> <!-- Primavera -->
-                        <tr>
-                            <th colspan="7" style="font-size: 1.2em; background-color: #84f16e; height: 4em;">
-                                <div style="display: flex; justify-content: space-around; align-items: center;">
-                                    <p class="primavera" style="margin-top: 1.65em;" title="Primavera" ></p>
-                                    <p class="primavera" style="margin-top: 1.65em;" title="Primavera" ></p>
-                                    <p class="primavera" style="margin-top: 1.65em;" title="Primavera" ></p>
-                                    <p class="primavera" style="margin-top: 1.65em;" title="Primavera" ></p>
-                                </div>
-                            </th>
+                <table class="data" style="margin-bottom: 1.5em; margin-top: 1.8em;"> <!-- Calendario -->
+                    <tr>
+                        <th colspan="7" id="estacion" style="font-size: 1.2em; background-color: #757a74; height: 4em;">
+                            <div style="display:flex;justify-content:space-around;align-items:center;">
+                                <p class="primavera" onclick="cambiarTemporada(1)" title="Primavera" style="cursor: pointer;"></p>
+                                <p class="verano" onclick="cambiarTemporada(2)" title="Verano" style="cursor: pointer;"></p>
+                                <p class="otoño" onclick="cambiarTemporada(3)" title="Otoño" style="cursor: pointer;"></p>
+                                <p class="invierno" onclick="cambiarTemporada(4)" title="Invierno" style="cursor: pointer;"></p>
+                            </div>
+                        </th>
+                    </tr>
+
+                    <tbody id="calendario0">
+                        <tr style="width: 120px; height: 120;">
+                            <td class="td_calenda_simple"><b style="font-size: 25px;">01</b></td>
+                            <td class="td_calenda_simple"><b style="font-size: 25px;">02</b></td>
+                            <td class="td_calenda_simple"><b style="font-size: 25px;">03</b></td>
+                            <td class="td_calenda_simple"><b style="font-size: 25px;">04</b></td>
+                            <td class="td_calenda_simple"><b style="font-size: 25px;">05</b></td>
+                            <td class="td_calenda_simple"><b style="font-size: 25px;">06</b></td>
+                            <td class="td_calenda_simple"><b style="font-size: 25px;">07</b></td>
                         </tr>
-        
+    
+                        <tr>
+                            <td class="td_calenda_simple"><b style="font-size: 25px;">08</b></td>
+                            <td class="td_calenda_simple"><b style="font-size: 25px;">09</b></td>
+                            <td class="td_calenda_simple"><b style="font-size: 25px;">10</b></td>
+                            <td class="td_calenda_simple"><b style="font-size: 25px;">11</b></td>
+                            <td class="td_calenda_simple"><b style="font-size: 25px;">12</b></td>
+                            <td class="td_calenda_simple"><b style="font-size: 25px;">13</b></td>
+                            <td class="td_calenda_simple"><b style="font-size: 25px;">14</b></td>
+                        </tr>
+    
+                        <tr>
+                            <td class="td_calenda_simple"><b style="font-size: 25px;">15</b></td>
+                            <td class="td_calenda_simple"><b style="font-size: 25px;">16</b></td>
+                            <td class="td_calenda_simple"><b style="font-size: 25px;">17</b></td>
+                            <td class="td_calenda_simple"><b style="font-size: 25px;">18</b></td>
+                            <td class="td_calenda_simple"><b style="font-size: 25px;">19</b></td>
+                            <td class="td_calenda_simple"><b style="font-size: 25px;">20</b></td>
+                            <td class="td_calenda_simple"><b style="font-size: 25px;">21</b></td>
+                        </tr>
+    
+                        <tr>
+                            <td class="td_calenda_simple"><b style="font-size: 25px;">22</b></td>
+                            <td class="td_calenda_simple"><b style="font-size: 25px;">23</b></td>
+                            <td class="td_calenda_simple"><b style="font-size: 25px;">24</b></td>
+                            <td class="td_calenda_simple"><b style="font-size: 25px;">25</b></td>
+                            <td class="td_calenda_simple"><b style="font-size: 25px;">26</b></td>
+                            <td class="td_calenda_simple"><b style="font-size: 25px;">27</b></td>
+                            <td class="td_calenda_simple"><b style="font-size: 25px;">28</b></td>
+                        </tr>
+                    </tbody>
+
+                    <tbody id="calendario1" style="display: none;"> <!-- Primavera -->
                         <tr>
                             <td class="td_calenda"><b style="font-size: 25px;">01</b></td>
                             <td class="td_calenda"><b style="font-size: 25px;">02</b></td>
@@ -468,26 +512,9 @@
                                 </dialog>
                             </td>
                         </tr>
-                    </table>
+                    </tbody>
 
-                </section>
-
-                <section> <!-- Verano -->
-                    
-                    <h2>Temporada de Verano</h2>
-
-                    <table class="data" style="margin-top: 1.8em;"> <!-- Verano --> 
-                        <tr>
-                            <th colspan="7" style="font-size: 1.2em; background-color: #f2e88c; height: 4em;">
-                                <div style="display: flex; justify-content: space-around; align-items: center;">
-                                    <p class="verano" style="margin-top: 1.65em;" title="Verano"></p>
-                                    <p class="verano" style="margin-top: 1.65em;" title="Verano"></p>
-                                    <p class="verano" style="margin-top: 1.65em;" title="Verano"></p>
-                                    <p class="verano" style="margin-top: 1.65em;" title="Verano"></p>
-                                </div>
-                            </th>
-                        </tr>
-        
+                    <tbody id="calendario2" style="display: none;"> <!-- Verano -->
                         <tr>
                             <td class="td_calenda"><b style="font-size: 25px;">01</b></td>
                             <td style="padding: 0; width: 120px;"> <!-- Cumpleaños de Mikey -->
@@ -904,25 +931,9 @@
                                 </dialog>
                             </td>
                         </tr>
-                    </table>
-                </section>
+                    </tbody>
 
-                <section> <!-- Otoño -->
-
-                    <h2>Temporada de Otoño</h2>
-
-                    <table class="data" style="margin-top: 1.8em;"> <!-- Otoño -->
-                        <tr>
-                            <th colspan="7" style="font-size: 1.2em; background-color: #f7b05f; height: 4em;">
-                                <div style="display: flex; justify-content: space-around; align-items: center;">
-                                    <p class="otoño" style="margin-top: 1.65em;" title="Otoño"></p>
-                                    <p class="otoño" style="margin-top: 1.65em;" title="Otoño"></p>
-                                    <p class="otoño" style="margin-top: 1.65em;" title="Otoño"></p>
-                                    <p class="otoño" style="margin-top: 1.65em;" title="Otoño"></p>
-                                </div>
-                            </th>
-                        </tr>
-        
+                    <tbody id="calendario3" style="display: none;"> <!-- Otoño -->
                         <tr>
                             <td class="td_calenda"><b style="font-size: 25px;">01</b></td>
                             <td class="td_calenda"><b style="font-size: 25px;">02</b></td>
@@ -1393,24 +1404,9 @@
                                 </dialog>
                             </td>
                         </tr>
-                    </table>
-                </section>
+                    </tbody>
 
-                <section> <!-- Invierno -->
-                    <h2>Temporada de Invierno</h2>
-
-                    <table class="data" style="margin-bottom: 1.5em; margin-top: 1.8em;"> <!-- Invierno -->
-                        <tr>
-                            <th colspan="7" style="font-size: 1.2em; background-color: #7ed1f5; height: 4em;">
-                                <div style="display: flex; justify-content: space-around; align-items: center;">
-                                    <p class="invierno" style="margin-top: 1.65em;" title="Invierno"></p>
-                                    <p class="invierno" style="margin-top: 1.65em;" title="Invierno"></p>
-                                    <p class="invierno" style="margin-top: 1.65em;" title="Invierno"></p>
-                                    <p class="invierno" style="margin-top: 1.65em;" title="Invierno"></p>
-                                </div>
-                            </th>
-                        </tr>
-        
+                    <tbody id="calendario4" style="display: none;"> <!-- Invierno -->
                         <tr>
                             <td style="padding: 0; width: 120px;"> <!-- Cumpleaños de Cindy -->
                                 <div style="display: flex;flex-direction:column; align-items: center;">
@@ -1818,8 +1814,8 @@
                                 </dialog>
                             </td>
                         </tr>
-                    </table>
-                </section>
+                    </tbody>
+                </table>
             </main>
             
             <div id="footer"></div>

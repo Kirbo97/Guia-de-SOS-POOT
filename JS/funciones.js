@@ -45,90 +45,6 @@ function mostrarContenido(tipo) {
     dialog.showModal();
 }   
 
-// Función para mostrar el contenido adecuado según la procesadora seleccionada (Seccion de personajes)
-function Scrollbutton(tip_bot) {
-
-    var anchoVentana = window.innerWidth;
-    var salto_movile=304;
-    var salto_comp=415.05;
-        
-    if (anchoVentana <= 980) { // desplasamiento para cuando es  el movile
-        if (tip_bot === 'arriba') {
-            boxsort.scrollTop -= salto_movile;
-        } else if (tip_bot === 'abajo') {
-            boxsort.scrollTop += salto_movile;
-        }
-            
-    } else if (anchoVentana > 980) { // desplasamiento para cuando es la computadora
-        if (tip_bot === 'arriba') {
-            boxsort.scrollTop -= salto_comp;
-        } else if (tip_bot === 'abajo') {
-            boxsort.scrollTop += salto_comp;
-        }   
-    }
-}      
-
-// Función para mostrar el contenido adecuado según la procesadora seleccionada (Seccion de personajes)
-function Scrollbutton_Perso_DLC(tip_bot_DLC) {
-
-    var anchoVentana = window.innerWidth;
-    var salto_movile=240;
-    var salto_comp=305.05;
-        
-    if (anchoVentana <= 980) { // desplasamiento para cuando es  el movile
-        if (tip_bot_DLC === 'arriba') {
-            boxsort_Aldeano_DLC.scrollTop -= salto_movile;
-        } else if (tip_bot_DLC === 'abajo') {
-            boxsort_Aldeano_DLC.scrollTop += salto_movile;
-        }
-            
-    } else if (anchoVentana > 980) { // desplasamiento para cuando es la computadora
-        if (tip_bot_DLC === 'arriba') {
-            boxsort_Aldeano_DLC.scrollTop -= salto_comp;
-        } else if (tip_bot_DLC === 'abajo') {
-            boxsort_Aldeano_DLC.scrollTop += salto_comp;
-        }   
-    }
-}   
-
-var currentTable = 1;
-// Función para mostrar el contenido adecuado según la procesadora seleccionada (Seccion de Victor)
-function ScrollbuttonVictor(direction) {
-    // Ocultar la tabla actual
-    document.getElementById('tv' + currentTable).style.display = 'none';
-    
-    // Cambiar la tabla según la dirección del scroll
-    if (direction === 'arriba' && currentTable > 1) {
-        currentTable--; // Si es hacia arriba, ir a la tabla anterior
-    } else if (direction === 'abajo' && currentTable < 9) {
-        currentTable++; // Si es hacia abajo, ir a la siguiente tabla
-    }
-    
-    // Mostrar la nueva tabla
-    document.getElementById('tv' + currentTable).style.display = 'table';
-}
-
-var Tablarecom = 1;
-// Función para mostrar el contenido adecuado según la procesadora seleccionada (Seccion de recompensa)
-function ScrollbuttonRecom(direc) {
-    // Ocultar la tabla actual
-    document.getElementById('tr' + Tablarecom).style.display = 'none';
-    var lis="";
-    
-    // Cambiar la tabla según la dirección del scroll
-    if (direc === 'arriba' && Tablarecom > 1) {
-        Tablarecom--; // Si es hacia arriba, ir a la tabla anterior
-    } else if (direc === 'abajo' && Tablarecom < 40) {
-        Tablarecom++; // Si es hacia abajo, ir a la siguiente tabla
-    }
-
-    // Cambia el nombre de la lista
-    if (Tablarecom > 9) { lis="Lista "; } else if (Tablarecom < 10) { lis="Lista 0"; }
-    document.getElementById("header1").innerText = lis+Tablarecom;
-
-    // Mostrar la nueva tabla
-    document.getElementById('tr' + Tablarecom).style.display = 'table';
-}
 
 // Función para calcular y ajustar el ancho de los dialog que contiene los eventos (Seccion de eventos de los personajes)
 function Cal_tabla(tip_lis_btn) {
@@ -172,6 +88,154 @@ function Cal_intro(tip_intr) {
         }
     }
 } 
+
+// Verificar si el archivo actual esta dentro de la ruta de "Personajes"
+if (window.location.pathname.includes("Personajes/")) {
+
+    // Definir el array con los valores de los ids
+    var estado = ["fasina", "encanta", "gusta"];
+
+    // Obtener el ancho de la ventana
+    var TipoVent = window.innerWidth;
+
+    // valido si la pagina en la que estoy es una que no tiene tabla de regalos porque si no lo tiene termina el proseso
+    if(window.location.pathname.includes("/jugador") || window.location.pathname.includes("/Espiritu") || window.location.pathname.includes("/Duendes") ){ 
+        var repetir=0; 
+    } else { var repetir=3; }
+ 
+    // Recorrer todos los elementos <th> encontrados
+    for (var i = 0; i < repetir; i++) {
+
+        // Obtener el elemento <div> con id "regalos"
+        var elemento = document.getElementById("regalos"+ (i + 1));
+
+        // Si el ancho de la ventana es menor o igual a 980px y el ancho de la tabla es mayor a 810px (Movile)
+        if(TipoVent <= 980) { var num =  3272; } else { var num =  3282; }
+
+        
+        // Si la altura del div es menor a 2587px ayadira una clase pero si lo supera añadira dos clases
+        if (elemento.offsetHeight <= num) { 
+            elemento.classList.add('cont_obj_regalo');
+        } else {
+            elemento.classList.add('cont_obj_regalo','scroll-container_reg'); 
+        }
+
+        // Obtener el elemento <th> con id "estado"
+        var thElement = document.getElementById("estado" + (i + 1));
+
+        // Obtener el elemento <div> con id de lo que esta en el arreglo
+        var thdiv = document.getElementById(estado[i]);
+
+        // Si la altura es igual a 135px, Ajusta el valor del margen superior del <div> según lo necesites
+        if (thElement.offsetHeight <= 135) { thdiv.style.marginTop = "20px"; }
+    }
+}
+
+/* ****************************************************** */
+/*  Funciones para editar la tabla acorde de la estacion  */
+/* ****************************************************** */
+
+function cambiarTemporada(num){ cambiar(num,0); }
+
+function cambiarTemporada_mascota(num){ cambiar(num,1); }
+
+function cambiar(num,i){
+    let encabezado = document.getElementById("estacion");
+    let titulo = document.getElementById("tituloEstacion");
+
+    for(i;i<=4;i++){ document.getElementById("calendario"+i).style.display="none"; }
+    document.getElementById("calendario"+num).style.display="block";
+
+    if(num==1){ // primavera 
+        encabezado.style.backgroundColor="#84f16e"; 
+        titulo.textContent="Calendario de Primavera";
+    } 
+
+    if(num==2){ // verano
+        encabezado.style.backgroundColor="#f2e88c";
+        titulo.textContent="Calendario de Verano"; 
+    }
+
+    if(num==3){  // otoño
+        encabezado.style.backgroundColor="#f7b05f"; 
+        titulo.textContent="Calendario de Otoño"; 
+    }
+
+    if(num==4){  // invierno
+        encabezado.style.backgroundColor="#7ed1f5"; 
+        titulo.textContent="Calendario de Invierno"; 
+    }
+}
+
+/* ************************************************************** */
+/*  Funciones para desplasar el contenido de la caja por botones  */
+/* ************************************************************** */
+
+// Función para desplazar el contenido de la caja de personajes
+function Scrollbutton(tip_bot){ desplasar(tip_bot,304,415.05); } // movile,comp
+
+// Función para desplazar el contenido de la caja de personajes del DLC
+function Scrollbutton_Perso_DLC(tip_bot){ desplasar(tip_bot,240,305.05); } // movile,comp
+
+// Función para el desplazamiento del contenido de la caja
+function desplasar(tip_bot,salto_movile,salto_comp) {
+
+    var anchoVentana = window.innerWidth;
+        
+    if (anchoVentana <= 980) { // desplasamiento para cuando es  el movile
+        if (tip_bot === 'arriba') {
+            boxsort.scrollTop -= salto_movile;
+        } else if (tip_bot === 'abajo') {
+            boxsort.scrollTop += salto_movile;
+        }
+            
+    } else if (anchoVentana > 980) { // desplasamiento para cuando es la computadora
+        if (tip_bot === 'arriba') {
+            boxsort.scrollTop -= salto_comp;
+        } else if (tip_bot === 'abajo') {
+            boxsort.scrollTop += salto_comp;
+        }   
+    }
+}      
+
+var currentTable = 1;
+// Función para mostrar el contenido adecuado según la procesadora seleccionada (Seccion de Victor)
+function ScrollbuttonVictor(direction) {
+    // Ocultar la tabla actual
+    document.getElementById('tv' + currentTable).style.display = 'none';
+    
+    // Cambiar la tabla según la dirección del scroll
+    if (direction === 'arriba' && currentTable > 1) {
+        currentTable--; // Si es hacia arriba, ir a la tabla anterior
+    } else if (direction === 'abajo' && currentTable < 9) {
+        currentTable++; // Si es hacia abajo, ir a la siguiente tabla
+    }
+    
+    // Mostrar la nueva tabla
+    document.getElementById('tv' + currentTable).style.display = 'table';
+}
+
+var Tablarecom = 1;
+// Función para mostrar el contenido adecuado según la procesadora seleccionada (Seccion de recompensa)
+function ScrollbuttonRecom(direc) {
+    // Ocultar la tabla actual
+    document.getElementById('tr' + Tablarecom).style.display = 'none';
+    var lis="";
+    
+    // Cambiar la tabla según la dirección del scroll
+    if (direc === 'arriba' && Tablarecom > 1) {
+        Tablarecom--; // Si es hacia arriba, ir a la tabla anterior
+    } else if (direc === 'abajo' && Tablarecom < 40) {
+        Tablarecom++; // Si es hacia abajo, ir a la siguiente tabla
+    }
+
+    // Cambia el nombre de la lista
+    if (Tablarecom > 9) { lis="Lista "; } else if (Tablarecom < 10) { lis="Lista 0"; }
+    document.getElementById("header1").innerText = lis+Tablarecom;
+
+    // Mostrar la nueva tabla
+    document.getElementById('tr' + Tablarecom).style.display = 'table';
+}
 
 var cant_cult_Setas = 1;
 var cant_cult_Cosechas = 1;
@@ -243,47 +307,5 @@ function ScrollbuttonCultivos(direction) {
 
         // Mostrar la nueva tabla
         document.getElementById(separador[1] + cant_cult_Cosechas).style.display = 'table';
-    }
-}
-
-// Verificar si el archivo actual esta dentro de la ruta de "Personajes"
-if (window.location.pathname.includes("Personajes/")) {
-
-    // Definir el array con los valores de los ids
-    var estado = ["fasina", "encanta", "gusta"];
-
-    // Obtener el ancho de la ventana
-    var TipoVent = window.innerWidth;
-
-    // valido si la pagina en la que estoy es una que no tiene tabla de regalos porque si no lo tiene termina el proseso
-    if(window.location.pathname.includes("/jugador") || window.location.pathname.includes("/Espiritu") || window.location.pathname.includes("/Duendes") ){ 
-        var repetir=0; 
-    } else { var repetir=3; }
- 
-    // Recorrer todos los elementos <th> encontrados
-    for (var i = 0; i < repetir; i++) {
-
-        // Obtener el elemento <div> con id "regalos"
-        var elemento = document.getElementById("regalos"+ (i + 1));
-
-        // Si el ancho de la ventana es menor o igual a 980px y el ancho de la tabla es mayor a 810px (Movile)
-        if(TipoVent <= 980) { var num =  3272; } else { var num =  3282; }
-
-        
-        // Si la altura del div es menor a 2587px ayadira una clase pero si lo supera añadira dos clases
-        if (elemento.offsetHeight <= num) { 
-            elemento.classList.add('cont_obj_regalo');
-        } else {
-            elemento.classList.add('cont_obj_regalo','scroll-container_reg'); 
-        }
-
-        // Obtener el elemento <th> con id "estado"
-        var thElement = document.getElementById("estado" + (i + 1));
-
-        // Obtener el elemento <div> con id de lo que esta en el arreglo
-        var thdiv = document.getElementById(estado[i]);
-
-        // Si la altura es igual a 135px, Ajusta el valor del margen superior del <div> según lo necesites
-        if (thElement.offsetHeight <= 135) { thdiv.style.marginTop = "20px"; }
     }
 }

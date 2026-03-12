@@ -190,7 +190,6 @@ div.list_btn{
 
 .btn_ev_cand { background-color:rgb(182, 152, 32); }
 
-
 p.FechCump{
     margin: 0;
     margin-bottom: 6px;
@@ -320,6 +319,13 @@ td.perso{ padding: 8px 18px;}
     text-align:center;
     padding: 0;
     width: 120px;
+}
+
+.td_calenda_simple { 
+    text-align:center;
+    padding: 0;
+    height: 100px; 
+    width: 100px;
 }
 
 /* ********************************************************* */
