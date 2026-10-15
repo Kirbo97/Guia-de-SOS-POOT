@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html lang="en"> 
+<html lang="es"> 
     <head>
         <meta charset="UTF-8">   <!-- Para usar la escritura latina -->
         <title>Guia de Karina de SOS-POOT</title> 
         <link rel="stylesheet" href="/Guia-de-SOS-POOT/CSS/Style.css" type="text/css" />
         <link rel="shortcut icon" href="/Guia-de-SOS-POOT/IMG/Iconos/Kirbo.ico"/>
-        <link rel="shortcut icon" href="/Guia-de-SOS-POOT/JS/include.js" defer></script> <!-- Conecta el archivo js para ser usado en la pagina --><!-- Este sj contiene la funcion de insertar el nav y footer a la pagina-->
+        <script type="text/javascript" src="/Guia-de-SOS-POOT/JS/include.js" defer></script> <!-- Conecta el archivo js para ser usado en la pagina --><!-- Este sj contiene la funcion de insertar el nav y footer a la pagina-->
+        <script type="text/javascript" src="/Guia-de-SOS-POOT/JS/funciones.js"></script> <!-- Conecta el archivo js para ser usado en la pagina --><!-- Este sj contiene las funciones de encriptar y desencriptar de la pagina-->
     </head>
     
-    <body>
+    <body> 
         <!-- Pantalla de carga -->
         <div id="loading"></div>
-        
+
         <div id="nav"></div>
 
         <div id="content">
@@ -119,7 +120,7 @@
                         </th>
 
                         <td style="text-align:center;">
-                            <div id="regalos1">
+                            <div id="regalos1" class="cont_obj_regalo">
                                 <div><img src="/Guia-de-SOS-POOT/IMG/Otros/Articulos/floreria/Perfume de ramo.png"/><p><b>Perfume de</b><b>ramo</b></p></div>
 
                                 <div><img src="/Guia-de-SOS-POOT/IMG/Otros/Articulos/floreria/Concierto de la tierra.png"/><p><b>Concierto</b><b>de la tierra</b></p></div>
@@ -142,7 +143,7 @@
                         </th>
 
                         <td style="text-align:center;">
-                            <div id="regalos2">
+                            <div id="regalos2" class="cont_obj_regalo">
                                 <div><img src="/Guia-de-SOS-POOT/IMG/Otros/Flores/Pensamiento negro.png"/><p><b>Pensamiento</b><b>negro</b></p></div>
 
                                 <div><img src="/Guia-de-SOS-POOT/IMG/Otros/Articulos/floreria/Vals de las llamas.png"/><p><b>Vals de las</b><b>llamas</b></p></div>
@@ -191,7 +192,7 @@
                         </th>
 
                         <td style="text-align:center;">
-                            <div id="regalos3">
+                            <div id="regalos3" class="cont_obj_regalo">
                                 <div><img src="/Guia-de-SOS-POOT/IMG/Otros/Cultivos/Aguacate.png"/><p><b>Aguacate</b></p></div>
 
                                 <div><img src="/Guia-de-SOS-POOT/IMG/Cocina/Recetas/ensalada/Ensalada de judías.png"/><p><b>Ensalada</b><b>de judías</b></p></div>
@@ -336,6 +337,5 @@
             
             <div id="footer"></div>
         </div>
-        <script type="text/javascript" src="/Guia-de-SOS-POOT/JS/funciones.js"></script> <!-- Conecta el archivo js para ser usado en la pagina --><!-- Este sj contiene las funciones de encriptar y desencriptar de la pagina-->
     </body>
 </html>
