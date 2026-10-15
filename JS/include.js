@@ -1,9 +1,9 @@
-async function loadHTML(id, file) { 
-    const response = await fetch(file); 
+async function loadHTML(id, file) {
+    const response = await fetch(file);
     if (!response.ok) { throw new Error("No se pudo cargar: " + file); }
-    const data = await response.text(); 
-    document.getElementById(id).innerHTML = data; 
-} 
+    const data = await response.text();
+    document.getElementById(id).innerHTML = data;
+}
 
 async function cargarAnimacion() {
     return new Promise(function (resolve) {
@@ -25,13 +25,13 @@ async function cargarAnimacion() {
 async function cargarPagina() {
     document.body.style.overflow = "hidden";
 
-    await loadHTML("loading", "/Guia-de-SOS-POOT/Estructura/carga.html");
+    await loadHTML("loading","/Guia-de-SOS-POOT/Estructura/carga.html");
 
     await cargarAnimacion();
 
     await Promise.all([
-        loadHTML("nav", "/Guia-de-SOS-POOT/Estructura/nav.html"),
-        loadHTML("footer", "/Guia-de-SOS-POOT/Estructura/footer.html")
+        loadHTML("nav","/Guia-de-SOS-POOT/Estructura/nav.html"),
+        loadHTML("footer","/Guia-de-SOS-POOT/Estructura/footer.html")
     ]);
 
     const imagenes = document.images;

@@ -1,3 +1,202 @@
+/* ************************************************************** */
+/*  Funciones para desplasar el contenido de la caja por botones  */
+/* ************************************************************** */
+
+// Función para desplazar el contenido de la caja de personajes
+function Scrollbutton(tip_bot,tip_Scrol){ 
+    var caja;
+    var salto_movile;
+    var salto_comp;
+
+    if (tip_Scrol==="Scrol_aldeanos"){
+        caja = document.getElementById("boxsort");
+        salto_movile = 181;
+        salto_comp = 260.05;
+    }
+
+
+    if (tip_Scrol==="Scrol_DLC"){
+        caja = document.getElementById("boxsort_Aldeano_DLC");
+        salto_movile = 270;
+        salto_comp = 325;
+    }
+
+
+    if (caja) { desplasar(tip_bot, caja, salto_movile, salto_comp); }
+}
+
+// Función para el desplazamiento del contenido de la caja
+function desplasar(tip_bot, caja, salto_movile, salto_comp) {
+
+    var anchoVentana = window.innerWidth;
+        
+    if (anchoVentana <= 980) { // desplasamiento para cuando es  el movile
+        if (tip_bot === 'arriba') {
+            caja.scrollTop -= salto_movile;
+        } else if (tip_bot === 'abajo') {
+            caja.scrollTop += salto_movile;
+        }
+            
+    } else if (anchoVentana > 980) { // desplasamiento para cuando es la computadora
+        if (tip_bot === 'arriba') {
+            caja.scrollTop -= salto_comp;
+        } else if (tip_bot === 'abajo') {
+            caja.scrollTop += salto_comp;
+        }   
+    }
+}  
+
+var currentTable = 1;
+// Función para mostrar el contenido adecuado según la procesadora seleccionada (Seccion de Victor)
+function ScrollbuttonVictor(direction) {
+    // Ocultar la tabla actual
+    document.getElementById('tv' + currentTable).style.display = 'none';
+    
+    // Cambiar la tabla según la dirección del scroll
+    if (direction === 'arriba' && currentTable > 1) {
+        currentTable--; // Si es hacia arriba, ir a la tabla anterior
+    } else if (direction === 'abajo' && currentTable < 9) {
+        currentTable++; // Si es hacia abajo, ir a la siguiente tabla
+    }
+    
+    // Mostrar la nueva tabla
+    document.getElementById('tv' + currentTable).style.display = 'table';
+}
+
+var Tablarecom = 1;
+// Función para mostrar el contenido adecuado según la procesadora seleccionada (Seccion de recompensa)
+function ScrollbuttonRecom(direc) {
+    // Ocultar la tabla actual
+    document.getElementById('tr' + Tablarecom).style.display = 'none';
+    var lis="";
+    
+    // Cambiar la tabla según la dirección del scroll
+    if (direc === 'arriba' && Tablarecom > 1) {
+        Tablarecom--; // Si es hacia arriba, ir a la tabla anterior
+    } else if (direc === 'abajo' && Tablarecom < 40) {
+        Tablarecom++; // Si es hacia abajo, ir a la siguiente tabla
+    }
+
+    // Cambia el nombre de la lista
+    if (Tablarecom > 9) { lis="Lista "; } else if (Tablarecom < 10) { lis="Lista 0"; }
+    document.getElementById("header1").innerText = lis+Tablarecom;
+
+    // Mostrar la nueva tabla
+    document.getElementById('tr' + Tablarecom).style.display = 'table';
+}
+
+var cant_cult_Setas = 1;
+var cant_cult_Cosechas = 1;
+var cant_cult_Arboles = 1;
+var cant_cult_Flores = 1;
+// Función para mostrar el contenido adecuado según la procesadora seleccionada (Seccion de Victor)
+function ScrollbuttonCultivos(direction) {
+
+    var separador = direction.split(",");
+
+    if(separador[1]=='cs'){
+        // Ocultar la tabla actual
+        document.getElementById(separador[1] + cant_cult_Setas).style.display = 'none';
+        
+        // Cambiar la tabla según la dirección del scroll
+        if (separador[0] === 'arriba' && cant_cult_Setas > 1) {
+            cant_cult_Setas--; // Si es hacia arriba, ir a la tabla anterior
+        } else if (separador[0] === 'abajo' && cant_cult_Setas < 2) {
+            cant_cult_Setas++; // Si es hacia abajo, ir a la siguiente tabla
+        } else if (separador[0] === 'abajo' && cant_cult_Setas == 2) { 
+            cant_cult_Setas=1; // Si llega al final vuelve al inicio
+        }
+
+        // Mostrar la nueva tabla
+        document.getElementById(separador[1] + cant_cult_Setas).style.display = 'table';
+
+    } else if(separador[1]=='ca'){
+        // Ocultar la tabla actual
+        document.getElementById(separador[1] + cant_cult_Arboles).style.display = 'none';
+        
+        // Cambiar la tabla según la dirección del scroll
+        if (separador[0] === 'arriba' && cant_cult_Arboles > 1) {
+            cant_cult_Arboles--; // Si es hacia arriba, ir a la tabla anterior
+        } else if (separador[0] === 'abajo' && cant_cult_Arboles < 4) {
+            cant_cult_Arboles++; // Si es hacia abajo, ir a la siguiente tabla
+        } else if (separador[0] === 'abajo' && cant_cult_Arboles == 4) { 
+            cant_cult_Arboles=1; // Si llega al final vuelve al inicio
+        }
+
+        // Mostrar la nueva tabla
+        document.getElementById(separador[1] + cant_cult_Arboles).style.display = 'table';
+    } else if(separador[1]=='cf'){
+        // Ocultar la tabla actual
+        document.getElementById(separador[1] + cant_cult_Flores).style.display = 'none';
+        
+        // Cambiar la tabla según la dirección del scroll
+        if (separador[0] === 'arriba' && cant_cult_Flores > 1) {
+            cant_cult_Flores--; // Si es hacia arriba, ir a la tabla anterior
+        } else if (separador[0] === 'abajo' && cant_cult_Flores < 4) {
+            cant_cult_Flores++; // Si es hacia abajo, ir a la siguiente tabla
+        } else if (separador[0] === 'abajo' && cant_cult_Flores == 4) { 
+            cant_cult_Flores=1; // Si llega al final vuelve al inicio
+        }
+
+        // Mostrar la nueva tabla
+        document.getElementById(separador[1] + cant_cult_Flores).style.display = 'table';
+    } else if(separador[1]=='cc'){
+        // Ocultar la tabla actual
+        document.getElementById(separador[1] + cant_cult_Cosechas).style.display = 'none';
+        
+        // Cambiar la tabla según la dirección del scroll
+        if (separador[0] === 'arriba' && cant_cult_Cosechas > 1) {
+            cant_cult_Cosechas--; // Si es hacia arriba, ir a la tabla anterior
+        } else if (separador[0] === 'abajo' && cant_cult_Cosechas < 8) {
+            cant_cult_Cosechas++; // Si es hacia abajo, ir a la siguiente tabla
+        } else if (separador[0] === 'abajo' && cant_cult_Cosechas == 8) { 
+            cant_cult_Cosechas=1; // Si llega al final vuelve al inicio
+        }
+
+        // Mostrar la nueva tabla
+        document.getElementById(separador[1] + cant_cult_Cosechas).style.display = 'table';
+    }
+}
+
+
+
+
+/* ****************************************************** */
+/*  Funciones para editar la tabla acorde de la estacion  */
+/* ****************************************************** */
+
+function cambiarTemporada(num){ cambiar(num,0); }
+
+function cambiarTemporada_mascota(num){ cambiar(num,1); }
+
+function cambiar(num,i){
+    let encabezado = document.getElementById("estacion");
+    let titulo = document.getElementById("tituloEstacion");
+
+    for(i;i<=4;i++){ document.getElementById("calendario"+i).style.display="none"; }
+    document.getElementById("calendario"+num).style.display="block";
+
+    if(num==1){ // primavera 
+        encabezado.style.backgroundColor="#84f16e"; 
+        titulo.textContent="Calendario de Primavera";
+    } 
+
+    if(num==2){ // verano
+        encabezado.style.backgroundColor="#f2e88c";
+        titulo.textContent="Calendario de Verano"; 
+    }
+
+    if(num==3){  // otoño
+        encabezado.style.backgroundColor="#f7b05f"; 
+        titulo.textContent="Calendario de Otoño"; 
+    }
+
+    if(num==4){  // invierno
+        encabezado.style.backgroundColor="#7ed1f5"; 
+        titulo.textContent="Calendario de Invierno"; 
+    }
+}
+
 // Función para cerrar el dialog
 function cerrarDialog(tip) { 
 
@@ -9,7 +208,7 @@ function cerrarDialog(tip) {
             var details = document.getElementById(arreglo[i]);
             if (details) { details.removeAttribute('open'); }
         }
-    }
+    } 
 
     document.getElementById(tip).close(); 
 }
@@ -129,183 +328,4 @@ if (window.location.pathname.includes("Personajes/")) {
         // Si la altura es igual a 135px, Ajusta el valor del margen superior del <div> según lo necesites
         if (thElement.offsetHeight <= 135) { thdiv.style.marginTop = "20px"; }
     }
-}
-
-/* ****************************************************** */
-/*  Funciones para editar la tabla acorde de la estacion  */
-/* ****************************************************** */
-
-function cambiarTemporada(num){ cambiar(num,0); }
-
-function cambiarTemporada_mascota(num){ cambiar(num,1); }
-
-function cambiar(num,i){
-    let encabezado = document.getElementById("estacion");
-    let titulo = document.getElementById("tituloEstacion");
-
-    for(i;i<=4;i++){ document.getElementById("calendario"+i).style.display="none"; }
-    document.getElementById("calendario"+num).style.display="block";
-
-    if(num==1){ // primavera 
-        encabezado.style.backgroundColor="#84f16e"; 
-        titulo.textContent="Calendario de Primavera";
-    } 
-
-    if(num==2){ // verano
-        encabezado.style.backgroundColor="#f2e88c";
-        titulo.textContent="Calendario de Verano"; 
-    }
-
-    if(num==3){  // otoño
-        encabezado.style.backgroundColor="#f7b05f"; 
-        titulo.textContent="Calendario de Otoño"; 
-    }
-
-    if(num==4){  // invierno
-        encabezado.style.backgroundColor="#7ed1f5"; 
-        titulo.textContent="Calendario de Invierno"; 
-    }
-}
-
-/* ************************************************************** */
-/*  Funciones para desplasar el contenido de la caja por botones  */
-/* ************************************************************** */
-
-// Función para desplazar el contenido de la caja de personajes
-function Scrollbutton(tip_bot){ desplasar(tip_bot,304,415.05); } // movile,comp
-
-// Función para desplazar el contenido de la caja de personajes del DLC
-function Scrollbutton_Perso_DLC(tip_bot){ desplasar(tip_bot,240,305.05); } // movile,comp
-
-// Función para el desplazamiento del contenido de la caja
-function desplasar(tip_bot,salto_movile,salto_comp) {
-
-    var anchoVentana = window.innerWidth;
-        
-    if (anchoVentana <= 980) { // desplasamiento para cuando es  el movile
-        if (tip_bot === 'arriba') {
-            boxsort.scrollTop -= salto_movile;
-        } else if (tip_bot === 'abajo') {
-            boxsort.scrollTop += salto_movile;
-        }
-            
-    } else if (anchoVentana > 980) { // desplasamiento para cuando es la computadora
-        if (tip_bot === 'arriba') {
-            boxsort.scrollTop -= salto_comp;
-        } else if (tip_bot === 'abajo') {
-            boxsort.scrollTop += salto_comp;
-        }   
-    }
-}      
-
-var currentTable = 1;
-// Función para mostrar el contenido adecuado según la procesadora seleccionada (Seccion de Victor)
-function ScrollbuttonVictor(direction) {
-    // Ocultar la tabla actual
-    document.getElementById('tv' + currentTable).style.display = 'none';
-    
-    // Cambiar la tabla según la dirección del scroll
-    if (direction === 'arriba' && currentTable > 1) {
-        currentTable--; // Si es hacia arriba, ir a la tabla anterior
-    } else if (direction === 'abajo' && currentTable < 9) {
-        currentTable++; // Si es hacia abajo, ir a la siguiente tabla
-    }
-    
-    // Mostrar la nueva tabla
-    document.getElementById('tv' + currentTable).style.display = 'table';
-}
-
-var Tablarecom = 1;
-// Función para mostrar el contenido adecuado según la procesadora seleccionada (Seccion de recompensa)
-function ScrollbuttonRecom(direc) {
-    // Ocultar la tabla actual
-    document.getElementById('tr' + Tablarecom).style.display = 'none';
-    var lis="";
-    
-    // Cambiar la tabla según la dirección del scroll
-    if (direc === 'arriba' && Tablarecom > 1) {
-        Tablarecom--; // Si es hacia arriba, ir a la tabla anterior
-    } else if (direc === 'abajo' && Tablarecom < 40) {
-        Tablarecom++; // Si es hacia abajo, ir a la siguiente tabla
-    }
-
-    // Cambia el nombre de la lista
-    if (Tablarecom > 9) { lis="Lista "; } else if (Tablarecom < 10) { lis="Lista 0"; }
-    document.getElementById("header1").innerText = lis+Tablarecom;
-
-    // Mostrar la nueva tabla
-    document.getElementById('tr' + Tablarecom).style.display = 'table';
-}
-
-var cant_cult_Setas = 1;
-var cant_cult_Cosechas = 1;
-var cant_cult_Arboles = 1;
-var cant_cult_Flores = 1;
-// Función para mostrar el contenido adecuado según la procesadora seleccionada (Seccion de Victor)
-function ScrollbuttonCultivos(direction) {
-
-    var separador = direction.split(",");
-
-    if(separador[1]=='cs'){
-        // Ocultar la tabla actual
-        document.getElementById(separador[1] + cant_cult_Setas).style.display = 'none';
-        
-        // Cambiar la tabla según la dirección del scroll
-        if (separador[0] === 'arriba' && cant_cult_Setas > 1) {
-            cant_cult_Setas--; // Si es hacia arriba, ir a la tabla anterior
-        } else if (separador[0] === 'abajo' && cant_cult_Setas < 2) {
-            cant_cult_Setas++; // Si es hacia abajo, ir a la siguiente tabla
-        } else if (separador[0] === 'abajo' && cant_cult_Setas == 2) { 
-            cant_cult_Setas=1; // Si llega al final vuelve al inicio
-        }
-
-        // Mostrar la nueva tabla
-        document.getElementById(separador[1] + cant_cult_Setas).style.display = 'table';
-
-    } else if(separador[1]=='ca'){
-        // Ocultar la tabla actual
-        document.getElementById(separador[1] + cant_cult_Arboles).style.display = 'none';
-        
-        // Cambiar la tabla según la dirección del scroll
-        if (separador[0] === 'arriba' && cant_cult_Arboles > 1) {
-            cant_cult_Arboles--; // Si es hacia arriba, ir a la tabla anterior
-        } else if (separador[0] === 'abajo' && cant_cult_Arboles < 4) {
-            cant_cult_Arboles++; // Si es hacia abajo, ir a la siguiente tabla
-        } else if (separador[0] === 'abajo' && cant_cult_Arboles == 4) { 
-            cant_cult_Arboles=1; // Si llega al final vuelve al inicio
-        }
-
-        // Mostrar la nueva tabla
-        document.getElementById(separador[1] + cant_cult_Arboles).style.display = 'table';
-    } else if(separador[1]=='cf'){
-        // Ocultar la tabla actual
-        document.getElementById(separador[1] + cant_cult_Flores).style.display = 'none';
-        
-        // Cambiar la tabla según la dirección del scroll
-        if (separador[0] === 'arriba' && cant_cult_Flores > 1) {
-            cant_cult_Flores--; // Si es hacia arriba, ir a la tabla anterior
-        } else if (separador[0] === 'abajo' && cant_cult_Flores < 4) {
-            cant_cult_Flores++; // Si es hacia abajo, ir a la siguiente tabla
-        } else if (separador[0] === 'abajo' && cant_cult_Flores == 4) { 
-            cant_cult_Flores=1; // Si llega al final vuelve al inicio
-        }
-
-        // Mostrar la nueva tabla
-        document.getElementById(separador[1] + cant_cult_Flores).style.display = 'table';
-    } else if(separador[1]=='cc'){
-        // Ocultar la tabla actual
-        document.getElementById(separador[1] + cant_cult_Cosechas).style.display = 'none';
-        
-        // Cambiar la tabla según la dirección del scroll
-        if (separador[0] === 'arriba' && cant_cult_Cosechas > 1) {
-            cant_cult_Cosechas--; // Si es hacia arriba, ir a la tabla anterior
-        } else if (separador[0] === 'abajo' && cant_cult_Cosechas < 8) {
-            cant_cult_Cosechas++; // Si es hacia abajo, ir a la siguiente tabla
-        } else if (separador[0] === 'abajo' && cant_cult_Cosechas == 8) { 
-            cant_cult_Cosechas=1; // Si llega al final vuelve al inicio
-        }
-
-        // Mostrar la nueva tabla
-        document.getElementById(separador[1] + cant_cult_Cosechas).style.display = 'table';
-    }
-}
+}   

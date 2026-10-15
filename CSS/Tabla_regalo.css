@@ -1,0 +1,12 @@
+/* ****************************** */
+/*  Diseños dla tabla de objetos  */
+/* ****************************** */
+
+.Table_regalo{ width: 64em; }
+
+/* Defino las caracteristicas para los rostros que se visualisan en la tabla de regalos */
+#regalos1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

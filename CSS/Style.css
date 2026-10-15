@@ -1,7 +1,6 @@
-
 @import url('Tablas_ayuntamiento.css');
-@import url('Tabla_cont_obj.css');
 @import url('Pantalla_carga.css');
+@import url('Tabla_cont_obj.css');
 @import url('Diseño_movil.css');
 @import url('Footer_y_Nav.css');
 @import url('Imagenes.css');
@@ -125,11 +124,13 @@ h3 , summary {
 /* Estas clases es para crear un Scroll en la seccion de personajes */
 .scroll-container_aldeanos,.scroll-container_matri,.scroll-container_DLC {
     width: auto;           /* Ancho del contenedor */
-    height: 26em;          /* Alto del contenedor */
+    height: 31em;          /* Alto del contenedor */
     overflow: auto;         /* Activa la barra de desplazamiento */
     scroll-behavior: smooth; /* Desplazamiento suave */
     border: 1px solid #ccc; /* Borde opcional para definir el contorno */
 }
+
+.scroll-container_matri { height: 27.85em;   /* Alto del contenedor */}
 
 /* Estas clases es para crear un Scroll en la seccion de personajes de los DLC */
 .scroll-container_DLC{ 
