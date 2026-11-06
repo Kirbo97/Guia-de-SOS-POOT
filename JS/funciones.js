@@ -182,6 +182,8 @@ function cambiarTemporada(num){ cambiar(num,0); }
 
 function cambiarTemporada_mascota(num){ cambiar(num,1); }
 
+function cambiar_lista(num,x){ cambiar_pagina(num,1,x); }
+
 function cambiar(num,i){
     let encabezado = document.getElementById("estacion");
     let titulo = document.getElementById("tituloEstacion");
@@ -208,6 +210,28 @@ function cambiar(num,i){
         encabezado.style.backgroundColor="#7ed1f5"; 
         titulo.textContent="Calendario de Invierno"; 
     }
+}
+
+function cambiar_pagina(num,i,x) {
+    let lista_objeto = document.getElementById("lista" + num);
+
+    // Si ya está visible, ocultarla
+    if (lista_objeto.style.display === "block") {
+        lista_objeto.style.display = "none";
+        return;
+    }
+
+    // Ocultar todas las listas
+    for(i;i<=x;i++){ 
+        if(num>4 && x==4){
+            document.getElementById("lista"+(i+4)).style.display="none"; 
+        } else if(num<5 || (num<6  && x==5)) {
+            document.getElementById("lista"+i).style.display="none";
+        }
+    }
+
+    // Mostrar la seleccionada
+    lista_objeto.style.display = "block";
 }
 
 // Función para cerrar el dialog
@@ -256,7 +280,6 @@ function mostrarContenido(tipo) {
 
     dialog.showModal();
 }   
-
 
 // Función para calcular y ajustar el ancho de los dialog que contiene los eventos (Seccion de eventos de los personajes)
 function Cal_tabla(tip_lis_btn) {
