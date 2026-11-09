@@ -182,7 +182,7 @@ function cambiarTemporada(num){ cambiar(num,0); }
 
 function cambiarTemporada_mascota(num){ cambiar(num,1); }
 
-function cambiar_lista(num,x){ cambiar_pagina(num,1,x); }
+function cambiar_lista(num,x){ cambiar_pag_peces(num,1,x); }
 
 function cambiar(num,i){
     let encabezado = document.getElementById("estacion");
@@ -212,7 +212,7 @@ function cambiar(num,i){
     }
 }
 
-function cambiar_pagina(num,i,x) {
+function cambiar_pag_peces(num,i,x) {
     let lista_objeto = document.getElementById("lista" + num);
 
     // Si ya está visible, ocultarla
@@ -223,9 +223,9 @@ function cambiar_pagina(num,i,x) {
 
     // Ocultar todas las listas
     for(i;i<=x;i++){ 
-        if(num>4 && x==4){
-            document.getElementById("lista"+(i+4)).style.display="none"; 
-        } else if(num<5 || (num<6  && x==5)) {
+        if(num>=4 && x==3){
+            document.getElementById("lista"+(i+3)).style.display="none"; 
+        } else if(num<=3) {
             document.getElementById("lista"+i).style.display="none";
         }
     }
